@@ -12,7 +12,7 @@ The ability to generate data files directly is coming along slowly basically int
 
 ## Additional Features
 
-VK2BV_repeater_config also has additional features not found in cwother better programs!.
+VK2BV_repeater_config also has additional features not found in other better programs!.
 
 * APRS entries for multiple countries or areas
 * WICEN simplex
