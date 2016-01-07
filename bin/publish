@@ -1,0 +1,23 @@
+rsync vkrepdir.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/
+rsync vkrep.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/
+rsync vkrepstd.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/
+rsync vkrepft-1dradms6.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
+rsync vkrepft-2drrts.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
+rsync vkrepftm-400dradms7*.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
+rsync vkrepftm-100drrts*.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
+rsync *g3.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/
+rsync *g22.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/
+rsync *g23.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/
+rsync *g24.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/
+rsync *g3.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A/
+rsync *mem*.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A/
+rsync *g3.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A\ AnnivPlus/
+rsync *g22.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A\ AnnivPlus/
+rsync *g23.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A\ AnnivPlus/
+rsync *g24.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A\ AnnivPlus/
+rsync *mem*.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 51A\ AnnivPlus/
+rsync *g3.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 5100\ 1.2/
+rsync *g22.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 5100\ 1.2/
+rsync *g23.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 5100\ 1.2/
+rsync *g24.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 5100\ 1.2/
+rsync *mem*.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/ICOM\ 5100\ 1.2/
