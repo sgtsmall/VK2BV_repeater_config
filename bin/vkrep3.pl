@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Reads in Steve's VK2MD kml files and creates data with location and direction
 #

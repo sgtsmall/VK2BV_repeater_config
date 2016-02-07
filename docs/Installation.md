@@ -13,7 +13,11 @@ Geo::Direction::Distance
 Text::CSV_XS
 XML::LibXML
 
-
+### ubuntu 
+sudo apt-get install libtext-csv-xs-perl  libxml-libxml-perl
+cpan   Ham::Locator Geo::Direction::Distance
+cd /usr/bin
+sudo ln -s /bin/sed gsed
 and some other bits
 
 * I just run and have a quick look at errors until things are fixed up

@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # merges wia and local data
 #
@@ -32,7 +32,7 @@ my $call = '';
 #my $offdata = '';
 #my @kmllist ;
 my $cntfld     = '';
-my @Favourites = qw{'VK2RBV 4'};
+#my @Favourites = qw{'VK2RBV 4'};
 
 
 # Load arrays with file contents

@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Creates a data file for the Yaesu FTM-400DR ADMS 7
 #

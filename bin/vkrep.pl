@@ -1,5 +1,8 @@
 #!/opt/local/bin/perl
-
+#
+# test script only
+#
+#
 use strict;
 use warnings;
 

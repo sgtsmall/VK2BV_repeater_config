@@ -1,6 +1,7 @@
 #!/opt/local/bin/perl
-
-# this seems to be a test script only
+#
+# test script only
+#
 
 use strict;
 use warnings;
