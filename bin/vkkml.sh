@@ -5,13 +5,19 @@ body() {
     printf '%s\n' "$header"
     "$@"
 }
+tester() {
+echo "test script to exercise modules"
+    ./bin/vkreptest.pl 
+}
 usage() {
-echo "Usage: $(basename $0) -r repdate [-h]|[-c]|[-i]|[-y]"
+echo "Usage: $(basename $0) -r repdate [-h][-c][-i][-y][-p][-t]"
 echo "  -r  repdate is YYMMDD from wia website"
 echo "  -h This help text"
 echo "  -c Suppress Chirp Files"
 echo "  -i Suppress Icom Files"
 echo "  -y Suppress Yaesu Files"
+echo "  -p Suppress Publish"
+echo "  -t Test perl and libraries"
 
 echo ""
 echo "e.g. ...../Repeater Directory 160103.csv   -r 160103"
@@ -38,6 +44,7 @@ if [ "$1" != "" ]; then
             -i ) outicom= ; shift ;;
             -y ) outyaesu= ; shift ;;
             -p ) publish= ; shift ;;
+            -t ) tester ; exit 0 ; shift ;;
         esac
     done
 fi

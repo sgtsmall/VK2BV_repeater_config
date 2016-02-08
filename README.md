@@ -54,7 +54,7 @@ Contributions are welcome and encouraged.  You can contribute in many ways:
 * New features.
 * Telling us your ideas and suggestions.
 
-The best place to start is the IRC channel on freenode (see above), drop in, say hi. Next place is the github issue tracker:
+Next place is the github issue tracker:
 
 https://github.com/sgtsmall/VK2BV_repeater_config/issues
 
