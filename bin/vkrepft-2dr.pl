@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 #
 # Creates a data file for the Yaesu FT-2DR
 #

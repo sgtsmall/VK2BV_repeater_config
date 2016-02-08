@@ -29,7 +29,7 @@ if [ "$1" != "" ]; then
     outyaesu=0
     outchirp=0
     publish=0
-    args=$(getopt r:chiyp $*)
+    args=$(getopt r:chiypt $*)
     if [ $? != 0 ] ; then usage ; exit 0 ; fi
 
     set -- $args
