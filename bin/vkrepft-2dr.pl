@@ -16,15 +16,15 @@ use Text::CSV_XS;
 my $csv = Text::CSV_XS->new({sep_char => ','});
 
 #open vkrepdir.csv
-my $file1 = $ARGV[0] or die "Need to main CSV file on the command line\n";
+my $file1 = $ARGV[0] or die "Need main CSV file on the command line\n";
 
 # open vkrepft-2dr.csv
-my $file2 = $ARGV[1] or die "Need to merge CSV file on the command line\n";
+my $file2 = $ARGV[1] or die "Need merge CSV file on the command line\n";
 my @CallUuniq;
 my $cnt        = 0;
 my $call       = '';
 my $cntfld     = '';
-my @Favourites = qw{VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI};
+my @Favourites = qw{VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM};
 
 
 # Load arrays with file contents

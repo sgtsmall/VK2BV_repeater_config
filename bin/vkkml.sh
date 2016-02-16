@@ -10,13 +10,15 @@ echo "test script to exercise modules"
     ./bin/vkreptest.pl 
 }
 usage() {
-echo "Usage: $(basename $0) -r repdate [-h][-c][-i][-y][-p][-t]"
+echo "Usage: $(basename $0) -r repdate [-h][-c][-i][-y][-p][-x][-w][-t]"
 echo "  -r  repdate is YYMMDD from wia website"
+echo "  -w Get Data from the website"
 echo "  -h This help text"
 echo "  -c Suppress Chirp Files"
 echo "  -i Suppress Icom Files"
 echo "  -y Suppress Yaesu Files"
 echo "  -p Suppress Publish"
+echo "  -x Test new function"
 echo "  -t Test perl and libraries"
 
 echo ""
@@ -28,8 +30,10 @@ if [ "$1" != "" ]; then
     outicom=0
     outyaesu=0
     outchirp=0
+    outtest=
+    getweb=0
     publish=0
-    args=$(getopt r:chiypt $*)
+    args=$(getopt r:chiyptwx $*)
     if [ $? != 0 ] ; then usage ; exit 0 ; fi
 
     set -- $args
@@ -44,6 +48,8 @@ if [ "$1" != "" ]; then
             -i ) outicom= ; shift ;;
             -y ) outyaesu= ; shift ;;
             -p ) publish= ; shift ;;
+            -x ) publish= ; outtest=0 ; shift ;;
+            -w ) publish= ; getweb= ; shift ;;
             -t ) tester ; exit 0 ; shift ;;
         esac
     done
@@ -55,6 +61,7 @@ fi
 #
 #exit
 #cd ~/Onedrive/wia
+if [ ! -n "$getweb" ] ; then 
 mkdir work
 rm work/*
 cd work
@@ -90,6 +97,7 @@ echo "starting the sed of vkrep2work.kml vkrep.xml"
 # do some distance calculations and tiny amount of additional cleanup
 #
 cd ..
+fi
 echo "starting vkrep3.pl create vkrep.csv extracted data from kml"
     ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > vkrep.csv
 echo "starting vkrep4.pl create vkrepdir.csv wialist merged with kml and distance"
@@ -100,6 +108,12 @@ sort --field-separator=',' --key=7,7 --key=5g,5 vkrepdir.csv > work/sortvkrepdir
 #
 # get the local entries file vkrepstd from defaults
 cp defaults/vkrepstd.srccsv work/vkrepstd.csv
+if [ -n "$outtest" ] ; then
+    echo "Testing a new format"
+    ./bin/vkrepft.pl work/sortvkrepdir.csv work/vkrepstd.csv work/vkrepftmerge.csv 
+    echo "generated the test file and exiting"
+    exit 0
+fi
 if [ -n "$outyaesu" ] ;  then 
     echo "starting the create of vkrepftmerge.csv"
 # reads vkrepdir and vkrepstd (simplex and other local)

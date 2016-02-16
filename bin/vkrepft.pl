@@ -74,10 +74,9 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
     @datard{@fieldsrd} = @$rowrd;    # This is a hash slice
     push @rowsrd, \%datard;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
-        && ($datard{'band'} ~~ ["7", "2", "C4FM"])
-        && ($datard{'Output'} < '450.0')
-        && ($datard{'Output'} > '140.0')
-        && ($datard{'Input'} > '140.0'))
+        && ! ($datard{'band'} ~~ ["DST", "ATV", "P25", "DMR"])
+#        && ((($datard{'Input'} < '450.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
+     )
     {
         print $vksofh join(',', @$rowrd), "\n";
     }
@@ -89,7 +88,7 @@ while (my $rowsd = $csv->getline($vksdfh)) {
     @datard{@fieldsrd} = @$rowsd;    # This is a hash slice
     push @rowsrd, \%datard;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
-        && ($datard{'band'} ~~ ["7", "2", "C4FM"])
+        && ! ($datard{'band'} ~~ ["DST", "ATV", "P25", "DMR"])
         && ($datard{'Output'} < '450.0'))
     {
         print $vksofh join(',', @$rowsd), "\n";
