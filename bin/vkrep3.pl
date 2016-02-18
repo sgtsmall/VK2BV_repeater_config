@@ -16,7 +16,7 @@ my $parser = XML::LibXML->new();
 my $doc    = $parser->parse_file(shift @ARGV);
 
 #VK3RCG
-my @fromsydlatlng = (-33.86429172, 151.2115417);
+my @fromsydlatlng = (-33.8677935,151.2077336);
 
 #VK3RCC
 my @frommellatlng = (-37.81382239, 144.9694815);

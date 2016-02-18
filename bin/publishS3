@@ -1,0 +1,5 @@
+cd output
+zip -r IcomDStarplus *g3.csv *g22.csv *g23.csv *g24.csv *mem*.csv
+zip -r IcomDStar *g3.csv *mem*.csv
+cd ..
+aws --profile wars-configuploader s3 sync output/ s3://warssharedfiles/public/

@@ -21,7 +21,7 @@ echo "  -p Suppress Publish"
 echo "  -x Test new function"
 echo "  -t Test perl and libraries"
 
-echo ""
+echo "normal full run     -r repdate -w"
 echo "e.g. ...../Repeater Directory 160103.csv   -r 160103"
 }
 
@@ -49,7 +49,7 @@ if [ "$1" != "" ]; then
             -y ) outyaesu= ; shift ;;
             -p ) publish= ; shift ;;
             -x ) publish= ; outtest=0 ; shift ;;
-            -w ) publish= ; getweb= ; shift ;;
+            -w ) getweb= ; shift ;;
             -t ) tester ; exit 0 ; shift ;;
         esac
     done
@@ -62,8 +62,10 @@ fi
 #exit
 #cd ~/Onedrive/wia
 if [ ! -n "$getweb" ] ; then 
-mkdir work
+if [ ! -d work ] ; then mkdir work ; fi
+if [ ! -d output ] ; then mkdir output ; fi
 rm work/*
+rm output/*
 cd work
 curl -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
 tr -d '\r' < repdown.dat > repdowntext.dat
@@ -99,41 +101,50 @@ echo "starting the sed of vkrep2work.kml vkrep.xml"
 cd ..
 fi
 echo "starting vkrep3.pl create vkrep.csv extracted data from kml"
-    ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > vkrep.csv
+    ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > output/vkrep.csv
 echo "starting vkrep4.pl create vkrepdir.csv wialist merged with kml and distance"
-    ./bin/vkrep4.pl work/wiarepdir.csv vkrep.csv|sed -f bin/vkrep.sed  |sort > vkrepdir.csv
+    ./bin/vkrep4.pl work/wiarepdir.csv output/vkrep.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
 #
 # This is callsign then input frequency
-sort --field-separator=',' --key=7,7 --key=5g,5 vkrepdir.csv > work/sortvkrepdir.csv
+sort --field-separator=',' --key=7,7 --key=5g,5 output/vkrepdir.csv > work/sortvkrepdir.csv
 #
 # get the local entries file vkrepstd from defaults
-cp defaults/vkrepstd.srccsv work/vkrepstd.csv
+cp defaults/vkrepstd.srccsv output/vkrepstd.csv
 if [ -n "$outtest" ] ; then
-    echo "Testing a new format"
-    ./bin/vkrepft.pl work/sortvkrepdir.csv work/vkrepstd.csv work/vkrepftmerge.csv 
-    echo "generated the test file and exiting"
+    echo "Testing a new format generating work/vkrepftmerge.csv"
+    ./bin/vkrepft.pl work/sortvkrepdir.csv output/vkrepstd.csv work/vkrepftmerge.csv 
+    echo "generated the test file and sorting on field 1"
+# This is callsign then input frequency
+  cat work/vkrepftmerge.csv | body sort --field-separator=',' --key=1,1 > work/svkrepftmerge.csv
+#
     exit 0
 fi
 if [ -n "$outyaesu" ] ;  then 
     echo "starting the create of vkrepftmerge.csv"
 # reads vkrepdir and vkrepstd (simplex and other local)
-        ./bin/vkrep27wft.pl work/sortvkrepdir.csv work/vkrepstd.csv work/vkrepftmerge.csv 
+    ./bin/vkrepft.pl work/sortvkrepdir.csv output/vkrepstd.csv work/vkrepftmerge.csv 
+# This is callsign then input frequency
+  cat work/vkrepftmerge.csv | body sort --field-separator=',' --key=1,1 > work/svkrepftmerge.csv
+#
+#
+#        ./bin/vkrep27wft.pl work/sortvkrepdir.csv work/vkrepstd.csv work/vkrepftmerge.csv 
     echo "starting vkrepft-2dr.pl create of vkrepft-2dr.csv"
-        ./bin/vkrepft-2dr.pl work/vkrepftmerge.csv vkrepft-2dr.csv
+        ./bin/vkrepft-2dr.pl work/svkrepftmerge.csv output/vkrepft-2dr.csv
     echo "starting vkrepft-1dradms6.pl create of vkrepft-1dr.csv"
-        ./bin/vkrepft-1dradms6.pl work/vkrepftmerge.csv vkrepft-1dradms6.csv
+        ./bin/vkrepft-1dradms6.pl work/svkrepftmerge.csv output/vkrepft-1dradms6.csv
     echo "starting vkrepftm-400dradms7.pl create of vkrepftm-400dra.csv and vkrepftm-400drb.csv"
-        ./bin/vkrepftm-400dradms7.pl work/vkrepftmerge.csv vkrepftm-400dradms7
+        ./bin/vkrepftm-400dradms7.pl work/svkrepftmerge.csv output/vkrepftm-400dradms7
 else
     echo "suppressed yaesu"
 fi
 if [ -n "$outicom" ] ;  then 
     echo "starting the create of vkrepdsmerge.csv"
 # reads vkrepdir and vkrepstd (simplex and other local)
-        ./bin/vkrep27wds.pl work/sortvkrepdir.csv work/vkrepstd.csv work/dstemp.csv
-        cat work/dstemp.csv | body sort --field-separator=',' --key=3,3 > work/vkrepdsmerge.csv 
+#        ./bin/vkrep27wds.pl work/sortvkrepdir.csv work/vkrepstd.csv work/dstemp.csv
+        ./bin/vkrepds.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dstemp.csv
+        cat work/dstemp.csv | body sort --field-separator=',' --key=1,1 --key=4,4 > work/vkrepdsmerge.csv 
     echo "starting vkrepicom51x.pl create of YYYYMMDDgnn.csv"
-        ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv 20$repdate
+        ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv output/20$repdate
 else
    echo "suppressed icom"
 fi  
@@ -149,6 +160,7 @@ else
 fi 
 if [ -n "$publish" ] ;  then 
     echo "starting the publish"
+    ./bin/publishS3
 else
     echo "suppressed publishing"
 fi

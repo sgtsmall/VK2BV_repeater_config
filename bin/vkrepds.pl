@@ -8,7 +8,6 @@ use warnings;
 
 use Text::CSV_XS;
 use List::MoreUtils qw(first_index);
-
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
 
@@ -18,8 +17,7 @@ my $csv = Text::CSV_XS->new({sep_char => ','});
 my $filei1 = $ARGV[0] or die "Need orig CSV file on the command line\n";
 
 #open vkrepstd.csv
-my $filei2 = $ARGV[1]
-  or die "Need standard,simplex CSV file on the command line\n";
+my $filei2 = $ARGV[1] or die "Need standard,simplex CSV file on the command line\n";
 
 # open vkrepout.csv
 my $fileo1 = $ARGV[2] or die "Need output CSV file on the command line\n";
@@ -33,7 +31,7 @@ my $call = '';
 #my $offdata = '';
 #my @kmllist ;
 my $cntfld     = '';
-my @Favourites = qw{VK2ROZ VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM};
+my @Favourites = qw{VK2RBV VK2ROT VK2ROZ VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM};
 
 #my @Favourites = qw{'VK2RBV 4'};
 my $sortseq = '0  sortseq,';
@@ -61,13 +59,13 @@ print $vksofh $sortseq, join(',', @fieldsrd), "\n";
 $sortseq = '00,';
 
 my $rowsd = $csv->getline($vksdfh);
-$rowsd = $csv->getline($vksdfh);
-print $vksofh $sortseq, join(',', @$rowsd), "\n";
+##$rowsd = $csv->getline($vksdfh);
+##print $vksofh $sortseq, join(',', @$rowsd), "\n";
 
 #read the second line of the standard input for now this is vk2rbv as fm
 #my @rowssd = @{ $csv->getline( $vkrdfh ) };
-$rowsd = $csv->getline($vksdfh);
-print $vksofh $sortseq, join(',', @$rowsd), "\n";
+##$rowsd = $csv->getline($vksdfh);
+##print $vksofh $sortseq, join(',', @$rowsd), "\n";
 
 
 # Read each line from the CSV file, and store it in @rows
@@ -79,8 +77,8 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
     @datard{@fieldsrd} = @$rowrd;    # This is a hash slice
     push @rowsrd, \%datard;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
-        && ($datard{'band'} ~~ ["2", "7", "C4FM"])
-        && ((($datard{'Input'} < '450.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
+        && ($datard{'band'} ~~ ["2","7","DST"])
+        && ( (($datard{'Input'} < '450.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
      ) {
          $sortseq = lsortseq(@$rowrd);
          print $vksofh $sortseq, join(',', @$rowrd), "\n";
@@ -89,10 +87,10 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
 # local maintained file
 while (my $rowrd = $csv->getline($vksdfh)) {
     my %datard;
-    @datard{@fieldsrd} = @$rowsd;    # This is a hash slice
+    @datard{@fieldsrd} = @$rowrd;    # This is a hash slice
     push @rowsrd, \%datard;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
-        && ($datard{'band'} ~~ ["2", "7", "C4FM"])
+        && ($datard{'band'} ~~ ["2", "7", "DST"])
         && ($datard{'Output'} < '450.0'))
     {
          $sortseq = lsortseq(@$rowrd);
@@ -122,8 +120,8 @@ sub lsortseq    {
 
 #DEBUG print "$cnt,$prefix ";
         if (grep { $prefix6 eq $_ } @Favourites) {
-        my $subsort = first_index { $prefix6 eq $_ } @Favourites ;
-             $sortseq = sprintf('01%s,',$subsort );
+            my $subsort = first_index { $prefix6 eq $_ } @Favourites ;
+            $sortseq = sprintf('01%s,',$subsort );
         }
         elsif ($bankfld eq '') {
             for ($prefix) {

@@ -1,3 +1,4 @@
+cd output
 rsync vkrepdir.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/
 rsync vkrep.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/
 rsync vkrepstd.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/

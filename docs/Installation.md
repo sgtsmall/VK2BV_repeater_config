@@ -12,6 +12,7 @@ Ham::Locator
 Geo::Direction::Distance
 Text::CSV_XS
 XML::LibXML
+List::MoreUtils
 
 ### ubuntu 
 sudo apt-get install libtext-csv-xs-perl  libxml-libxml-perl
