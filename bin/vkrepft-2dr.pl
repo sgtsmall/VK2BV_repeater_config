@@ -10,6 +10,8 @@ use warnings;
 
 use Text::CSV_XS;
 
+our @Favourft;
+require My::Favourites;
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
 
@@ -24,8 +26,6 @@ my @CallUuniq;
 my $cnt        = 0;
 my $call       = '';
 my $cntfld     = '';
-my @Favourites = qw{VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM};
-
 
 # Load arrays with file contents
 #Open input file
@@ -119,7 +119,7 @@ while (my $row = $csv->getline($vkrdfh)) {
 # Vibrator,BANK1
 #
         my $BankFav = ',,';
-        if (grep { $data{'Call'} eq $_ } @Favourites) {
+        if (grep { $data{'Call'} eq $_ } @Favourft) {
             $BankFav = '1,1,';
         }
 #

@@ -109,7 +109,7 @@ echo "starting vkrep4.pl create vkrepdir.csv wialist merged with kml and distanc
 sort --field-separator=',' --key=7,7 --key=5g,5 output/vkrepdir.csv > work/sortvkrepdir.csv
 #
 # get the local entries file vkrepstd from defaults
-cp defaults/vkrepstd.srccsv output/vkrepstd.csv
+cp Defaults/vkrepstd.srccsv output/vkrepstd.csv
 if [ -n "$outtest" ] ; then
     echo "Testing a new format generating work/vkrepftmerge.csv"
     ./bin/vkrepft.pl work/sortvkrepdir.csv output/vkrepstd.csv work/vkrepftmerge.csv 
@@ -128,9 +128,9 @@ if [ -n "$outyaesu" ] ;  then
 #
 #
 #        ./bin/vkrep27wft.pl work/sortvkrepdir.csv work/vkrepstd.csv work/vkrepftmerge.csv 
-    echo "starting vkrepft-2dr.pl create of vkrepft-2dr.csv"
-        ./bin/vkrepft-2dr.pl work/svkrepftmerge.csv output/vkrepft-2dr.csv
-    echo "starting vkrepft-1dradms6.pl create of vkrepft-1dr.csv"
+    echo "starting vkrepft-2dr.pl create of vkrepft-2drrts.csv"
+        ./bin/vkrepft-2dr.pl work/svkrepftmerge.csv output/vkrepft-2drrts.csv
+    echo "starting vkrepft-1dradms6.pl create of vkrepft-1dradms6.csv"
         ./bin/vkrepft-1dradms6.pl work/svkrepftmerge.csv output/vkrepft-1dradms6.csv
     echo "starting vkrepftm-400dradms7.pl create of vkrepftm-400dra.csv and vkrepftm-400drb.csv"
         ./bin/vkrepftm-400dradms7.pl work/svkrepftmerge.csv output/vkrepftm-400dradms7
@@ -160,6 +160,8 @@ else
 fi 
 if [ -n "$publish" ] ;  then 
     echo "starting the publish"
+    ./bin/publish
+    ./bin/publishGD
     ./bin/publishS3
 else
     echo "suppressed publishing"

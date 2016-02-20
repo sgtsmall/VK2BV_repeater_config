@@ -5,7 +5,7 @@ rsync vkrepstd.csv ~/Google\ Drive/VK2BV/MemberRead/Aust\ Repeater\ Data/
 rsync vkrepft-1dradms6.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
 rsync vkrepft-2drrts.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
 rsync vkrepftm-400dradms7*.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
-rsync vkrepftm-100drrts*.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
+#rsync vkrepftm-100drrts*.csv ~/Google\ Drive/VK2BV/MemberRead/Yaesu/
 rsync *g3.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/
 rsync *g22.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/
 rsync *g23.csv ~/Google\ Drive/VK2BV/MemberRead/DStar\ Radio\ Config/

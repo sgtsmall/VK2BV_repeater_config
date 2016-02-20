@@ -10,6 +10,9 @@ use warnings;
 
 use Text::CSV_XS;
 
+our @Favourft;
+require My::Favourites;
+
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
 
@@ -28,8 +31,6 @@ my $outfh      = '';
 my $chnum      = '';
 my $memcnta    = 0;
 my $memcntb    = 0;
-my @Favourites = qw{VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI};
-
 
 # Load arrays with file contents
 #Open input file
@@ -143,7 +144,7 @@ while ((my $row = $csv->getline($vkrdfh))
 #SKIP,
 #
         my $SkipFav = 'OFF,';
-        if (grep { $data{'Call'} eq $_ } @Favourites) {
+        if (grep { $data{'Call'} eq $_ } @Favourft) {
             $SkipFav = 'SELECT,';
         }
 
@@ -156,7 +157,7 @@ while ((my $row = $csv->getline($vkrdfh))
 # BANK2,...,13
 #
         my $BankLoc = '';
-#
+        my $both    = '0'; 
         my $dirn     = sprintf("%s", $data{'dirkat'});
         my $dirs     = '';
         my $distcsyd = sprintf("%s", $data{'distsyd'});
@@ -166,10 +167,21 @@ while ((my $row = $csv->getline($vkrdfh))
 
 #DEBUG print ("$data{'Call U'}-$dirn-$dirs-$distc\n");
 
-        my $prefix = sprintf("%.3s", $data{'Call U'});
+        my $prefix   = sprintf("%.3s", $data{'Call U'});
+        my $prefix6  = sprintf("%.6s", $data{'Call U'});
 
 #DEBUG print "$cnt,$prefix ";
-        if ($bankfld eq '') {
+        if (grep { $prefix6 eq $_ } @Favourft ) {
+            $band = '0';
+            $outfh = $ftm400fha;
+            $memcnta += 1;
+            $chnum = $memcnta;
+            if ($data{'mode'} eq 'FM' ) {
+                $both = '-1';
+                $memcntb += 1;
+            }
+        }
+        elsif ($bankfld eq '') {
             if (($prefix eq 'VK1') || ($prefix eq 'VK2')) {
                 $band  = '0';
                 $outfh = $ftm400fha;
@@ -188,19 +200,25 @@ while ((my $row = $csv->getline($vkrdfh))
                 $memcnta += 1;
                 $chnum = $memcnta;
             }
-            elsif (($prefix eq 'VK5') || ($prefix eq 'VK8')) {
+            elsif ($prefix eq 'VK5') {
                 $band  = '0';
                 $outfh = $ftm400fha;
                 $memcnta += 1;
                 $chnum = $memcnta;
             }
             elsif ($prefix eq 'VK6') {
-                $band  = '0';
-                $outfh = $ftm400fha;
-                $memcnta += 1;
-                $chnum = $memcnta;
+                $band  = '1';
+                $outfh = $ftm400fhb;
+                $memcntb += 1;
+                $chnum = $memcntb;
             }
             elsif ($prefix eq 'VK7') {
+                $band  = '1';
+                $outfh = $ftm400fhb;
+                $memcntb += 1;
+                $chnum = $memcntb;
+            }
+            elsif ($prefix eq 'VK8') {
                 $band  = '1';
                 $outfh = $ftm400fhb;
                 $memcntb += 1;
@@ -229,20 +247,25 @@ while ((my $row = $csv->getline($vkrdfh))
             $memcntb += 1;
             $chnum = $memcntb;
         }
-        my $newline = sprintf(
-            "%s,%s%s%s%s%s%s%s%s",
-            $chnum,   $newdata, $newdat1, $newdat2, $newdat3,
-            $SkipFav, $newdat4, $newdat5, $band
-        );
-#
-#
-        if ($csv->parse($newline)) {
-            print $outfh $csv->string, "\n";
-        }
-        else {
-            print STDERR "parse () failed on argument: ", $csv->error_input,
-              "\n";
-            $csv->error_diag();
+        while ( $both < '1' ){
+# create the line and write it        
+            my $newline = sprintf(
+                "%s,%s%s%s%s%s%s%s%s",
+                $chnum,   $newdata, $newdat1, $newdat2, $newdat3,
+                $SkipFav, $newdat4, $newdat5, $band
+            );
+            if ($csv->parse($newline)) {
+                print $outfh $csv->string, "\n";
+            }
+            else {
+                print STDERR "parse () failed on argument: ", $csv->error_input,
+                "\n";
+                $csv->error_diag();
+            }
+            $both += 1;
+            $chnum = $memcntb;
+            $outfh = $ftm400fhb;
+            $band = 1;
         }
     }
 }

@@ -8,8 +8,8 @@ use warnings;
 
 use Text::CSV_XS;
 use List::MoreUtils qw(first_index);
-#use List::Util qw(first);
-#use Scalar::Util qw(looks_like_number);
+our @Favourds;
+require My::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
 
@@ -31,9 +31,7 @@ my $call = '';
 #my $offdata = '';
 #my @kmllist ;
 my $cntfld     = '';
-my @Favourites = qw{VK2RBV VK2ROT VK2ROZ VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM};
 
-#my @Favourites = qw{'VK2RBV 4'};
 my $sortseq = '0  sortseq,';
 
 # Load arrays with file contents
@@ -49,33 +47,18 @@ open(my $vksofh, '>', $fileo1) or die "Could not open '$fileo1' $!\n";
 
 #read the header line of the main input
 my @fieldsrd = @{$csv->getline($vkrdfh)};
-
-#
+# output this header with sortseq 
 print $vksofh $sortseq, join(',', @fieldsrd), "\n";
 
-#read the first line of the standard input this contains our p1 (home)
-#my @rowssd = @{ $csv->getline( $vkrdfh ) };
-# read and discard the first line of the standard input
-$sortseq = '00,';
-
-my $rowsd = $csv->getline($vksdfh);
-##$rowsd = $csv->getline($vksdfh);
-##print $vksofh $sortseq, join(',', @$rowsd), "\n";
-
-#read the second line of the standard input for now this is vk2rbv as fm
-#my @rowssd = @{ $csv->getline( $vkrdfh ) };
-##$rowsd = $csv->getline($vksdfh);
-##print $vksofh $sortseq, join(',', @$rowsd), "\n";
-
+#read the header line of the local input
+my @fieldssd = @{$csv->getline($vksdfh)};
 
 # Read each line from the CSV file, and store it in @rows
-my @rowsrd;
 
 # repeater list
 while (my $rowrd = $csv->getline($vkrdfh)) {
     my %datard;
-    @datard{@fieldsrd} = @$rowrd;    # This is a hash slice
-    push @rowsrd, \%datard;
+    @datard{@fieldsrd} = @$rowrd;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2","7","DST"])
         && ( (($datard{'Input'} < '450.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
@@ -87,8 +70,7 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
 # local maintained file
 while (my $rowrd = $csv->getline($vksdfh)) {
     my %datard;
-    @datard{@fieldsrd} = @$rowrd;    # This is a hash slice
-    push @rowsrd, \%datard;
+    @datard{@fieldssd} = @$rowrd;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2", "7", "DST"])
         && ($datard{'Output'} < '450.0'))
@@ -107,7 +89,7 @@ close $vksofh;
 
 sub lsortseq    {
         my %datard;
-        @datard{@fieldsrd} = @_ ;    # This is a hash slice
+        @datard{@fieldsrd} = @_ ;
         $sortseq     = 'Z,';
         my $dirs     = '';        
         my $dirn     = sprintf("%s", $datard{'dirkat'});
@@ -119,8 +101,8 @@ sub lsortseq    {
         my $prefix6  = sprintf("%.6s", $datard{'Call U'});
 
 #DEBUG print "$cnt,$prefix ";
-        if (grep { $prefix6 eq $_ } @Favourites) {
-            my $subsort = first_index { $prefix6 eq $_ } @Favourites ;
+        if (grep { $prefix6 eq $_ } @Favourds) {
+            my $subsort = first_index { $prefix6 eq $_ } @Favourds ;
             $sortseq = sprintf('01%s,',$subsort );
         }
         elsif ($bankfld eq '') {
@@ -187,20 +169,36 @@ sub lsortseq    {
                 elsif ($prefix eq 'VK7') {
                         $sortseq = '29,';
                         }
-                else {
+                elsif ($prefix eq 'APR') {
+                    if ($datard{'Call U'} eq 'APRSAU') {
                         $sortseq = '30,';
+                        }
+                    elsif ($datard{'Call U'} eq 'APRWIC') {
+                        $sortseq = '31,';
+                        }
+                    elsif ($datard{'Call U'} eq 'APRISS') {
+                        $sortseq = '32,';
+                        }
+                    else {
+                        $sortseq = '33,';
+                        }
+                }
+                else {
+                        $sortseq = '40,';
                         }
             }
         }
         else {
-                        $sortseq = '30,';
+            $sortseq = '40,';
             if ($bankfld eq '6') {
-                                    $sortseq = 'A,';
+                $sortseq = 'A,';
+            }
+            elsif ($bankfld eq '15'){
+                $sortseq = 'B,';
             }
         }
 
         return $sortseq 
     }
-
 
 exit

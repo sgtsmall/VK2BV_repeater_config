@@ -10,6 +10,9 @@ use warnings;
 
 use Text::CSV_XS;
 
+our @Favourft;
+require My::Favourites;
+
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
 
@@ -28,7 +31,6 @@ my $outfh      = '';
 my $chnum      = '';
 my $memcnta    = 0;
 my $memcntb    = 0;
-my @Favourites = qw{VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI};
 
 
 # Load arrays with file contents
@@ -145,7 +147,7 @@ while ((my $row = $csv->getline($vkrdfh))
 #SKIP,
 #
         my $SkipFav = 'OFF,';
-        if (grep { $data{'Call'} eq $_ } @Favourites) {
+        if (grep { $data{'Call'} eq $_ } @Favourft) {
             $SkipFav = 'SELECT,';
         }
 

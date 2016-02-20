@@ -19,9 +19,8 @@ use strict;
 use warnings;
 
 use Text::CSV_XS;
-
-#use List::Util qw(first);
-#use Scalar::Util qw(looks_like_number);
+our @Favourds;
+require My::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
 
@@ -42,7 +41,6 @@ my @CallUuniq;
 my $call       = '';
 my $cntfld     = '';
 my $utcoffset  = '';
-my @Favourites = qw{VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2PSF};
 my @grpnum     = qw{3 22 23 24};
 my @grpnam     = qw{AusDV FMAus FMAusNW Local};
 my @utco10     = qw{VK1 VK2 Vk3 VK4 VK7};
@@ -212,7 +210,7 @@ while (my $row = $csv->getline($vkrdfh)) {
 # use this logic for RPT1 USE
 #
         my $BankFav = ',,';
-        if (grep { $data{'Call'} eq $_ } @Favourites) {
+        if (grep { $data{'Call'} eq $_ } @Favourds) {
             $BankFav = '1,1,';
         }
 #
@@ -236,7 +234,7 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $chnum  = 'UNDEF';
 
 
-#    if ( grep { $data{'Call'} eq $_ } @Favourites ) {
+
 
         if ($data{'mode'} eq "DV") {
             $grpnum = '3,';
