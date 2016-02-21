@@ -13,7 +13,7 @@ The files were prepared using the RT-Systems FT-2D software with Data extracted 
 * VKBV2D.rsf - basic settings file options
 * VKBV2D.FT2D - template used to import more memories, includes the bank names.
 
-* VKBVyymmmdd.FT2D - most recent RT Systems file
+* VKBVyymondd.FT2D - most recent RT Systems file
 * BACKUP.dat - generated SD card file.
 
 ### Radio Load Steps
