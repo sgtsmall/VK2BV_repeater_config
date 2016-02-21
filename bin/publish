@@ -1,6 +1,8 @@
 rsync Defaults/README_FT_1D.md output/FT-1D/
 rsync output/vkrepft-1dradms6.csv output/FT-1D/
 rsync Defaults/README_FT_2D.md output/FT-2D/
+rsync Defaults/VKBV2D.rsf output/FT-2D/
+rsync Defaults/VKBV2D.TF2D output/FT-2D/
 rsync output/vkrepft-2drrts.csv output/FT-2D/
 rsync Defaults/README_FT_400D.md output/FTM-400D/
 rsync output/vkrepftm-400dradms7a.csv output/FTM-400D/
