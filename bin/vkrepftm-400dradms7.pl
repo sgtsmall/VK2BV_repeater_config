@@ -59,6 +59,17 @@ my $newhead = sprintf("%s", $newhea1);
 #  print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
 #  $csv->error_diag ();
 #}
+#Add aprs AU to begiing of 'B'
+my $newline = sprintf("1,145.17500,145.17500,0.0000,OFF,FM,APRSAU A,OFF,100.0 Hz,023,1500 Hz,MID,OFF,5.0KHz,0,APRSAU APRSAU ,1");
+$outfh = $ftm400fhb;
+$memcntb += 1;
+if ($csv->parse($newline)) {
+    print $outfh $csv->string, "\n";
+}
+else {
+    print STDERR "parse () failed on argument: ", $csv->error_input,"\n";
+    $csv->error_diag();
+}
 
 #read the header line of the main input
 my @fields = @{$csv->getline($vkrdfh)};
@@ -77,7 +88,9 @@ while ((my $row = $csv->getline($vkrdfh))
 
 # This radio can handle DV-C4FM and FM on 2 and 70
     if (   ($data{'mode'} ~~ ["DV", "FM"])
-        && ($data{'band'} ~~ ["7", "2", "C4FM"]))
+        && ($data{'band'} ~~ ["7", "2", "C4FM"])
+        && ($data{'absoff'} < '10.0')
+        )
     {
 #    $cnt +=1;
 
@@ -116,7 +129,7 @@ while ((my $row = $csv->getline($vkrdfh))
             $data{'Location'});
 
 #my $tonemode = 'None';
-#    my $tonemode = ( $data{'CTCSS'} eq '-') ? 'OFF' : 'TONE SQL';
+#    my $tonemode = ( $data{'Tone'} eq '-') ? 'OFF' : 'TONE SQL';
 #
 #Name,Tone Mode,CTCSS,
 # 8char
@@ -125,11 +138,11 @@ while ((my $row = $csv->getline($vkrdfh))
         my $printtone = '';
 
 #TONE,Repeater Tone,RPT1USE,
-        if ($data{'CTCSS'} eq '-') {
+        if ($data{'Tone'} eq '-') {
             $tonemode = 'OFF,100.0 Hz';
         }
         else {
-            my $printtone = sprintf("%.1f", $data{'CTCSS'});
+            my $printtone = sprintf("%.1f", $data{'Tone'});
             $tonemode = sprintf("TONE SQL,%s Hz", $printtone);
         }
         my $newdat2 = sprintf("%.8s,%s,", $name, $tonemode);
@@ -201,10 +214,10 @@ while ((my $row = $csv->getline($vkrdfh))
                 $chnum = $memcnta;
             }
             elsif ($prefix eq 'VK5') {
-                $band  = '0';
-                $outfh = $ftm400fha;
-                $memcnta += 1;
-                $chnum = $memcnta;
+                $band  = '1';
+                $outfh = $ftm400fhb;
+                $memcntb += 1;
+                $chnum = $memcntb;
             }
             elsif ($prefix eq 'VK6') {
                 $band  = '1';
@@ -225,27 +238,37 @@ while ((my $row = $csv->getline($vkrdfh))
                 $chnum = $memcntb;
             }
             elsif ($prefix eq 'APR') {
-
-                $band  = '1';
-                $outfh = $ftm400fhb;
-                $memcntb += 1;
-                $chnum = $memcntb;
+                $band = '0';
+                $outfh = $ftm400fha;
+                $memcnta += 1;
+                $chnum = $memcnta;
+                if ($data{'mode'} eq 'FM' ) {
+                    $both = '-1';
+                    $memcntb += 1;
+                }            
             }
             else {
-                $outfh = $ftm400fhb;
-                $band  = '1';
-                $memcntb += 1;
-                $chnum = $memcntb;
+                $band = '0';
+                $outfh = $ftm400fha;
+                $memcnta += 1;
+                $chnum = $memcnta;
+                if ($data{'mode'} eq 'FM' ) {
+                    $both = '-1';
+                    $memcntb += 1;
+                }            
             }
-
 #    }
         }
         else {
 # if a field is specified put in Band B
-            $outfh = $ftm400fhb;
-            $band  = '1';
-            $memcntb += 1;
-            $chnum = $memcntb;
+            $band = '0';
+            $outfh = $ftm400fha;
+            $memcnta += 1;
+            $chnum = $memcnta;
+            if ($data{'mode'} eq 'FM' ) {
+                $both = '-1';
+                $memcntb += 1;
+            }            
         }
         while ( $both < '1' ){
 # create the line and write it        

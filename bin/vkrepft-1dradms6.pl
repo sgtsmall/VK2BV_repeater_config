@@ -104,18 +104,18 @@ while (my $row = $csv->getline($vkrdfh)) {
             $data{'Location'});
 
 #my $tonemode = 'None';
-#    my $tonemode = ( $data{'CTCSS'} eq '-') ? 'OFF' : 'TONE SQL';
+#    my $tonemode = ( $data{'Tone'} eq '-') ? 'OFF' : 'TONE SQL';
 #
 #Name,Tone Mode,CTCSS,
 #
         my $tonemode = '';
 
 #TONE,Repeater Tone,RPT1USE,
-        if ($data{'CTCSS'} eq '-') {
+        if ($data{'Tone'} eq '-') {
             $tonemode = 'OFF,';
         }
         else {
-            $tonemode = sprintf("TONE SQL,%s Hz", $data{'CTCSS'});
+            $tonemode = sprintf("TONE SQL,%s Hz", $data{'Tone'});
         }
         my $newdat2 = sprintf("%.16s,%s,", $name, $tonemode);
 

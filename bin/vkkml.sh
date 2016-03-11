@@ -65,11 +65,15 @@ if [ ! -n "$getweb" ] ; then
 if [ ! -d work ] ; then mkdir work ; fi
 if [ ! -d output ] ; then mkdir output ; fi
 rm work/*
-rm output/*
+# rm output/*
 cd work
-curl -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
+curl -f -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
+#echo $wiaget
+#exit
+if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" ; echo "Please check wia website" ; exit 0 ; fi 
 tr -d '\r' < repdown.dat > repdowntext.dat
-gsed -f ../bin/wiahead.gsed repdowntext.dat > wiarepdir.csv
+gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
+gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
 curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
 unzip vkrep2google.zip
 # now get rid of most of the file 
@@ -101,7 +105,8 @@ echo "starting the sed of vkrep2work.kml vkrep.xml"
 cd ..
 fi
 echo "starting vkrep3.pl create vkrep.csv extracted data from kml"
-    ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > output/vkrep.csv
+    ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > work/vkrep.csv
+     gsed -f ./bin/vkrep.gsed work/vkrep.csv > output/vkrep.csv
 echo "starting vkrep4.pl create vkrepdir.csv wialist merged with kml and distance"
     ./bin/vkrep4.pl work/wiarepdir.csv output/vkrep.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
 #
@@ -144,7 +149,7 @@ if [ -n "$outicom" ] ;  then
         ./bin/vkrepds.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dstemp.csv
         cat work/dstemp.csv | body sort --field-separator=',' --key=1,1 --key=4,4 > work/vkrepdsmerge.csv 
     echo "starting vkrepicom51x.pl create of YYYYMMDDgnn.csv"
-        ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv output/20$repdate
+        ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv output/icom
 else
    echo "suppressed icom"
 fi  

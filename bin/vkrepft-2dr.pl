@@ -103,12 +103,12 @@ while (my $row = $csv->getline($vkrdfh)) {
             $data{'Location'});
 
 #my $tonemode = 'None';
-        my $tonemode = ($data{'CTCSS'} eq '-') ? 'None' : 'T Sql';
+        my $tonemode = ($data{'Tone'} eq '-') ? 'None' : 'T Sql';
 #
 #Name,Tone Mode,CTCSS,
 #
         my $newdat2 =
-          sprintf("%.16s,%s,%s,", $name, $tonemode, $data{'CTCSS'});
+          sprintf("%.16s,%s,%s,", $name, $tonemode, $data{'Tone'});
 #
 # DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,
 #
