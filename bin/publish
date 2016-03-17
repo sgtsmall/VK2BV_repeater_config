@@ -1,3 +1,6 @@
+rsync Defaults/marinemem400.csv output/icombankx.csv
+rsync Defaults/icombankax.csv output/icombanka.csv
+rsync Defaults/g14.csv output/icomg14.csv
 rsync Defaults/README_FT_1D.md output/FT-1D/
 rsync output/vkrepft-1dradms6.csv output/FT-1D/
 rsync Defaults/README_FT_2D.md output/FT-2D/
@@ -8,16 +11,17 @@ rsync output/vkrepft-2drrts.csv output/FT-2D/
 rsync Defaults/README_FT_400D.md output/FTM-400D/
 rsync output/vkrepftm-400dradms7a.csv output/FTM-400D/
 rsync output/vkrepftm-400dradms7b.csv output/FTM-400D/
-rsync Defaults/g14.csv output/icomg14.csv
-rsync output/*g*.csv output/ICOM_5100_12/
-rsync output/*mem*.csv output/ICOM_5100_12/
-rsync output/*bank*.csv output/ICOM_5100_12/
+#
+#
+cd output
+zip -r IcomDStarplus *g3.csv *g14.csv *g22.csv *g23.csv *g24.csv *mem*.csv *bank*.csv
+zip -r IcomDStar *g3.csv *g14.csv *mem*.csv *bank*.csv
+sleep 5
+rm *g3.csv *g14.csv *g22.csv *g23.csv *g24.csv *mem*.csv *bank*.csv
+cd ..
+
+rsync output/IcomDStarplus.zip output/ICOM_5100_12/
 rsync Defaults/README_ID_51A_P.gdoc output/ICOM_51A_AnivPlus/
-rsync output/*g*.csv output/ICOM_51A_AnivPlus/
-rsync output/*mem*.csv output/ICOM_51A_AnivPlus/
-rsync output/*bank*.csv output/ICOM_51A_AnivPlus/
+rsync output/IcomDStarplus.zip output/ICOM_51A_AnivPlus/
 rsync Defaults/README_ID_51A.gdoc output/ICOM_51A/
-rsync output/*g3.csv output/ICOM_51A/
-rsync output/*g14.csv output/ICOM_51A/
-rsync output/*mem*.csv output/ICOM_51A/
-rsync output/*bank*.csv output/ICOM_51A/
+rsync output/IcomDStar.zip output/ICOM_51A/

@@ -187,6 +187,24 @@ else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
     $csv->error_diag();
 }
+#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,CQCQCQ,VK2RBV B,VK2RBV G,");##
+#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       E,VK2RBV B,VK2RBV G,");##
+#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       I,VK2RBV B,VK2RBV G,");##
+#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       U,VK2RBV B,VK2RBV G,");##
+#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,REF003CL,VK2RBV B,VK2RBV G,");##
+#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,DCS014BL,VK2RBV B,VK2RBV G,");##
+#
+$memcntba = 5;
+# $outfh = a
+#$cnt=b
+#        if ($csv->parse($newline)) {
+#            print $outfh $csv->string, "\n";
+#        }
+#        else {
+#            print STDERR "parse () failed on argument: ", $csv->error_input,
+#              "\n";
+#            $csv->error_diag();
+#        }
 
 #read the header line of the main input
 my @fields = @{$csv->getline($vkrdfh)};
@@ -253,12 +271,15 @@ while (my $row = $csv->getline($vkrdfh)) {
 #TONE,Repeater Tone,RPT1USE,
 #TONE - Tone only, TSQL - Tone Squelch
         my $tonemode = '';
+        my $tonesql  = '';
         if ($data{'Tone'} eq '-') {
             $tonemode = 'OFF,';
+            $tonesql  = ',';
         }
         else {
             $tonemode = sprintf("TSQL,%sHz", $data{'Tone'});
-        }
+            $tonesql  = sprintf(",%sHz", $data{'Tone'});
+    }
 
 # RPT1USE,
 # use this logic for RPT1 USE
@@ -281,7 +302,7 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 #$newdab1,
 # 'Name,SKIP,TONE,Repeater Tone,TSQL Frequency,DTCS Code,DTCS Polarity,' ;
 # $tonemode == TONE,Repeater Tone
-        my $newdab2 = sprintf("%s,%s,%s,,,,", $dispname, $Rptskip, $tonemode);
+        my $newdab2 = sprintf("%s,%s,%s%s,,,", $dispname, $Rptskip, $tonemode, $tonesql);
 
 #$newdab2
 #'DV SQL,DV SQL Code,Your Call Sign,RPT1 Call Sign,RPT2 Call Sign' ;
