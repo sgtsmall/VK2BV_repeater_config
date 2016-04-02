@@ -1,0 +1,3239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+<!--Based on Australian Communications and Media Authority data-->
+    <Document>
+        <Folder>
+        <name>Amateur Repeaters</name>
+        <open>0</open>
+        <visibility>1</visibility>
+        <Placemark>
+            <name><![CDATA[Terrey Hills]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2RMB, 29.1200Mhz, 0Khz<br>FM</font><br><br><font color="red">VK2RMB, 53.6750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RMB, 146.8750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RMB, 438.1750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RMB, 438.1750Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2220794,-33.69299394,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Mt Darling]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RBH, 29.1200Mhz, 0Khz<br>FM</font><br><br><font color="green">VK2RBH, 147.0000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>141.5331625,-32.02296308,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Knights Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2RUW, 29.1200Mhz, 0Khz<br>88.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.6973108,-34.61824295,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Logan]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RLB, 29.1200Mhz, 0Khz<br>88.5Hz, FM</font><br><br><font color="green">VK4RLB, 53.7250Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RLB, 147.6250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RLB, 438.7500Mhz, -5Mhz<br>FM</font><br><br><font color="orange">VK4RLB, 1273.3500Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.1001913,-27.6274108,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Werrington]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RNG, 29.1300Mhz, 0Khz<br>FM</font><br><br><font color="green">VK2RNG, 439.8500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.7406808,-33.76559905,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Merbein]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RRU, 29.1400Mhz, 0Khz<br>FM</font><br><br><font color="green">VK3RRU, 438.5250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.0790504,-34.16833223,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Terrible]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RSC, 29.6200Mhz, -100Khz<br>FM</font><br><br><font color="green">VK5RSC, 29.6200Mhz, 118.055Mhz<br>141.3Hz, FM</font><br><br><font color="green">VK5RSC, 147.6750Mhz, -118.055Mhz<br>141.3Hz, FM</font><br><br><font color="red">VK5RSC, 438.0750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK5RSC, 439.8250Mhz, -5Mhz<br>FM</font><br><br><font color="lawngreen">VK5RSC, 1273.4500Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.5017764,-35.33110131,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lalor Park]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2RCZ, 29.6300Mhz, -100Khz<br>FM</font><br><br><font color="green">VK2RCZ, 147.0750Mhz, 600Khz<br>123Hz, FM</font><br><br><font color="orange">VK2RCZ, 439.4250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.8335528,-33.74733787,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Perry]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK4RPU, 29.6300Mhz, -100Khz<br>FM</font><br><br><font color="green">VK4RPU, 146.7500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RPU, 438.7500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.6880069,-25.19148493,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Duncan]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK7RMD, 29.6300Mhz, -100Khz<br>FM</font><br><br><font color="green">VK7RMD, 53.8000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK7RMD, 146.6250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK7RMD, 438.6000Mhz, -5Mhz<br>141.3Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.0356037,-41.19458418,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Olinda]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RHF, 29.6400Mhz, -100Khz<br>FM</font><br><br><font color="green">VK3REC, 147.1750Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RHF, 438.7500Mhz, -5Mhz<br>88.5Hz, FM</font><br><br><font color="green">VK3RWN C, 146.9125Mhz, -600Khz<br>DV</font><br><br><font color="green">VK3RWN B, 438.3000Mhz, -5.4Mhz<br>DV</font><br><br><font color="green">VK3RWN A, 1273.9000Mhz, 20Mhz<br>DV</font><br><br><font color="green">VK3RWN AD, 1298.3000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.3642271,-37.85786446,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Dural]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RWI, 29.6500Mhz, -100Khz<br>FM</font><br><br><font color="green">VK2RWI, 53.8500Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RWI, 147.0000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RWI, 438.5250Mhz, -5Mhz<br>FM</font><br><br><font color="red">VK2RWI, 438.6000Mhz, -5Mhz<br>FM</font><br><br><font color="orange">VK2RWI, 439.9000Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK2RWI, 1273.5000Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.0554635,-33.69874235,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Oceanview]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RKC, 29.6600Mhz, -100Khz<br>FM</font><br><br><font color="green">VK4RKC, 145.6250Mhz, 0Khz<br>FM</font><br><br><font color="green">VK4RCC, 146.6250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RKC, 147.9000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RKC, 446.500Mhz, -<br>ATV</font><br><br><font color="green">VK4RMG, 446.500Mhz, 836.5Mhz<br>ATV</font><br><br><font color="green">VK4RTV, 446.500Mhz, -<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.8202094,-27.14555098,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lawson]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RBM, 29.6700Mhz, -100Khz<br>FM</font><br><br><font color="green">VK2RBM, 53.8750Mhz, -1Mhz<br>123Hz, FM</font><br><br><font color="green">VK2RBM, 147.0500Mhz, 600Khz<br>123Hz, FM</font><br><br><font color="green">VK2RBM, 438.3750Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.4315849,-33.71943279,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Leeming]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RHF, 29.6800Mhz, -100Khz<br>179.9Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.0707907,-32.1861746,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Nelson]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="lawngreen">VK7RHF, 29.6800Mhz, -100Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.3148845,-42.91984588,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Parrots Nest]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSC, 53.5500Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RSC, 146.8000Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="green">VK2RSC, 439.9500Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2285111,-28.85706342,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Grundy Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2RPW, 53.5750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RPW, 1273.2000Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.6559786,-31.32653725,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Tabletop]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSM, 53.5750Mhz, -1Mhz<br>123Hz, FM</font><br><br><font color="green">VK2RSM, 147.0250Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RSM, 439.9000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.8584392,-36.11984178,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Kaputar]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RNW, 53.6000Mhz, -1Mhz<br>FM</font><br><br><font color="orange">VK2RNW, 146.6250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RNW, 438.5750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.1521385,-30.27882146,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Sugarloaf]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSN, 53.6250Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RTZ, 146.7750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.5158569,-32.94467082,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Maddens Plains]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMP, 53.6500Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RMP, 146.8500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RMP, 438.7250Mhz, -5Mhz<br>123Hz, FM</font><br><br><font color="green">VK2RDS C, 146.7625Mhz, -600Khz<br>DV</font><br><br><font color="green">VK2RDS B, 439.8625Mhz, -5Mhz<br>DV</font><br><br><font color="green">VK2RDS A, 1273.8500Mhz, 20Mhz<br>DV</font><br><br><font color="orange">VK2RDS AD, 1298.5000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.9545937,-34.26338381,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Signal Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RGN, 53.7000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK2RGN, 438.6250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.6883444,-34.75634778,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Somersby]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAG, 53.7250Mhz, -1Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 146.7250Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 147.1250Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 438.0750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 439.5250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 439.7250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 439.9500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAG, 1273.4000Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK2RAG C, 146.6375Mhz, -600Khz<br>DV</font><br><br><font color="green">VK2RAG B, 438.3250Mhz, -5.4Mhz<br>DV</font><br><br><font color="orange">VK2RAG A, 1273.4000Mhz, 20Mhz<br>DV</font><br><br><font color="green">VK2RAG, 439.9500Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2912145,-33.36007822,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Ginini]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK1RGI, 53.9250Mhz, -1Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK1RGI, 146.9500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK1RGI, 438.0500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.772605,-35.52955176,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wattle Glen]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3RMH, 53.5500Mhz, -1Mhz<br>FM</font><br><br><font color="red">VK3RMH, 438.3250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.1954617,-37.681545,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Cockatoo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3RDD, 53.5750Mhz, -1Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.4770185,-37.94294867,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Lookout]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMR, 53.6000Mhz, -1Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.3640652,-37.69681411,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Dandenong]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RHF, 53.6250Mhz, -1Mhz<br>88.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.3478759,-37.83672766,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt William]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWU, 53.6500Mhz, -1Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RWU, 438.6750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.603725,-37.29498482,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mitcham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3RAD, 53.6750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK3RAD, 438.5250Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.188383,-37.82077303,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Gordon]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RTN, 53.6750Mhz, -1Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.7123689,-37.51596865,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Wombat]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RGV, 53.7250Mhz, -1Mhz<br>123Hz, FM</font><br><br><font color="green">VK3RGV, 146.6500Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="green">VK3RGV, 439.7750Mhz, -5Mhz<br>123Hz, FM</font><br><br><font color="green">VK3RGV B, 438.2000Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.6730699,-36.84930833,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Olinda]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMS, 53.9000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK3RMS, 147.3500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RMS, 438.2250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RTV, 446.500Mhz, 803.5Mhz<br>ATV</font><br><br><font color="green">VK3RTV, 446.500Mhz, 808.5Mhz<br>ATV</font><br><br><font color="green">VK3RTV, 446.500Mhz, 831.5Mhz<br>ATV</font><br><br><font color="green">VK3RTV, 446.500Mhz, 9963.5Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.36636,-37.85392842,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Buller]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3RGM, 53.9750Mhz, -1Mhz<br>FM</font><br><br><font color="lawngreen">VK3RZU, 439.6750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK3RZU, 439.6750Mhz, -5Mhz<br>DMR</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.4344096,-37.14642475,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wamuran]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RRC, 53.6250Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RRC, 146.9250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RRC, 438.3250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.8231054,-27.03671622,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wilkes Knob]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RSN, 53.7000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RSC, 146.8500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RSC, 438.0750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RSC, 1273.3000Mhz, 20Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RDS C, 146.7375Mhz, -600Khz<br>DV</font><br><br><font color="green">VK4RDS B, 438.5500Mhz, -5.2Mhz<br>DV</font><br><br><font color="green">VK4RDS A, 1273.2000Mhz, 20Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.912493,-26.77817495,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kroombit Tops]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK4RGA, 53.7250Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RGA, 146.9000Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RGA, 147.3750Mhz, 600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.9396977,-24.35662603,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bundaberg]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK4RBG, 53.7750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RBG, 147.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.4262926,-24.84247743,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Butchers Creek]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBP, 53.7750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RBP, 147.1000Mhz, 600Khz<br>FM</font><br><br><font color="green">VK4RBP, 439.7750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK4RBP, 439.9250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.6994147,-17.31681037,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Sarina]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="lawngreen">VK4RSA, 53.8000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RSA, 146.6750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RSA, 439.6250Mhz, -5Mhz<br>FM</font><br><br><font color="lawngreen">VK4RSA B, 438.2750Mhz, -5.4Mhz<br>DV</font><br><br><font color="lawngreen">VK4RSA, 147.0750Mhz, 600Khz<br>P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.1695496,-21.49752105,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Mowbullan]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4REG, 53.8250Mhz, -1Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4REG, 146.9500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4REG, 438.6500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.6007642,-26.88856258,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[The Knobby]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBX, 53.9250Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RAI, 146.9000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RBX, 438.4250Mhz, -5Mhz<br>123Hz, FM</font><br><br><font color="green">VK4RAI, 439.3250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RBX C, 146.7875Mhz, -600Khz<br>DV</font><br><br><font color="green">VK4RAI, 439.3250Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br><font color="green">VK4RBX, 146.6375Mhz, -600Khz<br>P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.5916327,-27.50226347,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Stuart]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK4RAT, 53.9500Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RAT, 146.7000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RAT, 438.2250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RAT, 444.250Mhz, 805.75Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.7806848,-19.34383816,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Gravatt]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBR, 53.9750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK4RBR, 147.9500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RBR, 438.2750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.0917058,-27.52659402,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Summertown]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RSB, 53.7500Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK5RSB, 439.9000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK5RSB, 1273.5000Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.7169783,-34.94923151,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Elizabeth]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RLZ, 53.7750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK5RLZ, 146.6250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK5RLZ, 439.9750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="red">VK5RLZ, 1273.5500Mhz, 20Mhz<br>FM</font><br><br><font color="red">VK5RLZ, 2415.000Mhz, -1165Mhz<br>ATV</font><br><br><font color="red">VK5RLZ, 5815.000Mhz, -80Mhz<br>ATV</font><br><br><font color="red">VK5RLZ, 10350.00Mhz, -140Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.6490742,-34.74244786,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Roleystone]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RAP, 53.8000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK6RAP, 146.7000Mhz, -600Khz<br>FM</font><br><br><font color="red">VK6RAP, 439.8000Mhz, -5Mhz<br>123Hz, FM</font><br><br><font color="green">VK6RWN C, 146.8375Mhz, -600Khz<br>DV</font><br><br><font color="green">VK6RWN B, 438.1750Mhz, -5.4Mhz<br>DV</font><br><br><font color="red">VK6RWN A, 1273.9000Mhz, 20Mhz<br>DV</font><br><br><font color="green">VK6RWN AD, 1298.3000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.0515497,-32.10005215,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Grey Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RCH, 53.7000Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK7RCH, 438.5750Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.1161356,-43.09150637,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Gawler]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RTV, 53.7750Mhz, -1Mhz<br>FM</font><br><br><font color="orange">VK7RTV, 446.500Mhz, 803.5Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.1547788,-41.2006548,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Queens Domain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RAD, 53.8250Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK7RAD, 146.7000Mhz, -600Khz<br>141.3Hz, FM</font><br><br><font color="green">VK7RAD, 147.9750Mhz, -600Khz<br>141.3Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.3103875,-42.84651833,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Table Cape]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK7RAC, 53.8250Mhz, -1Mhz<br>FM</font><br><br><font color="orange">VK7RAC, 147.3750Mhz, 600Khz<br>FM</font><br><br><font color="green">VK7RAC, 438.6500Mhz, -5Mhz<br>141.3Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.720715,-40.95226883,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Barrow]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK7RAA, 53.8750Mhz, -1Mhz<br>FM</font><br><br><font color="green">VK7RAA, 147.0000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.4220554,-41.37726594,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Goonengerry]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RBB, 146.6250Mhz, -600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.4350422,-28.6022166,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Gray]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RGN, 146.6250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RGN, 438.3250Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK2RGN, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.7630924,-34.75856717,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Dorrigo Plateau]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RDO, 146.6500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.8587894,-30.31710212,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Bindo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RDX, 146.6500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.0092893,-33.67701918,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Terry Hie Hie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMI, 146.6500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.2799745,-29.80596822,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Grafton]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCV, 146.6750Mhz, -600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.1573295,-29.63464571,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Stringybark Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RLH, 146.6750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RLH, 439.8500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.3597759,-33.55485678,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mount Ganghat]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2REE, 146.6750Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="green">VK2REE, 438.3250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.1817397,-31.92207109,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Canobolas]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAO, 146.7000Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK2RAO, 438.7250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.9829672,-33.34185184,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Nowra Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMU, 146.7000Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="green">VK2RMU, 438.1250Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.5669942,-34.93559662,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Middle Brother]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RPM, 146.7000Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK2RPM, 438.5250Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.6782851,-31.70130379,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Isaacs Ridge]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK1RBM, 146.7250Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK1RBM, 439.9500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="lawngreen">VK1RWN C, 146.6625Mhz, -600Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.1187502,-35.36458523,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[South Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAD, 146.7250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RAD, 438.6500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.6517546,-30.54427719,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Balranald]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RBL, 146.7250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.5667973,-34.63516247,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Burroway Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCD, 146.7250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RDD, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.5567121,-32.15491085,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Francis Lookout]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCB, 146.7500Mhz, -600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.6882033,-30.3965164,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Crawney]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RTM, 146.7500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.9925799,-31.58757994,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wheel of Fortune]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWG, 146.7500Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.5593702,-35.04985793,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Bethungra]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RBE, 146.7750Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.8774239,-34.72072358,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Noumea Tops]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RBK, 146.7750Mhz, -600Khz<br>FM</font><br><br><font color="red">VK2RBK, 439.9000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.5241697,-30.05669514,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Tabulam]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RBR, 146.7750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.4270946,-28.75401916,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Needle Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCC, 146.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.0261856,-31.34631103,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Engadine]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RLE, 146.8000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RLE, 438.4250Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK2RLE, 438.4250Mhz, -5Mhz<br>P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.0361648,-34.04032914,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Mt Kendall]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RTD, 146.8000Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.009957,-35.49552222,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Galore]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RGA, 146.8250Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.7906623,-35.1082274,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[High Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RHR, 146.8250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RHR, 438.0250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.3357462,-34.37099698,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wolumla Peak]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="lawngreen">VK2RWP, 146.8250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RWP, 439.9000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.7281148,-36.86445474,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Coramba]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCH, 146.8500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.0533583,-30.21925464,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Square Knob]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RGF, 146.8500Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.6101545,-34.55175189,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Baldwin]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMO, 146.8500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.9594285,-31.04555947,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Yarrahapinni]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMY, 146.8750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RMY, 438.0750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.9194899,-30.81391167,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Back Perisher Mtn]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RLJ, 146.8750Mhz, -600Khz<br>FM</font><br><br><font color="orange">VK2RLJ, 438.4500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.3918701,-36.40000445,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Arthur]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RZL, 146.8750Mhz, -600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.8583963,-32.36301317,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Tidbinbilla]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK1RAC, 146.9000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.9521436,-35.37893186,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Sugarloaf]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RNC, 146.9000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RNC, 146.9750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RNC, 438.0250Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK2RNC, 438.6750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.538894,-32.8901955,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Boona Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RRT, 146.9000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.1445264,-32.65648748,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Jervis Bay]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK1RJB, 146.9250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.7303866,-35.16173555,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[North Ryde]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RGR, 146.9250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1269075,-33.79830756,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Rumbee]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RNE, 146.9500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.6052689,-29.95186941,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Telegraph Point]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCN, 147.0000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK2RCN, 438.4250Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.7741135,-31.30396225,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Paddington]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2ROT, 147.0250Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK2ROT, 438.5750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2ROT, 438.5750Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2291117,-33.88656055,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Wandera]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMW, 147.0750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.0059193,-35.7947349,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Moona Trig]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWR, 147.0750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.8898296,-31.03990305,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Cabbage Tree Mtn]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RGL, 147.1000Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RGL, 147.2000Mhz, 600Khz<br>FM</font><br><br><font color="orange">VK2RGL, 426.250Mhz, 18Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.120465,-32.25739471,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Southern Highlands]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSH, 147.1000Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RSH, 439.3750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.5176925,-34.40814592,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Warraderry]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWM, 147.1000Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RWM, 438.3250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.137425,-33.83583417,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Scaddens Ridge]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSR, 147.1250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.3669139,-33.29454162,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Chatswood]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWC, 147.1500Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK2RWC, 1273.2000Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1789745,-33.7980051,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Newcastle]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWH, 147.1500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RWH, 439.6250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.5154557,-32.91742767,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kurrajong Heights]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWK, 147.1500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RWK, 439.8250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RWK, 439.8250Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.6269303,-33.52358322,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bulls Head]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK1RBH, 147.1750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.8130485,-35.38578797,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Lindsay]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCW, 147.2000Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RCW, 439.3000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.1232074,-33.27946023,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Gwynne Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWB, 147.2000Mhz, 600Khz<br>123Hz, FM</font><br><br><font color="green">VK2RWB, 439.6500Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.8844262,-35.91247348,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Albury]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAY, 147.2250Mhz, 600Khz<br>FM</font><br><br><font color="orange">VK2RAY, 438.5750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.0352724,-36.10082955,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lewisham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RST, 147.2250Mhz, 600Khz<br>FM</font><br><br><font color="red">VK2RRS, 438.4750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1453516,-33.89453142,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bald Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RYL, 147.2250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.0175414,-32.69094859,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Moonimba]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2REH, 147.2500Mhz, 600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.4432588,-29.11550688,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Nimmitabel]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RHH, 147.2500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.3023097,-36.50910403,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Asquith]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RNS, 147.2500Mhz, 600Khz<br>FM</font><br><br><font color="orange">VK2RNS, 439.9750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1006775,-33.68987894,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Acacia Plateau]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAP, 147.2750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.347415,-28.39188002,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Razorback Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RRR, 147.2750Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RRR, 439.6000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RRR, 439.6000Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.6649263,-34.13894445,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lawson]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RTS, 147.3250Mhz, 600Khz<br>FM</font><br><br><font color="green">VK2RTS, 1250.000Mhz, -805.75Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.4448985,-33.71069258,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Cooranbong]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2RBO, 147.3500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.460511,-33.0888466,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt MacKenzie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMM, 147.3750Mhz, 600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9663476,-29.08614287,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Green Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBT, 146.6500Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.9015765,-37.62642303,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Cann]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3REG, 146.6500Mhz, -600Khz<br>FM</font><br><br><font color="red">VK3REG, 438.0250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.9786978,-37.64672754,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Martha]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RSP, 146.6750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.0176175,-38.29004657,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Torrumbarry]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCA, 146.6750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.570348,-36.04400059,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ferny Creek]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RML, 146.7000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.3363277,-37.87779574,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ouyen]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RON, 146.7000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.3109495,-35.07432719,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Briarty Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RYV, 146.7250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK3RYV, 439.3000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.4762425,-37.73098542,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Buninyong]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBA, 146.7500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RBA, 439.2750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RBA, 1273.9250Mhz, 20Mhz<br>91.5Hz, FM</font><br><br><font color="red">VK3RBA B, 439.9875Mhz, -5Mhz<br>DV</font><br><br><font color="red">VK3RBA AD, 1298.7000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.9264646,-37.65292977,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Rennies Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RAG, 146.7750Mhz, -600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.7058345,-37.21863058,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Mt Tassie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RLV, 146.8000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK3RLV, 438.3750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK3RLV, 1273.3500Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.5592604,-38.39357237,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mildura city]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMA, 146.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.1614128,-34.18930512,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Upwey]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RAJ, 146.8250Mhz, -600Khz<br>94.8Hz, FM</font><br><br><font color="green">VK3RAJ, 439.7500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.3172575,-37.90393029,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Portland]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RPL, 146.8250Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RPL, 439.9500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>141.6318643,-38.38779431,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Major]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RDU, 146.8500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK3RDU, 438.0750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK3RDU, 439.8750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.694467,-36.36158967,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kinglake]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMN, 146.8500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RMN, 439.4500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RMN, 1273.4500Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK3RCD, 438.1875Mhz, -5.4Mhz<br>P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.3162849,-37.5157077,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Arapiles]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWM, 146.8500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>141.8359411,-36.75231676,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Green Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RGH, 146.8750Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="orange">VK3RGH, 439.3250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="orange">VK3RGH, 1273.2500Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.4257447,-37.18627244,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Nowa Nowa]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3REB, 146.9000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.0909009,-37.6927986,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Swan Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RSH, 146.9000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.5053682,-35.33001754,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt William]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWZ, 146.9500Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.601203,-37.29308085,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Riddells Creek]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RRC, 146.9750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK3RRC, 439.7000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.6648404,-37.44798127,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Anakie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RGL, 147.0000Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RGL, 439.5000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RGL, 439.5000Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.2690362,-37.88642676,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Big Ben]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RNE, 147.0000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK3RNE, 439.4250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.9409759,-36.40629398,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Fatigue]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3RGS, 147.0250Mhz, 600Khz<br>123Hz, FM</font><br><br><font color="green">VK3RGS, 438.3750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.306918,-38.56986205,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Kerang]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMK, 147.0250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.5512481,-36.31228552,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Hotham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RHO, 147.0500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RHO, 438.3750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.1280548,-36.97521798,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Robinvale]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RVL, 147.0500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.7698951,-34.58748392,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Warrnambool]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWL, 147.0500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RWL, 439.8750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.7378532,-38.30493644,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Dandenong]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCR, 147.0750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.34661,-37.83747566,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Porepunkah]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RPB, 147.1000Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.9622989,-36.65728568,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bass Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RSG, 147.1000Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.5509316,-38.48880391,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ben Nevis]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWA, 147.1000Mhz, 600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.2010938,-37.22842369,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Delegate]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RDG, 147.1250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.8973438,-37.11267338,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Montpellier]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RGC, 147.1250Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RGC, 439.5750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RGC, 439.5750Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.313919,-38.15716793,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Mt Alexander]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCV, 147.1500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.3087249,-36.99059685,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Maramingo Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3REM, 147.1500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.5526155,-37.41091362,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Dimboola]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBQ, 147.2000Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.0348445,-36.45216135,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Cottrell]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RPS, 147.2000Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RPS, 439.7250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RPS, 1273.6500Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.6218721,-37.76315776,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Baw Baw]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWG, 147.2250Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RWG, 438.3750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.2748305,-37.83833516,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Macedon]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMM, 147.2500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RMM, 439.8250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="orange">VK3RMM C, 146.9625Mhz, -600Khz<br>DV</font><br><br><font color="green">VK3RMM B, 438.0500Mhz, -5.4Mhz<br>DV</font><br><br><font color="orange">VK3RMM A, 1273.9750Mhz, 20Mhz<br>DV</font><br><br><font color="orange">VK3RMM AD, 1298.5000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.5767796,-37.38344075,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Caveat]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK3RMP, 147.2750Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="lawngreen">VK3RMP, 439.3500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.5009012,-37.06943015,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Beech Forest]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3ROW, 147.2750Mhz, 600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.5638956,-38.63325439,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Narre Warren Nth]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMC, 147.3250Mhz, 600Khz<br>FM</font><br><br><font color="green">VK3RMC, 439.3750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK3RMC, 439.8750Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK3RMC, 1273.6000Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK3RMC C, 146.7625Mhz, -600Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.3281339,-38.00118893,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt St Leonard]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMU, 147.3750Mhz, 600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RSB, 439.5500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RMU, 439.8000Mhz, -5Mhz<br>FM</font><br><br><font color="orange">VK3RMU, 1273.5000Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK3RMU, 439.8000Mhz, -5Mhz<br>P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.5255499,-37.56753677,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Hillside]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RFY, 147.4250Mhz, 0Khz<br>91.5Hz, FM</font><br><br><font color="green">VK3RFY, 438.4000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.7285569,-37.69462239,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Maurice Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RGT, 146.6250Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RGT, 438.0500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2425543,-23.93597675,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Grafton Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4ROM, 146.6500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.8421778,-26.57539992,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ghost Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RHB, 146.6500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.8374443,-25.31061322,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Kiangarow]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RET, 146.6750Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RET, 438.7000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.5489115,-26.83066391,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Hann Tableland]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RHT, 146.6750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.2534593,-16.9145725,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Archer]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RAR, 146.7000Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RAR, 438.2250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.5765568,-23.33725543,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Springbrook]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RGC, 146.7000Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="green">VK4RGC, 438.6000Mhz, -5Mhz<br>123Hz, FM</font><br><br><font color="red">VK4RWN C, 146.8375Mhz, -600Khz<br>DV</font><br><br><font color="red">VK4RWN B, 438.2250Mhz, -5.4Mhz<br>DV</font><br><br><font color="red">VK4RWN A, 1273.1000Mhz, 20Mhz<br>DV</font><br><br><font color="red">VK4RWN AD, 1298.3000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2888591,-28.23486197,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Four Mile Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RMI, 146.7000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>139.5583114,-20.71273734,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Boulder]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RCM, 146.7250Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.805384,-26.25252758,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Crosby]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RKP, 146.7250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RKP, 444.250Mhz, 805.75Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.7979195,-27.52745194,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[O'Rourke's House]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RDD, 146.7500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RDD, 439.2750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9918837,-27.69125793,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Blue Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBM, 146.7750Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RWS, 438.6750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="lawngreen">VK4RBM, 439.3000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.9678826,-21.60064568,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Gympie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK4RGY, 146.7750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RGY, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.6714233,-26.1877767,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Goonaneman]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBU, 146.8000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RBU, 438.7750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.1221314,-25.43309252,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Midge Point]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RMP, 146.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.6766306,-20.64762154,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Braeside]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RCR, 146.8250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9252206,-28.39088095,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Noosa Heads]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RSL, 146.8250Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RSL, 438.1750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.0975279,-26.38926797,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Roddas Lookout]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RSP, 146.8250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.1542224,-24.14237405,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Carborough Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RAS, 146.8750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RAS B, 439.9500Mhz, -5Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.3127279,-21.92074782,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Alexandra Hills]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBS, 146.8750Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RBS, 439.7250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2315197,-27.54396419,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Hodgson Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RHR, 146.9250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RHR, 438.5000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.0335589,-22.69269225,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Blackdown Tableland]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBD, 146.9500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RBD C, 146.6375Mhz, -600Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.1168305,-23.77406759,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Coot-tha]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK4RBQ, 146.9500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="red">VK4RBQ, 439.3000Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK4RMC, 1273.5000Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK4RMC, 439.9750Mhz, -5Mhz<br>DMR</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.9471176,-27.46317516,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Haren]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RCA, 146.9500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RCN B, 438.3250Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.61219,-16.83652895,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Seaview]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RRR, 146.9750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.7107986,-21.44095148,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Spring Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RLW, 146.9750Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK4RLW, 438.5000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RSM, 439.3000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.8790286,-27.71792408,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Glorious]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBN, 147.0000Mhz, -600Khz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.7480128,-27.31528699,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Banana Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RCQ, 147.0000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK4RCQ, 439.8750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.314482,-24.450308,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Blackwood]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RMK, 147.0000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.9433422,-21.03163824,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Cotton]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RAX, 147.0750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2155683,-27.61725915,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Middlemount]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="lawngreen">VK4REP, 147.0750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>148.6745963,-22.80955075,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Stanthorpe]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RMM, 147.1250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9469144,-28.65358139,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Spring Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RAG, 147.1500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK4RAG, 438.6250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.0233264,-27.4603396,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[North Ipswich]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RWM, 147.1750Mhz, 600Khz<br>FM</font><br><br><font color="green">VK4RWM, 438.3750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RWM, 439.9250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.7582875,-27.59031207,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Dalby]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RED, 147.2500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2519763,-27.21024521,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Doonan]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RNL, 147.2750Mhz, 600Khz<br>FM</font><br><br><font color="orange">VK4RNL, 439.3750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.9924871,-26.46213195,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Tambourine]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBT, 147.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2152258,-27.92257928,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Naracoorte]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RNC, 146.6500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.7704499,-36.97904119,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Willunga Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RSV, 146.6750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.5980211,-35.2731902,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[The Bluff]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RMN, 146.7000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.1627721,-33.08640426,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mount Barker]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RBK, 146.7250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.9218588,-35.07098492,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Pillaworta Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RAC, 146.7500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK5RAC, 439.8500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>135.9540644,-34.39262403,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lobethal]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RAH, 146.7750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.8712497,-34.88277789,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Coolanie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5REP, 146.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>136.7798231,-33.6054379,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Graham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RSE, 146.8000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.4468159,-37.5246726,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Kitchener]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RBV, 146.8250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK5RBV, 439.8000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>139.005935,-34.5719765,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Anstey Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RHO, 146.8500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK5RHO, 439.8750Mhz, -5Mhz<br>FM</font><br><br><font color="orange">VK5RHO, 1273.3750Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.7494496,-34.8419086,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Beevor]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RMB, 146.8750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>139.0347262,-34.92910361,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[The Bluff]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RMG, 146.9000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.570599,-37.72577138,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bumbunga Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RLH, 146.9250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.1304025,-33.90360264,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Arden]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RAE, 146.9750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>137.9788059,-32.15191253,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Crafers]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RAD, 147.0000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK5RAD, 439.9250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.6987726,-34.99845193,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Moorook]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RLD, 147.3250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.3333241,-34.2500003,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Willalooka]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RBT, 147.3500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.4596726,-36.41602667,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Benson]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RKN, 147.3750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>139.8114862,-37.03279016,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wanneroo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RNC, 146.6250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.8135675,-31.75646198,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Tom Price]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RTP, 146.6250Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>117.7611628,-22.71923716,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Harvey]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RBY, 146.6500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK6RBY, 438.6500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.9260233,-33.10002042,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Northampton]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RNR, 146.6750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>114.6507602,-28.23660544,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wickham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RWR, 146.7000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>117.1309256,-20.67371835,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Clarence]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK6RAL, 146.7250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK6RAL, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>117.8947009,-35.02478333,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Roleystone]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RLM, 146.7500Mhz, -600Khz<br>FM</font><br><br><font color="green">VK6RLM, 438.5250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.0492017,-32.10161319,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Geraldton]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6ROO, 146.7750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>114.6014832,-28.77635946,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Tic Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RTH, 146.8000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK6RTH, 438.2250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.0639376,-31.82576784,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Mt Barker]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK6RAA, 146.8250Mhz, -600Khz<br>FM</font><br><br><font color="green">VK6RAA, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>117.6470546,-34.65574682,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Exmouth]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6REX, 146.8500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>114.150467,-21.78225418,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt William]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RMW, 146.9000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.0238753,-32.9379848,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Attadale]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RFM, 146.9500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.7876059,-32.02670632,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Fairfield]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RAW, 147.0000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>117.5215985,-33.79398496,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kalgoorlie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RAK, 147.0000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>121.4602164,-30.81674951,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Geraldton]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RGN, 147.0000Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>114.6774446,-28.68293663,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Rottnest Is]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK6ROT, 147.0750Mhz, 600Khz<br>FM</font><br><br><font color="green">VK6ROT, 439.7000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.5248241,-32.00002293,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Manjimup]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RMJ, 147.1500Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.9853383,-34.2203672,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wooroloo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6REC, 147.1750Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.3623984,-31.79286947,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Yandan Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RCT, 147.2000Mhz, 600Khz<br>FM</font><br><br><font color="green">VK6RCT, 438.5250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.5981692,-30.75836347,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Saddleback]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK6RMS, 147.2500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK6RMS, 438.5250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.4508615,-32.96485495,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Hoddy Well]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RAV, 147.2750Mhz, 600Khz<br>FM</font><br><br><font color="green">VK6RAV, 438.5250Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK6RAV B, 438.9250Mhz, -5Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.4889882,-31.63104189,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kellerberrin]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RKN, 147.3250Mhz, 600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>117.7098468,-31.62278019,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Chapman Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RBN, 147.3500Mhz, 600Khz<br>FM</font><br><br><font color="green">VK6RBN, 438.6750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.3701635,-33.81446999,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Faulkner]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RAF, 146.6500Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="green">VK7RAF, 438.5500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.1915097,-42.79223288,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ulverstone West]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RNW, 146.7500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.1209519,-41.12599595,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Stowport]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RTV, 146.7750Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.9078094,-41.12580503,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Gagebrook]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RAK, 146.8000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK7RAK, 438.7000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.2664268,-42.74027497,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Snug Tiers]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RHT, 146.8500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.209459,-43.09265209,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Snow Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK7REC, 146.9000Mhz, -600Khz<br>FM</font><br><br><font color="green">VK7REC, 439.7000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.8356447,-41.91581919,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Read]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RWC, 147.0750Mhz, 600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.541521,-41.84420647,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Alonnah]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RBI, 147.3000Mhz, 0Khz<br>114.8Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.2450586,-43.31158781,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lenah Valley]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK7RCR, 147.8750Mhz, -1.8Mhz<br>123Hz, FM</font><br><br><font color="green">VK7RCR, 438.5250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK7RCR C, 146.9625Mhz, -600Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.2779011,-42.86164982,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Marrara]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK8RWI, 146.8000Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="red">VK8RWI, 439.9750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>130.9213526,-12.41712108,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Darwin]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK8RDA, 146.9000Mhz, -600Khz<br>123Hz, FM</font><br><br><font color="red">VK8RDA, 438.2750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>130.984368,-12.48079358,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[West Gap]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK8RCA, 146.9500Mhz, -600Khz<br>91.5Hz, FM</font><br><br><font color="green">VK8RIT, 438.5250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>133.8565777,-23.72220535,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Moil]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK8RPD, 146.9500Mhz, -600Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>130.8848445,-12.3863669,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Larrakeyah]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK8RTE, 147.0000Mhz, -600Khz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>130.8332332,-12.45598413,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Willans Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RTW, 438.0250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RTW, 439.8000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.3722418,-35.13272441,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[North Ryde]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RRW, 438.1000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1315523,-33.78340956,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lilyfield SCA]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2ROZ, 438.1125Mhz, -5.4Mhz<br>FM</font><br><br><font color="orange">VK2ROZ A, 1273.7000Mhz, 20Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1627747,-33.86612621,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wyee]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RHK, 438.1250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.4938783,-33.18273562,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bruxner Park]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMG, 438.1250Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.1088777,-30.25612927,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Berowra North]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWS, 438.2750Mhz, -5.4Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RWS, 438.2750Mhz, -5.4Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1469258,-33.62087566,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kiama]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RIW, 438.3000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.7913891,-34.69760759,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Chatswood]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RHT, 438.3500Mhz, -5.4Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RHT, 438.3500Mhz, -5.4Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1791975,-33.7977301,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Carlingford]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCF, 438.4500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RCF, 438.4500Mhz, -5Mhz<br>91.5Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.0527875,-33.77565327,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Crawney]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAB, 438.4750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.9920829,-31.58769895,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Hurstville]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RHC, 438.5500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.0939495,-33.96426012,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Merewether]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RUM, 438.6250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.7480913,-32.95176983,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Campbelltown]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCT, 438.6500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.7847849,-34.04251997,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Woy Woy]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RDC, 438.6500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.315176,-33.49825824,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Nardi]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RPL, 438.6750Mhz, -5Mhz<br>123Hz, FM</font><br><br><font color="orange">VK2RPL, 1273.3000Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK2RPL, 438.6750Mhz, -5Mhz<br>123Hz, P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.290154,-28.5426686,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Booral]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RAI, 439.2750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9716893,-32.5052853,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kariong]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="lawngreen">VK2RTG, 439.3000Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK2RTG, 444.250Mhz, 805.75Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2972948,-33.43952126,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Sans Souci]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSV, 439.3250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1305966,-34.00513772,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Glenwood]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK2RGW, 439.4750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.9485289,-33.74782455,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Riverview]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RMR, 439.5750Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.6304766,-33.73078557,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bolwarra Heights]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2ROJ, 439.7000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.5951718,-32.69992491,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Horsley Park]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RHP, 439.7500Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK2RHP, 438.1375Mhz, -5.4Mhz<br>P25 (NAC = 293)</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.8549472,-33.86154777,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Blaxland]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RSW, 439.7750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.6335239,-33.75030147,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Sydney]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RCG, 439.8000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK2RBV B, 438.7750Mhz, -5Mhz<br>DV</font><br><br><font color="green">VK2RCG, 438.2000Mhz, -5.4Mhz<br>P25 (NAC = 293)</font><br><br><font color="green">VK2RCG, 439.5000Mhz, -5Mhz<br>DMR</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2115417,-33.86429172,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Artarmon]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RON, 439.9250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1814115,-33.80534607,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Specimen Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBO, 438.0250Mhz, -5Mhz<br>FM</font><br><br><font color="green">VK3RBO, 2415.000Mhz, -1165Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.2440875,-36.76562244,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Melbourne City]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCC, 438.0250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK3RCC, 1273.1000Mhz, 20Mhz<br>FM</font><br><br><font color="green">VK3RSU, 438.1000Mhz, -5.4Mhz<br>DMR</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.9694815,-37.81382239,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ouyen]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCP, 438.0250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.3116084,-35.06953216,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Paps]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RLE, 438.1250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.9848104,-37.04339896,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bendigo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="lawngreen">VK3RIR, 438.1500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="orange">VK3RIR, 1273.7000Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.953894,-38.35446257,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Devil's River]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RUG, 438.1750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.8416087,-37.20926566,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Burrumbeet]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBN, 438.3500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.6637942,-37.47438741,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Moliagul]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCU, 438.4250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.6469508,-36.72319488,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Gisborne]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBW, 438.4500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.5870696,-37.52017815,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Hollowback]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBU, 438.4750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>143.8154793,-37.44005074,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Grovedale]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK3RGW, 438.5000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.2969601,-38.17256809,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Stanley]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RNU, 438.5250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.8029189,-36.44459478,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Drouin]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RWD, 438.5750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.8181877,-38.14430497,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bannockburn]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RNP, 438.6500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.1624408,-38.04182726,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bacchus Marsh]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="orange">VK3RBM, 438.7000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="orange">VK3RBM, 1273.1500Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.4166529,-37.64389849,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Noble Park]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RSV, 439.4250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.1886121,-37.96777939,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Cranbourne]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RLP, 439.4750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.2800586,-38.11372175,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Pretty Sally]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RPT, 439.5250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.9655763,-37.38094974,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Taylor]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RTU, 439.5250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.5608071,-37.70561498,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Waverley]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RDX, 439.6000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.1381244,-37.87446577,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bayswater]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBY, 439.6250Mhz, -5Mhz<br>88.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.2639384,-37.84043156,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Emerald]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RSA, 439.6500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.4441559,-37.93257786,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Horsham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBP, 439.7000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.1983672,-36.71618158,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bambill South]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RBL, 439.8250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>141.5080933,-34.47257896,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Arthur's Seat]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RPU, 439.8500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.951503,-38.3560426,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Glen Waverley]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RSE, 439.9000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.1734806,-37.89065521,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Broughton]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RMG, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.4129889,-37.12047245,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Kynoch]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RTQ, 438.0250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="green">VK4RTQ, 147.2250Mhz, -1.6Mhz<br>P25 (NAC = 293)</font><br><br><font color="green">VK4RTQ, 439.4875Mhz, -5Mhz<br>DMR</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9558648,-27.50616557,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Perseverance]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RZD, 438.0500Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.1613356,-27.41336554,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Springbrook]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RZA, 438.1000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2903511,-28.23262898,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wilkes Knob]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RZC, 438.1250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.9154499,-26.77894393,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Coot-tha]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RZB, 438.2000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br><font color="red">VK4RZB, 1273.4000Mhz, 20Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.9540427,-27.47974406,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Ocean View]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RSS, 438.5750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.8293951,-27.13369494,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Watalgan]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBW, 439.7750Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.9620524,-24.7013388,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lady Larcom]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RGL, 439.8000Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1252439,-23.80434418,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Cairns]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RCA, 439.8500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.7750359,-16.91550849,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Tolga]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBK, 439.9000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.4472632,-17.22296332,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Maleny]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK4RXZ, 439.9000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.7997949,-26.79724575,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Sunnybank]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBA, 439.9500Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.0607759,-27.61252899,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Adelaide CBD]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RSA, 438.0250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.6033836,-34.92782315,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Moonta]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RCT, 438.3250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>137.6536304,-34.04730666,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Blue Lake]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5ROH, 439.8250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.7763492,-37.83314882,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Lower Light]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5ROC, 439.9500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.3750029,-34.54665609,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kalgoorlie]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RGF, 438.1250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>121.4727815,-30.7658329,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wanneroo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RNA, 438.7250Mhz, -5Mhz<br>123Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.8193574,-31.7553979,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Whiteman Park]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK6RNS, 439.9250Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.9329413,-31.73334944,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[Ben Lomond]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RBH, 438.0500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.6588142,-41.53306696,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Barren Tier]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RIN, 438.5000Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.7551898,-42.01830202,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Arthur]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RAB, 438.5500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.2880332,-41.27753224,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Nelson]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RDS, 439.7500Mhz, -5Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.3164265,-42.91953487,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Dazzler Range]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RDR, 439.7750Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.7193139,-41.2352298,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Wellington]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RTC, 439.8250Mhz, -5Mhz<br>91.5Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.2362127,-42.89486475,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Companion Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RAL, 439.9000Mhz, -5Mhz<br>141.3Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>145.7281878,-41.34121685,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Lloyd]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RML, 439.9500Mhz, -5Mhz<br>141.3Hz, FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>146.960276,-42.84472642,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Macedon]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK3RHF, 1273.4000Mhz, 20Mhz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.5793629,-37.39439772,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Terrey Hills]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RWN C, 146.9625Mhz, -600Khz<br>DV</font><br><br><font color="green">VK2RWN B, 438.4000Mhz, -5.4Mhz<br>DV</font><br><br><font color="orange">VK2RWN A, 1273.9000Mhz, 20Mhz<br>DV</font><br><br><font color="orange">VK2RWN AD, 1298.7000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.2223514,-33.69290793,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Bendigo]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RCE B, 438.9125Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>144.3038831,-36.73384772,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Horsham]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK3RDK C, 146.6375Mhz, -600Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>142.2047202,-36.71861355,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Black Mountain]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RBY C, 146.6500Mhz, -600Khz<br>DV</font><br><br><font color="green">VK4RBY B, 438.4500Mhz, -5Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.0954654,-21.06403938,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Mt Tamborine]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RDK B, 438.3125Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.1831131,-27.99672931,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wongawallan]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RDW B, 438.3500Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>153.2598807,-27.88335908,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Sarina]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RUS B, 438.4500Mhz, -5Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>149.2376578,-21.39424773,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Winter Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5REX C, 146.9625Mhz, -600Khz<br>DV</font><br><br><font color="green">VK5REX B, 438.2250Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>135.8281648,-34.70165131,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Renmark]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RMK B, 438.0750Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>140.7154301,-34.1585558,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Brown Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RVH B, 438.5250Mhz, -5Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.6463647,-35.50572521,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Banksia Park]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK5RWN C, 146.9375Mhz, -600Khz<br>DV</font><br><br><font color="green">VK5RWN B, 438.4000Mhz, -5.4Mhz<br>DV</font><br><br><font color="lawngreen">VK5RWN A, 1273.7000Mhz, 20Mhz<br>DV</font><br><br><font color="red">VK5RWN AD, 1299.7000Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.748772,-34.81375852,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Gosnells]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RLX C, 146.8625Mhz, -1.6Mhz<br>DV</font><br><br><font color="green">VK6RLX B, 438.1500Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.9880326,-32.07444561,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[East Fremantle]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6ROX B, 438.1250Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>115.7752544,-32.0453516,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Richmond]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK7RRR B, 438.1250Mhz, -5.4Mhz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>147.4216618,-42.74250123,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Palmerston]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK8RAD C, 146.7000Mhz, -600Khz<br>DV</font><br><br><font color="green">VK8RAD B, 438.7500Mhz, -5Mhz<br>DV</font><br><br><font color="green">VK8RAD A, 1293.4000Mhz, -20Mhz<br>DV</font><br><br><font color="green">VK8RAD AD, 1274.0500Mhz, 0Khz<br>DV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>130.8983075,-12.40001798,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Kalamunda]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK6RRR, 438.2000Mhz, -5.4Mhz<br>DMR</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>116.0407893,-31.96828816,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
+        <Placemark>
+            <name><![CDATA[St Leonards]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="red">VK2RTV, -Mhz, -<br>ATV</font><br><br><font color="red">VK2RTV, -Mhz, -<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.1897186,-33.82125797,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Oakdale]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2RFM, 1250.000Mhz, -823.75Mhz<br>ATV</font><br><br><font color="green">VK2RFM, 1250.000Mhz, -805.75Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>150.5035284,-34.07973469,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[Wilkes Knob]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK4RNC, 446.500Mhz, -<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>152.910371,-26.77726996,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[The Bluff]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RDC, 446.500Mhz, 828.5Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.1645445,-33.10593712,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[O'Halloran Hill]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK5RWH, 1286.250Mhz, -842Mhz<br>ATV</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>138.5540057,-35.05194309,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name><![CDATA[VK2MD]]></name> <styleUrl>#repeaterStyle</styleUrl>
+            <description>
+              <![CDATA[<font color="green">VK2MD, 145.400Mhz, 0Khz<br>FM</font><br><br>]]>
+            </description>
+            <Point>
+                <coordinates>151.136859,-33.653220,0</coordinates>
+            </Point>
+        </Placemark>
+        </Folder>
+    </Document>
+<!--By Steve Ireland VK2MD 2014 vk2md(at)wia.org.au-->
