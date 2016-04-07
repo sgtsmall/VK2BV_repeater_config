@@ -7,6 +7,8 @@
 #
 use strict;
 use warnings;
+no warnings 'experimental::smartmatch';
+
 
 use Text::CSV_XS;
 
@@ -38,7 +40,7 @@ open(my $ft1fh, '>', $file2) or die "Could not open '$file2' $!\n";
 my $newhea1 =
   'Channel Number,Priotiry Channel,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,DCS Polarity,User CTCSS,Tx Power,Skip,Step,,Attenuator,S-Meter Squelch,Bell,Vibrator,Half Dev,Clock Shift,';
 my $newhea2 =
-  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,BANK22,Marine Fav,Marine,';
+  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,C4FM,Marine Fav,Marine,';
 my $newhea3 = 'Comment,';
 
 # print "$newhead,$newhea2,$newhea3\n";
@@ -93,7 +95,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                 my $ccuniq = chr($cuniq);
                 my $tCallUufld = substr $CallUufld, 6, 1, $ccuniq;
             }
-            print "Inserting $CallUufld\n";
+#            print "Inserting $CallUufld\n";
             push @CallUuniq, $CallUufld;
         }
         else {
@@ -279,12 +281,20 @@ while (my $row = $csv->getline($vkrdfh)) {
             $BankTest = '1,';
         }
 
-# BANK16,..,24,
-#                   678901234
-        my $BankRest = '0,0,0,0,0,0,0,0,0,';
+# BANK16,..,21,
+#                       678901
+        my $BankRest = '0,0,0,0,0,0,';
+# BANK22
+        my $BankC4FM ='0,';
+        if ($data{'band'} eq 'C4FM') {
+            $BankC4FM ='1,'
+        }
+# BANK23,24,
+        my $BankMarine = '0,0,';
 #
-        my $newbank = sprintf("%s%s%s%s%s",
-            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest);
+        my $newbank = sprintf("%s%s%s%s%s%s%s",
+            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest, $BankC4FM, $BankMarine);
+
 
 # Comment,
 #

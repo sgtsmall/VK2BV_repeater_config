@@ -17,6 +17,7 @@ echo "  -h This help text"
 echo "  -c Suppress Chirp Files"
 echo "  -i Suppress Icom Files"
 echo "  -y Suppress Yaesu Files"
+echo "  -d Suppress DMR Files"
 echo "  -p Suppress Publish"
 echo "  -x Test new function"
 echo "  -t Test perl and libraries"
@@ -30,10 +31,11 @@ if [ "$1" != "" ]; then
     outicom=0
     outyaesu=0
     outchirp=0
+    outdmr=0
     outtest=
     getweb=0
     publish=0
-    args=$(getopt r:chiyptwx $*)
+    args=$(getopt r:cdhiyptwx $*)
     if [ $? != 0 ] ; then usage ; exit 0 ; fi
 
     set -- $args
@@ -47,6 +49,7 @@ if [ "$1" != "" ]; then
             -c ) outchirp= ; shift ;;
             -i ) outicom= ; shift ;;
             -y ) outyaesu= ; shift ;;
+            -d ) outdmr= ; shift ;;
             -p ) publish= ; shift ;;
             -x ) publish= ; outtest=0 ; shift ;;
             -w ) getweb= ; shift ;;
@@ -64,9 +67,11 @@ fi
 if [ ! -n "$getweb" ] ; then 
 if [ ! -d work ] ; then mkdir work ; fi
 if [ ! -d output ] ; then mkdir output ; fi
+if [ ! -d output/WP ] ; then mkdir output/WP ; fi
 rm work/*
 # rm output/*
 cd work
+# Get the WIA data
 curl -f -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
 #echo $wiaget
 #exit
@@ -74,6 +79,8 @@ if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" 
 tr -d '\r' < repdown.dat > repdowntext.dat
 gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
 gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
+#
+# Get VK2MD file 
 curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
 unzip vkrep2google.zip
 # now get rid of most of the file 
@@ -83,27 +90,33 @@ unzip vkrep2google.zip
     let l=`awk '/kml>/{ print NR; exit }' vkrep2google.kml`
     range=`echo "$i"d\;"$j","$k"d\;"$l"d`
 #echo $range
-echo "starting the sed of vkrep2work.kml"
+echo "starting the sed of vkrep2google.kml"
 # 
     sed -e $range vkrep2google.kml  > vkrep2work.kml
 #
 # remove the line feed in the repeater names
-#
-
 echo "starting the ex of vkrep2work.kml"
     ex -c "%g/name></j" -c "wq" vkrep2work.kml
 #
 # apply several cleanups 
-#
-
 echo "starting the sed of vkrep2work.kml vkrep.xml"
 #
     sed -f ../bin/2mdkml.sed vkrep2work.kml |xmllint --format - > vkrep.xml
+#    
+# Get DMR contacts
+curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
+if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check dmr-marc website" ; exit 0 ; fi 
+grep "^Radio" userdown.dat > userwork.dat
+grep "^505" userdown.dat >> userwork.dat
+grep "^530" userdown.dat >> userwork.dat
+grep "^537" userdown.dat >> userwork.dat
+#
+cd ..
+# here we leave work and this is the end of the section for getting raw data from web
+fi
 #
 # do some distance calculations and tiny amount of additional cleanup
 #
-cd ..
-fi
 echo "starting vkrep3.pl create vkrep.csv extracted data from kml"
     ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > work/vkrep.csv
      gsed -f ./bin/vkrep.gsed work/vkrep.csv > output/vkrep.csv
@@ -139,6 +152,8 @@ if [ -n "$outyaesu" ] ;  then
         ./bin/vkrepft-1dradms6.pl work/svkrepftmerge.csv output/vkrepft-1dradms6.csv
     echo "starting vkrepftm-400dradms7.pl create of vkrepftm-400dra.csv and vkrepftm-400drb.csv"
         ./bin/vkrepftm-400dradms7.pl work/svkrepftmerge.csv output/vkrepftm-400dradms7
+    echo "starting vkrepftm-400drrts.pl create of vkrepftm-400drrtsa.csv and vkrepftm-400drrtsb.csv"
+        ./bin/vkrepftm-400drrts.pl work/svkrepftmerge.csv output/vkrepftm-400drrts
 else
     echo "suppressed yaesu"
 fi
@@ -148,7 +163,11 @@ if [ -n "$outicom" ] ;  then
 #        ./bin/vkrep27wds.pl work/sortvkrepdir.csv work/vkrepstd.csv work/dstemp.csv
         ./bin/vkrepds.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dstemp.csv
         cat work/dstemp.csv | body sort --field-separator=',' --key=1,1 --key=4,4 > work/vkrepdsmerge.csv 
-    echo "starting vkrepicom51x.pl create of YYYYMMDDgnn.csv"
+# until we develop a better method for getting old style in banka
+   echo "preloading old style for banka"
+   cp Defaults/icombankaxx.csv output/icombanka.csv
+   
+   echo "starting vkrepicom51x.pl create of YYYYMMDDgnn.csv"
         ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv output/icom
 else
    echo "suppressed icom"
@@ -163,9 +182,17 @@ if [ -n "$outchirp" ] ;  then
 else
    echo "suppressed chirp"
 fi 
+if [ -n "$outdmr" ] ;  then 
+    echo "starting the create of contact.csv for DMR"
+echo "starting dmrscrape.pl"
+   ./bin/dmrscrape.pl work/userwork.dat output/contact.csv 
+else
+   echo "suppressed DMR contacts"
+fi 
 if [ -n "$publish" ] ;  then 
     echo "starting the publish"
     ./bin/publish
+    ./bin/publishWP
     ./bin/publishGD
     ./bin/publishS3
 else

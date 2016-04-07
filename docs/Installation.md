@@ -7,6 +7,9 @@ It was developed with the QAN (Quick and Nasty) principle over a couple of years
 
 Note that despite this it runs in about 3 seconds on my mac (2.5 seconds is the curl get of files)
 
+### Apr-16 Now uses pandoc and BasicTeX on my mac to generate documentation
+Start with pandoc (available for most platforms) then find how it generates pdf.
+
 ## Install some perl modules 
 Ham::Locator
 Geo::Direction::Distance

@@ -23,6 +23,8 @@
 #
 use strict;
 use warnings;
+no warnings 'experimental::smartmatch';
+
 
 use Text::CSV_XS;
 our @Favourds;
@@ -114,7 +116,7 @@ open(my $icgfh7, '>', $file27) or die "Could not open '$file27' $!\n";
 open(my $icgfh8, '>', $file28) or die "Could not open '$file28' $!\n";
 open(my $icgfh9, '>', $file29) or die "Could not open '$file29' $!\n";
 
-open(my $icbfha, '>', $banka) or die "Could not open '$banka' $!\n";
+open(my $icbfha, '>>', $banka) or die "Could not open '$banka' $!\n";
 open(my $icbfhb, '>', $bankb) or die "Could not open '$bankb' $!\n";
 open(my $icbfhc, '>', $bankc) or die "Could not open '$bankc' $!\n";
 open(my $icbfhd, '>', $bankd) or die "Could not open '$bankd' $!\n";
@@ -166,7 +168,7 @@ if ($csv->parse($newhebd)) {
     print $icgfh7 $csv->string, "\n";
     print $icgfh8 $csv->string, "\n";
     print $icgfh9 $csv->string, "\n";
-    print $icbfha $csv->string, "\n";
+#    print $icbfha $csv->string, "\n";
     print $icbfhb $csv->string, "\n";
     print $icbfhc $csv->string, "\n";
     print $icbfhd $csv->string, "\n";
@@ -187,6 +189,9 @@ else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
     $csv->error_diag();
 }
+
+#preload old style example
+
 #my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,CQCQCQ,VK2RBV B,VK2RBV G,");##
 #my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       E,VK2RBV B,VK2RBV G,");##
 #my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       I,VK2RBV B,VK2RBV G,");##
@@ -194,7 +199,7 @@ else {
 #my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,REF003CL,VK2RBV B,VK2RBV G,");##
 #my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,DCS014BL,VK2RBV B,VK2RBV G,");##
 #
-$memcntba = 5;
+$memcntba = 6;
 # $outfh = a
 #$cnt=b
 #        if ($csv->parse($newline)) {
@@ -233,7 +238,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                 my $ccuniq = chr($cuniq);
                 my $tCallUufld = substr $CallUufld, 6, 1, $ccuniq;
             }
-            print "Inserting $CallUufld\n";
+#            print "Inserting $CallUufld\n";
             push @CallUuniq, $CallUufld;
         }
         else {

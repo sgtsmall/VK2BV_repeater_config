@@ -1,4 +1,5 @@
 0Sort,Call U,mode,band,Output,Input,Call,mNemonic,Location,Service Area,S,ERP,HASL,T/O,Sp,CTCSS,Notes,Note2,Offset,absoff,sign,tsign,tdup,trpt,longditude,latitude,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank
+9-C4FM,VK2ROZ 4,DV,C4FM,438.1125,432.7125,VK2ROZ,SydC47,Sydney,Sydney city,P,25,200,,,91.5,,,5.400,5.400,"-",MINUS,DUP-,"-RPT",151.2115417,-33.86429172,QF56od52jn,0,180.0,101.5,,,3,
 2-FM,APRSAU,FM,2,145.1750,145.1750,APRSAU,APRSAU,,,,,,,,-,,,0,0,,SIMPLEX,OFF,OFF,,,,,,,,,5,
 2-FM,APRWIC,FM,2,145.2000,145.2000,APRSAU,Wicen,,,,,,,,-,,,0,0,,SIMPLEX,OFF,OFF,,,,,,,,,5,
 2-FM,APRSNZ,FM,2,144.5750,144.5750,APRSNZ,APRSNZ,,,,,,,,-,,,0,0,,SIMPLEX,OFF,OFF,,,,,,,,,5,

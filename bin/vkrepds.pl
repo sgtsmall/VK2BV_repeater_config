@@ -5,6 +5,8 @@
 
 use strict;
 use warnings;
+no warnings 'experimental::smartmatch';
+
 
 use Text::CSV_XS;
 use List::MoreUtils qw(first_index);

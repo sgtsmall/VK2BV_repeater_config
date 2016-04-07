@@ -46,7 +46,8 @@ while (my $line = <$data>) {
             $type = $fields[4];
             $band = $fields[4];
             if ($type eq 'DST') { $type = ''; }
-        }
+            if ($type eq 'C4FM') {$type = '4'; }
+        } 
         else {
 # Not a HEAD
             $call = sprintf("%s %s,%s,%s", $fields[2], $type, $mode, $band);

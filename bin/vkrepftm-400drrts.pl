@@ -50,19 +50,21 @@ open(my $ftm400fhb, '>', $file2b) or die "Could not open '$file2b' $!\n";
 #  my $newhea2 = 'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,BANK22,Marine Fav,Marine,';
 #  my $newhea3 = 'Comment,User CTCSS,S-Meter Squelch,Bell,';
 my $newhea1 =
-  'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,User CTCSS,Tx Power,Skip,Step,Clock Shift,Comment,';
+  'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Show Name,Tone Mode,CTCSS,DCS,User CTCSS,Tx Power,Skip,Step,Clock Shift,Comment';
 
 # print "$newhead,$newhea2,$newhea3\n";
 my $newhead = sprintf("%s", $newhea1);
 #
-#if ($csv->parse ($newhead)) {
-#  print $ftm400fh $csv->string, "\n";
-#} else {
-#  print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
-#  $csv->error_diag ();
-#}
+if ($csv->parse ($newhead)) {
+  print $ftm400fha $csv->string, "\n";
+  print $ftm400fhb $csv->string, "\n";
+  
+} else {
+  print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
+  $csv->error_diag ();
+}
 #Add aprs AU to begiing of 'B'
-my $newline = sprintf("1,145.17500,145.17500,0.0000,OFF,FM,APRSAU A,OFF,100.0 Hz,023,1500 Hz,MID,OFF,5.0KHz,0,APRSAU APRSAU ,1");
+my $newline = sprintf("1,145.17500,145.17500,0.0000,Simplex,FM,APRSAU A,Large,OFF,100.0 Hz,023,1500 Hz,MID,Off,5.0KHz,Off,APRSAU APRSAU ,1");
 $outfh = $ftm400fhb;
 $memcntb += 1;
 if ($csv->parse($newline)) {
@@ -79,8 +81,8 @@ my @fields = @{$csv->getline($vkrdfh)};
 # Read each line from the CSV file, and store it in @rows
 my @rows;
 while ((my $row = $csv->getline($vkrdfh))
-    && ($memcnta < '500')
-    && ($memcntb < '500'))
+    && ($memcnta < '499')
+    && ($memcntb < '499'))
 {
 
     my %data;
@@ -105,10 +107,10 @@ while ((my $row = $csv->getline($vkrdfh))
 #my $newdata = sprintf(",%s,%s,", $data{'Output'}, $data{'Input'});
 #
 #Offset Frequency,Offset Direction,Operating Mode
-# 0.6,5.4       +RPT,-RPT,OFF     AM,FM,NFM
-        my $newdat1 = sprintf("%.4f,%s,FM,", $data{'absoff'}, $data{'trpt'});
-
-#    my $newdat1 = sprintf("%.4f,-RPT,NFM,", $data{'absoff'});
+# 0.6,5.4       Plus,Minus,Simplex     AM,FM,Auto
+        my $workmode = $data {'mode'};
+        if ($workmode eq 'DV') {$workmode = 'Auto' ;}
+        my $newdat1 = sprintf("%.4f,%s,%s,", $data{'absoff'}, $data{'tsign'},$workmode);
 
         my $CallUufld = sprintf("%s", $data{'Call U'});
 #        print "Process $CallUufld\n";
@@ -134,7 +136,7 @@ while ((my $row = $csv->getline($vkrdfh))
 #my $tonemode = 'None';
 #    my $tonemode = ( $data{'Tone'} eq '-') ? 'OFF' : 'TONE SQL';
 #
-#Name,Tone Mode,CTCSS,
+#Name,Show Name,Tone Mode,CTCSS,
 # 8char
 #
         my $tonemode  = '';
@@ -142,26 +144,26 @@ while ((my $row = $csv->getline($vkrdfh))
 
 #TONE,Repeater Tone,RPT1USE,
         if ($data{'Tone'} eq '-') {
-            $tonemode = 'OFF,100.0 Hz';
+            $tonemode = 'None,100.0 Hz';
         }
         else {
             my $printtone = sprintf("%.1f", $data{'Tone'});
-            $tonemode = sprintf("TONE SQL,%s Hz", $printtone);
+            $tonemode = sprintf("T Sql,%s Hz", $printtone);
         }
-        my $newdat2 = sprintf("%.8s,%s,", $name, $tonemode);
+        my $newdat2 = sprintf("%.8s,Large,%s,", $name, $tonemode);
 
 
 #DCS,User CTCSS,Tx Power,
-        my $newdat3 = sprintf("023,1500 Hz,MID,");
+        my $newdat3 = sprintf("023,300 Hz,Medium,");
 
 #
 #  Favourite Logic here for Skip
 #
 #SKIP,
 #
-        my $SkipFav = 'OFF,';
+        my $SkipFav = 'Off,';
         if (grep { $data{'Call'} eq $_ } @Favourft) {
-            $SkipFav = 'SELECT,';
+            $SkipFav = '0,';
         }
 
 #Step,Clock Shift,
@@ -297,7 +299,7 @@ while ((my $row = $csv->getline($vkrdfh))
 }
 my $blankline = sprintf(",,,,,,,,,,,,,0,,");
 
-while ($memcnta < '500') {
+while ($memcnta < '499') {
     $memcnta += 1;
     $band = '0';
     my $fillline = sprintf("%s,%s%s", $memcnta, $blankline, $band);
@@ -309,7 +311,7 @@ while ($memcnta < '500') {
         $csv->error_diag();
     }
 }
-while ($memcntb < '500') {
+while ($memcntb < '499') {
     $band = '1';
     $memcntb += 1;
     my $fillline = sprintf("%s,%s%s", $memcntb, $blankline, $band);

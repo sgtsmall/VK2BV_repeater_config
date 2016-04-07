@@ -1,0 +1,8 @@
+
+/<h1 id="yaesu-ft-2d-files">Yaesu FT-2D Files<\/h1>/d
+s:<li>VKBVREP.FT2D -: <li>[s3secureurl bucket='warssharedfiles' target='/public/FT-2D/VKBVREP.FT2D' expires='5']VKBVREP.FT2D[/s3secureurl] -:
+s:<li>BACKUP.dat -: <li>[s3secureurl bucket='warssharedfiles' target='/public/FT-2D/BACKUP.dat' expires='5']BACKUP.dat[/s3secureurl] -:
+s:<li>MEMORY.dat -: <li>[s3secureurl bucket='warssharedfiles' target='/public/FT-2D/MEMORY.dat' expires='5']MEMORY.dat[/s3secureurl] -:
+s:<li>VKBV2D.FT2D -:<li>[s3secureurl bucket='warssharedfiles' target='/public/FT-2D/VKBV2D.FT2D' expires='5']VKBV2D.FT2D[/s3secureurl] -:
+s:<li>VKBV2D.rsf -:<li>[s3secureurl bucket='warssharedfiles' target='/public/FT-2D/VKBV2D.rsf' expires='5']VKBV2D.rsf[/s3secureurl] -:
+s:<li>vkrepft-2drrts.csv -:<li>[s3secureurl bucket='warssharedfiles' target='/public/FT-2D/vkrepft-2drrts.csv' expires='5']vkrepft-2drrts.csv[/s3secureurl] -:

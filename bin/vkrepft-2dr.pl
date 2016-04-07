@@ -7,6 +7,8 @@
 #
 use strict;
 use warnings;
+no warnings 'experimental::smartmatch';
+
 
 use Text::CSV_XS;
 
@@ -37,7 +39,7 @@ open(my $ft2fh, '>', $file2) or die "Could not open '$file2' $!\n";
 my $newhea1 =
   'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,Vibrator,';
 my $newhea2 =
-  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,BANK22,Marine Fav,Marine,';
+  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,C4FM,Marine Fav,Marine,';
 my $newhea3 = 'Comment,User CTCSS,S-Meter Squelch,Bell,';
 
 # print "$newhead,$newhea2,$newhea3\n";
@@ -92,7 +94,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                 my $ccuniq = chr($cuniq);
                 my $tCallUufld = substr $CallUufld, 6, 1, $ccuniq;
             }
-            print "Inserting $CallUufld\n";
+#            print "Inserting $CallUufld\n";
             push @CallUuniq, $CallUufld;
         }
         else {
@@ -112,7 +114,8 @@ while (my $row = $csv->getline($vkrdfh)) {
 #
 # DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,
 #
-        my $newdat3 = sprintf(",,%s,,,,,,", $data{'txpower'});
+#        my $newdat3 = sprintf(",,%s,,,,,,", $data{'txpower'});
+        my $newdat3 = sprintf(",,2.5,,,,,,", );
 #
 #  Favourite Logic here for Bank1
 #
@@ -266,13 +269,19 @@ while (my $row = $csv->getline($vkrdfh)) {
         if ($bankfld eq '15') {
             $BankTest = '1,';
         }
-
-# BANK16,..,24,
-#                       678901234
-        my $BankRest = ',,,,,,,,,';
+# BANK16,..,21,
+#                       678901
+        my $BankRest = ',,,,,,';
+# BANK22
+        my $BankC4FM =',';
+        if ($data{'band'} eq 'C4FM') {
+            $BankC4FM ='1,'
+        }
+# BANK23,24,
+        my $BankMarine = ',,';
 #
-        my $newbank = sprintf("%s%s%s%s%s",
-            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest);
+        my $newbank = sprintf("%s%s%s%s%s%s%s",
+            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest, $BankC4FM, $BankMarine);
 
 # Comment, User CTCSS,S-Meter Squelch,Bell,
 #

@@ -8,6 +8,7 @@ s/<font color="red">/<repeater>/g
 s/<font color="orange">/<repeater>/g
 s/<font color="lawngreen">/<repeater>/g
 s/<br>FM/,,FM/g
+s/<br>C4/,,C4/g
 s/<br>P2/,,P2/g
 s/<br>DM/,,DM/g
 s/<br>DV/,,DV/g

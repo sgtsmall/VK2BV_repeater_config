@@ -1,0 +1,19 @@
+pandoc -f markdown Defaults/README_FT_1D.md > work/README_FT_1D.htmlx
+gsed -f bin/wpREADME_FT_1D.gsed work/README_FT_1D.htmlx > output/WP/README_FT_1D.html
+
+pandoc -f markdown Defaults/README_FT_2D.md > work/README_FT_2D.htmlx
+gsed -f bin/wpREADME_FT_2D.gsed work/README_FT_2D.htmlx > output/WP/README_FT_2D.html
+
+pandoc -f markdown Defaults/README_FTM_400D.md > work/README_FTM_400D.htmlx
+gsed -f bin/wpREADME_FTM_400D.gsed work/README_FTM_400D.htmlx > output/WP/README_FTM_400D.html
+
+pandoc -f markdown Defaults/README_ID_51A.md > work/README_ID_51A.htmlx
+gsed -f bin/wpREADME_ID_51A.gsed work/README_ID_51A.htmlx > output/WP/README_ID_51A.html
+
+pandoc -f markdown Defaults/README_ID_51A_P.md > work/README_ID_51A_P.htmlx
+gsed -f bin/wpREADME_ID_51A_P.gsed work/README_ID_51A_P.htmlx > output/WP/README_ID_51A_P.html
+
+pandoc -f markdown Defaults/README_ID_5100.md > work/README_ID_5100.htmlx
+gsed -f bin/wpREADME_ID_5100.gsed work/README_ID_5100.htmlx > output/WP/README_ID_5100.html
+#
+# rm work/*.htmlx
