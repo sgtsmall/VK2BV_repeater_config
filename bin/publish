@@ -1,47 +1,51 @@
+echo "starting publish"
 #DMR
-rsync output/contact.csv output/DMR/
+if [ -f output/contact.csv ] ; then
+    mv output/contact.csv output/DMR/
+fi
 
 #Icom
-rsync Defaults/marinemem400.csv output/icombankx.csv
-rsync Defaults/icomyour.csv output/
-rsync Defaults/icomcall.csv output/
-rsync Defaults/g14.csv output/icomg14.csv
+#rsync Defaults/marinemem400.csv output/icombankx.csv
+#rsync Defaults/icomyour.csv output/
+#rsync Defaults/icomcall.csv output/
+#rsync Defaults/g14.csv output/icomg14.csv
 
 #Yaesu FT-1DR
-rsync Defaults/README_FT_1D.md output/FT-1D/
-rsync output/vkrepft-1dradms6.csv output/FT-1D/
+mv    output/README_FT_1D.md output/FT-1D/
+mv    output/vkrepft-1dradms6.csv output/FT-1D/
 
 #Yaesu FT-2DR
-rsync Defaults/README_FT_2D.md output/FT-2D/
+mv    output/README_FT_2D.md output/FT-2D/
 rsync Defaults/VKBV2D.rsf output/FT-2D/
 rsync Defaults/VKBV2D.FT2D output/FT-2D/
-rsync output/vkrepft-2drrts.csv output/FT-2D/
+mv    output/vkrepft-2drrts.csv output/FT-2D/
 
 #Yaesu FTM-400D
-rsync Defaults/README_FTM_400D.md output/FTM-400D/
+mv    output/README_FTM_400D.md output/FTM-400D/
 rsync Defaults/VKBV400.rsf output/FTM-400D/
 rsync Defaults/VKBV400.FTM400 output/FTM-400D/
 rsync Defaults/README_FTM_400D.md output/FTM-400D/
-rsync output/vkrepftm-400dradms7a.csv output/FTM-400D/
-rsync output/vkrepftm-400dradms7b.csv output/FTM-400D/
-rsync output/vkrepftm-400drrtsa.csv output/FTM-400D/
-rsync output/vkrepftm-400drrtsb.csv output/FTM-400D/
+mv    output/vkrepftm-400dradms7a.csv output/FTM-400D/
+mv    output/vkrepftm-400dradms7b.csv output/FTM-400D/
+mv    output/vkrepftm-400drrtsa.csv output/FTM-400D/
+mv    output/vkrepftm-400drrtsb.csv output/FTM-400D/
 #
 #
+echo " publish zipping icom"
 cd output
-zip -r IcomDStarplus *g3.csv *g14.csv *g22.csv *g23.csv *g24.csv *mem*.csv *bank*.csv icomyour.csv icomcall.csv
-zip -r IcomDStar *g3.csv *g14.csv *mem*.csv *bank*.csv icomyour.csv icomcall.csv
+zip -r IcomDStarplus *g3.csv *g14.csv *g22.csv *g23.csv *g24.csv icomm*.csv icomb*.csv icomyour.csv icomcall.csv
+zip -r IcomDStar *g3.csv *g14.csv icomm*.csv icomb*.csv icomyour.csv icomcall.csv
 sleep 5
-rm *g3.csv *g14.csv *g22.csv *g23.csv *g24.csv *mem*.csv *bank*.csv  icomyour.csv icomcall.csv
+rm icomg*.csv icomm*.csv icomb*.csv  icomyour.csv icomcall.csv
 cd ..
 
 rsync output/IcomDStarplus.zip output/ICOM_5100_12/
-rsync Defaults/README_ID_5100.md output/ICOM_5100_12/
+mv output/README_ID_5100.md output/ICOM_5100_12/
 
 rsync Defaults/README_ID_51A_P.gdoc output/ICOM_51A_AnivPlus/
 rsync output/IcomDStarplus.zip output/ICOM_51A_AnivPlus/
-rsync Defaults/README_ID_51A_P.md output/ICOM_51A_AnivPlus/
+mv    output/README_ID_51A_P.md output/ICOM_51A_AnivPlus/
 
 rsync Defaults/README_ID_51A.gdoc output/ICOM_51A/
 rsync output/IcomDStar.zip output/ICOM_51A/
-rsync Defaults/README_ID_51A.md output/ICOM_51A/
+mv    output/README_ID_51A.md output/ICOM_51A/

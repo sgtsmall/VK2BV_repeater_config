@@ -77,12 +77,12 @@ while (my $line = <$data>) {
             if (   (looks_like_number($fields[0]))
                 && (looks_like_number($fields[1])))
             {
-                my $offset = $fields[0] - $fields[1];
+                my $offset = $fields[1] - $fields[0];
                 my $offabs = abs $offset;
 
 # if the offset >0 then receive was higher so offset to Tx is '-'.
                 my $offtxt =
-                  ($offset > 0)
+                  ($offset < 0)
                   ? '"-",MINUS,DUP-,"-RPT"'
                   : '"+",PLUS,DUP+,"+RPT"';
                 $offdata = sprintf("%.3f,%.3f,%s", $offset, $offabs, $offtxt);

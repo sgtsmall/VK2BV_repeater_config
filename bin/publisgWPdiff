@@ -1,0 +1,5 @@
+cd output/WP
+for f in `ls -1 REA*`
+do
+	diff $f published/$f
+done

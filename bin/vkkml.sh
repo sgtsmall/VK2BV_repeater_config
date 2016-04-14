@@ -10,9 +10,10 @@ echo "test script to exercise modules"
     ./bin/vkreptest.pl 
 }
 usage() {
-echo "Usage: $(basename $0) -r repdate [-h][-c][-i][-y][-p][-x][-w][-t]"
+echo "Usage: $(basename $0) -r repdate [-m][-w][-h][-c][-i][-y][-p][-x][-t]"
 echo "  -r  repdate is YYMMDD from wia website"
-echo "  -w Get Data from the website"
+echo "  -w Get Data from the WIA website"
+echo "  -m Get Data from the MARC website"
 echo "  -h This help text"
 echo "  -c Suppress Chirp Files"
 echo "  -i Suppress Icom Files"
@@ -34,8 +35,9 @@ if [ "$1" != "" ]; then
     outdmr=0
     outtest=
     getweb=0
+    getmarc=0
     publish=0
-    args=$(getopt r:cdhiyptwx $*)
+    args=$(getopt r:cdhiyptwmx $*)
     if [ $? != 0 ] ; then usage ; exit 0 ; fi
 
     set -- $args
@@ -53,6 +55,7 @@ if [ "$1" != "" ]; then
             -p ) publish= ; shift ;;
             -x ) publish= ; outtest=0 ; shift ;;
             -w ) getweb= ; shift ;;
+            -m ) getmarc= ; shift ;;      
             -t ) tester ; exit 0 ; shift ;;
         esac
     done
@@ -64,25 +67,25 @@ fi
 #
 #exit
 #cd ~/Onedrive/wia
-if [ ! -n "$getweb" ] ; then 
 if [ ! -d work ] ; then mkdir work ; fi
 if [ ! -d output ] ; then mkdir output ; fi
 if [ ! -d output/WP ] ; then mkdir output/WP ; fi
-rm work/*
+if [ ! -n "$getweb" ] ; then 
+    rm work/*
 # rm output/*
-cd work
+    cd work
 # Get the WIA data
-curl -f -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
+    curl -f -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
 #echo $wiaget
 #exit
-if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" ; echo "Please check wia website" ; exit 0 ; fi 
-tr -d '\r' < repdown.dat > repdowntext.dat
-gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
-gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
+    if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" ; echo "Please check wia website" ; exit 0 ; fi 
+    tr -d '\r' < repdown.dat > repdowntext.dat
+    gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
+    gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
 #
 # Get VK2MD file 
-curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
-unzip vkrep2google.zip
+    curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
+    unzip vkrep2google.zip
 # now get rid of most of the file 
     let i=`awk '/<kml/{ print NR; exit }' vkrep2google.kml`
     let j=`awk '/<Document>/{ print NR; exit }' vkrep2google.kml`+1
@@ -90,28 +93,32 @@ unzip vkrep2google.zip
     let l=`awk '/kml>/{ print NR; exit }' vkrep2google.kml`
     range=`echo "$i"d\;"$j","$k"d\;"$l"d`
 #echo $range
-echo "starting the sed of vkrep2google.kml"
+    echo "starting the sed of vkrep2google.kml"
 # 
     sed -e $range vkrep2google.kml  > vkrep2work.kml
 #
 # remove the line feed in the repeater names
-echo "starting the ex of vkrep2work.kml"
+    echo "starting the ex of vkrep2work.kml"
     ex -c "%g/name></j" -c "wq" vkrep2work.kml
 #
 # apply several cleanups 
-echo "starting the sed of vkrep2work.kml vkrep.xml"
+    echo "starting the sed of vkrep2work.kml vkrep.xml"
 #
     sed -f ../bin/2mdkml.sed vkrep2work.kml |xmllint --format - > vkrep.xml
+    cd ..
+fi    
 #    
+if [ ! -n "$getmarc" ] ; then 
+    cd work
 # Get DMR contacts
-curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
-if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check dmr-marc website" ; exit 0 ; fi 
-grep "^Radio" userdown.dat > userwork.dat
-grep "^505" userdown.dat >> userwork.dat
-grep "^530" userdown.dat >> userwork.dat
-grep "^537" userdown.dat >> userwork.dat
+    curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
+    if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check dmr-marc website" ; exit 0 ; fi 
+    grep "^Radio" userdown.dat > userwork.dat
+    grep "^505" userdown.dat >> userwork.dat
+    grep "^530" userdown.dat >> userwork.dat
+    grep "^537" userdown.dat >> userwork.dat
 #
-cd ..
+    cd ..
 # here we leave work and this is the end of the section for getting raw data from web
 fi
 #
@@ -129,11 +136,16 @@ sort --field-separator=',' --key=7,7 --key=5g,5 output/vkrepdir.csv > work/sortv
 # get the local entries file vkrepstd from defaults
 cp Defaults/vkrepstd.srccsv output/vkrepstd.csv
 if [ -n "$outtest" ] ; then
-    echo "Testing a new format generating work/vkrepftmerge.csv"
-    ./bin/vkrepft.pl work/sortvkrepdir.csv output/vkrepstd.csv work/vkrepftmerge.csv 
+    echo "Testing a new format generating work/chtemp.csv"
+    ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/chtemp.csv
+    ./bin/vkrepchd.pl work/chtemp.csv output/ch
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
+    #perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/dmr/scan.csv
+    #perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/dmr/zone.csv
+    
     echo "generated the test file and sorting on field 1"
 # This is callsign then input frequency
-  cat work/vkrepftmerge.csv | body sort --field-separator=',' --key=1,1 > work/svkrepftmerge.csv
+#  cat work/vkrepftmerge.csv | body sort --field-separator=',' --key=1,1 > work/svkrepftmerge.csv
 #
     exit 0
 fi
@@ -163,17 +175,23 @@ if [ -n "$outicom" ] ;  then
 #        ./bin/vkrep27wds.pl work/sortvkrepdir.csv work/vkrepstd.csv work/dstemp.csv
         ./bin/vkrepds.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dstemp.csv
         cat work/dstemp.csv | body sort --field-separator=',' --key=1,1 --key=4,4 > work/vkrepdsmerge.csv 
-# until we develop a better method for getting old style in banka
-   echo "preloading old style for banka"
-   cp Defaults/icombankaxx.csv output/icombanka.csv
-   
-   echo "starting vkrepicom51x.pl create of YYYYMMDDgnn.csv"
+#        
+   echo "starting vkrepicom51xx.pl create of icom*.csv"
+        cp Defaults/marinemem400.csv output/icombx.csv
+        cp Defaults/icomyour.csv output/
+        cp Defaults/icomcall.csv output/
+        cp Defaults/g14.csv output/icomg14.csv
         ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv output/icom
 else
    echo "suppressed icom"
 fi  
 if [ -n "$outchirp" ] ;  then 
-    echo "starting the create of vkrepchmerge.csv [coming soon!!]"
+#    echo "starting the create of merged chtemp.csv"
+#    ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/chtemp.csv
+   echo "starting vkrepchd.pl create of chirpx.csv"
+    ./bin/vkrepchd.pl work/vkrepdsmerge.csv output/ch
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
+
 ## reads vkrepdir and vkrepstd (simplex and other local)
 #        ./bin/vkrep27wch.pl work/sortvkrepdir.csv work/vkrepstd.csv work/chtemp.csv
 #        cat work/chtemp.csv | body sort --field-separator=',' --key=3,3 > work/vkrepchmerge.csv 
@@ -183,16 +201,26 @@ else
    echo "suppressed chirp"
 fi 
 if [ -n "$outdmr" ] ;  then 
-    echo "starting the create of contact.csv for DMR"
-echo "starting dmrscrape.pl"
-   ./bin/dmrscrape.pl work/userwork.dat output/contact.csv 
+    if [  -f work/userwork.dat ] ; then
+        echo "starting the create of contact.csv for DMR"
+        echo "starting dmrscrape.pl"
+        ./bin/dmrscrape.pl work/userwork.dat output/contact.csv 
+    fi    
+echo "starting the create of channels, scanlists and zones for DMR"
+
+   ./bin/vkrepdm.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dmtemp.csv
+   ./bin/vkrepmd380.pl work/dmtemp.csv output/DMR
+echo "files are converted to dos for windows programs"   
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/chan.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/scan.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/zone.csv
 else
    echo "suppressed DMR contacts"
 fi 
 if [ -n "$publish" ] ;  then 
     echo "starting the publish"
+    ./bin/publishWP -r $repdate
     ./bin/publish
-    ./bin/publishWP
     ./bin/publishGD
     ./bin/publishS3
 else

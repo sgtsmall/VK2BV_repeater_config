@@ -2,14 +2,24 @@
 Repeater configuration configs and scripts for Australian data
 
 These scripts process local and Australian repeater Data
-Give it until Feb 16 for me to tidy all this up 
-
 
 These scripts read data and create files that can be used in the various products own applications. 
 ie they are usually imported within the individual radio setup program.
 
-The ability to generate data files directly is coming along slowly basically integrating with chirp where practical
-
+The ability to generate data files directly is coming along slowly, basically integrating with chirp where practical
+## Radios supported
+*   Full:  generally means source files for configuration software as well as files for SD card deployment.
+    *   Yaesu - FT-2D, FTM-400D
+    *   Icom - ID-51, ID-51Plus, ID-5100
+    
+*   Basic: generally means the csv files that can be used with the radio software.
+    *   Yaesu - FT-1D, FTM-100D
+    
+*   Testing: (your mileage may vary!!!!)
+    *   DMR contacts file for VK/ZL
+    *   MD-380 code plug.
+    *   chirp
+    
 ## Additional Features
 
 VK2BV_repeater_config also has additional features not found in other better programs!.
@@ -27,7 +37,7 @@ See: https://github.com/sgtsmall/VK2BV_repeater_config/docs/Installation.md
 
 ## Documentation
 
-There will be lots of documentation here: https://github.com/sgtsmall/VK2BV_repeater_config/docs 
+There will be lots of documentation here: https://github.com/sgtsmall/VK2BV_repeater_config/docs (oneday)
 
 ## Support
 
