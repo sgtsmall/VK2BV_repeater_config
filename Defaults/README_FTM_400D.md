@@ -4,12 +4,13 @@
 
 This folder contains Programming files for the Yaesu FTM-400D
 
-Release: Draft Apr 16
+Release: MDDATEFLD
 
 
 The files were prepared using the RT-Systems software with Data extracted from the WIA data set. (Import files for the Yaesu ADMS-7 software are also provided)
 
 ## Files
+
 * Configuration
     - VKBVREP.FTM400 - most recent RT Systems file
     - CLNFTM400D.dat - generated SD card file.

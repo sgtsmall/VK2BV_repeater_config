@@ -4,7 +4,7 @@
 
 This folder contains Programming files for the Icom ID-51A Plus
 
-Release: Draft Apr 16
+Release: MDDATEFLD
 
 The files were prepared using the RT-Systems FT-2D software with Data extracted from the WIA data set.
 
@@ -58,19 +58,19 @@ The ID-51 supports 2 VFO's 'A' and 'B' with 1 Tranceivers. Both VFO's can proces
 
 * The ID-51A supports 26 "Banks" (A-Z), a Memory can only be assigned to 1 bank.
     
-        - A DStar entries
-        - B SYDCBD Stations within 60km of Sydney
-        - C VK2 South Coast
-        - D VK2 North Coast
-        - E VK1 and 2 West
-        - F WICEN
-        - G MEL within 80km of Melbourne
-        - H VK3
-        - I VK4SE within 80 km of Tamborine
-        - J VK4
-        - K VK5-8
-        - L VK6
-        - M VK7
-        - N APRS including AU and ISS and other countries
-        - O Test
-        - X Marine
+    - A DStar entries
+    - B SYDCBD Stations within 60km of Sydney
+    - C VK2 South Coast
+    - D VK2 North Coast
+    - E VK1 and 2 West
+    - F WICEN
+    - G MEL within 80km of Melbourne
+    - H VK3
+    - I VK4SE within 80 km of Tamborine
+    - J VK4
+    - K VK5-8
+    - L VK6
+    - M VK7
+    - N APRS including AU and ISS and other countries
+    - O Test
+    - X Marine

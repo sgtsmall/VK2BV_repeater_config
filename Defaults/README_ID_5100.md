@@ -4,14 +4,18 @@
 
 This folder contains Programming files for the Icom ID-5100 Plus
 
-Release: Draft Apr 16
+Release: MDDATEFLD
 
 The files were prepared using the Icom CS-5100 software V 1.2 with Data extracted from the WIA data set.
 1000 Memories
+
 ## Files
 
 * Configuration
     - 5100_12_VK2BV.icf - most recent icom file
+
+> This file was built for a ID-5100A using the CS-5100 Version 1.2 and Firware E3.
+
 
 * Build Files to create standard configuration
     - icomDStarplus.zip - Output from the repeater configuration

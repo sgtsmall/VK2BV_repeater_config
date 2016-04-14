@@ -4,7 +4,7 @@
 
 This folder contains Programming files for the Yaesu FT-2D
 
-Release: Draft Apr 16
+Release: MDDATEFLD
 
 The files were prepared using the RT-Systems FT-2D software with Data extracted from the WIA data set.
 
@@ -23,7 +23,8 @@ The files were prepared using the RT-Systems FT-2D software with Data extracted 
         - vkrepft-2drrts.csv - Output from the repeater configuration
 
 ### Radio Load Steps
-* General Note: The user interface to the FT-2DR is inconsistent. Some operations can be completed by rotation of  the VFO(selector) knob and pressing DISP, whilst others require screen presses. In the following instructions the "OK" commands generally need to be pressed on the screen, however for reliability it is best to select it with the knob first! then press it.
+
+    General Note: The user interface to the FT-2DR is inconsistent. Some operations can be completed by rotation of  the VFO(selector) knob and pressing DISP, whilst others require screen presses. In the following instructions the "OK" commands generally need to be pressed on the screen, however for reliability it is best to select it with the knob first! then press it.
 
 * Steps to Load the config
 * Create the directory structure on an SD card if you haven't already.
@@ -56,7 +57,7 @@ This will create the folders and a backup file.
 
     > The MEMORY.dat can be stored in x:\\FT2D_MEMORY-CH\\MEMORY.dat and loaded by choosing the MEMORY CH from the SD CARD Menu. This will not assign the correct bank names.
 
-> To help find entries, switch to extended display (Hold the A/B button for several seconds). However this only allows 1 VFO to be active at a time.
+    > To help find entries, switch to extended display (Hold the A/B button for several seconds). However this only allows 1 VFO to be active at a time.
 
 ### Structure of entries
 

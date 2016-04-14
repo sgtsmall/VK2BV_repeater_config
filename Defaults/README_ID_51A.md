@@ -4,7 +4,7 @@
 
 This folder contains Programming files for the Icom ID-51A
 
-Release: Draft Apr 16
+Release: MDDATEFLD
 
 The files were prepared using the Icom CS-51 software with Data extracted from the WIA data set.
 

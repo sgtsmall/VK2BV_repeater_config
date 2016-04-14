@@ -4,7 +4,7 @@
 
 This folder contains Programming files for the Yaesu FT-1D
 
-Release: Draft Apr 16
+Release: MDDATEFLD
 
 The files were prepared using the Yaesu ADMS6 FT-1D software with Data extracted from the WIA data set.
 
@@ -19,5 +19,5 @@ The files were prepared using the Yaesu ADMS6 FT-1D software with Data extracted
 
 ## Notes
 
-    > I have created an extract file that should work ok with the ADMS6 software, If you have RT-Systems then the data file from the FT-2DR might be more appropriate. 
+    I have created an extract file that should work ok with the ADMS6 software, If you have RT-Systems then the data file from the FT-2DR might be more appropriate. 
 
