@@ -28,6 +28,8 @@ no warnings 'experimental::smartmatch';
 
 use Text::CSV_XS;
 our @Favourds;
+our @FavdstrUR;
+our @FavdstrR1;
 require My::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
@@ -66,6 +68,7 @@ my @CallUuniq;
 my $call       = '';
 my $cntfld     = '';
 my $utcoffset  = '';
+my $dstlab     = '';
 my @grpnum     = qw{3 22 23 24};
 my @grpnam     = qw{AusDV FMAus FMAusNW Local};
 my @utco10     = qw{VK1 VK2 Vk3 VK4 VK7};
@@ -76,66 +79,16 @@ my @utco08     = qw{VK6};
 #Open input file
 open(my $vkrdfh, '<', $file1) or die "Could not open '$file1' $!\n";
 
+# to add more banks add to @bfiles and use in $oubfh;
+#
 #open output file
-my $file21 = sprintf("%sg3.csv",   $file2pre);
-my $file22 = sprintf("%sg22.csv",  $file2pre);
+my @gfiles = qw{ g3 g22 g23 g24 };
+my @mfiles = qw{ m0 m1 m2 m3 m4 };
+my @bfiles = qw{ ba bb bc bd be bf bg bh bi bj bk bl bm bn };
+my @allfiles = ( @gfiles, @mfiles, @bfiles );
+my %handles = get_write_handles(@allfiles);
 my @g22    = qw{VK1 VK2 VK3 VK7};
-my $file23 = sprintf("%sg23.csv",  $file2pre);
 my @g23    = qw{VK4 VK5 VK6 VK8};
-my $file24 = sprintf("%sg24.csv",  $file2pre);
-my $file25 = sprintf("%smem0.csv", $file2pre);
-my $file26 = sprintf("%smem1.csv", $file2pre);
-my $file27 = sprintf("%smem2.csv", $file2pre);
-my $file28 = sprintf("%smem3.csv", $file2pre);
-my $file29 = sprintf("%smem4.csv", $file2pre);
-
-my $banka = sprintf("%sbanka.csv", $file2pre);
-my $bankb = sprintf("%sbankb.csv", $file2pre);
-my $bankc = sprintf("%sbankc.csv", $file2pre);
-my $bankd = sprintf("%sbankd.csv", $file2pre);
-my $banke = sprintf("%sbanke.csv", $file2pre);
-my $bankf = sprintf("%sbankf.csv", $file2pre);
-my $bankg = sprintf("%sbankg.csv", $file2pre);
-my $bankh = sprintf("%sbankh.csv", $file2pre);
-my $banki = sprintf("%sbanki.csv", $file2pre);
-my $bankj = sprintf("%sbankj.csv", $file2pre);
-my $bankk = sprintf("%sbankk.csv", $file2pre);
-my $bankl = sprintf("%sbankl.csv", $file2pre);
-my $bankm = sprintf("%sbankm.csv", $file2pre);
-my $bankn = sprintf("%sbankn.csv", $file2pre);
-#my $banko = sprintf("%sbanko.csv", $file2pre);
-
-
-open(my $icgfh1, '>', $file21) or die "Could not open '$file21' $!\n";
-open(my $icgfh2, '>', $file22) or die "Could not open '$file22' $!\n";
-open(my $icgfh3, '>', $file23) or die "Could not open '$file23' $!\n";
-open(my $icgfh4, '>', $file24) or die "Could not open '$file24' $!\n";
-open(my $icgfh5, '>', $file25) or die "Could not open '$file25' $!\n";
-open(my $icgfh6, '>', $file26) or die "Could not open '$file26' $!\n";
-open(my $icgfh7, '>', $file27) or die "Could not open '$file27' $!\n";
-open(my $icgfh8, '>', $file28) or die "Could not open '$file28' $!\n";
-open(my $icgfh9, '>', $file29) or die "Could not open '$file29' $!\n";
-
-open(my $icbfha, '>>', $banka) or die "Could not open '$banka' $!\n";
-open(my $icbfhb, '>', $bankb) or die "Could not open '$bankb' $!\n";
-open(my $icbfhc, '>', $bankc) or die "Could not open '$bankc' $!\n";
-open(my $icbfhd, '>', $bankd) or die "Could not open '$bankd' $!\n";
-open(my $icbfhe, '>', $banke) or die "Could not open '$banke' $!\n";
-open(my $icbfhf, '>', $bankf) or die "Could not open '$bankf' $!\n";
-open(my $icbfhg, '>', $bankg) or die "Could not open '$bankg' $!\n";
-open(my $icbfhh, '>', $bankh) or die "Could not open '$bankh' $!\n";
-open(my $icbfhi, '>', $banki) or die "Could not open '$banki' $!\n";
-open(my $icbfhj, '>', $bankj) or die "Could not open '$bankj' $!\n";
-open(my $icbfhk, '>', $bankk) or die "Could not open '$bankk' $!\n";
-open(my $icbfhl, '>', $bankl) or die "Could not open '$bankl' $!\n";
-open(my $icbfhm, '>', $bankm) or die "Could not open '$bankm' $!\n";
-open(my $icbfhn, '>', $bankn) or die "Could not open '$bankn' $!\n";
-#open(my $icbfho, '>', $banko) or die "Could not open '$banko' $!\n";
-
-
-#open(my $icgfh2, '>', '$file2pre'g22.csv ) or die "Could not open '$file2' $!\n";
-#open(my $icgfh3, '>', $file2) or die "Could not open '$file2' $!\n";
-#open(my $icgfh4, '>', $file2) or die "Could not open '$file2' $!\n";
 #
 my $newhea1 =
   'Group No,Group Name,Name,Sub Name,Repeater Call Sign,Gateway Call Sign,';
@@ -145,10 +98,9 @@ my $newhea3 = 'Position,Latitude,Longitude,UTC Offset';
 my $newhead = sprintf("%s%s%s", $newhea1, $newhea2, $newhea3);
 #
 if ($csv->parse($newhead)) {
-    print $icgfh1 $csv->string, "\n";
-    print $icgfh2 $csv->string, "\n";
-    print $icgfh3 $csv->string, "\n";
-    print $icgfh4 $csv->string, "\n";
+    foreach (@gfiles) {
+        print { $handles{$_} } $csv->string,"\n";    
+    }    
 }
 else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -163,54 +115,18 @@ my $newheb3 =
 my $newhebd = sprintf("%s%s%s", $newheb1, $newheb2, $newheb3);
 #
 if ($csv->parse($newhebd)) {
-    print $icgfh5 $csv->string, "\n";
-    print $icgfh6 $csv->string, "\n";
-    print $icgfh7 $csv->string, "\n";
-    print $icgfh8 $csv->string, "\n";
-    print $icgfh9 $csv->string, "\n";
-#    print $icbfha $csv->string, "\n";
-    print $icbfhb $csv->string, "\n";
-    print $icbfhc $csv->string, "\n";
-    print $icbfhd $csv->string, "\n";
-    print $icbfhe $csv->string, "\n";
-    print $icbfhf $csv->string, "\n";
-    print $icbfhg $csv->string, "\n";
-    print $icbfhh $csv->string, "\n";
-    print $icbfhi $csv->string, "\n";
-    print $icbfhj $csv->string, "\n";
-    print $icbfhk $csv->string, "\n";
-    print $icbfhl $csv->string, "\n";
-    print $icbfhm $csv->string, "\n";
-    print $icbfhn $csv->string, "\n";
-#    print $icbfho $csv->string, "\n";
-    
+    foreach (@mfiles) {
+        print { $handles{$_} } $csv->string,"\n";  
+    }    
+    foreach (@bfiles) {
+        print { $handles{$_} } $csv->string,"\n";  
+    }    
 }
 else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
     $csv->error_diag();
 }
-
-#preload old style example
-
-#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,CQCQCQ,VK2RBV B,VK2RBV G,");##
-#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       E,VK2RBV B,VK2RBV G,");##
-#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       I,VK2RBV B,VK2RBV G,");##
-#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,       U,VK2RBV B,VK2RBV G,");##
-#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,REF003CL,VK2RBV B,VK2RBV G,");##
-#my $newline = sprintf("0,438.7750,DUP-,5.000,,DV,Sydney,OFF,OFF,,OFF,,,,,,DCS014BL,VK2RBV B,VK2RBV G,");##
-#
-$memcntba = 6;
-# $outfh = a
-#$cnt=b
-#        if ($csv->parse($newline)) {
-#            print $outfh $csv->string, "\n";
-#        }
-#        else {
-#            print STDERR "parse () failed on argument: ", $csv->error_input,
-#              "\n";
-#            $csv->error_diag();
-#        }
-
+#exit;
 #read the header line of the main input
 my @fields = @{$csv->getline($vkrdfh)};
 
@@ -311,7 +227,9 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 
 #$newdab2
 #'DV SQL,DV SQL Code,Your Call Sign,RPT1 Call Sign,RPT2 Call Sign' ;
-        my $newdab3 = sprintf(",,%s,%s,%s,", $Urcall, $CallUufld, $CallG);
+        my $newdab3 = sprintf(",,%s,%s,%s", $Urcall, $CallUufld, $CallG);
+#         my $newdab3 = sprintf(",,%s,%s,", $Urcall, $CallUufld);
+        
 
 #,$newdab3,$newdab4
 #
@@ -333,11 +251,12 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 
         my $grpnum = '';
         my $grpnam = '';
-        my $outfh  = $icgfh1;
-        my $oudfh  = $icgfh5;
-        my $oubfh  = $icbfha;
+        my $ougfh  = '';
+        my $oumfh  = '';
+        my $oubfh  = '';
         my $chnum  = 'UNDEF';
         my $bchnum = 'UNDEF';
+        my $ldispname = $dispname ;
 
 
 
@@ -346,118 +265,124 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
         if ($data{'mode'} eq "DV") {
             $grpnum = '3,';
             $grpnam = 'AusDV,';
-            $outfh  = $icgfh1;
-            $oudfh  = $icgfh5;
-            $oubfh  = $icbfha;
+            $ougfh  = 'g3';
+            $oumfh  = 'm0';
+            $oubfh  = 'ba';
             $memcntba += 1;
             $bchnum = $memcntba;
             $memcnt0 += 1;
             $chnum = $memcnt0;
+            $dstlab = 'CQ';
+            $ldispname = sprintf("%s %s",$dispname, $dstlab);
         }
         elsif (grep { $prefix eq $_ } @g22) {
             $grpnum = '22,';
             $grpnam = 'FMAusSE,';
-            $outfh  = $icgfh2;
+            $ougfh  = 'g22';
         }
         elsif (grep { $prefix eq $_ } @g23) {
             $grpnum = '23,';
             $grpnam = 'FMAusNW,';
-            $outfh  = $icgfh3;
+            $ougfh  = 'g23';
         }
         else {
             $grpnum = '24,';
             $grpnam = 'Simplex,';
-            $outfh  = $icgfh4;
+            $ougfh  = 'g24';
         }
         if ($data{'mode'} eq "FM" && ($data{'distsyd'} ne '')) {
             if (($prefix eq 'VK1') || ($prefix eq 'VK2')) {
-                $oudfh = $icgfh6;
-                $memcnt1 += 1;
-                $chnum = $memcnt1;
                 if ($data{'distsyd'} <= '60000') {
-                    $oubfh = $icbfhb;
+                    $oumfh = 'm1';
+                    $memcnt1 += 1;
+                    $chnum = $memcnt1;
+                    $oubfh = 'bb';
                     $memcntbb += 1;
                     $bchnum = $memcntbb;
                 }
                 else { # improve later
                     $dirs = $dirn + 157.5;
                     if (($dirs lt 180) || ($dirs gt 360)) { #west
-                        $oubfh = $icbfhe;
+                        $oubfh = 'be';
                         $memcntbe += 1;
-                        $bchnum = $memcntbe;                    
+                        $bchnum = $memcntbe;  
                     }
                     elsif ($dirs lt 270) {    #North
-                        $oubfh = $icbfhd;
+                    $oumfh = 'm1';
+                    $memcnt1 += 1;
+                    $chnum = $memcnt1;
+                        $oubfh = 'bd';
                         $memcntbd += 1;
                         $bchnum = $memcntbd;                    
                     }
                     elsif ($dirs le 360) {    #South
-                        $oubfh = $icbfhc;
+                        $oubfh = 'bc';
                         $memcntbc += 1;
                         $bchnum = $memcntbc;                    
                     }
                 }
             }
             elsif ($prefix eq 'VK3') {
-                $oudfh = $icgfh7;
-                $memcnt2 += 1;
-                $chnum = $memcnt2;
+                
                 if ($data{'distmel'} <= '80000') {
-                    $oubfh = $icbfhg;
+                    $oubfh = 'bg';
                     $memcntbg += 1;
                     $bchnum = $memcntbg;
+                    $oumfh = 'm2';
+                    $memcnt2 += 1;
+                    $chnum = $memcnt2;
                 }
                 else { # improve later
-                    $oubfh = $icbfhh;
+                    $oubfh = 'bh';
                     $memcntbh += 1;
                     $bchnum = $memcntbh;
                 }
             }
             elsif ($prefix eq 'VK4')  {
-                $oudfh = $icgfh8;
+                $oumfh = 'm3';
                 $memcnt3 += 1;
                 $chnum = $memcnt3;
                 if ($data{'disttmb'} <= '80000') {
-                    $oubfh = $icbfhi;
+                    $oubfh = 'bi';
                     $memcntbi += 1;
                     $bchnum = $memcntbi;
                 }
                 else { # improve later
-                    $oubfh = $icbfhj;
+                    $oubfh = 'bj';
                     $memcntbj += 1;
                     $bchnum = $memcntbj;
                 }
             }
             elsif (($prefix eq 'VK5') || ($prefix eq 'VK8')) {
-                $oudfh = $icbfhk;
+                $oubfh = 'bk';
                 $memcntbk += 1;
-                $chnum = $memcntbk;
+                $bchnum = $memcntbk;
             }
             elsif ($prefix eq 'VK6') {
-                $oudfh = $icbfhl;
+                $oubfh = 'bl';
                 $memcntbl += 1;
-                $chnum = $memcntbl;
+                $bchnum = $memcntbl;
             }
             elsif ($prefix eq 'VK7') {
-                $oudfh = $icbfhm;
+                $oubfh = 'bm';
                 $memcntbm += 1;
-                $chnum = $memcntbm;
+                $bchnum = $memcntbm;
             }
 
         }
         elsif ($data{'mode'} eq "FM" && $prefix eq 'APR') {
-            $oudfh = $icgfh9;
+            $oumfh = 'm4';
             $memcnt4 += 1;
             $chnum = $memcnt4;
-            $oubfh = $icbfhn;
+            $oubfh = 'bn';
             $memcntbn += 1;
             $bchnum = $memcntbn;
         }
         elsif ($data{'mode'} eq "FM" ) {
-            #$oudfh = $icgfh9;
+            #$oumfh = 'm4';
             #$memcnt4 += 1;
             #$chnum = $memcnt4;
-            $oubfh = $icbfhf;
+            $oubfh = 'bf';
             $memcntbf += 1;
             $bchnum = $memcntbf;
         }
@@ -485,20 +410,20 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
         );
 #
         if ($csv->parse($newline)) {
-            print $outfh $csv->string, "\n";
+            print { $handles{$ougfh} } $csv->string, "\n";
         }
         else {
             print STDERR "parse () failed on argument: ", $csv->error_input,
               "\n";
             $csv->error_diag();
         }
-
 # output to *mem.csv
         if ($chnum ne 'UNDEF') {
+        if ($chnum >= '99' ) { print STDERR "chnum already 99 $CallUufld\n " ; }
             my $newlinb =
               sprintf("%s,%s%s%s", $chnum, $newdab1, $newdab2, $newdab3);
             if ($csv->parse($newlinb)) {
-                print $oudfh $csv->string, "\n";
+                print { $handles{$oumfh} } $csv->string, "\n";
             }
             else {
                 print STDERR "parse () failed on argument: ",
@@ -507,15 +432,59 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
             }
         }
         if ($bchnum ne 'UNDEF') {
+        if ($bchnum >= '99' ) { print STDERR "bchnum already 99 $CallUufld\n " ; }
             my $newlinb =
               sprintf("%s,%s%s%s", $bchnum, $newdab1, $newdab2, $newdab3);
             if ($csv->parse($newlinb)) {
-                print $oubfh $csv->string, "\n";
+                print { $handles{$oubfh} } $csv->string, "\n";
             }
             else {
                 print STDERR "parse () failed on argument: ",
                   $csv->error_input, "\n";
                 $csv->error_diag();
+            }
+            if ((( $oumfh eq 'm0') || ( $oubfh eq 'ba' )) && (grep { $prefix6 eq $_ } @FavdstrR1)) {
+                my $dstarinfo = '';
+                foreach $dstarinfo (@FavdstrUR) {
+                    $memcntba += 1;
+                    $bchnum = $memcntba;
+                    $memcnt0 += 1;
+                    $chnum = $memcnt0;
+            #    $cnt += 1;
+           #print $dmrlabtg , "\n" ;
+                    my @dstinfo = split('-',$dstarinfo);
+                    my $dstlab = $dstinfo[0];
+                    my $dstUR = $dstinfo[1];
+                    $ldispname = sprintf("%s %s",$dispname, $dstlab);
+                    $Urcall = sprintf("%8s",$dstUR);
+# 'Name,SKIP,TONE,Repeater Tone,TSQL Frequency,DTCS Code,DTCS Polarity,' ;
+# $tonemode == TONE,Repeater Tone
+                    my $newdab2 = sprintf("%s,%s,%s%s,,,", $ldispname, $Rptskip, $tonemode, $tonesql);
+#$newdab2
+#'DV SQL,DV SQL Code,Your Call Sign,RPT1 Call Sign,RPT2 Call Sign' ;
+                    my $newdab3 = sprintf(",,%s,%s,%s", $Urcall, $CallUufld, $CallG);
+                    my $newlinb =
+              sprintf("%s,%s%s%s", $bchnum, $newdab1, $newdab2, $newdab3);
+              my $newlinm =
+              sprintf("%s,%s%s%s", $chnum, $newdab1, $newdab2, $newdab3);
+#                      print "debug: $newlinb\n";
+                    if ($csv->parse($newlinb)) {
+                        print { $handles{$oubfh} } $csv->string, "\n";
+                    }
+                    else {
+                        print STDERR "parse () failed on argument: ",
+                        $csv->error_input, "\n";
+                        $csv->error_diag();
+                    }
+                    if ($csv->parse($newlinm)) {
+                        print { $handles{$oumfh} } $csv->string, "\n";
+                    }
+                    else {
+                        print STDERR "parse () failed on argument: ",
+                        $csv->error_input, "\n";
+                        $csv->error_diag();
+                    }
+                }
             }
         }
     }
@@ -523,6 +492,17 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 
 # Close the file handles.
 close $vkrdfh;
-close $icgfh1;
-
+foreach (values %handles) {
+  close $_ ;
+}
+#close $icgfh1;
+sub get_write_handles {
+  my @file_names = @_ ;
+  my %file_handles;
+  foreach (@file_names) {
+    open my $fh, '>', sprintf('output/icom%s.csv',$_) or die "cant open $_: $!";
+    $file_handles{$_} = $fh;
+  }
+  return %file_handles;
+}
 exit
