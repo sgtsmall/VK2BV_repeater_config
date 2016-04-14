@@ -1,4 +1,6 @@
 .DS_Store
-work/*
-output/*
+work/
 /.project
+output/**/*.md
+output/**/*.csv
+output/*.icf
