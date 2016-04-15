@@ -2,5 +2,6 @@
 work/
 /.project
 output/**/*.md
+output/**/*.html
 output/**/*.csv
 output/*.icf
