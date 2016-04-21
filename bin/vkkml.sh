@@ -113,10 +113,10 @@ if [ ! -n "$getmarc" ] ; then
 # Get DMR contacts
     curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
     if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check dmr-marc website" ; exit 0 ; fi 
-    grep "^Radio" userdown.dat > userwork.dat
-    grep "^505" userdown.dat >> userwork.dat
-    grep "^530" userdown.dat >> userwork.dat
-    grep "^537" userdown.dat >> userwork.dat
+    grep "^Radio" userdown.dat |sed 's/<br\/>//' > userwork.dat
+    grep "^505" userdown.dat |sed 's/<br\/>//' >> userwork.dat
+    grep "^530" userdown.dat |sed 's/<br\/>//' >> userwork.dat
+    grep "^537" userdown.dat |sed 's/<br\/>//' >> userwork.dat
 #
     cd ..
 # here we leave work and this is the end of the section for getting raw data from web
@@ -207,6 +207,7 @@ if [ -n "$outdmr" ] ;  then
         ./bin/dmrscrape.pl work/userwork.dat output/DMR
         perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/contacts.csv
         perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/cont-n0gsg.csv
+        perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/motocontacts.csv
     fi    
 echo "starting the create of channels, scanlists and zones for DMR"
 

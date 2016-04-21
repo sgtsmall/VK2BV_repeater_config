@@ -16,6 +16,7 @@ The files were prepared using the Tytera MD 380 V1.30 and the CPS utilities soft
 * Build Files to create standard configuration
 
     - contacts.csv - Output from the marc database
+    - cont-n0gsg.csv - Output from the marc database
     - chan.csv - output from the repeater configuration
     - scan.csv - output from the repeater configuration
     - zone.csv - output from the repeater configuration
@@ -34,4 +35,11 @@ The files were prepared using the Tytera MD 380 V1.30 and the CPS utilities soft
      * Your ID and similar fields in General Settings.
      
      You probably want to move some other channels into the VK2RCG zone (e.g. ROT,ROZ, RCG FM).
+     
+     The tools I am using:-
+        - Tyt MD-380 CPS 
+        - ContactManagerV123.exe from n0gsg
+        - CPS Programmer V0-20 from DL5MCC
+        I also originally used 
+        G4EML tools, but I generate all that data now.
 

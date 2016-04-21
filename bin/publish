@@ -1,8 +1,6 @@
 echo "starting publish"
 #DMR
-if [ -f output/contact.csv ] ; then
-    mv output/contact.csv output/DMR/
-fi
+mv    output/README_MD380.md output/DMR/
 
 #Icom
 #rsync Defaults/marinemem400.csv output/icombankx.csv

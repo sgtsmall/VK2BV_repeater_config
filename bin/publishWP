@@ -42,5 +42,6 @@ pansed README_ID_51A
 pansed README_ID_51A_P
 pansed README_ID_5100
 pansed README_MD380
+pansed README_MotoDMR
 
 rm work/*.htmlx

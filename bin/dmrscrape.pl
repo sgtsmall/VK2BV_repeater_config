@@ -27,10 +27,15 @@ open(my $dmrwfh, '<', $filei1) or die "Could not open '$filei1' $!\n";
 #open output file
 my $file2con1 = sprintf("%s/contacts.csv", $file2pre);
 my $file2con2 = sprintf("%s/cont-n0gsg.csv", $file2pre);
+my $file2con3 = sprintf("%s/motocontacts.csv", $file2pre);
 
 open(my $con1fh, '>', $file2con1) or die "Could not open '$file2con1' $!\n";
 open(my $con2fh, '>', $file2con2) or die "Could not open '$file2con2' $!\n";
+open(my $con3fh, '>', $file2con3) or die "Could not open '$file2con3' $!\n";
 
+my $newhea1 = 'Name,radio_id';
+#
+    print $con3fh $newhea1, "\n";
 #process talk Groups
 #
 foreach my $tmpTG (@bothTGlist) {
@@ -51,6 +56,7 @@ foreach my $tmpTG (@bothTGlist) {
     
 }
 
+
 # marc contact list
 my @fieldsrd = @{$csv->getline($dmrwfh)};
 
@@ -59,11 +65,14 @@ while (my $rowrd = $csv->getline($dmrwfh)) {
     @datard{@fieldsrd} = @$rowrd;
     my $fullname = $datard{'Name'};
 	my ($firstname, $lastname) = split (' ', $fullname);
+    my $remarks = sprintf("%.1s", $datard{'Remarks'});
 
     # Print the three items: ID, Callsign, Firstname
-	print $con1fh join (',', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname), "\n";
-    my $nogsgcon = sprintf('"%s","%s %s","Private Call","No"', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname);
+	print $con1fh join (',', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname, $remarks), "\n";
+    my $nogsgcon = sprintf('"%s","%s %s%s","Private Call","No"', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname, $remarks);
     print $con2fh $nogsgcon,"\n";
+    my $motocon = sprintf("%s %s%s,%s", $datard{'Callsign'}, $firstname, $remarks, $datard{'Radio ID'});
+    print $con3fh $motocon,"\n";
     }
 close $con1fh;
 close $con2fh;
