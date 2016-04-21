@@ -4,4 +4,6 @@ work/
 output/**/*.md
 output/**/*.html
 output/**/*.csv
+output/**/*.dat
+output/**/*.rdt
 output/*.icf
