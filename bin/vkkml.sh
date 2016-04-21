@@ -204,7 +204,9 @@ if [ -n "$outdmr" ] ;  then
     if [  -f work/userwork.dat ] ; then
         echo "starting the create of contact.csv for DMR"
         echo "starting dmrscrape.pl"
-        ./bin/dmrscrape.pl work/userwork.dat output/contact.csv 
+        ./bin/dmrscrape.pl work/userwork.dat output/DMR
+        perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/contacts.csv
+        perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/cont-n0gsg.csv
     fi    
 echo "starting the create of channels, scanlists and zones for DMR"
 
