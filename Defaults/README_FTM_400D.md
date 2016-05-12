@@ -76,7 +76,7 @@ The FTM-400D supports 2 VFO's 'A' and 'B' with 2 Tranceivers. However only VFO '
 
 * Bank A memories are sorted:-
     - VK2ROZ 7 (FM with TSQL 91.5)
-    - VK2ROZ 4 no TSQL (Some Yaesu radios allow the specification of FM and C4FM with the memory entry, unfortunately the FTM don't)
+    - VK2ROZ 4 (FM with TSQL 91.5 Some Yaesu radios allow the specification of FM and C4FM with the memory entry, unfortunately the FTM don't)
     - A selection of Favourites
         - VK2ROZ VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
     - Remaining stations within 60km of Sydney
