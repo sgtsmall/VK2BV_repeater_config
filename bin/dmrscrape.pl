@@ -69,9 +69,9 @@ while (my $rowrd = $csv->getline($dmrwfh)) {
 
     # Print the three items: ID, Callsign, Firstname
 	print $con1fh join (',', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname, $remarks), "\n";
-    my $nogsgcon = sprintf('"%s","%s %s%s","Private Call","No"', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname, $remarks);
+    my $nogsgcon = sprintf('"%s","%s %s %s","Private Call","No"', $datard{'Radio ID'}, $datard{'Callsign'}, $firstname, $remarks);
     print $con2fh $nogsgcon,"\n";
-    my $motocon = sprintf("%s %s%s,%s", $datard{'Callsign'}, $firstname, $remarks, $datard{'Radio ID'});
+    my $motocon = sprintf("%s %s %s,%s", $datard{'Callsign'}, $firstname, $remarks, $datard{'Radio ID'});
     print $con3fh $motocon,"\n";
     }
 close $con1fh;

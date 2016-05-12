@@ -15,16 +15,16 @@ use Text::CSV_XS;
 use List::Util qw(first);
 
 my @ScanlistUniq;
-my @dmscantmp;
-my @dmscanlist;
+my @ScanlistDUniq;
+
+my @dmrscanlist;
+my @dmrscancnt;
 my @LocalmarcTG;
 my @dmrtginfo;
 our @Favourdm;
 our @FavmarcTG;
 our @FavsimpTG;
 require My::Favourites;
-#use List::Util qw(first);
-#use Scalar::Util qw(looks_like_number);
 my @fmscanlist = ( 'FAVFM','SYDFM','VK2NFM','VK2SFM','VK2WFM','OTHERFM','MELFM','VK3FM','TMBFM','VK4FM','VK5FM','VK6FM','VK7FM','VK8FM' ) ;
 my @fmscancnt = ( 0,0,0,0,0,0,0,0,0,0,0,0,0,0 );
 my $dmscantmp = '';
@@ -35,7 +35,6 @@ my @CallUuniq;
 my $cnt        = 0;
 my $call       = '';
 my $cntfld     = '';
-my $dmscancnt = 0;
 my $txcontact;
 
 
@@ -113,6 +112,7 @@ while (my $row = $csv->getline($vkrdfh)) {
 #DEBUG      print "Station: $data{'Call U'}, Output: $data{Output}\n";
 #
 #2;num;type;callsign;dmrid;qrg;shift;
+
 # type is a or d
 # dmrid is 000
 #Channel Number,Receive Frequency,Transmit Frequency
@@ -173,12 +173,11 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $txrx = sprintf('%s;%s;%s;%s;',$txcontact1,$rxgroup1,$txcontact2,$rxgroup2);
 #print "DEBUG mode ", $data{'mode'}, "tone ", $data{'Tone'},"\n";
         if ( $data{'mode'} eq "FM" ) {         
-            $tonefld = ($data{'Tone'} eq '-') ? '' : $data{'Tone'};
+            $tonefld = ( $data{'Tone'} eq '-') ? '' : $data{'Tone'};
+            $dmccode = ( $tonefld eq '') ? '' : 'c' ;
         }
         if ( $data{'mode'} eq "DV" ) {
             $dmtype =  'd';
-#           my $dmrlabtg = '1-LOCAL-TG9';
-#
             $dmrlabtg = ( $data{'Tone'} eq '-' ) ? '1-LOCAL-TG9-9' : $data{'Tone'};
 #            print "DEBUG dmrlabtg :", $dmrlabtg, " ",$dmtype, "\n";
             $tonefld = '';
@@ -339,7 +338,6 @@ while (my $row = $csv->getline($vkrdfh)) {
         }
 
 #scanlist1;scanlist2;scanlistfm
-        #my $scanlistfm = sprintf(';;%sFM',$prefix6);
         my $scanlist1 = '';
         my $scanlist2 = '';
         my $scanlistdm = '';
@@ -347,11 +345,25 @@ while (my $row = $csv->getline($vkrdfh)) {
         if ($data{'mode'} eq "DV" ) { 
 #        print "DEBUG Call ", $CallUufld," ", $prefix6,"\n";
             $scanlistdm = sprintf('%sDSL',$prefix6); 
-            if (! grep { $scanlistdm eq $_ } @ScanlistUniq) {
-                push @ScanlistUniq, $scanlistdm;
+            if (! grep { $scanlistdm eq $_ } @ScanlistDUniq) {
+                push @ScanlistDUniq, $scanlistdm;
+                push @dmrscanlist, $scanlistdm;
+                push @dmrscancnt, '0';
             }
-#            print "DEBUG Call ", $CallUufld," ", $prefix6," ",$scanlistdm,"\n";
-            @dmscantmp = $scanlistdm;
+                    my ( $index )= grep { $dmrscanlist[$_] =~ /^$scanlistdm/ } 0..$#dmrscanlist;
+                    my $newdmrscan = sprintf('%s;%s',$dmrscanlist[$index],$longcall);
+                    my $newdmrscancnt = $dmrscancnt[$index] +1 ;
+#       print "DEBUG newdmr ", $newdmrscan," :", $newdmrscancnt,"\n";
+                    if ($newdmrscancnt > 31) {
+                    print "too many entries for $scanlistdm \n";        
+                    } else {
+                    
+                    splice(@dmrscancnt,$index,1,$newdmrscancnt);
+                    splice(@dmrscanlist,$index,1,$newdmrscan);
+                    }
+
+
+# print "DEBUG Call ", $CallUufld," ", $prefix6," ",$scanlistdm," ",@ScanlistDUniq,"\n";
 
             $scanlist1 = $scanlistdm;
             $scanlist2 = '';
@@ -360,9 +372,6 @@ while (my $row = $csv->getline($vkrdfh)) {
                     $scanlist2 = $scanlistdm;
                 }
             $dmscanlist = sprintf('%s;%s;',$scanlist1,$scanlist2) ;
-            $dmscancnt = 0;
-            push @dmscantmp, sprintf('%.16s',$longcall);
-            $dmscancnt += 1;
         }
         my $newdat4 = sprintf("%s", $dmscanlist);
 #
@@ -379,13 +388,8 @@ while (my $row = $csv->getline($vkrdfh)) {
             $csv->error_diag();
         }
         if ($data{'mode'} eq "DV") {
-#            @LocalmarcTG = @FavmarcTG ;
-#            if ($data{'tsign'} eq "SIMPLEX") {
-#               print "DV SIMPLEX\n";
-#                @LocalmarcTG = @FavsimpTG;
-#                }
             if ($data{'tsign'} ne "SIMPLEX") {
-        # insert multiple
+        # insert multiple if it is a repeater
             foreach $dmrlabtg (@FavmarcTG) {
                 $cnt += 1;
            #print $dmrlabtg , "\n" ;
@@ -416,8 +420,8 @@ while (my $row = $csv->getline($vkrdfh)) {
                 $callext1 = $pcallext;
                 $callext2 = '';
 
-                my ( $index ) = grep { $tgnumuniq[$_] =~ /^$dmrtgnum/ } 0..$#tgnumuniq;
-                $txcontact = sprintf('%s',$tgnamuniq[$index]);
+                my ( $tgindex ) = grep { $tgnumuniq[$_] =~ /^$dmrtgnum/ } 0..$#tgnumuniq;
+                $txcontact = sprintf('%s',$tgnamuniq[$tgindex]);
 #            print "DEBUG: index :",$index,":numuniq:",$tgnumuniq[$index],":nam:",$tgnamuniq[$index],":\n";
 
                 $txcontact1 = $txcontact;
@@ -430,10 +434,21 @@ while (my $row = $csv->getline($vkrdfh)) {
                     $scanlist1 = '';
                     $scanlist2 = $scanlistdm;
                 }
-                if (! grep { $scanlistdm eq $_ } @ScanlistUniq) {
-                    push @ScanlistUniq, $scanlistdm;
-                }
-                $dmscanlist = sprintf('%s;%s;',$scanlist1,$scanlist2);
+                    my ( $index )= grep { $dmrscanlist[$_] =~ /^$scanlistdm/ } 0..$#dmrscanlist;
+                    my $newdmrscan = sprintf('%s;%s',$dmrscanlist[$index],$longcall);
+                    my $newdmrscancnt = $dmrscancnt[$index] +1 ;
+#       print "DEBUG newdmr ", $newdmrscan," :", $newdmrscancnt,"\n";
+                    if ($newdmrscancnt > 31) {
+                    print "too many entries for $scanlistdm \n";        
+                    } else {
+                    
+                    splice(@dmrscancnt,$index,1,$newdmrscancnt);
+                    splice(@dmrscanlist,$index,1,$newdmrscan);
+                    }
+
+
+
+$dmscanlist = sprintf('%s;%s;',$scanlist1,$scanlist2);
                 $newdata =
           sprintf("%s;%s;000;%s;%s;", $dmtype,$CallUufld,$data{'Output'},$data{'Offset'});
 
@@ -450,8 +465,6 @@ while (my $row = $csv->getline($vkrdfh)) {
                 $cnt,$newdata, $newdat1, $newdat2, $newdat3, $newdat4);
                 if ($csv->parse($newline)) {
                     print $chanfh $csv->string, "\n";
-                    push @dmscantmp, sprintf('%.16s',$longcall);
-                    $dmscancnt += 1;
                 }
                 else {
                     print STDERR "parse () failed on argument: ", $csv->error_input,"\n";
@@ -460,35 +473,14 @@ while (my $row = $csv->getline($vkrdfh)) {
             
             }
             }
-            $dmscantmp = join(';',@dmscantmp);
-            while ($dmscancnt < 31) {
-                $dmscantmp = sprintf('%s;',$dmscantmp);
-                $dmscancnt += 1;
-            }
-            push @dmscanlist,$dmscantmp;
-#            print $dmscantmp,"\n";
-            
-
         }
     }
 }
-#@ScanlistUniq = sort(@ScanlistUniq);
-#print "@ScanlistUniq\n";
 my $scanheader = 'ScanList;Ch1;Ch2;Ch3;Ch4;Ch5;Ch6;Ch7;Ch8;Ch9;Ch10;Ch11;Ch12;Ch13;Ch14;Ch15;Ch16;Ch17;Ch18;Ch19;Ch20;Ch21;Ch22;Ch23;Ch24;Ch25;Ch26;Ch27;Ch28;Ch29;Ch30;Ch31';
 my $zoneheader = 'ZoneList;Ch1;Ch2;Ch3;Ch4;Ch5;Ch6;Ch7;Ch8;Ch9;Ch10;Ch11;Ch12;Ch13;Ch14;Ch15;Ch16';
 
 
-
-#                    my ( $index )= grep { $fmscanlist[$_] =~ /^$scanlistfm/ } 0..$#fmscanlist;
-#                    my $newfmscan = sprintf('%s;%s',$fmscanlist[$index],$CallUufld);
-#                    my $newfmscancnt = $fmscancnt[$index] +1 ;
-#                    if ($newfmscancnt > 31) {
-#                    print "too many entries for $scanlistfm \n";        
-#                    } else {
-#                    
-#                    splice(@fmscancnt,$index,1,$newfmscancnt);
-#                    splice(@fmscanlist,$index,1,$newfmscan);
-#
+# FM Scanlist
 my $newfmscancnt;
 my $tmpindex = 0 ;
 foreach $newfmscancnt (@fmscancnt) {
@@ -502,6 +494,47 @@ foreach $newfmscancnt (@fmscancnt) {
     }
     $tmpindex += 1;
 }
+#
+# find and hold the DMR simplex for the DMR zones.
+my ( $dsindex )= grep { $dmrscanlist[$_] =~ 'VKSMPLDSL' } 0..$#dmrscanlist;
+my $holddmrsmplind = $dsindex ;
+my $holddmrsmplcnt = $dmrscancnt[$holddmrsmplind];
+my @holddmrsmplscan = split(';',$dmrscanlist[$holddmrsmplind]);
+
+# DMR Scanlist
+my $newdmrscancnt;
+$tmpindex = 0 ;
+foreach $newdmrscancnt (@dmrscancnt) {
+    my @tmpdmrsl = split(';',$dmrscanlist[$tmpindex]);
+    if ($tmpdmrsl[0] ne 'VKSMPLDSL'){
+    
+       my $extracnt = 31 - $holddmrsmplcnt + 1 ;
+#        print "DEBUG: A zonesuffix ",$extracnt," zone0 ",$zoneline, "\n";
+    
+       if ( $newdmrscancnt < $extracnt )  {
+#        print "DEBUG: inside vksmpl ";
+        my $vksimplind = 0;
+        while ($vksimplind < $holddmrsmplcnt){
+            my $getscanlist = $dmrscanlist[$tmpindex] ;
+            $vksimplind += 1;
+            my $newscanlistx = sprintf('%s;%s',$getscanlist,$holddmrsmplscan[$vksimplind]);
+            splice (@dmrscanlist, $tmpindex,1,$newscanlistx);    
+            $newdmrscancnt += 1;    
+        }
+    }
+    }
+
+
+    while ($newdmrscancnt < 31) {
+        my $addsemicolon = sprintf('%s;',$dmrscanlist[$tmpindex]);
+ #       print "adding $addsemicolon \n to $newfmscancnt\n";
+        splice(@dmrscanlist,$tmpindex,1,$addsemicolon);
+        $newdmrscancnt +=1;
+    }
+    $tmpindex += 1;
+}
+
+
 
 $tmpindex = 0;
 my $tmpcnt = $tmpindex ;
@@ -511,7 +544,7 @@ my $tmpfmx;
 my $zonename;
 my $zoneline;
 my @zonelist ;
-my @bothlist = (@dmscanlist,@fmscanlist) ;
+my @bothlist = (@dmrscanlist,@fmscanlist) ;
 foreach $scanent (@bothlist){
 #    print "scanent $scanent\n" ;
     my @tmpfment = split(';',$scanent);
@@ -537,6 +570,22 @@ foreach $scanent (@bothlist){
         }
         $tmpindex += 1;
     }
+    #append the vksmpl stuff to dmr entries about here
+#    my $zonesuffix = substr $zonename, -1; 
+#    if ( $zonesuffix eq 'D') {
+#       my $extracnt = 17 - $holddmrsmplcnt + 1 ;
+#        print "DEBUG: A zonesuffix ",$extracnt," zone0 ",$zoneline, "\n";
+    
+#       if (( $tmpcnt < $extracnt ) && ($zonename ne 'VKSMPLD')) {
+#        print "DEBUG: inside vksmpl ";
+#        my $vksimplind = 0;
+#        while ($vksimplind < $holddmrsmplcnt){
+#            $vksimplind += 1;
+#            $zoneline = sprintf('%s;%s',$zoneline,$holddmrsmplscan[$vksimplind]);
+#            $tmpcnt += 1;    
+#        }
+#    }
+#    }
     while ($tmpcnt < 17) {
         $zoneline = sprintf('%s;',$zoneline);
         $tmpcnt += 1;
@@ -558,11 +607,6 @@ print $scanfh $scanheader,"\n";
 foreach $scanent (@bothlist) {
     print $scanfh $scanent,"\n";
 }
-#my $newfmscan;
-#foreach $newfmscan (@fmscanlist) {
-#    print $scanfh $newfmscan,"\n";
-#}
-#}
 
 # Close the file handles.
 close $zonefh;
