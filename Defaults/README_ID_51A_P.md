@@ -13,7 +13,7 @@ The files were prepared using the RT-Systems FT-2D software with Data extracted 
     - 51P_AUS_VK2BV.icf - most recent icom file
 
 * Build Files to create standard configuration
-    - icomDStarplus.zip - Output from the repeater configuration
+    - IcomDStarplus.zip - Output from the repeater configuration
         - icombankX.csv, icomgX.csv, icommemX.csv
 
 ### Radio Load Steps

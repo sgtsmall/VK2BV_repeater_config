@@ -91,7 +91,7 @@ while ((my $row = $csv->getline($vkrdfh))
 # This radio can handle DV-C4FM and FM on 2 and 70
     if (   ($data{'mode'} ~~ ["DV", "FM"])
         && ($data{'band'} ~~ ["7", "2", "C4FM"])
-        && ($data{'absoff'} < '10.0')
+#        && ($data{'absoff'} < '10.0')
         )
     {
 #    $cnt +=1;

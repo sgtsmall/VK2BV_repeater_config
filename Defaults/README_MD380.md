@@ -38,8 +38,8 @@ The files were prepared using the Tytera MD 380 V1.30 and the CPS utilities soft
      
      The tools I am using:-
         - Tyt MD-380 CPS 
-        - ContactManagerV123.exe from n0gsg
-        - CPS Programmer V0-20 from DL5MCC
+        - ContactManagerV132.exe from n0gsg
+        - CPS Programmer V0-25 from DL5MCC
         I also originally used 
         G4EML tools, but I generate all that data now.
 

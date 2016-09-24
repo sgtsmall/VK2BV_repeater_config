@@ -2,6 +2,8 @@
 #
 # Creates a data file(s) for the MD-380
 #
+#UHF 400-480MHz
+#
 # This radio uses Zones, Channels and scan lists.
 #
 # The data is organised into Zones and Scanlists
@@ -25,8 +27,8 @@ our @Favourdm;
 our @FavmarcTG;
 our @FavsimpTG;
 require My::Favourites;
-my @fmscanlist = ( 'FAVFM','SYDFM','VK2NFM','VK2SFM','VK2WFM','OTHERFM','MELFM','VK3FM','TMBFM','VK4FM','VK5FM','VK6FM','VK7FM','VK8FM' ) ;
-my @fmscancnt = ( 0,0,0,0,0,0,0,0,0,0,0,0,0,0 );
+my @fmscanlist = ( 'FAVFM','SYDFM','VK2NFM','VK2SFM','VK2WFM','OTHERFM','WICENFM','MELFM','VK3FM','TMBFM','VK4FM','VK5FM','VK6FM','VK7FM','VK8FM','ESOFM' ) ;
+my @fmscancnt = ( 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 );
 my $dmscantmp = '';
 my $index = '';
 my $csv = Text::CSV_XS->new({sep_char => ','});
@@ -51,9 +53,11 @@ open(my $vkrdfh, '<', $file1) or die "Could not open '$file1' $!\n";
 my $file2chan = sprintf("%s/chan.csv", $file2pre);
 my $file2scan = sprintf("%s/scan.csv", $file2pre);
 my $file2zone = sprintf("%s/zone.csv", $file2pre);
+my $file2rxgr = sprintf("%s/rxgroup.csv", $file2pre);
 open(my $chanfh, '>', $file2chan) or die "Could not open '$file2chan' $!\n";
 open(my $scanfh, '>', $file2scan) or die "Could not open '$file2scan' $!\n";
 open(my $zonefh, '>', $file2zone) or die "Could not open '$file2zone' $!\n";
+open(my $rxgroupfh, '>', $file2rxgr) or die "Could not open '$file2rxgr' $!\n";
 
 
 #
@@ -98,26 +102,28 @@ my @fields = @{$csv->getline($vkrdfh)};
 
 my @rows;
 while (my $row = $csv->getline($vkrdfh)) {
-    my %data;
-    @data{@fields} = @$row;    # This is a hash slice
+    my %datard;
+    @datard{@fields} = @$row;    # This is a hash slice
 
-    push @rows, \%data;
+    push @rows, \%datard;
 
-# This radio can handle DV-C4FM and FM on 2 and 70
-    if (   ($data{'mode'} ~~ ["DV", "FM"])
-        && ($data{'band'} ~~ ["7", "DMR"]))
+# This radio can handle DV-DMR and FM on 70
+    if (   ($datard{'mode'} ~~ ["DV", "FM"])
+        && ($datard{'band'} ~~ ["7", "DMR"])
+        && (($datard{'Input'} < '480.0') && ($datard{'Input'} > '400.0'))
+        && (($datard{'Output'} < '480.0') && ($datard{'Output'} > '400.0')))
     {
         $cnt += 1;
  #       if ($cnt > 30) { exit };
-#DEBUG      print "Station: $data{'Call U'}, Output: $data{Output}\n";
+#DEBUG      print "Station: $datard{'Call U'}, Output: $datard{Output}\n";
 #
 #2;num;type;callsign;dmrid;qrg;shift;
 
 # type is a or d
 # dmrid is 000
 #Channel Number,Receive Frequency,Transmit Frequency
-        my $prefix6  = sprintf("%.6s", $data{'Call U'});
-        my $prefix3  = sprintf("%.3s", $data{'Call U'});
+        my $prefix6  = sprintf("%.6s", $datard{'Call U'});
+        my $prefix3  = sprintf("%.3s", $datard{'Call U'});
         my $suffix4  = substr $prefix6, -4 ;
         my $dmtype =  'a' ;
         my $dmccode = '' ;
@@ -132,7 +138,7 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $lenpcallext = '';
         my $templen = '';
         
-        my $CallUufld = sprintf("%s", $data{'Call U'});
+        my $CallUufld = sprintf("%s", $datard{'Call U'});
         if (grep { $CallUufld eq $_ } @CallUuniq) {
 
 #        print " DEBUG $CallUufld not unique\n";
@@ -153,15 +159,15 @@ while (my $row = $csv->getline($vkrdfh)) {
 #longcall; callext1;callext2;txcontact1;rxgroup1;txcontact2;rxgroup2;pwr;
 
 
-#        my $prefix6  = sprintf("%.6s", $data{'Call U'});
+#        my $prefix6  = sprintf("%.6s", $datard{'Call U'});
 #        my $suffix4  = substr $prefix6, 2, 4 ;
 #longcall;callext1;callext2;txcontact1;rxgroup1;txcontact2;rxgroup2;pwr;
 
 #
 # for FM longcall for DMR 2 fields
 #
-#        my $newdat3 = sprintf(",,%s,,,,,,", $data{'txpower'});
-        my $longcall = sprintf("%s %s %s", $CallUufld, $data{'mNemonic'},$data{'Location'});
+#        my $newdat3 = sprintf(",,%s,,,,,,", $datard{'txpower'});
+        my $longcall = sprintf("%s %s %s", $CallUufld, $datard{'mNemonic'},$datard{'Location'});
         my $callext1 = '' ;
         my $callext2 = '' ;
         my $txcontact1 = '';
@@ -171,14 +177,14 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $pwr = 'H';
         my $callext = sprintf('%s;%s;',$callext1,$callext2);
         my $txrx = sprintf('%s;%s;%s;%s;',$txcontact1,$rxgroup1,$txcontact2,$rxgroup2);
-#print "DEBUG mode ", $data{'mode'}, "tone ", $data{'Tone'},"\n";
-        if ( $data{'mode'} eq "FM" ) {         
-            $tonefld = ( $data{'Tone'} eq '-') ? '' : $data{'Tone'};
+#print "DEBUG mode ", $datard{'mode'}, "tone ", $datard{'Tone'},"\n";
+        if ( $datard{'mode'} eq "FM" ) {         
+            $tonefld = ( $datard{'Tone'} eq '-') ? '' : $datard{'Tone'};
             $dmccode = ( $tonefld eq '') ? '' : 'c' ;
         }
-        if ( $data{'mode'} eq "DV" ) {
+        if ( $datard{'mode'} eq "DV" ) {
             $dmtype =  'd';
-            $dmrlabtg = ( $data{'Tone'} eq '-' ) ? '1-LOCAL-TG9-9' : $data{'Tone'};
+            $dmrlabtg = ( $datard{'Tone'} eq '-' ) ? '1-LOCAL-TG9-9' : $datard{'Tone'};
 #            print "DEBUG dmrlabtg :", $dmrlabtg, " ",$dmtype, "\n";
             $tonefld = '';
             @dmrtginfo = split('-',$dmrlabtg);
@@ -232,20 +238,20 @@ while (my $row = $csv->getline($vkrdfh)) {
 #2ROTFM   ;         ;        ;          ;        ;          ;        ;High;;;VK2RCG
 #2RCG Tech TG100;Tech TG100; ;None      ;None    ;          ;        ;High;#
         my $newdata =
-          sprintf("%s;%s;000;%s;%s;", $dmtype,$CallUufld,$data{'Output'},$data{'Offset'});
+          sprintf("%s;%s;000;%s;%s;", $dmtype,$CallUufld,$datard{'Output'},$datard{'Offset'});
 
 #        print "DEBUG ", $newdat1, " ", $newdata, "\n";
 
-        my $dirn   = sprintf("%s", $data{'dirkat'});
+        my $dirn   = sprintf("%s", $datard{'dirkat'});
         my $dirs = '';
-        my $distcsyd = sprintf("%s", $data{'distsyd'});
+        my $distcsyd = sprintf("%s", $datard{'distsyd'});
 #
         my $scanlistfm = '';
 ####
-  if ($data{'mode'} eq "FM" && ($data{'distsyd'} ne '')) {
+  if ($datard{'mode'} eq "FM" && ($datard{'distsyd'} ne '')) {
             if (($prefix3 eq 'VK1') || ($prefix3 eq 'VK2')) {
                 
-                if ($data{'distsyd'} <= '55000') {
+                if ($datard{'distsyd'} <= '55000') {
                     $scanlistfm = 'SYDFM';
                 }
                 else { # improve later
@@ -262,7 +268,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                 }
             }
             elsif ($prefix3 eq 'VK3') {
-                if ($data{'distmel'} <= '80000') {
+                if ($datard{'distmel'} <= '80000') {
                     $scanlistfm = 'MELFM';
                 }
                 else { # improve later
@@ -270,7 +276,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                 }
             }
             elsif ($prefix3 eq 'VK4')  {
-                if ($data{'disttmb'} <= '80000') {
+                if ($datard{'disttmb'} <= '80000') {
                     $scanlistfm = 'TMBFM';
                 }
                 else { # improve later
@@ -289,20 +295,27 @@ while (my $row = $csv->getline($vkrdfh)) {
             elsif ($prefix3 eq 'VK8') {
                 $scanlistfm = 'VK8FM';
             }
+            
 
         }
-        elsif ($data{'mode'} eq "FM" && $prefix3 eq 'APR') {
+        elsif (($datard{'mode'} eq "FM") && (($prefix3 eq 'WIC') || ($prefix3 eq 'VRA'))) {
+                $scanlistfm = 'WICENFM';
+        }
+        elsif (($datard{'mode'} eq "FM") && ($prefix3 eq 'ESO')) {
+                $scanlistfm = 'ESOFM';
+        }
+        elsif ($datard{'mode'} eq "FM" && $prefix3 eq 'APR') {
             $scanlistfm = 'APRSFM';
         }
-        elsif ($data{'mode'} eq "FM" ) {
+        elsif ($datard{'mode'} eq "FM" ) {
             $scanlistfm = 'OTHERFM';
         }
-        if ($data{'mode'} eq "FM" ) {
+        if ($datard{'mode'} eq "FM" ) {
                     my ( $index )= grep { $fmscanlist[$_] =~ /^$scanlistfm/ } 0..$#fmscanlist;
                     my $newfmscan = sprintf('%s;%s',$fmscanlist[$index],$CallUufld);
                     my $newfmscancnt = $fmscancnt[$index] +1 ;
                     if ($newfmscancnt > 31) {
-                    print "too many entries for $scanlistfm \n";        
+                    print "too many entries for A $scanlistfm $CallUufld\n";        
                     } else {
                     
                     splice(@fmscancnt,$index,1,$newfmscancnt);
@@ -311,8 +324,8 @@ while (my $row = $csv->getline($vkrdfh)) {
         }
 
 
-        my $newloc = sprintf("%s;%s;", $data{'latitude'},
-            $data{'longditude'});
+        my $newloc = sprintf("%s;%s;", $datard{'latitude'},
+            $datard{'longditude'});
 
 #net;city;cnty;country;ctry;lat;lon;';
 # add fandling of lat lon later
@@ -321,13 +334,13 @@ while (my $row = $csv->getline($vkrdfh)) {
 #longcall;callext1;callext2;txcontact1;rxgroup1;txcontact2;rxgroup2;pwr;
         my $newdat3 = sprintf("%.16s;%s%s%s;", $longcall, $callext, $txrx, $pwr);
 
-        if (($data{'mode'} eq "FM" ) && (grep { $data{'Call'} eq $_ } @Favourdm)) {
+        if (($datard{'mode'} eq "FM" ) && (grep { $datard{'Call'} eq $_ } @Favourdm)) {
             $scanlistfm = 'FAVFM';
             my ( $index )= grep { $fmscanlist[$_] =~ /^$scanlistfm/ } 0..$#fmscanlist;
             my $newfmscan = sprintf('%s;%s',$fmscanlist[$index],$CallUufld);
             my $newfmscancnt = $fmscancnt[$index] +1 ;
             if ($newfmscancnt > 31) {
-                print "too many entries for $scanlistfm \n";        
+                print "too many entries for B $scanlistfm \n";        
             } else {    
                 splice(@fmscancnt,$index,1,$newfmscancnt);
                 splice(@fmscanlist,$index,1,$newfmscan);
@@ -342,9 +355,9 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $scanlist2 = '';
         my $scanlistdm = '';
         my $dmscanlist = sprintf(';;%s',$scanlistfm);
-        if ($data{'mode'} eq "DV" ) { 
+        if ($datard{'mode'} eq "DV" ) { 
 #        print "DEBUG Call ", $CallUufld," ", $prefix6,"\n";
-            $scanlistdm = sprintf('%sDSL',$prefix6); 
+            $scanlistdm = sprintf('%sDMRSL',$prefix6); 
             if (! grep { $scanlistdm eq $_ } @ScanlistDUniq) {
                 push @ScanlistDUniq, $scanlistdm;
                 push @dmrscanlist, $scanlistdm;
@@ -355,7 +368,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                     my $newdmrscancnt = $dmrscancnt[$index] +1 ;
 #       print "DEBUG newdmr ", $newdmrscan," :", $newdmrscancnt,"\n";
                     if ($newdmrscancnt > 31) {
-                    print "too many entries for $scanlistdm \n";        
+                    print "too many entries for C $scanlistdm \n";        
                     } else {
                     
                     splice(@dmrscancnt,$index,1,$newdmrscancnt);
@@ -387,8 +400,8 @@ while (my $row = $csv->getline($vkrdfh)) {
               "\n";
             $csv->error_diag();
         }
-        if ($data{'mode'} eq "DV") {
-            if ($data{'tsign'} ne "SIMPLEX") {
+        if ($datard{'mode'} eq "DV") {
+            if ($datard{'tsign'} ne "SIMPLEX") {
         # insert multiple if it is a repeater
             foreach $dmrlabtg (@FavmarcTG) {
                 $cnt += 1;
@@ -413,7 +426,7 @@ while (my $row = $csv->getline($vkrdfh)) {
 
                 
                 $CallUufld = $dmrlab ;
-                $scanlistdm = sprintf('%sDSL',$prefix6);
+                $scanlistdm = sprintf('%sDMRSL',$prefix6);
                 my $newdat1 = sprintf("%s;%s;%s;",$dmccode, $dmmix, $tonefld);
                 $scanlist1 = $scanlistdm;
                 $scanlist2 = '';
@@ -439,7 +452,7 @@ while (my $row = $csv->getline($vkrdfh)) {
                     my $newdmrscancnt = $dmrscancnt[$index] +1 ;
 #       print "DEBUG newdmr ", $newdmrscan," :", $newdmrscancnt,"\n";
                     if ($newdmrscancnt > 31) {
-                    print "too many entries for $scanlistdm \n";        
+                    print "too many entries for D $scanlistdm \n";        
                     } else {
                     
                     splice(@dmrscancnt,$index,1,$newdmrscancnt);
@@ -450,7 +463,7 @@ while (my $row = $csv->getline($vkrdfh)) {
 
 $dmscanlist = sprintf('%s;%s;',$scanlist1,$scanlist2);
                 $newdata =
-          sprintf("%s;%s;000;%s;%s;", $dmtype,$CallUufld,$data{'Output'},$data{'Offset'});
+          sprintf("%s;%s;000;%s;%s;", $dmtype,$CallUufld,$datard{'Output'},$datard{'Offset'});
 
 #scanlist1;scanlist2;scanlistfm
                 $newdat4 = sprintf("%s", $dmscanlist);
@@ -476,8 +489,6 @@ $dmscanlist = sprintf('%s;%s;',$scanlist1,$scanlist2);
         }
     }
 }
-my $scanheader = 'ScanList;Ch1;Ch2;Ch3;Ch4;Ch5;Ch6;Ch7;Ch8;Ch9;Ch10;Ch11;Ch12;Ch13;Ch14;Ch15;Ch16;Ch17;Ch18;Ch19;Ch20;Ch21;Ch22;Ch23;Ch24;Ch25;Ch26;Ch27;Ch28;Ch29;Ch30;Ch31';
-my $zoneheader = 'ZoneList;Ch1;Ch2;Ch3;Ch4;Ch5;Ch6;Ch7;Ch8;Ch9;Ch10;Ch11;Ch12;Ch13;Ch14;Ch15;Ch16';
 
 
 # FM Scanlist
@@ -496,7 +507,7 @@ foreach $newfmscancnt (@fmscancnt) {
 }
 #
 # find and hold the DMR simplex for the DMR zones.
-my ( $dsindex )= grep { $dmrscanlist[$_] =~ 'VKSMPLDSL' } 0..$#dmrscanlist;
+my ( $dsindex )= grep { $dmrscanlist[$_] =~ 'VKSMPLDMRSL' } 0..$#dmrscanlist;
 my $holddmrsmplind = $dsindex ;
 my $holddmrsmplcnt = $dmrscancnt[$holddmrsmplind];
 my @holddmrsmplscan = split(';',$dmrscanlist[$holddmrsmplind]);
@@ -506,7 +517,7 @@ my $newdmrscancnt;
 $tmpindex = 0 ;
 foreach $newdmrscancnt (@dmrscancnt) {
     my @tmpdmrsl = split(';',$dmrscanlist[$tmpindex]);
-    if ($tmpdmrsl[0] ne 'VKSMPLDSL'){
+    if ($tmpdmrsl[0] ne 'VKSMPLDMRSL'){
     
        my $extracnt = 31 - $holddmrsmplcnt + 1 ;
 #        print "DEBUG: A zonesuffix ",$extracnt," zone0 ",$zoneline, "\n";
@@ -544,6 +555,8 @@ my $tmpfmx;
 my $zonename;
 my $zoneline;
 my @zonelist ;
+my $rxgline;
+my @rxgrouplist;
 my @bothlist = (@dmrscanlist,@fmscanlist) ;
 foreach $scanent (@bothlist){
 #    print "scanent $scanent\n" ;
@@ -553,7 +566,7 @@ foreach $scanent (@bothlist){
         if ($tmpcnt < 17 ) {
             if ( $tmpcnt == 0 ) {
                 if ( $tmpindex == 0 ) {
-                    $zonename = sprintf('%.7s',$tmpfmx) ;
+                    $zonename = sprintf('%.9s',$tmpfmx) ;
                     $zoneline = sprintf('%s',$zonename);
                     $tmpcnt += 1;
                 }
@@ -570,22 +583,7 @@ foreach $scanent (@bothlist){
         }
         $tmpindex += 1;
     }
-    #append the vksmpl stuff to dmr entries about here
-#    my $zonesuffix = substr $zonename, -1; 
-#    if ( $zonesuffix eq 'D') {
-#       my $extracnt = 17 - $holddmrsmplcnt + 1 ;
-#        print "DEBUG: A zonesuffix ",$extracnt," zone0 ",$zoneline, "\n";
-    
-#       if (( $tmpcnt < $extracnt ) && ($zonename ne 'VKSMPLD')) {
-#        print "DEBUG: inside vksmpl ";
-#        my $vksimplind = 0;
-#        while ($vksimplind < $holddmrsmplcnt){
-#            $vksimplind += 1;
-#            $zoneline = sprintf('%s;%s',$zoneline,$holddmrsmplscan[$vksimplind]);
-#            $tmpcnt += 1;    
-#        }
-#    }
-#    }
+
     while ($tmpcnt < 17) {
         $zoneline = sprintf('%s;',$zoneline);
         $tmpcnt += 1;
@@ -596,6 +594,40 @@ foreach $scanent (@bothlist){
     push @zonelist,$zoneline;
 }
     
+    
+#output the files
+#Generate the headers
+#my $scanheader = 'ScanList;Ch1;Ch2;Ch3;Ch4;Ch5;Ch6;Ch7;Ch8;Ch9;Ch10;Ch11;Ch12;Ch13;Ch14;Ch15;Ch16;Ch17;Ch18;Ch19;Ch20;Ch21;Ch22;Ch23;Ch24;Ch25;Ch26;Ch27;Ch28;Ch29;Ch30;Ch31';
+#my $zoneheader = 'ZoneList;Ch1;Ch2;Ch3;Ch4;Ch5;Ch6;Ch7;Ch8;Ch9;Ch10;Ch11;Ch12;Ch13;Ch14;Ch15;Ch16';
+
+
+
+$tmpcnt = 1;
+my $rxgheader = 'RxGroups';
+my $scanheader = 'ScanList';
+my $zoneheader = 'ZoneList';
+while ($tmpcnt < 65 ){
+    $rxgheader = sprintf('%s;tg%i',$rxgheader,$tmpcnt);
+    if ($tmpcnt < 32){
+        $scanheader = sprintf('%s;Ch%i',$scanheader,$tmpcnt);
+        if ($tmpcnt < 17) {
+            $zoneheader = sprintf('%s;Ch%i',$zoneheader,$tmpcnt);
+        }
+    }
+    $tmpcnt += 1;
+}
+       print "DEBUG: scanheader ",$scanheader, "\n";
+       print "DEBUG: zoneheader ",$zoneheader, "\n";
+       print "DEBUG: rxgheader ",$rxgheader, "\n";
+
+
+print $rxgroupfh $rxgheader,"\n";
+
+foreach $rxgline (@rxgrouplist) {
+    print $rxgroupfh $rxgline,"\n";
+}
+
+
 print $zonefh $zoneheader,"\n";
 
 foreach $zoneline (@zonelist) {

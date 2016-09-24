@@ -18,7 +18,7 @@ The files were prepared using the Icom CS-5100 software V 1.2 with Data extracte
 
 
 * Build Files to create standard configuration
-    - icomDStarplus.zip - Output from the repeater configuration
+    - IcomDStarplus.zip - Output from the repeater configuration
         - icombankX.csv, icom6X.csv, icommemX.csv
 
 ### Radio Load Steps

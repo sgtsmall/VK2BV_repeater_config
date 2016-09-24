@@ -14,7 +14,8 @@ The files were prepared using the RT-Systems software with Data extracted from t
 * Configuration
     - VKBVREP.FTM400 - most recent RT Systems file
     - CLNFTM400D.dat - generated SD card file.
-    - MEMFTM400D.dat - generated SD card file of Memories only.
+
+    - VKBVREP.FTM400D - most recent Yaesu ADMS7 file
 
 > This file was built for a FTM-400DR-AUS running main 2.1.
 > Loading an incorrect CLN file can brick radios. (This also applies to firmware upgrades)
@@ -38,7 +39,6 @@ The files were prepared using the RT-Systems software with Data extracted from t
     - Insert and format an SD card in the radio.
     - Use the 1. BACKUP> Write to SD> 
         - select ALL > OK to create CLNFTM400D.dat
-        - select MEMORY > OK to create MEMFTM400D.dat
 This will create the folders and a clone and memories file.
 
 * Copy the new configuration to the card
@@ -46,17 +46,10 @@ This will create the folders and a clone and memories file.
     - The standard format on the radio sometimes sets a read only flag on files and directories.
     - Right click/Properties on the xxx Folder on the drive just mounted and unset the Read-Only Attribute
     - The file just created will be x:\\BACKUP\\CLONE\\CLNFTM400D.dat copy or rename this file as a backup and move the provided CLNFTM400D.dat to the same folder.
-    - copy the provided MEMFTM400D.dat to the MEMORY folder
     - Eject the card and load to radio.
     - Load the clone 
     - Use the 1. BACKUP> Read from SD> 
         - select ALL > OK to read CLNFTM400D.dat
-        or
-        - select MEMORY > OK to read MEMFTM400D.dat
-
-> Your mileage may vary here, I have had difficulty just loading memories. 
-> I suspect it is because I have loaded a clone but not set up the radio (Callsigns). 
-> So as long as your radio is setup then loading memories seeks ok.
 
 * Configure your call sign and APRS
     - If you load this CLN file it should prompt for a callsign on reboot.
@@ -75,10 +68,10 @@ The FTM-400D supports 2 VFO's 'A' and 'B' with 2 Tranceivers. However only VFO '
 * In most sections entries are sorted by Callsign
 
 * Bank A memories are sorted:-
-    - VK2ROZ 7 (FM with TSQL 91.5)
-    - VK2ROZ 4 (FM with TSQL 91.5 Some Yaesu radios allow the specification of FM and C4FM with the memory entry, unfortunately the FTM don't)
+    - VK2RBV 7 (FM with TSQL 91.5)
+    - VK2RBV 4 (FM with TSQL 91.5 Some Yaesu radios allow the specification of FM and C4FM with the memory entry, unfortunately the FTM don't)
     - A selection of Favourites
-        - VK2ROZ VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
+        - VK2RBV VK2ROT VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
     - Remaining stations within 60km of Sydney
     - VK2 South Coast
     - VK2 North Coast
@@ -94,7 +87,7 @@ The FTM-400D supports 2 VFO's 'A' and 'B' with 2 Tranceivers. However only VFO '
 * Bank B memories are sorted:-
     - APRS AU
     - A selection of Favourites
-        - VK2ROZ VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
+        - VK2RBV VK2ROT VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
     - VK5
     - VK6
     - VK7

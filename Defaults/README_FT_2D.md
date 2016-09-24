@@ -66,9 +66,9 @@ The FT-2D supports 2 VFO's 'A' and 'B' with 2 Tranceivers. Both VFO's can proces
 * In most sections entries are sorted by Callsign
 
 * The FT-2DR supports 24 "Banks", a Memory can be assigned to multiple Banks.
-    - For example the VK2ROZ entries are assigned to banks 'Fav', 'SYDCBD' and 'C4FM'.
+    - For example the VK2RBV entries are assigned to banks 'Fav', 'SYDCBD' and 'C4FM'.
         - Fav A selection of Favourites
-            - VK2ROZ VK2ROT VK2RBV VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
+            - VK2RBV VK2ROT VK2RCG VK2RCF VK2RWI VK2RMP VK2RBM
         - SYDCBD Stations within 60km of Sydney
         - VK2 South Coast
         - VK2 North Coast

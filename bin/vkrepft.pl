@@ -68,7 +68,7 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
     @datard{@fieldsrd} = @$rowrd;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2", "7", "C4FM"])
-        && ((($datard{'Input'} < '450.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
+        && ((($datard{'Input'} < '470.0') && ($datard{'Input'} > '400.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
      ) {
          $sortseq = lsortseq(@$rowrd);
          print $vksofh $sortseq, join(',', @$rowrd), "\n";
@@ -80,7 +80,7 @@ while (my $rowrd = $csv->getline($vksdfh)) {
     @datard{@fieldssd} = @$rowrd;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2", "7", "C4FM"])
-        && ($datard{'Output'} < '450.0'))
+        && ($datard{'Output'} < '470.0'))
     {
          $sortseq = lsortseq(@$rowrd);
          print $vksofh $sortseq, join(',', @$rowrd), "\n";

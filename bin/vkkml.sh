@@ -71,7 +71,8 @@ if [ ! -d work ] ; then mkdir work ; fi
 if [ ! -d output ] ; then mkdir output ; fi
 if [ ! -d output/WP ] ; then mkdir output/WP ; fi
 if [ ! -n "$getweb" ] ; then 
-    rm work/*
+    echo "starting get data from WIA"
+    rm -r work/*
 # rm output/*
     cd work
 # Get the WIA data
@@ -80,10 +81,15 @@ if [ ! -n "$getweb" ] ; then
 #exit
     if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" ; echo "Please check wia website" ; exit 0 ; fi 
     tr -d '\r' < repdown.dat > repdowntext.dat
+    echo "Generated work/repdownext.dat remove CR"
     gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
+    echo "Generated work/wiarepdiri.csv headings"
+    cp wiarepdiri.csv wiarepdir.csv
     gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
+    echo "Generated work/wiarepdir.csv local edit"
 #
 # Get VK2MD file 
+    echo "starting get data from vk2md"
     curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
     unzip vkrep2google.zip
 # now get rid of most of the file 
@@ -109,6 +115,7 @@ if [ ! -n "$getweb" ] ; then
 fi    
 #    
 if [ ! -n "$getmarc" ] ; then 
+    echo "starting get data from MARC"
     cd work
 # Get DMR contacts
     curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
@@ -210,9 +217,17 @@ if [ -n "$outdmr" ] ;  then
         perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/motocontacts.csv
     fi    
 echo "starting the create of channels, scanlists and zones for DMR"
-
+echo "reading work/sortvkrepdir.csv output/vkrepstd.csv writing work/dmtemp.csv"
    ./bin/vkrepdm.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dmtemp.csv
-   ./bin/vkrepmd380.pl work/dmtemp.csv output/DMR
+   
+echo " sorting dmtemp.csv svkrepdmmerge"
+# This is callsign then input frequency
+  cat work/dmtemp.csv | body sort --field-separator=',' --key=1,1 > work/svkrepdmmerge.csv
+#
+   
+   
+echo "reading work/svkrepdmmerge.csv writing to DMR "
+    ./bin/vkrepmd380u.pl work/svkrepdmmerge.csv output/DMR
 echo "files are converted to dos for windows programs"   
     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/chan.csv
     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/scan.csv

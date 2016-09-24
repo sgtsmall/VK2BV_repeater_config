@@ -1,0 +1,623 @@
+Radio ID,Callsign,Name,Nickname,City,State,Country,Remarks
+5051001,VK1VMA,Mathew Meins,,Canberra,ACT,Australia,Portable
+5051002,VK1VMA,Mathew Meins,,Canberra,ACT,Australia,Mobile
+5051003,VK1VMA,Mathew Meins,,Canberra,ACT,Australia,Control
+5051004,VK1ANK,Neil Kefford,Neil,Canberra,Australian Capital T,Australia,Portable
+5051005,VK1NRU,Sue Hendrickson,SUE,Canberra,Australian Capital Territory,Australia,DMR
+5051006,VK1ZDJ,Doug Jackson,,Canberra,Australian Capital Territory,Australia,DMR
+5051007,VK1MDP,Murray De Plater,,Canberra,Australian Capital Territory,Australia,DMR
+5051008,VK1AAB,Stephen Whittingham,,Kambah,Australian Capital Territory,Australia,DMR
+5052001,VK2YLO,John Reeves,,Goonellabah,New South Wales,Australia,Mobile
+5052002,VK2LK,Matt Robert,,Sydney,New South Wales,Australia,
+5052003,VK2YVA,Mal Alexander,,Campbelltown,New South Wales,Australia,
+5052004,VK2LJ,John Harper,,Sydney,New South Wales,Australia,Portable
+5052005,VK2XHP,Huw Price,,Sydney,New South Wales,Australia,
+5052006,VK2ND,Ian Hawkins,,Sydney,New South Wales,Australia,
+5052007,VK2VRB,Belayet Robin,,Lakemba,New South Wales,Australia,
+5052008,VK2LWB,John Buckley,,Sydney,New South Wales,Australia,
+5052009,VK2HDX,Paul Duffy,,Rosebery,New South Wales,Australia,
+5052010,VK2CU,Justin Lavery,,Sydney,New South Wales,Australia,
+5052011,VK2MCA,Steve Diekman,,Sydney,New South Wales,Australia,Portable
+5052012,VK2NIJ,Joel Graham,,Sydney,New South Wales,Australia,Portable
+5052013,VK2XYI,Scott Richardson,,Faulconbridge,New South Wales,Australia,Portable
+5052014,VK2LK,Matt Robert,,Sydney,New South Wales,Australia,Mobile
+5052015,VK2PWR,Adam Anderson,,Glenfield,New South Wales,Australia,Mobile
+5052016,VK2ZB,Mark Regan,,Lawrence,New South Wales,Australia,Portable
+5052017,VK2PR,Peter Richardson,,Sydney,New South Wales,Australia,Mobile
+5052018,VK2UMC,Michael Cheng,,Sydney,New South Wales,Australia,Portable
+5052019,VK2PR,Peter Richardson,,Sydney,New South Wales,Australia,Portable
+5052020,VK2RM,Andy Mitchell,,Sydney,New South Wales,Australia,Mobile
+5052021,VK2PHA,Nigel David Wright,,Sydney/Castle Hill,New South Wales,Australia,Mobile
+5052022,VK2HHS,Henrik Stenstrom,,Sydney,New South Wales,Australia,Other
+5052023,VK2HLT,Tim Logan,,Wagga Wagga,New South Wales,Australia,Mobile
+5052024,VK2SM,Greg James,,Wyoming,New South Wales,Australia,Portable
+5052025,VK2LJ,John Harper,,Sydney,New South Wales,Australia,Mobile
+5052026,VK2XYI,Scott Richardson,,Faulconbridge,New South Wales,Australia,Portable
+5052027,VK2ERG,Earnest Ganuelas,,Kellyville,New South Wales,Australia,DMR
+5052028,VK2UMC,Michael Cheng,,Sydney,New South Wales,Australia,Portable
+5052029,VK2LJ,John Harper,,Sydney,New South Wales,Australia,Other
+5052030,VK2IP,John Meekings,,Penrith,New South Wales,Australia,Portable
+5052031,VK2MED,Joshua Gum,,Sydney,New South Wales,Australia,Portable
+5052032,VK2MD,Steve Ireland,,Mount Kuring-gai,New South Wales,Australia,Mobile
+5052033,VK2APA,Paul Anslow,,Blacktown,New South Wales,Australia,Portable
+5052034,VK2BOS,Steven Heimann,,Sydney,New South Wales,Australia,Mobile
+5052035,VK2ABG,Peter Drew,,Sydney,New South Wales,Australia,Portable
+5052036,VK2DAG,Matt Hetherington,,Ourimbah,New South Wales,Australia,Portable
+5052037,VK2RE,Mark Henry Swiss,,sydney,New South Wales,Australia,Portable
+5052038,VK2AAH,Richard Cerveny,,Sydney,New South Wales,Australia,Portable
+5052039,VK2ERG,Earnest Ganuelas,,Kellyville,New South Wales,Australia,DMR
+5052040,VK2NIJ,Joel Graham,,Sydney,New South Wales,Australia,Portable
+5052041,VK2MCA,Steve Diekman,,Dural,New South Wales,Australia,Portable
+5052042,VK2KO,Glenn Dunstan,,Sydney,New South Wales,Australia,Portable
+5052043,VK2JCC,Colin Christie,,Pennant Hills 2120 N,New South Wales,Australia,Portable
+5052044,VK2DAY,Rod Gamble,,Cherrybrook,New South Wales,Australia,Portable
+5052045,VK2OG,Paul Armitage,,Sydney,New South Wales,Australia,Mobile
+5052046,VK2YV,Robert Bellamy,,Sydney,New South Wales,Australia,Portable
+5052047,VK2DAG,Matt Hetherington,,Ourimbah,New South Wales,Australia,Portable
+5052048,VK2MBA,Bernie Orbell,,Roselands,New South Wales,Australia,Mobile
+5052049,VK2DAY,Rod Gamble,,Cherrybrook,New South Wales,Australia,Mobile
+5052050,VK2CU,Justin Lavery,,Sydney,New South Wales,Australia,Other
+5052051,VK2VE,Eric Van De Weyer,,Sydney,New South Wales,Australia,Portable
+5052052,VK2HRX, Compton Allen,,Ryde,New South Wales,Australia,Portable
+5052053,VK2OOO,Richard Tolhurst,,CONCORD WEST,New South Wales,Australia,Portable
+5052054,VK2FVSW,Stuart Walker,,Sydney,New South Wales,Australia,Portable
+5052055,VK2CAA,Issy Millhouse,,Lalor Park,New South Wales,Australia,Portable
+5052056,VK2GUY,Jason Thomas,,Cambridge Park,New South Wales,Australia,Mobile
+5052057,VK2XE,Greg Lee,,North Manly,New South Wales,Australia,Mobile
+5052058,VK2FECK,Stewart Gardiner,,Sydney,New South Wales,Australia,Mobile
+5052059,VK2VB,Harry Callaghan,,Rooty Hill,New South Wales,Australia,Portable
+5052060,VK2XRL,Ryan Lovett,,Sydney,New South Wales,Australia,Portable
+5052061,VK2CZ,David Burger,,Sydney,New South Wales,Australia,Portable
+5052062,VK2ABS,Benjamin Spiteri,,Sydney,New South Wales,Australia,Portable
+5052063,VK2UAL,Richard Fox,,Willoughby East,New South Wales,Australia,Mobile
+5052064,VK2TUR,Ian Grimston,,Willoughby East,New South Wales,Australia,Mobile
+5052065,VK2UR,Scott Richardson,,Blue Mountains,New South Wales,Australia,Mobile
+5052066,VK2UR,Scott Richardson,,Blue Mountains,New South Wales,Australia,Portable
+5052067,VK2XRL,Ryan Lovett,,Sydney,New South Wales,Australia,Portable
+5052068,VK2THZ,Simon Brown,,Sydney,New South Wales,Australia,Mobile
+5052069,VK2OE,Rowan Dollar,,Sydney,New South Wales,Australia,Portable
+5052070,VK2KEV,Kevin Purves,,Yarramundi,New South Wales,Australia,Mobile
+5052071,VK2DOC,Benno Koch,,Lisarow,New South Wales,Australia,Portable
+5052072,VK2BOS,Steven Heimann,,Sydney,New South Wales,Australia,Portable
+5052073,VK2PM,Shannon Reneman,,Sydney,New South Wales,Australia,Mobile
+5052074,VK2ARS,Steve Sharp,,Terranora,New South Wales,Australia,Portable
+5052075,VK2ZRN,Dennis Jurisinec,,Sydney,New South Wales,Australia,Mobile
+5052076,VK2TIM,James Cutler,,Sydney,New South Wales,Australia,Portable
+5052077,VK2EHQ,Peter Boskos,,Kulnura,New South Wales,Australia,Mobile
+5052078,VK2ERG,Earnest Ganuelas,,Kellyville,New South Wales,Australia,DMR
+5052079,VK2HRT,Paul Crossan,,sydney,New South Wales,Australia,Mobile
+5052080,VK2JDW,Lewis Griffiths,,lake haven,New South Wales,Australia,Mobile
+5052081,VK2AH,Brian Farrar,,BULLI,New South Wales,Australia,Mobile
+5052082,VK2PSF,Alex Stewart,,Sydney,New South Wales,Australia,Portable
+5052083,VK2BWF,Brian W Farrar,,BULLI,New South Wales,Australia,Other
+5052084,VK2EVB,Peter Mcadam,,Coffs Harbour,New South Wales,Australia,Portable
+5052085,VK2EVB,Peter Mcadam,,Coffs Harbour,New South Wales,Australia,Portable
+5052086,VK2FRO,Ben Johnson,,Erskineville,New South Wales,Australia,Mobile
+5052087,VK2ARO,Danny Hayes,,South Granville,New South Wales,Australia,Mobile
+5052088,VK2ARO,Danny Hayes,,South Granville,New South Wales,Australia,Other
+5052089,VK2HRT,Paul Crossan,,Sydney,New South Wales,Australia,Mobile
+5052090,VK2XLJ,Doug Johnson,,Orange,New South Wales,Australia,Portable
+5052091,VK2JIW,Jason Watson,,Doonside,New South Wales,Australia,Other
+5052092,VK2DCR,Douglas Rosser,,Enmore,New South Wales,Australia,Portable
+5052093,VK2EY,Doug Rosser,,ENMORE,New South Wales,Australia,Mobile
+5052094,VK2YHX,Spero Davias,,Newcastle,New South Wales,Australia,Portable
+5052095,VK2KFJ,Steven Blanche,,Sydney,New South Wales,Australia,Portable
+5052096,VK2JDS,David Scott,,Bathurst,New South Wales,Australia,Mobile
+5052097,VK2MCA,Steve Diekman,,Sydney,New South Wales,Australia,Other
+5052098,VK2VIC,Anthony Vickers,,Sydney,New South Wales,Australia,Portable
+5052099,VK2LCD,Damien Joshua,,Springwood,New South Wales,Australia,Portable
+5052100,VK2LCD,Damien Joshua,,Springwood,New South Wales,Australia,Mobile
+5052101,VK2THZ,Simon Brown,,Sydney,New South Wales,Australia,Portable
+5052102,VK2GD,Sergio Sanchez,,SYDNEY,New South Wales,Australia,Portable
+5052103,VK2DAY,Rod Gamble,,Cherrybrook,New South Wales,Australia,Portable
+5052104,VK2XDL, Damien Lucas,,Newcastle,New South Wales,Australia,Mobile
+5052105,VK2RF,Raffy Shammay,,SYDNEY,New South Wales,Australia,Non-DMR
+5052106,VK2DI,Mark Salmon,,SYDNEY,New South Wales,Australia,Portable
+5052107,VK2VE,Eric Van De Weyer,,Denistone (Sydney),New South Wales,Australia,Portable
+5052108,VK2NQ,Briam Conner,,Sydney,New South Wales,Australia,Portable
+5052109,VK2EM,Bruce Ekert,,Forster,New South Wales,Australia,Other
+5052110,VK2HK,Ian Tulley,,Wyee,New South Wales,Australia,Portable
+5052111,VK2IPT,Ian Tulley,,WYEE,New South Wales,Australia,Portable
+5052112,VK2LAX,Jarman Rod,Jarman,Gorokan,New South Wales,Australia,Portable
+5052113,VK2KXN,Nicholas Mclean,Nicholas,Sydney,New South Wales,Australia,Portable
+5052114,VK2GG,Dan Joyce,Dan,Morisset,New South Wales,Australia,
+5052115,VK2PSF,Alexander Stewart,Alex,Sydney,New South Wales,Australia,
+5052116,VK2GX,Paul Howarth,Paul,Sydney,New South Wales,Australia,
+5052117,VK2WIH,Hunter Wicen,Wicen,Lake Macquarie,New South Wales,Australia,
+5052118,VK2GP,Colin Garven,Colin,Toronto,New South Wales,Australia,
+5052119,VK2YF,Frederick Jacob Messemaker,Fred,Toronto,New South Wales,Australia,
+5052120,VK2GG,Dan Joyce,Dan,Dora Creek,New South Wales,Australia,
+5052121,VK2MK,Jim Hendrickson,,Narrawallee,New South Wales,Australia,DMR
+5052122,VK2KXX,Colin Garven,Colin,Toronto,New South Wales,Australia,DMR
+5052123,VK2PSW,Peter Wohlhagen,,Albury,New South Wales,Australia,DMR
+5052124,VK2EDM,Ed Martin,Echo Delta Mike,SYDNEY,New South Wales,Australia,DMR
+5052125,VK2EMM,Ed Martin,Echo Mike Mike,SYDNEY,New South Wales,Australia,DMR
+5052126,VK2FI,Nigel Maddock,,Menai,New South Wales,Australia,DMR
+5052127,VK2RB,Robert Van Woudenberg,Rob,Revesby,New South Wales,Australia,Other
+5052128,VK2TY,Carlos Peco,Carlos,Sydney,New South Wales,Australia,DMR
+5052129,VK2MUF,Rob De Bondt,,Stanhope Gardens,New South Wales,Australia,DMR
+5052130,VK2GWO,Foord Ian,,Albury,New South Wales,Australia,DMR
+5052131,VK2NGL,Angela Bell,,Sydney,New South Wales,Australia,DMR
+5052132,VK2XDW,Dennis Williams,,Newcastle,New South Wales,Australia,DMR
+5052133,VK2FEB,Jan Van Ekris,,Leppington,New South Wales,Australia,DMR
+5052134,VK2VAN,Irene Van Ekris,,Leppington,New South Wales,Australia,DMR
+5052135,VK2FVAX,Alastair Boyanich,Al,Sydney,New South Wales,Australia,DMR
+5052136,VK2CRH,Carl Harford,Carl,Sydney,New South Wales,Australia,DMR
+5052137,VK2FEB,Jan Van Ekris,,Leppington,New South Wales,Australia,DMR
+5052138,VK2HR,Robert Smith,Rob,Queanbeyan,New South Wales,Australia,DMR
+5052139,VK2BMA,Max Bettini,,Sydney,New South Wales,Australia,DMR
+5052140,VK2NPW,Peter Westerhof,,Tarago,New South Wales,Australia,Other
+5052141,VK2MPJ,Peter Bye,,Wagga Wagga,New South Wales,Australia,DMR
+5052142,VK2XY,Peter Boskos,,Kulnura,New South Wales,Australia,DMR
+5052143,VK2XRH,Robert Halliday,Rob,Camperdown,New South Wales,Australia,DMR
+5052144,VK2DMR,Dr Mckay,Makka,Sydney,New South Wales,Australia,DMR
+5052145,VK2JXA,Andrew Avery,,Sydney,New South Wales,Australia,DMR
+5052146,VK2HCR,Andrew R Wright,,Sydney,New South Wales,Australia,DMR
+5052147,VK2FAEW,James Zaiter,,Sydney,New South Wales,Australia,Other
+5052148,VK2HL,Hh Leykam,,Dee Why,New South Wales,Australia,CCS7
+5052149,VK2JN,James Nelson,,Sydney,New South Wales,Australia,Other
+5052150,VK2JN,James Nelson,,Sydney,New South Wales,Australia,Other
+5052151,VK2BSY,Dave Oliver,Dave,Wollongong,New South Wales,Australia,DMR
+5053001,VK3XDE,Paul Engler,,Melbourne,Victoria,Australia,Mobile
+5053002,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Portable
+5053003,VK3AJ,Peter Chaplin,,Upwey,Victoria,Australia,Mobile
+5053004,VK3AJ,Peter Chaplin,,Upwey,Victoria,Australia,Portable
+5053005,VK3SAJ,Scout Radio,,Box Hill,Victoria,Australia,Scouting Public Service
+5053006,VK3SAJ,Scout Radio,,Box Hill,Victoria,Australia,Scouting Public Service
+5053007,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Mobile
+5053008,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Portable
+5053009,VK3VCS,Dave Shields,,Geelong,Victoria,Australia,Portable
+5053010,VK3HSV,Max Deane,,Melbourne,Victoria,Australia,DMR
+5053011,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Loaner-Demo
+5053012,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Loaner-Demo
+5053013,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Loaner-Demo
+5053014,VK3TE,Peter Brennan,,Karingal,Victoria,Australia,Loaner-Demo
+5053015,VK3JCH,Craig Hewett,,Devon Medows,Victoria,Australia,Mobile
+5053016,VK3JCH,Craig Hewett,,Devon Medows,Victoria,Australia,Portable
+5053017,VK3HSV,Max Deane,,Melbourne,Victoria,Australia,DMR
+5053018,VK3TYG,Chris Lumsden,,Shepparton,Victoria,Australia,Portable
+5053019,VK3LN,Karl Harbeck,,Romsey,Victoria,Australia,Mobile
+5053020,VK3JPH,Phill Harden,,Ringwood,Victoria,Australia,Portable
+5053021,VK3TKK,Peter Watkins,,Sunbury,Victoria,Australia,Portable
+5053022,VK3IC,John Nunan,,Sunbury,Victoria,Australia,Portable
+5053023,VK3CDN,Craig Norris,,Melbourne,Victoria,Australia,Portable
+5053024,VK3ASC,Mark Withers,,Wodonga,Victoria,Australia,
+5053025,VK3XPT,Perrin Trease,,Melbourne,Victoria,Australia,Portable 1
+5053026,VK3XPT,Perrin Trease,,Melbourne,Victoria,Australia,Portable 2
+5053027,VK3GSG,Gary Greer,,Gisborne,Victoria,Australia,Portable
+5053028,VK3JED,Antony Langton,,Bendigo,Victoria,Australia,Portable #1
+5053029,VK3JED,Antony Langton,,Bendigo,Victoria,Australia,Portable #2
+5053030,VK3SMC,Simon Mcclure,,Melbourne,Victoria,Australia,Mobile
+5053031,VK3BLS,Benjamin Spiteri,,Doreen,Victoria,Australia,Portable
+5053032,VK3XO,Adam Teichelman,,Melbourne,Victoria,Australia,Portable
+5053033,VE3XEM,Simon Templar,,Healesville,Victoria,Australia,
+5053034,VE3XEM,Simon Templar,,Healesville,Victoria,Australia,
+5053035,VK3WH,Andrew Whalen,,Melbourne,Victoria,Australia,Mobile
+5053036,VK3LJB,Jan Brennan,,Karingal, Melbourne,Victoria,Australia,Mobile
+5053037,VK3LJB,Jan Brennan,,Karingal, Melbourne,Victoria,Australia,Portable
+5053038,VK3TWO,Heath Walder,,Gisborne (Melbourne),Victoria,Australia,Other
+5053039,VK3FRC,Frankston & Mornington Peninsula R,,Frankston,Victoria,Australia,Club Fleet
+5053040,VK3VRX,Daniel Wallbank,,Melton,Victoria,Australia,Mobile
+5053041,VK3TEN,Gordon Pearce,,Melbourne,Victoria,Australia,Portable
+5053042,VK3JMA,Mark Aitken,,Hampton Park,Victoria,Australia,Portable
+5053043,VK3BA,Nik Presser,,Geelong,Victoria,Australia,Mobile
+5053044,VK3NY,Craig Carson,,Wantirna South,Victoria,Australia,Portable
+5053045,VK3AN,Anthony Nance,,Melbourne,Victoria,Australia,Mobile
+5053046,VK3ECH,Rob George,,Echuca,Victoria,Australia,Mobile
+5053047,VK3TAS,Steven Baszak,,Frankston,Victoria,Australia,Mobile
+5053048,VK3ND,Greg Smith,,Melbourne ,Victoria,Australia,Mobile
+5053049,VK3ER,Emc Rc,,Burwood,Victoria,Australia,Club Fleet
+5053050,VK3YZP,Peter Weeks,,Alexandra,Victoria,Australia,Mobile
+5053051,VK3YZP,Peter Weeks,,Alexandra,Victoria,Australia,Other
+5053052,VK3GL,Graeme Lewis,,Berwick,Victoria,Australia,Mobile
+5053053,VK3GL,Lewis Graeme,,Berwick,Victoria,Australia,Mobile
+5053054,VK3MHY,Michael Hyderiotis,,Heatherton,Victoria,Australia,Portable
+5053055,VK3AS, Andrew Norman Squires,,Horsham,Victoria,Australia,Portable
+5053056,VK3EME,Mark Harris,,White Hills,Victoria,Australia,Mobile
+5053057,VK3BMX,Terry Churcher,,Seaford,Victoria,Australia,Mobile
+5053058,VK3FD,Ian Jasper,,Doncaster,Victoria,Australia,Portable
+5053059,VK3TVZ,John - Paul Holbrook,,Melbourne,Victoria,Australia,Portable
+5053060,VK3RM,Randall Mcdonald,,melbourne,Victoria,Australia,Portable
+5053061,VK3XKA,Andy Salmon,,Lysterfield,Victoria,Australia,Portable
+5053062,VK3KAY,Doug Kay,,dimboola,Victoria,Australia,Portable
+5053063,VK3KAY,Douglas Kay,,Dimboola,Victoria,Australia,Portable
+5053064,VK3TOM,Thomas Steadman,,traralgon,Victoria,Australia,Mobile
+5053065,VK3YAP,Arnoldus Put,,Bairnsdale,Victoria,Australia,Non-DMR
+5053066,VK3TQ,Willmott Peter,,Melbourne,Victoria,Australia,Mobile
+5053067,VK3BDG,Barry Giblett,,Rosedale,Victoria,Australia,Non-DMR
+5053068,VK3BDG,Barry Giblett,,Melbourne,Victoria,Australia,Portable
+5053069,VK3DET,Ernie Turner,,Enfield,Victoria,Australia,Portable
+5053070,VK3IJB,Ian Baker,IanB,Cowes,Victoria,Australia,
+5053071,VK3EHG,Hirotaka Horiuchi,Hiro,CLayton,Victoria,Australia,
+5053072,VK3SMC,Simon Mcclure,Simon,Knoxfield,Victoria,Australia,DMR
+5053073,VK3GP,David B Timms,,Horsham,Victoria,Australia,DMR
+5053074,VK3XBC,Duncan Maughan,,Melbourne ,Victoria,Australia,DMR
+5053075,VK3EY,Rob Puise,,Shepparton,Victoria,Australia,DMR
+5054001,VK4JV,Andrew Chapman,,Toowoomba,Queensland,Australia,DMR
+5054002,VK4JV,Andrew Chapman,,Toowoomba,Queensland,Australia,DMR
+5054003,VK4JV,Andrew Chapman,,Toowoomba,Queensland,Australia,DMR
+5054004,VK4JV,Andrew Chapman,,Toowoomba,Queensland,Australia,DMR
+5054005,VK4AB,Robert Bryce,,Ipswich,Queensland,Australia,Mobile
+5054006,VK4ZUK,Danny Ainsworth,,Brisbane,Queensland,Australia,Portable
+5054007,VK4AB,Robert Bryce,,Ipswich,Queensland,Australia,Portable
+5054008,VK4CJE,Chris Edge,,Gold Coast,Queensland,Australia,Portable
+5054009,VK4DMH,Mark Hanrahan,,Gold Coast,Queensland,Australia,Portable
+5054010,VK2DQ,Ron Bertrand,,Oxford,Queensland,Australia,Mobile
+5054011,VK4UT,Ben Weber,,Gold Coast,Queensland,Australia,Mobile
+5054012,VK4WIG,Gold Coast Arc,,Gold Coast,Queensland,Australia,Mobile
+5054013,VK4GQ,Paul Benner,,Gold Coast,Queensland,Australia,Mobile
+5054014,VK4KZK,Mark Kyle,,Burpengary,Queensland,Australia,Mobile
+5054015,VK4BJT,John Ostergaard,,Gold Coast,Queensland,Australia,Portable
+5054016,VK4BIT,Neil Hardisty,,Brisbane,Queensland,Australia,Mobile
+5054017,VK4VT,John Stevens,,Brisbane,Queensland,Australia,Mobile
+5054018,VK4BT,Peter Stevens,,Brisbane,Queensland,Australia,Portable
+5054019,VK4KI,Danny Grainger,,Brisbane,Queensland,Australia,Mobile
+5054020,VK4PC,Peter Chapman,,Toowoomba,Queensland,Australia,Mobile
+5054021,VK4ZUK,Danny Ainsworth,,Brisbane,Queensland,Australia,Portable #2
+5054022,VK4TUB,Kery Mckenzie,,Townsville,Queensland,Australia,Loaner
+5054023,VK4MTV,Dale Sharp,,Brisbane,Queensland,Australia,Portable
+5054024,VK4CCH,James Mulholand,,Brisbane,Queensland,Australia,Portable
+5054025,VK4PY,Paul Young,,Gold Coast,Queensland,Australia,PORTABLE
+5054026,VK4EB,Alan Billington,,Toowoomba,Queensland,Australia,DMR
+5054027,VK4EB,Alan Billington,,Toowoomba,Queensland,Australia,DMR
+5054028,VK4HVU,Adrian Eurell,,Brisbane,Queensland,Australia,Portable
+5054029,VK4GO,Art Van Esch,,Atherton,Queensland,Australia,Mobile
+5054030,VK4GO,Art Van Esch,,Atherton,Queensland,Australia,Mobile
+5054031,VK4TVT,Vicktor Tsaoucis,,Brisbane,Queensland,Australia,Mobile
+5054032,VK4GO,Art Van Esch,,Atherton,Queensland,Australia,Portable
+5054033,VK4TIM,Tim Moore,,Brisbane,Queensland,Australia,Portable
+5054034,VK4BS,Howard Small,,Kuranda,Queensland,Australia,
+5054035,VK4TUX,Adrian Fewster,,Laidley Heights,Queensland,Australia,Portable
+5054036,VK4FSD,Peter John Richens,,Brisbane,Queensland,Australia,Loaner
+5054037,VK4WA, Kevin Dalton,,Ipswich,Queensland,Australia,Portable
+5054038,VK4DU,Glenn Dunstan,,Cairns,Queensland,Australia,Portable
+5054039,VK4DU,Glenn Dunstan,,Cairns,Queensland,Australia,Mobile
+5054040,VK4CDB,Craig Burnett,,Brisbane,Queensland,Australia,Mobile
+5054041,VK4FABB,Brandon Gordon,,Biloela,Queensland,Australia,Portable
+5054042,VK4EE,David Mclean,,Biloela,Queensland,Australia,Portable
+5054043,VK4MKB,Kevin Blanch,,Biloela,Queensland,Australia,Portable
+5054044,VK4HVU,Adrian Eurell,,brisbane,Queensland,Australia,Loaner
+5054045,VK4NSP,Shaun Stapleton,,Rockhampton,Queensland,Australia,Other
+5054046,VK4JLM,Joshua Mcadam,,Carina,Queensland,Australia,Portable
+5054047,VK4APN,Paul Newman,,Cairns,Queensland,Australia,Portable
+5054048,VK4ASV,Stephen Pescod,,Joyner 4500,Queensland,Australia,Portable
+5054049,VK4MKY,Neil Balkin,,KOUMALA,Queensland,Australia,Portable
+5054050,VK4EA,Peter Schrader,,Brisbane,Queensland,Australia,Portable
+5054051,VK4SC,Stew Mcphee,,brisbane,Queensland,Australia,Portable
+5054052,VK4HG,Iva Smits,,Brisbane,Queensland,Australia,Mobile
+5054053,VK4NBL,Fauth Peter,,Woodford,Queensland,Australia,Mobile
+5054054,VK4BQ,Waratah Swinton,,Mackay,Queensland,Australia,Mobile
+5054055,VK4XH,Peter Richardi,,Mackay,Queensland,Australia,Mobile
+5054056,VK4YKI,Helmut Giger,,Redlynch,Queensland,Australia,Portable
+5054057,VK4VIP,Brandon Gordon,,Biloela,Queensland,Australia,Portable
+5054058,VK4SM,Steven Wood,,blackwater,Queensland,Australia,Mobile
+5054059,VK4TFB,Richard Barham,,Cairns,Queensland,Australia,Portable
+5054060,VK4TFB,Richard Barham,,Cairns,Queensland,Australia,Portable
+5054061,VK4PM,Maclaurin Peter,,Eagle Heights,Queensland,Australia,Portable
+5054062,VK4VBU,Gregory Weir,,Emerald,Queensland,Australia,Portable
+5054063,VK4AA,Samantha Scafe,,Cairns,Queensland,Australia,Non-DMR
+5054064,VK4AA,Sam Scafe,,Cairns,Queensland,Australia,Mobile
+5054065,VK4BQ,Waratah Swinton,,Slade Point,Queensland,Australia,Mobile
+5054066,VK4FP,Lloyd Baker,Lloyd,Rasmussen,Queensland,Australia,Mobile
+5054067,VK4APM,Aidan Mountford,aidan,gold coast,Queensland,Australia,Non-DMR
+5054068,VK4NBL,Peter Fauth,Ozipete1,Woodford,Queensland,Australia,
+5054069,VK4BDJ,David Munn,Jerry,Townsville,Queensland,Australia,
+5054070,VK4UN,David Wilson,,Tewantin,Queensland,Australia,Portable
+5054071,VK4CUZ,Gary Crothers,,Mackay,Queensland,Australia,DMR
+5054072,VK4RM,Roy Moore,roy,sarina,Queensland,Australia,DMR
+5054073,VK4SM,Steven Wood,,queensland ,Queensland,Australia,Other
+5054074,VK4TDI,David Ingram,,Brisbane,Queensland,Australia,DMR
+5054075,VK4VP,Gordon Taylor,,Buderim,Queensland,Australia,DMR
+5054076,VK4UN,David Wilson,David,Tewantin,Queensland,Australia,DMR
+5054077,VK4HC,Neil Balkin,,Koumala,Queensland,Australia,CCS7
+5054078,VK4RT,Bob Rigg,,Coomera,Queensland,Australia,CCS7
+5054079,VK4NB,Neil Balkin,,Koumala,Queensland,Australia,CCS7
+5054080,VK4HAM,Wayne Odonnell,,Mackay,Queensland,Australia,CCS7
+5054081,VK4HOG,Tony (Raffi) Tomlinson,Raffi,Sarina,Queensland,Australia,CCS7
+5054082,VK4FD,Dave Jones,,Rubyvale,Queensland,Australia,CCS7
+5054083,VK4YOK,Peter Nolan,,Gold Coast,Queensland,Australia,DMR
+5054084,VK4NRL,Richard (Rick) Lammas,Rick,Dalby ,Queensland,Australia,DMR
+5054085,VK4UQ,David Kavanagh,,Toowoomba,Queensland,Australia,DMR
+5054086,VK4ZJE,Wj Mondientz,John,Toowoomba,Queensland,Australia,DMR
+5054087,VK4DAK,David Kavanagh,,Toowoomba,Queensland,Australia,DMR
+5054088,VK4AGJ,Gj Borger,Greg,Toowoomba,Queensland,Australia,DMR
+5054089,AX4TUX,Adrian Richard Fewster,,Big Banana,Queensland,Australia,DMR
+5054090,VK4YA,James R Wisdom,,Capalaba,Queensland,Australia,DMR
+5054091,VK4PLY,Paul Beet,,Thornlands,Queensland,Australia,DMR
+5055001,VK5FBFB,Brendan Blackman,,adelaide,South Australia,Australia,Portable
+5055002,VK5UZ,Udo Zott,,Adelaide ,South Australia,Australia,Mobile
+5055003,VK5RZ,Stephan Forka,,Seaford Rise,South Australia,Australia,Other
+5055004,VK5FBFB,Brendan Blackman,,Adelaide,South Australia,Australia,Other
+5055005,VK5HK,Herb Kunzelmann,,Adelaide,South Australia,Australia,Mobile
+5055006,VK5JP,Peter Jung,,Adelaide,South Australia,Australia,Mobile
+5055007,VK5MAR,Mcgettrick Martin,,Adelaide,South Australia,Australia,Loaner
+5055008,VK5ZKR,Rod Kessell,,Adelaide,South Australia,Australia,Mobile
+5055009,VK5ZEA,Michael Carey,,PORT LINCOLN,South Australia,Australia,Portable
+5055010,VK5PBZ,Alan Waye,,tumby bay,South Australia,Australia,Mobile
+5056001,VK6ZTN,Joe Nevin,,Perth,Western Australia,Australia,Portable
+5056002,VK6TWO,Heath ,,Perth,Western Australia,Australia,Mobile
+5056003,VK6ZTN,Joe Nevin,,Perth,Western Australia,Australia,Portable #2
+5056004,VK6ZFG,Igor Iskra,,Perth,Western Australia,Australia,Portable
+5056005,VK6GHZ,Duncan Watkinson,,Perth,Western Australia,Australia,Portable
+5056006,VK6LD,Robert Seaman,,Perth,Western Australia,Australia,Portable
+5056007,VK6XLR,Rick Kowalewski,,Perth,Western Australia,Australia,Portable
+5056008,VK6ZMS,Martin Stretton,,Perth,Western Australia,Australia,Portable
+5056009,VK6OK,Craig Treeby,,Perth,Western Australia,Australia,Portable
+5056010,VK6XCJ,Christie Jahn,,Perth,Western Australia,Australia,Portable
+5056011,VK6OK,Craig Treeby,,Perth,Western Australia,Australia,Portable
+5056012,VK6AG,John Mcnamee,,Perth,Western Australia,Australia,Mobile
+5056013,VK6AG,John Mcnamee,,Perth,Western Australia,Australia,Portable
+5056014,VK6ZRW,Ray Archibald,,Perth,Western Australia,Australia,Mobile
+5056015,VK6KSA,Sam Adcock,,Perth,Western Australia,Australia,Portable
+5056016,VK6VHZ,Steve ,,Perth,Western Australia,Australia,Mobile
+5056017,VK6KSA,Sam Adcock,,Perth,Western Australia,Australia,Mobile
+5056018,VK6KSA,Sam Adcock,,Perth,Western Australia,Australia,Portable
+5056019,VK6ZGN,Bob Good,,Perth,Western Australia,Australia,Portable
+5056020,VK6ZGN,Bob Good,,Perth,Western Australia,Australia,Other
+5056021,VK6AS,Andrew Smith,,BULL CREEK,Western Australia,Australia,Portable
+5056022,VK6AIF,Peter Somes,,PERTH,Western Australia,Australia,Portable
+5056023,VK6BFO,Allen Coxe,,perth,Western Australia,Australia,Portable
+5056024,VK6WT,Paul Smit,,Perth,Western Australia,Australia,Portable
+5056025,VK6SP,Barry Murray,,Perth,Western Australia,Australia,Portable
+5056026,VK6BG,Stuart Brown,,Mindarie,Western Australia,Australia,Mobile
+5056027,VK6LOT,Paul Howells,,Perth,Western Australia,Australia,Mobile
+5056028,VK6RX,John Saffrey,,Perth,Western Australia,Australia,Mobile
+5056029,VK6HSV,Arthur Thompson,,Perth,Western Australia,Australia,Club Fleet
+5056030,VK6ML,Mathew Mcdonough,,perth,Western Australia,Australia,Mobile
+5056031,VK6MT,Mal Good,,Katanning,Western Australia,Australia,DMR
+5056032,VK6NAH,James Oudejans,James,Perth,Western Australia,Australia,DMR
+5056033,VK6NAH,James Oude,James,Perth,Western Australia,Australia,DMR
+5056100,VK100ANZ,Hmas Stirling - Gard,,Garden Island,Western Australia,Australia,John McNamee VK6AG
+5057001,VK7YXX,Don Nolder,,Richmond,Tasmania,Australia,
+5057002,VK7JA,John Andrewartha,,Scottsdale,Tasmania,Australia,Mobile
+5057003,VK7JD,David Jones,JD,Underwood,Tasmania,Australia,
+5058001,VK8AA,David Burger,,Darwin,Northern Territory,Australia,Portable
+5300001,ZL4SJ,Steve Jepson,Steve,OTAKI,Wellington,New Zealand,
+5300002,ZL2FX,Scott ,Scott,Palmerston north,,New Zealand,
+5300003,ZL2UN,Neil ,Neil,Masterton, North Isl,,New Zealand,
+5300004,ZL4SLG,Stephen Gosling,ZL4SLG,Dunedin,,New Zealand,
+5300005,ZL2JA,Wanganui Branch Arec,Wanganui Branch AREC,Wanganui North Isaln,,New Zealand,
+5300006,ZL2IY,Tim ,Tim,Levin,,New Zealand,
+5300007,ZL2LOZ,Lawrence Hird,Loz,Wellington,,New Zealand,
+5301001,ZL4JY,John Yaldwyn,,Wellington,North Island 1,New Zealand,Portable
+5301002,ZL4RFC,4rf Amateur Radio Club,,Wellington,North Island,New Zealand,Portable
+5301003,ZL4JY,John Yaldwyn,,Wellington,North Island 1,New Zealand,Portable
+5301004,ZL2GGD,Graham Dempsey,,Hawke's Bay,Hastings,New Zealand,
+5301005,ZL2JG,Jeff Graham,,Waikanae Beach,Waikanae,New Zealand,Portable
+5301006,ZL2HD,John Andrews,,Wellington,North Island,New Zealand,Portable
+5301007,ZL1MRC,Mike Conner,,Auckland,North Island,New Zealand,
+5301008,ZL2KG,Steve Jepson,,Otaki,Kapiti,New Zealand,Portable
+5301009,ZL2RAY,Ray Harkness,,Wellington,North Island 1,New Zealand,Portable
+5301010,ZL3TC,Peter Cobb,,Lower Hutt,Wellington,New Zealand,Portable
+5301011,ZL2TWS,John Wysocki,,Lower Hutt,Wellington,New Zealand,Portable
+5301012,ZL2FY,Richard Harkett,,Paraparaumu Beach,Paraparaumu,New Zealand,Portable
+5301013,ZL2BHJ,Jill Andrews,,Wellington,North Island,New Zealand,Control
+5301014,ZL2SX,David Andrews,,Wellington,North Island,New Zealand,Portable
+5301015,ZL2ABN,Graham Ridding,,Porirua,Wellington,New Zealand,Mobile
+5301016,ZL4JS,Jeff Sayer,,Masterton,North Island,New Zealand,Portable
+5301017,ZL2BRG,Simon Eatough,,Wellington,North Island,New Zealand,Portable
+5301018,ZL2UGL,Justin Southam,,Wellington,North Island,New Zealand,Portable
+5301019,ZL2UFI,Mark Gooding,,Wellington,North Island,New Zealand,Portable
+5301020,ZL2GO,Len Blackley,,Paraparaumu,Paraparaumu,New Zealand,Portable
+5301021,ZL2BKC,Wayne Knowles,,Wellington,North Island,New Zealand,Portable
+5301022,ZL2RJP,Randall Prentice,,Wellington,North Island,New Zealand,Portable
+5301023,ZL2TGC,Geoff Cook,,Kapiti,North Island,New Zealand,Loaner
+5301024,ZL2FY,Richard Harkett,,Paraparaumu ,North Island,New Zealand,Mobile
+5301025,ZL2OA,Wairarapa Arec,,Wairarapa,North Island,New Zealand,Loaner #1
+5301026,ZL2OA,Wairarapa Arec,,Wairarapa,North Island,New Zealand,Loaner #2
+5301027,ZL2FC,Colin Coutts,,Wairarapa,North Island,New Zealand,Portable
+5301028,ZL2BA,David Bray,,Wairarapa,North Island,New Zealand,Portable
+5301029,ZL1THG,Tom Bevan,,Hamilton,North Island,New Zealand,Portable
+5301030,ZL2KB-1,Kapiti Branch Arec,,Kapiti,North Island,New Zealand,Loaner #1
+5301031,ZL2KB-1,Kapiti Branch Arec,,Kapiti,North Island,New Zealand,Loaner #2
+5301032,ZL2KB-3,Kapiti Branch Arec,,Kapiti,North Island,New Zealand,Loaner #3
+5301033,ZL2KB-4,Kapiti Branch Arec,,Kapiti,North Island,New Zealand,Loaner #4
+5301034,ZL2BEZ,Paul Miller,,Wellington,North Island,New Zealand,Portable
+5301035,ZL4SJ,Steve Jepson,,Otaki,Kapiti,New Zealand,
+5301036,ZL2KB-FL,Kapiti Branch Arec,,Kapiti,North Island,New Zealand,Fleet
+5301037,ZL2FX,Scott Billington,,Palmerston N.,North Island,New Zealand,
+5301038,ZL2UN,Neil Richardson,,Masterton,North Island,New Zealand,
+5301039,ZL2MGS,Mike Sanders,,Hamilton,North Island 1,New Zealand,Portable
+5301040,ZL1UPJ,Jono Jonassen,,Hamilton,North Island 1,New Zealand,Portable
+5301041,ZL1PK,Phil King,,Hamilton,North Island 1,New Zealand,Portable
+5301042,ZL4JY,John Yaldwyn,,Wellington,North Island 1,New Zealand,Control Station
+5301043,ZL1UX,Hamilton Arec,,Hamilton,North Island 1,New Zealand,Club Fleet
+5301044,ZL1UX,Hamilton Arec,,Hamilton,North Island 1,New Zealand,Club Fleet
+5301045,ZL1RWR,Russ Richardson,,Hamilton,North Island 1,New Zealand,Mobile
+5301046,ZL1TOM,Tom Bevan,,Hamilton,North Island 1,New Zealand,Portable
+5301047,ZL3IH,Earl Intemann,,Te Awamutu,North Island 1,New Zealand,Portable
+5301048,ZL1TOY,Fergus Mcgilp,,Auckland,North Island 1,New Zealand,Portable
+5301049,ZL2BEZ,Paul Miller,,Wellington,North Island 1,New Zealand,Mobile
+5301050,ZL2TDC,Steve De Grey,,Palmerston North,North Island 1,New Zealand,Portable
+5301051,ZL2GJL,Geoff Livingston,,Turangi,North Island 1,New Zealand,Portable
+5301052,ZL1BNG,Neil Orton,,Hamilton,North Island 1,New Zealand,Portable
+5301053,ZL2AJ,Warren Harris,,Te Awamutu,North Island 1,New Zealand,Mobile
+5301054,ZL2ADL,Brian Purdie,,Sanson,North Island 1,New Zealand,Portable
+5301055,ZL1JJ,Japie Nel,,Auckland,North Island 1,New Zealand,Portable
+5301056,ZL1NE,John Neill,,Auckland,North Island 1,New Zealand,Portable
+5301057,ZL1BBZ,Bob Holt,,Auckland,North Island 1,New Zealand,Portable
+5301058,ZL1MIT,Malcolm Motion,,Auckland,North Island 1,New Zealand,Portable
+5301059,ZL1BNQ,Richard Gamble,,Auckland,North Island 1,New Zealand,Portable
+5301060,ZL1ICU,Laurie Matthews,,Auckland,North Island 1,New Zealand,Portable
+5301061,ZL1XR,Roger Smith,,Auckland,North Island 1,New Zealand,Portable
+5301062,ZL1JD,John Dunn,,Auckland,North Island 1,New Zealand,Portable
+5301063,ZL1BQ,Auckland Arec,,Auckalnd,North Island 1,New Zealand,Club Fleet
+5301064,ZL1BQ,Auckland Arec,,Auckland,North Island 1,New Zealand,Club Fleet
+5301065,ZL1BQ,Auckland Arec,,Auckland,North Island 1,New Zealand,Club Fleet
+5301066,ZL1BQ,Auckland Arec,,Auckland,North Island 1,New Zealand,Club Fleet
+5301067,ZL1BQ,Auckland Arec,,Auckland,North Island 1,New Zealand,Club Fleet
+5301068,ZL1TTE,Doug Cooke,,Auckland,North Island 1,New Zealand,Portable
+5301069,ZL1KF,Leslie John Cole,,Hamilton,North Island 1,New Zealand,Portable
+5301070,ZL2GJL,Geoff Livingston,,Turangi,North Island 1,New Zealand,Mobile
+5301071,ZL2ALY,Cliff Walker,,Paraparaumu,North Island 1,New Zealand,Portable
+5301072,ZL2SFM,Mercer Steve,,Wellington,North Island 1,New Zealand,Other
+5301073,ZL2TWT,Wysocki John,,Lower Hutt,North Island 1,New Zealand,Other
+5301074,ZL1HN,Brian Farrell,,RAGLAN ,North Island 1,New Zealand,Portable
+5301075,ZL1CC,Brendan Farrell,,RAGLAN ,North Island 1,New Zealand,Portable
+5301076,ZL1HN,Brian Farrell,,RAGLAN,North Island 1,New Zealand,Mobile
+5301077,ZL1HN,Brian Farrell,,RAGLAN,North Island 1,New Zealand,Other
+5301078,ZL1TBG,Ralph Sanson,,Warkworth,North Island 1,New Zealand,Mobile
+5301079,ZL1ABX, Julian Dukes,,AUCKLAND,North Island 1,New Zealand,Portable
+5301080,ZL1VH,Vaughan Henderson,,Auckland,North Island 1,New Zealand,Portable
+5301081,ZL1COP,Andrew Brill,,Auckland,North Island 1,New Zealand,Portable
+5301082,ZL2ARN,Gordon Stewart,,Waikanae,North Island 1,New Zealand,Other
+5301083,ZL1KLP,Riku Luostari,,Auckland,North Island 1,New Zealand,Portable
+5301084,ZL2AJS,Tony Silke,,Paraparaumu,North Island 1,New Zealand,Mobile
+5301085,ZL2OLY,Oliver Ewert,,Wellington,North Island 1,New Zealand,Mobile
+5301086,ZL1KRH,Kevin Hampshire,,Tauranga,North Island 1,New Zealand,Non-DMR
+5301087,ZL1AZT,Ian Clare,,TAURANGA,North Island 1,New Zealand,Non-DMR
+5301088,ZL1TAP,Andrew Race,,TAURANGA,North Island 1,New Zealand,Other
+5301089,ZL1BVA,John Cullen,,Tauranga,North Island 1,New Zealand,Control Station
+5301090,ZL1DY,Graham Thomas,,HAMILTON,North Island 1,New Zealand,Portable
+5301091,ZL1SB,Steve Sapich,,HENDERSON  AK,North Island 1,New Zealand,Other
+5301092,ZL1TOY,Fergus Mcgilp,,Auckland,North Island 1,New Zealand,Portable
+5301093,ZL1TLC,Tony May,,auckland,North Island 1,New Zealand,Portable
+5301094,ZL1GI,Philip Price,,Tauranga,North Island 1,New Zealand,Portable
+5301095,ZL1SKL,Soren Low,,Auckland,North Island 1,New Zealand,Portable
+5301096,ZL3WPK,Paul Kenyon,,Auckland,North Island 1,New Zealand,Portable
+5301097,ZL1GSM,Grant Manning,,Auckland,North Island 1,New Zealand,Portable
+5301098,ZL1UOJ,David Kilgour,,Auckland,North Island 1,New Zealand,Portable
+5301099,ZL1BNO,Mark Twiname,,Auckland,North Island 1,New Zealand,Portable
+5301100,ZL1BAK,Graeme Burrage,,Te Aroha,North Island 1,New Zealand,DMR
+5301101,ZL1WBZ,Neil Wilson,,Warkworth,North Island 1,New Zealand,DMR
+5301102,ZL1LK,Roy Sargon,,Auckland,North Island 1,New Zealand,DMR
+5301103,ZL1CTS,Cliff Barrimore,,Tauranga,North Island 1,New Zealand,Other
+5301104,ZL1CTS,Cliff Barrimore,,Tauranga,North Island 1,New Zealand,Other
+5301105,ZL1OLE,Ole Runge,,Auckland,North Island 1,New Zealand,DMR
+5301106,ZL1DAM,David Morey,,CAMBRIDGE,North Island 1,New Zealand,DMR
+5301107,ZL1AQC,Vic Sinclair,VIC,Tauranga,North Island 1,New Zealand,Other
+5301108,ZL1DAM,David Morey,Dave,Cambridge,North Island 1,New Zealand,DMR
+5301109,ZL2RO,Phil Garside,,Hastings,North Island 1,New Zealand,CCS7
+5301110,ZL1KLP,Riku Luostari,,Auckland,North Island 1,New Zealand,DMR
+5301111,ZL4DAN,Daniel Houlbrooke,,Whakatane,North Island 1,New Zealand,DMR
+5301112,ZL3RUM,Karl Hunt,,Whakatane,North Island 1,New Zealand,DMR
+5301113,ZL1FE,David Feek,,Whakatane,North Island 1,New Zealand,DMR
+5301114,ZL2HB,Paul Cavanagh,,Napier,North Island 1,New Zealand,CCS7
+5302001,ZL4JY,John Yaldwyn,,Waikanae,North Island 2,New Zealand,Mobile
+5302002,ZL2JG,Jeff Graham,,Waikanae Beach,North Island 2,New Zealand,Mobile
+5302003,ZL2JG,Jeff Graham,,Waikanae Beach,North Island 2,New Zealand,Portable
+5302004,ZL2MDH,Martin Honey,,paraparaumu,North Island 2,New Zealand,Portable
+5302005,ZL3JM,Philip Bennett,,Kapiti Coast,North Island 2,New Zealand,Portable
+5302006,ZL2KG,Steve Jepson,,KAPITI,North Island 2,New Zealand,Mobile
+5302007,ZL2LI,Len Inkpen,,palmerston north,North Island 2,New Zealand,Portable
+5302008,ZL2AUB,Peter Moore,,Palmerston North,North Island 2,New Zealand,Portable
+5302009,ZL2JML,Warren Crawley,,Palmerston North,North Island 2,New Zealand,Portable
+5302010,ZL2KO,Manawatu Arec,,Palmerston North,North Island 2,New Zealand,Club Fleet
+5302011,ZL2KO,Manawatu Arec,,Palmerston North,North Island 2,New Zealand,Club Fleet
+5302012,ZL2KO,Manawatu Arec,,Palmerston North,North Island 2,New Zealand,Club Fleet
+5302013,ZL2TDA,Denis Dawson,,Palmerston North,North Island 2,New Zealand,Portable
+5302014,ZL2WD,Hayden Sims,,Palmerston North,North Island 2,New Zealand,Portable
+5302015,ZL2CZE,Jan Suldovsky,,Napier,North Island 2,New Zealand,Mobile
+5302016,ZL3TJ,Peter Wilson,,Wellington,North Island 2,New Zealand,Portable
+5302017,ZL3TJ,Peter Wilson,,Wellington,North Island 2,New Zealand,Mobile
+5302018,ZL2NSA,Michael Cox,,Upper Hutt,North Island 2,New Zealand,Mobile
+5302019,ZL2DAZ,Darren Sharland,,Palmerston North,North Island 2,New Zealand,Portable
+5302020,ZL2TYR,Don Robertson,,Porirua,North Island 2,New Zealand,Portable
+5302021,ZL2ASA,Dinsdale Barry,,Palmerston North,North Island 2,New Zealand,Portable
+5302022,ZL2JTD,Ted Byrne,,Carterton, 5713,North Island 2,New Zealand,Portable
+5302023,ZL2TXS,Stephen Macgregor,,Paraparaumu,North Island 2,New Zealand,Portable
+5302024,ZL2WAL,Rob Wallace,Rob,Wellington,North Island 2,New Zealand,Mobile
+5302025,41HS599,Geoff Partridge,,Marton,North Island 2,New Zealand,Portable
+5302026,ZL1VMF,Mark Foster,,Wellington,North Island 2,New Zealand,Other
+5302027,ZL2CJR,Colin Robertson,Colin,Otaki,North Island 2,New Zealand,DMR
+5302028,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,DMR
+5302029,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Club Fleet
+5302030,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Club Fleet
+5302031,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Club Fleet
+5302032,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Club Fleet
+5302033,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Club Fleet
+5302034,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Club Fleet
+5302035,ZL2WA,Wellington Vhf Group Arec,,Wellington,North Island 2,New Zealand,Loaner
+5302036,ZL2JA,Wanganui Amateur Radio Society Inc. Arec,,Whanganui,North Island 2,New Zealand,Club Fleet
+5302037,ZL2JA,Wanganui Amateur Radio Society Inc. Arec,,Whanganui ,North Island 2,New Zealand,Club Fleet
+5302038,ZL2JA,Wanganui Amateur Radio Society Inc. Arec,,Whanganui,North Island 2,New Zealand,Club Fleet
+5302039,ZL2JA,Wanganui Amateur Radio Society Inc. Arec,,Whanganui,North Island 2,New Zealand,Club Fleet
+5302040,ZL2JA,Wanganui Amateur Radio Society Inc. Arec,,Whanganui,North Island 2,New Zealand,Club Fleet
+5302041,ZL2JA,Wanganui Amateur Radio Society Inc. Arec,,Whanganui,North Island 2,New Zealand,Club Fleet
+5303001,ZL3VP,Gareth Bradshaw,,Christchurch,South Island,New Zealand,Mobile
+5303002,ZL3PX,Geoff Chapman,,Christchurch,South Island,New Zealand,Portable
+5303003,ZL4FZ,Richard Smart,,Christchurch,South Island,New Zealand,Portable
+5303004,ZL3DMC,Don Macdonald,,Christchurch,South Island,New Zealand,Portable
+5303005,ZL3AC,Christchurch Arec,,Christchurch,South Island,New Zealand,Club Fleet
+5303006,ZL3AC,Christchurch Arec,,Christchurch,South Island,New Zealand,Club Fleet
+5303007,ZL3TOY,Blair Kenton,,Christchurch,South Island,New Zealand,Portable
+5303008,ZL3RCK,Ron Kautz,,Loburn,South Island,New Zealand,Mobile
+5303009,ZL3RX,Rob Thirkettle,,Christchurch,South Island,New Zealand,Portable
+5303010,ZL3ROD,Rodrigo Pellizzari,,West Melton,South Island,New Zealand,Portable
+5303011,ZL3DMH,Doug Hart,,Christchurch,South Island,New Zealand,Portable
+5303012,ZL4KD,Kenneth Duffy,,Christchurch,South Island,New Zealand,Portable
+5303013,ZL4KS,Lindsey Ross,,Dunedin,South Island,New Zealand,Portable
+5303014,ZL4ASC,Adam Campbell,,Dunedin,South Island,New Zealand,Portable
+5303015,ZL4DC,Stewart Hall,,Dunedin,South Island,New Zealand,Portable
+5303016,ZL4AA,Otago Branch,,AREC,South Island,New Zealand,Portable
+5303017,ZL4AA,Otago Branch Arec,,Dunedin,South Island,New Zealand,Portable
+5303018,ZL4AA,Otago Branch Arec,,Dunedin,South Island,New Zealand,Portable
+5303019,ZL4AA,Otago Branch Arec,,Dunedin,South Island,New Zealand,Portable
+5303020,ZL4AA,Otago Branch Arec,,Dunedin,South Island,New Zealand,Portable
+5303021,ZL4JH,Martin Balch,,Dunedin,South Island,New Zealand,Portable
+5303022,ZL4KX,Bede Mccormick,,Dunedin,South Island,New Zealand,Portable
+5303023,ZL4FM,Alan Wilden,,Dunedin,South Island,New Zealand,Portable
+5303024,ZL4RC,Ross Chapman,,Dunedin,South Island,New Zealand,Portable
+5303025,ZL3TRX,Dave Hadler,,Christchurch,South Island,New Zealand,Portable
+5303026,ZL3AC,Christchurch Arec,,Christchurch,South Island,New Zealand,Club Fleet
+5303027,ZL3AC,Christchurch Arec,,Christchurch,South Island,New Zealand,Club Fleet
+5303028,ZL3AC,Christchurch Arec,,Christchurch,South Island,New Zealand,Club Fleet
+5303029,ZL2ASF,Steve Fogerty,, Motueka,South Island,New Zealand,Portable
+5303030,ZL2FZ,Robin Reeve,,Motueka,South Island,New Zealand,Portable
+5303031,ZL2BCG,Jim Jackson,,Motueka ,South Island,New Zealand,Portable
+5303032,ZL2GK,Motueka Arec,,Motueka,South Island,New Zealand,Club Fleet
+5303033,ZL2GK,Motueka Arec,,Motueka,South Island,New Zealand,Club Fleet
+5303034,ZL3GSL,Graham Lees,,Christchurch,South Island,New Zealand,Portable
+5303035,ZL3DMH,Douglas Hart,,Christchurch,South Island,New Zealand,Portable
+5303036,ZL2UCX,Steve Davis,,Christchurch,South Island,New Zealand,Portable
+5303037,ZL4RP,Roy Gillions,,DUNEDIN,South Island,New Zealand,Mobile
+5303038,ZL3TMB,Mike Barnes,,Christchurch,South Island,New Zealand,Mobile
+5303039,ZL3UYJ,Alan Page,,Christchurch,South Island,New Zealand,Portable
+5303040,ZL3IX,Smith Greg,,Christchurch,South Island,New Zealand,Portable
+5303041,ZL2MV,Graham Brenchley,,Christchurch,South Island,New Zealand,Mobile
+5303042,ZL2BHF,Jim Meachen,,Nelson,South Island,New Zealand,Portable
+5303043,ZL1DFA,Daniel Ayers,,Christchurch,South Island,New Zealand,Portable
+5303044,ZL4NZ,Keith Reid,,Rolleston,South Island,New Zealand,Portable
+5303045,ZL4HD,Tom Hardwick,,Bluff,South Island,New Zealand,Mobile
+5303046,ZL4DE,Daniel Erickson,,Invercargill,South Island,New Zealand,Other
+5303047,ZL3FV,James Hines,,Christchurch,South Island,New Zealand,Portable
+5303048,ZL2IC,David Holland,,Christchurch,South Island,New Zealand,Portable
+5303049,ZL3CHD,Pete Robinson,,Christchurch,South Island,New Zealand,Other
+5303050,ZL2HZ,Andrew Mackie,,Nelson,South Island,New Zealand,Portable
+5303051,ZL3DG,Rene Damasco,,CHRISTCHURCH,South Island,New Zealand,Other
+5303052,ZL3HB,Rory Deans,,Christchurch,South Island,New Zealand,Mobile
+5303053,ZL4LDS,Lindsay Donald Strong,Lindsay,Dunedin,South Island,New Zealand,Mobile
+5303054,ZL2GK,Motueka Arec Vhf,Motueka,Motueka,South Island,New Zealand,Portable
+5303055,ZL2GK,Motueka Arec Vhf,Motueka,Motueka,South Island,New Zealand,Portable
+5303056,ZL2GK,Motueka Arec Vhf,Motueka,Motueka,South Island,New Zealand,Portable
+5303057,ZL2GK,Motueka Arec Vhf,Motueka,Motueka,South Island,New Zealand,Portable
+5303058,ZL2GK,Motueka Arec Vhf,Motueka,Motueka,South Island,New Zealand,Portable
+5303059,ZL2GK,Motueka Arec Vhf,Motueka,Motueka,South Island,New Zealand,Portable
+5303060,ZL2HZ,Andrew Mackie,Andrew,Nelson,South Island,New Zealand,Mobile
+5303061,ZL4QD,Kevin Hand,,Dunedin,South Island,New Zealand,Portable
+5303062,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Control Station
+5303063,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303064,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303065,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303066,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303067,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303068,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303069,ZL4AL,Eastern Southland Arec,,Gore,South Island,New Zealand,Club Fleet
+5303070,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303071,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303072,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303073,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303074,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303075,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303076,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303077,ZL4AA,Otago Branch Nzart,SAR,Dunedin,South Island,New Zealand,DMR
+5303078,ZL4AA,Otago Branch Nzart,,Dunedin,South Island,New Zealand,DMR
+5303079,ZL4SB,David Stevenson,,Dunedin,South Island,New Zealand,DMR
+5303080,ZL3AD,Andrew Davidson,Andy,Christchurch,South Island,New Zealand,DMR
+5303081,ZL3HRB,Heinz Boehner,,Koenigswinter,,New Zealand,
+5303082,ZL3UE,R H Prattley,R H,Lincoln,South Island,New Zealand,DMR
+5303083,ZL3LM,Lez Morrison,,Oamaru,South Island,New Zealand,DMR
+5303084,ZL3FK,F R Knewstubb,,Oamaru,South Island,New Zealand,DMR
+5303085,ZL2ARC,Alastair Christie,,Christchurch,South Island,New Zealand,DMR
+5371001,P29ZTC,Terry Griffiths,,Port Moresby,NCD,Papua New Guinea,Mobile
+5371002,P29LZ,Lowell Zabala,,Lae,Morobe,Papua New Guinea,Mobile

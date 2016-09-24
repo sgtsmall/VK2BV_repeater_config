@@ -1,4 +1,4 @@
 
 /<h1 id="icom-id-51a-files">Icom ID-51A Files<\/h1>/d
-s:<li>51_AUS_VK2BV.icf -: <li>[s3secureurl bucket='warssharedfiles' target='/public/ICOM_51A/51_AUS_VK2BV.icf' expires='5']51P_AUS_VK2BV.icf[/s3secureurl] -:
-s:<li>icomDStar.zip -: <li>[s3secureurl bucket='warssharedfiles' target='/public/ICOM_51A/icomDStarplus.zip' expires='5']icomDStar.zip[/s3secureurl] -:
+s:<li>51_AUS_VK2BV.icf -: <li>[s3secureurl bucket='warssharedfiles' target='/public/ICOM_51A/51_AUS_VK2BV.icf' expires='25']51P_AUS_VK2BV.icf[/s3secureurl] -:
+s:<li>IcomDStar.zip -: <li>[s3secureurl bucket='warssharedfiles' target='/public/ICOM_51A/IcomDStar.zip' expires='25']IcomDStar.zip[/s3secureurl] -:

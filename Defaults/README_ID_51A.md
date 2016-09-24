@@ -13,7 +13,7 @@ The files were prepared using the Icom CS-51 software with Data extracted from t
     - 51_AUS_VK2BV.icf - most recent icom file
 
 * Build Files to create standard configuration
-    - icomDStar.zip - Output from the repeater configuration
+    - IcomDStar.zip - Output from the repeater configuration
         - icombankX.csv, icomgX.csv, icommemX.csv
 
 ### Radio Load Steps
