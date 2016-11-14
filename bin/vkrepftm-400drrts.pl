@@ -161,9 +161,9 @@ while ((my $row = $csv->getline($vkrdfh))
 #
 #SKIP,
 #
-        my $SkipFav = 'Off,';
+        my $SkipFav = '0,';
         if (grep { $data{'Call'} eq $_ } @Favourft) {
-            $SkipFav = '0,';
+            $SkipFav = '2,';
         }
 
 #Step,Clock Shift,

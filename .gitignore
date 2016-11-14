@@ -6,4 +6,9 @@ output/**/*.html
 output/**/*.csv
 output/**/*.dat
 output/**/*.rdt
-output/*.icf
+output/**/*.icf
+extract of gsed
+
+*.rdt
+
+*.icf

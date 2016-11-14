@@ -185,7 +185,7 @@ while (my $row = $csv->getline($vkrdfh)) {
         if ( $datard{'mode'} eq "DV" ) {
             $dmtype =  'd';
             $dmrlabtg = ( $datard{'Tone'} eq '-' ) ? '1-LOCAL-TG9-9' : $datard{'Tone'};
-#            print "DEBUG dmrlabtg :", $dmrlabtg, " ",$dmtype, "\n";
+            print "DEBUG dmrlabtg :", $dmrlabtg, " ",$dmtype, "\n";
             $tonefld = '';
             @dmrtginfo = split('-',$dmrlabtg);
             $dmccode = '1' ;

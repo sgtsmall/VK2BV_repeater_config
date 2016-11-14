@@ -71,7 +71,7 @@ if [ ! -d work ] ; then mkdir work ; fi
 if [ ! -d output ] ; then mkdir output ; fi
 if [ ! -d output/WP ] ; then mkdir output/WP ; fi
 if [ ! -n "$getweb" ] ; then 
-    echo "starting get data from WIA"
+    echo "Get data from WIA Repeater Directory $repdate.csv save as repdown.dat"
     rm -r work/*
 # rm output/*
     cd work
@@ -80,11 +80,14 @@ if [ ! -n "$getweb" ] ; then
 #echo $wiaget
 #exit
     if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" ; echo "Please check wia website" ; exit 0 ; fi 
+
     tr -d '\r' < repdown.dat > repdowntext.dat
-    echo "Generated work/repdownext.dat remove CR"
+    echo "Generated work/repdownext.dat from repdown.dat remove CR"
     gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
     echo "Generated work/wiarepdiri.csv headings"
     cp wiarepdiri.csv wiarepdir.csv
+    
+    echo "Local edit of the wiarepdir.csv for repeater changes with wiarepdir.gsed"
     gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
     echo "Generated work/wiarepdir.csv local edit"
 #
