@@ -33,11 +33,11 @@ VK2BV_repeater_config also has additional features not found in other better pro
 
 ## Installation
 
-See: https://github.com/sgtsmall/VK2BV_repeater_config/docs/Installation.md 
+See: https://github.com/sgtsmall/VK2BV_repeater_config/tree/master/docs/Installation.md 
 
 ## Documentation
 
-There will be lots of documentation here: https://github.com/sgtsmall/VK2BV_repeater_config/docs (oneday)
+There will be lots of documentation here: https://github.com/sgtsmall/VK2BV_repeater_config/tree/master/docs (oneday)
 
 ## Support
 

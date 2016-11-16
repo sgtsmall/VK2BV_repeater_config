@@ -147,9 +147,9 @@ sort --field-separator=',' --key=7,7 --key=5g,5 output/vkrepdir.csv > work/sortv
 cp Defaults/vkrepstd.srccsv output/vkrepstd.csv
 if [ -n "$outtest" ] ; then
     echo "Testing a new format generating work/chtemp.csv"
-    ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/chtemp.csv
-    ./bin/vkrepchd.pl work/chtemp.csv output/ch
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
+    ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/shinytemp.csv
+    ./bin/vkrepshiny.pl work/shinytemp.csv output/s
+   # perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
     #perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/dmr/scan.csv
     #perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/dmr/zone.csv
     

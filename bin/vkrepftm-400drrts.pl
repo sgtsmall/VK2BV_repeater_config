@@ -43,8 +43,8 @@ open(my $vkrdfh, '<', $file1) or die "Could not open '$file1' $!\n";
 my $file2a = sprintf("%sa.csv", $file2pre);
 my $file2b = sprintf("%sb.csv", $file2pre);
 
-open(my $ftm400fha, '>', $file2a) or die "Could not open '$file2a' $!\n";
-open(my $ftm400fhb, '>', $file2b) or die "Could not open '$file2b' $!\n";
+open(my $ftmfha, '>', $file2a) or die "Could not open '$file2a' $!\n";
+open(my $ftmfhb, '>', $file2b) or die "Could not open '$file2b' $!\n";
 #
 # my $newhea1 = 'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,Vibrator,';
 #  my $newhea2 = 'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,BANK22,Marine Fav,Marine,';
@@ -56,8 +56,8 @@ my $newhea1 =
 my $newhead = sprintf("%s", $newhea1);
 #
 if ($csv->parse ($newhead)) {
-  print $ftm400fha $csv->string, "\n";
-  print $ftm400fhb $csv->string, "\n";
+  print $ftmfha $csv->string, "\n";
+  print $ftmfhb $csv->string, "\n";
   
 } else {
   print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -65,7 +65,7 @@ if ($csv->parse ($newhead)) {
 }
 #Add aprs AU to begiing of 'B'
 my $newline = sprintf("1,145.17500,145.17500,0.0000,Simplex,FM,APRSAU A,Large,OFF,100.0 Hz,023,1500 Hz,MID,Off,5.0KHz,Off,APRSAU APRSAU ,1");
-$outfh = $ftm400fhb;
+$outfh = $ftmfhb;
 $memcntb += 1;
 if ($csv->parse($newline)) {
     print $outfh $csv->string, "\n";
@@ -191,7 +191,7 @@ while ((my $row = $csv->getline($vkrdfh))
 #DEBUG print "$cnt,$prefix ";
         if (grep { $prefix6 eq $_ } @Favourft ) {
             $band = '0';
-            $outfh = $ftm400fha;
+            $outfh = $ftmfha;
             $memcnta += 1;
             $chnum = $memcnta;
             if ($data{'mode'} eq 'FM' ) {
@@ -202,49 +202,49 @@ while ((my $row = $csv->getline($vkrdfh))
         elsif ($bankfld eq '') {
             if (($prefix eq 'VK1') || ($prefix eq 'VK2')) {
                 $band  = '0';
-                $outfh = $ftm400fha;
+                $outfh = $ftmfha;
                 $memcnta += 1;
                 $chnum = $memcnta;
             }
             elsif ($prefix eq 'VK3') {
                 $band  = '0';
-                $outfh = $ftm400fha;
+                $outfh = $ftmfha;
                 $memcnta += 1;
                 $chnum = $memcnta;
             }
             elsif ($prefix eq 'VK4') {
                 $band  = '0';
-                $outfh = $ftm400fha;
+                $outfh = $ftmfha;
                 $memcnta += 1;
                 $chnum = $memcnta;
             }
             elsif ($prefix eq 'VK5') {
                 $band  = '1';
-                $outfh = $ftm400fhb;
+                $outfh = $ftmfhb;
                 $memcntb += 1;
                 $chnum = $memcntb;
             }
             elsif ($prefix eq 'VK6') {
                 $band  = '1';
-                $outfh = $ftm400fhb;
+                $outfh = $ftmfhb;
                 $memcntb += 1;
                 $chnum = $memcntb;
             }
             elsif ($prefix eq 'VK7') {
                 $band  = '1';
-                $outfh = $ftm400fhb;
+                $outfh = $ftmfhb;
                 $memcntb += 1;
                 $chnum = $memcntb;
             }
             elsif ($prefix eq 'VK8') {
                 $band  = '1';
-                $outfh = $ftm400fhb;
+                $outfh = $ftmfhb;
                 $memcntb += 1;
                 $chnum = $memcntb;
             }
             elsif ($prefix eq 'APR') {
                 $band = '0';
-                $outfh = $ftm400fha;
+                $outfh = $ftmfha;
                 $memcnta += 1;
                 $chnum = $memcnta;
                 if ($data{'mode'} eq 'FM' ) {
@@ -254,7 +254,7 @@ while ((my $row = $csv->getline($vkrdfh))
             }
             else {
                 $band = '0';
-                $outfh = $ftm400fha;
+                $outfh = $ftmfha;
                 $memcnta += 1;
                 $chnum = $memcnta;
                 if ($data{'mode'} eq 'FM' ) {
@@ -267,7 +267,7 @@ while ((my $row = $csv->getline($vkrdfh))
         else {
 # if a field is specified put in Band B
             $band = '0';
-            $outfh = $ftm400fha;
+            $outfh = $ftmfha;
             $memcnta += 1;
             $chnum = $memcnta;
             if ($data{'mode'} eq 'FM' ) {
@@ -292,7 +292,7 @@ while ((my $row = $csv->getline($vkrdfh))
             }
             $both += 1;
             $chnum = $memcntb;
-            $outfh = $ftm400fhb;
+            $outfh = $ftmfhb;
             $band = 1;
         }
     }
@@ -304,7 +304,7 @@ while ($memcnta < '499') {
     $band = '0';
     my $fillline = sprintf("%s,%s%s", $memcnta, $blankline, $band);
     if ($csv->parse($fillline)) {
-        print $ftm400fha $csv->string, "\n";
+        print $ftmfha $csv->string, "\n";
     }
     else {
         print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -316,7 +316,7 @@ while ($memcntb < '499') {
     $memcntb += 1;
     my $fillline = sprintf("%s,%s%s", $memcntb, $blankline, $band);
     if ($csv->parse($fillline)) {
-        print $ftm400fhb $csv->string, "\n";
+        print $ftmfhb $csv->string, "\n";
     }
     else {
         print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -327,7 +327,7 @@ while ($memcntb < '499') {
 
 # Close the file handles.
 close $vkrdfh;
-close $ftm400fha;
-close $ftm400fhb;
+close $ftmfha;
+close $ftmfhb;
 
 exit
