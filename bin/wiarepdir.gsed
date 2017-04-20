@@ -13,11 +13,9 @@
 438.4250,433.4250,VK2RLE,HCote,Engadine,Sydney South DMR,O,50,110,3,2LE,-, \
 438.5250,433.5250,VK3RAD,-,Mitcham,Melbourne,O,80,100,2.5,3JFK,-, \
 438.1500,432.7500,VK3RWW,-,portable,Nation wide,O,25,-,3,WIA,-, \
-438.3000,432.9000,VK3RW1,-,portable,Nation wide,X,25,-,3,WIA,-, \
 438.8125,431.8125,VK4RBT,-,Mt Tambourine,Gold Coast,O,100,1900,5,4WIF,-, \
-438.8375,431.8375,VK4RBX,-,The Knobby,Ipswich,O,70,120,4.5,4AB,-, \
 438.2625,432.8625,VK5REX,-,Winter Hill,Port Lincoln (G),O,25,240,3,5ZEA,-, \
-438.8375,431.8375,VK5RSF,-,portable,Nation wide,O,25,-,3,WIA,-, 
 }
-#2DAG 2ERG 2YHX 3TE 3AS 4DU 4TUX 4TCA 4TUB 6ZTN 6AG 
+#2DAG 2ERG 2YHX 3TE 3AS 4DU 4TUX 4TCA 4TUB 6ZTN 6AG
 # analogue 439.8750,434.8750,VK3RMC,-,Narre Warren North,Melbourne SE,O,-,-,-,3APC,-,\n
+#438.8375,431.8375,VK4RBX,-,The Knobby,Ipswich,O,70,120,4.5,4AB,-, \

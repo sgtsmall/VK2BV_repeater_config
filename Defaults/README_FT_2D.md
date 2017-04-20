@@ -12,11 +12,10 @@ The files were prepared using the RT-Systems FT-2D software with Data extracted 
 * Configuration
     - VKBVREP.FT2D - most recent RT Systems file
     - BACKUP.dat - generated SD card file.
-    - MEMORY.dat - generated file of Memories only.
-
+    
 * Build Files to create standard configuration
 
-    - These files are only needed if you wish to create yor own config files from scratch
+    - These files are only needed if you wish to create your own config files from scratch
 
         - VKBV2D.FT2D - template used to import more memories, includes the bank names.
         - VKBV2D.rsf - basic settings file options
@@ -55,7 +54,6 @@ This will create the folders and a backup file.
     - In particular select Bank 14 APRS on VFO B for APRS.
 * In this configuration GPS is OFF by Default and Memories are set to MID (Low 3) Power.
 
-    > The MEMORY.dat can be stored in x:\\FT2D_MEMORY-CH\\MEMORY.dat and loaded by choosing the MEMORY CH from the SD CARD Menu. This will not assign the correct bank names.
 
     > To help find entries, switch to extended display (Hold the A/B button for several seconds). However this only allows 1 VFO to be active at a time.
 

@@ -1,0 +1,22 @@
+wiarepdir.csv
+
+Output,Input,Call,mNemonic,Location,Service Area,S,ERP,HASL,T/O,Sp,Tone,Notes
+
+
+
+
+vkrep.csv
+Call,freq,offset,ctcss,type,location,longditude,latitude,height ,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb, txpower,bank
+
+'CALL_SIGN,LATITUDE,LONGITUDE,NAME,STATE,LICENSING_AREA_ID,POSTCODE,SITE_PRECISION,ELEVATION';
+
+vkrepstd.csv
+0Sort,Call U,mode,band,Output,Input,Call,mNemonic,Location,Service Area,S,ERP,HASL,T/O,Sp,CTCSS,Notes,Note2,Offset,absoff,sign,tsign,tdup,trpt,longditude,latitude,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank
+
+vkrepdir.csv
+
+0Sort,Call U,mode,band,Output,Input,Call,mNemonic,Location,Service Area,S,ERP,HASL,T/O,Sp,Tone,Notes,Note2,Offset,absoff,sign,tsign,tdup,trpt,longditude,latitude,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank
+
+vkrep3 vkrep.xml  --- work/vkrep.csv
+
+vkrep4 wiarepdir.csv + vkrep.csv ---- output/vkrepdir.csv

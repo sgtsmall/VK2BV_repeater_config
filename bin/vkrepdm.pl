@@ -34,7 +34,7 @@ my $call = '';
 #my @kmllist ;
 my $cntfld     = '';
 
-my $sortseq = '0  sortseq,';
+my $sortseqfld = '0  sortseqfld,';
 
 # Load arrays with file contents
 #Open input file
@@ -49,8 +49,8 @@ open(my $vksofh, '>', $fileo1) or die "Could not open '$fileo1' $!\n";
 
 #read the header line of the main input
 my @fieldsrd = @{$csv->getline($vkrdfh)};
-# output this header with sortseq 
-print $vksofh $sortseq, join(',', @fieldsrd), "\n";
+# output this header with sortseqfld 
+print $vksofh $sortseqfld, join(',', @fieldsrd), "\n";
 
 #read the header line of the local input
 my @fieldssd = @{$csv->getline($vksdfh)};
@@ -65,8 +65,8 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
         && ($datard{'band'} ~~ ["2","7","DMR"])
         && ( (($datard{'Input'} < '470.0') && ($datard{'Input'} > '144.0')) && (($datard{'Output'} < '470.0') && ($datard{'Output'} > '144.0')))
      ) {
-         $sortseq = lsortseq(@$rowrd);
-         print $vksofh $sortseq, join(',', @$rowrd), "\n";
+         $sortseqfld = lsortseqfld(@$rowrd);
+         print $vksofh $sortseqfld, join(',', @$rowrd), "\n";
     }
 }
 # local maintained file
@@ -77,8 +77,8 @@ while (my $rowrd = $csv->getline($vksdfh)) {
         && ($datard{'band'} ~~ ["2", "7", "DMR"])
         && ($datard{'Output'} < '470.0'))
     {
-         $sortseq = lsortseq(@$rowrd);
-         print $vksofh $sortseq, join(',', @$rowrd), "\n";
+         $sortseqfld = lsortseqfld(@$rowrd);
+         print $vksofh $sortseqfld, join(',', @$rowrd), "\n";
     }
 }
 
@@ -89,10 +89,10 @@ close $vkrdfh;
 close $vksdfh;
 close $vksofh;
 
-sub lsortseq    {
+sub lsortseqfld    {
         my %datard;
         @datard{@fieldsrd} = @_ ;
-        $sortseq     = 'Z,';
+        $sortseqfld     = 'Z,';
         my $dirs     = '';        
         my $dirn     = sprintf("%s", $datard{'dirkat'});
         my $distcsyd = sprintf("%s", $datard{'distsyd'});
@@ -105,102 +105,102 @@ sub lsortseq    {
 #DEBUG print "$cnt,$prefix ";
         if (grep { $prefix6 eq $_ } @Favourds) {
             my $subsort = first_index { $prefix6 eq $_ } @Favourds ;
-            $sortseq = sprintf('01%s,',$subsort );
+            $sortseqfld = sprintf('01%s,',$subsort );
         }
         elsif ($bankfld eq '') {
             for ($prefix) {
                 if (($prefix eq 'VK1') || ($prefix eq 'VK2')) {
                     if ($distcsyd eq '') {
-                        $sortseq = 'A,';
+                        $sortseqfld = 'A,';
                         }
                     elsif ($distcsyd <= '60000') {
-                        $sortseq = '02,';
+                        $sortseqfld = '02,';
                     }
                     else {
                         if ($dirn eq '') {
-                        $sortseq = 'A,';
+                        $sortseqfld = 'A,';
                         }
                         else {
                             $dirs = $dirn + 157.5;
                             if ($dirs lt 180) {    #West
-                        $sortseq = '05,';
+                        $sortseqfld = '05,';
                             }
                             elsif ($dirs gt 360) {    #West
-                        $sortseq = '05,';
+                        $sortseqfld = '05,';
                             }
                             elsif ($dirs lt 270) {    #North
 
-                        $sortseq = '04,';
+                        $sortseqfld = '04,';
                             }
                             elsif ($dirs le 360) {    #South
 
-                        $sortseq = '03,';                            }
+                        $sortseqfld = '03,';                            }
                         }
                     }
                 }
                 elsif ($prefix eq 'VK3') {
                     if ($distcmel eq '') {
-                        $sortseq = 'A,';
+                        $sortseqfld = 'A,';
                         }
                     elsif ($distcmel <= '80000') {
-                        $sortseq = '10,';
+                        $sortseqfld = '10,';
                         }
                     else {
-                        $sortseq = '11,';
+                        $sortseqfld = '11,';
                         }
                 }
                 elsif ($prefix eq 'VK4') {
                     if ($distctmb eq '') {
-                        $sortseq = 'A,'; 
+                        $sortseqfld = 'A,'; 
                         }
                     elsif ($distctmb <= '80000') {
 
-                        $sortseq = '20,';
+                        $sortseqfld = '20,';
                         }
                     else {
-                        $sortseq = '21,';
+                        $sortseqfld = '21,';
                         }
                 }
                 elsif (($prefix eq 'VK5') || ($prefix eq 'VK8')) {
-                        $sortseq = '25,';
+                        $sortseqfld = '25,';
                         }
                 elsif ($prefix eq 'VK6') {
 
-                        $sortseq = '28,';
+                        $sortseqfld = '28,';
                         }
                 elsif ($prefix eq 'VK7') {
-                        $sortseq = '29,';
+                        $sortseqfld = '29,';
                         }
                 elsif ($prefix eq 'APR') {
                     if ($datard{'Call U'} eq 'APRSAU') {
-                        $sortseq = '30,';
+                        $sortseqfld = '30,';
                         }
                     elsif ($datard{'Call U'} eq 'APRWIC') {
-                        $sortseq = '31,';
+                        $sortseqfld = '31,';
                         }
                     elsif ($datard{'Call U'} eq 'APRISS') {
-                        $sortseq = '32,';
+                        $sortseqfld = '32,';
                         }
                     else {
-                        $sortseq = '33,';
+                        $sortseqfld = '33,';
                         }
                 }
                 else {
-                        $sortseq = '40,';
+                        $sortseqfld = '40,';
                         }
             }
         }
         else {
-            $sortseq = '40,';
+            $sortseqfld = '40,';
             if ($bankfld eq '6') {
-                $sortseq = 'A,';
+                $sortseqfld = 'A,';
             }
             elsif ($bankfld eq '15'){
-                $sortseq = 'B,';
+                $sortseqfld = 'B,';
             }
         }
 
-        return $sortseq 
+        return $sortseqfld 
     }
 
 exit

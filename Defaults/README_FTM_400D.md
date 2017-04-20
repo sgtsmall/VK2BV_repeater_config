@@ -15,8 +15,7 @@ The files were prepared using the RT-Systems software with Data extracted from t
     - VKBVREP.FTM400 - most recent RT Systems file
     - CLNFTM400D.dat - generated SD card file.
 
-    - VKBVREP.FTM400D - most recent Yaesu ADMS7 file
-
+    
 > This file was built for a FTM-400DR-AUS running main 2.1.
 > Loading an incorrect CLN file can brick radios. (This also applies to firmware upgrades)
 

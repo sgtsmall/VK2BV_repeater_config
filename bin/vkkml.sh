@@ -10,9 +10,10 @@ echo "test script to exercise modules"
     ./bin/vkreptest.pl 
 }
 usage() {
-echo "Usage: $(basename $0) -r repdate [-m][-w][-h][-c][-i][-y][-p][-x][-t]"
+echo "Usage: $(basename $0) -r repdate [-m][-s][-w][-h][-c][-i][-y][-p][-x][-t]"
 echo "  -r  repdate is YYMMDD from wia website"
 echo "  -w Get Data from the WIA website"
+echo "  -s Get Data from the ACMA website"
 echo "  -m Get Data from the MARC website"
 echo "  -h This help text"
 echo "  -c Suppress Chirp Files"
@@ -36,8 +37,9 @@ if [ "$1" != "" ]; then
     outtest=
     getweb=0
     getmarc=0
+    getspectra=0
     publish=0
-    args=$(getopt r:cdhiyptwmx $*)
+    args=$(getopt r:cdhiypstwmx $*)
     if [ $? != 0 ] ; then usage ; exit 0 ; fi
 
     set -- $args
@@ -56,6 +58,7 @@ if [ "$1" != "" ]; then
             -x ) publish= ; outtest=0 ; shift ;;
             -w ) getweb= ; shift ;;
             -m ) getmarc= ; shift ;;      
+            -s ) getspectra= ; mand=0 ; shift ;;      
             -t ) tester ; exit 0 ; shift ;;
         esac
     done
@@ -65,9 +68,11 @@ if [ ! -n "$mand" ] ; then
    exit 0 
 fi
 #
+here=`pwd`
 #exit
 #cd ~/Onedrive/wia
 if [ ! -d work ] ; then mkdir work ; fi
+if [ ! -d archive ] ; then mkdir archive ; fi
 if [ ! -d output ] ; then mkdir output ; fi
 if [ ! -d output/WP ] ; then mkdir output/WP ; fi
 if [ ! -n "$getweb" ] ; then 
@@ -80,7 +85,8 @@ if [ ! -n "$getweb" ] ; then
 #echo $wiaget
 #exit
     if [ $? != 0 ] ; then echo "File not found Repeater%20Directory%20$repdate.csv" ; echo "Please check wia website" ; exit 0 ; fi 
-
+    if [ ! -d ../archive/$repdate ] ; then mkdir ../archive/$repdate ; fi
+    cp repdown.dat ../archive/$repdate 
     tr -d '\r' < repdown.dat > repdowntext.dat
     echo "Generated work/repdownext.dat from repdown.dat remove CR"
     gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
@@ -91,32 +97,43 @@ if [ ! -n "$getweb" ] ; then
     gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
     echo "Generated work/wiarepdir.csv local edit"
 #
-# Get VK2MD file 
-    echo "starting get data from vk2md"
-    curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
-    unzip vkrep2google.zip
-# now get rid of most of the file 
-    let i=`awk '/<kml/{ print NR; exit }' vkrep2google.kml`
-    let j=`awk '/<Document>/{ print NR; exit }' vkrep2google.kml`+1
-    let k=`awk '/<name>Amateur Repeaters/{ print NR; exit }' vkrep2google.kml`-2
-    let l=`awk '/kml>/{ print NR; exit }' vkrep2google.kml`
-    range=`echo "$i"d\;"$j","$k"d\;"$l"d`
-#echo $range
-    echo "starting the sed of vkrep2google.kml"
-# 
-    sed -e $range vkrep2google.kml  > vkrep2work.kml
-#
-# remove the line feed in the repeater names
-    echo "starting the ex of vkrep2work.kml"
-    ex -c "%g/name></j" -c "wq" vkrep2work.kml
-#
-# apply several cleanups 
-    echo "starting the sed of vkrep2work.kml vkrep.xml"
-#
-    sed -f ../bin/2mdkml.sed vkrep2work.kml |xmllint --format - > vkrep.xml
     cd ..
-fi    
+    fi    
 #    
+if [ ! -n "$getspectra" ] ; then 
+    echo "starting get data from spectra"
+    cd work
+# Get spectra contacts
+    curl -f -o spectra_rrl.zip http://web.acma.gov.au/rrl-updates/spectra_rrl.zip
+    if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check acma website" ; exit 0 ; fi 
+    unzip spectra_rrl.zip
+    cd ..
+    ./bin/spectra01_dev.pl work/shortdev.csv 
+    sort work/shortdev.csv  Defaults/localshortdev.csv > output/shortsite.csv
+fi
+## Get VK2MD file 
+#    echo "starting get data from vk2md"
+#    curl -o vkrep2google.zip https://dl.dropboxusercontent.com/u/22223943/vkrep2google.kmz
+#    unzip vkrep2google.zip
+## now get rid of most of the file 
+#    let i=`awk '/<kml/{ print NR; exit }' vkrep2google.kml`
+#    let j=`awk '/<Document>/{ print NR; exit }' vkrep2google.kml`+1
+#    let k=`awk '/<name>Amateur Repeaters/{ print NR; exit }' vkrep2google.kml`-2
+#    let l=`awk '/kml>/{ print NR; exit }' vkrep2google.kml`
+#    range=`echo "$i"d\;"$j","$k"d\;"$l"d`
+##echo $range
+#    echo "starting the sed of vkrep2google.kml"
+## 
+#    sed -e $range vkrep2google.kml  > vkrep2work.kml
+##
+## remove the line feed in the repeater names
+#    echo "starting the ex of vkrep2work.kml"
+#    ex -c "%g/name></j" -c "wq" vkrep2work.kml
+##
+## apply several cleanups 
+#    echo "starting the sed of vkrep2work.kml vkrep.xml"
+##
+#    sed -f ../bin/2mdkml.sed vkrep2work.kml |xmllint --format - > vkrep.xml
 if [ ! -n "$getmarc" ] ; then 
     echo "starting get data from MARC"
     cd work
@@ -125,7 +142,7 @@ if [ ! -n "$getmarc" ] ; then
     if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check dmr-marc website" ; exit 0 ; fi 
     grep "^Radio" userdown.dat |sed 's/<br\/>//' > userwork.dat
     grep "^505" userdown.dat |sed 's/<br\/>//' >> userwork.dat
-    grep "^530" userdown.dat |sed 's/<br\/>//' >> userwork.dat
+ #   grep "^530" userdown.dat |sed 's/<br\/>//' >> userwork.dat
     grep "^537" userdown.dat |sed 's/<br\/>//' >> userwork.dat
 #
     cd ..
@@ -133,23 +150,30 @@ if [ ! -n "$getmarc" ] ; then
 fi
 #
 # do some distance calculations and tiny amount of additional cleanup
+#exit
 #
-echo "starting vkrep3.pl create vkrep.csv extracted data from kml"
-    ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > work/vkrep.csv
-     gsed -f ./bin/vkrep.gsed work/vkrep.csv > output/vkrep.csv
-echo "starting vkrep4.pl create vkrepdir.csv wialist merged with kml and distance"
-    ./bin/vkrep4.pl work/wiarepdir.csv output/vkrep.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
+#echo "starting vkrep3.pl create vkrep.csv extracted data from kml"
+#    ./bin/vkrep3.pl work/vkrep.xml | sed -f bin/vkrep.sed  |sort > work/vkrep.csv
+#     gsed -f ./bin/vkrep.gsed work/vkrep.csv > output/vkrep.csv
+#echo "starting vkrep4.pl create vkrepdir.csv wialist merged with kml and distance"
+#    ./bin/vkrep4.pl work/wiarepdir.csv output/vkrep.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
+echo "starting vkrep5.pl create vkrepdir.csv wialist merged with acma"
+    ./bin/vkrep5.pl work/wiarepdir.csv output/shortsite.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
 #
+echo "sort vkrepdir.csv to create sortvkrepdir.csv in work and archive"
 # This is callsign then input frequency
 sort --field-separator=',' --key=7,7 --key=5g,5 output/vkrepdir.csv > work/sortvkrepdir.csv
 #
+cp work/sortvkrepdir.csv archive/$repdate
 # get the local entries file vkrepstd from defaults
 cp Defaults/vkrepstd.srccsv output/vkrepstd.csv
 if [ -n "$outtest" ] ; then
-    echo "Testing a new format generating work/chtemp.csv"
-    ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/shinytemp.csv
-    ./bin/vkrepshiny.pl work/shinytemp.csv output/s
-   # perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
+    echo "Testing a new format generating work/shortdev.csv"
+ #   ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/shinytemp.csv
+    ./bin/spectra01_dev.pl work/shortdev.csv 
+    
+    sort work/shortdev.csv Defaults/localshortdev.csv > output/shortsite.csv
+    # perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
     #perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/dmr/scan.csv
     #perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/dmr/zone.csv
     
@@ -201,7 +225,7 @@ if [ -n "$outchirp" ] ;  then
    echo "starting vkrepchd.pl create of chirpx.csv"
     ./bin/vkrepchd.pl work/vkrepdsmerge.csv output/ch
     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
-
+    cp output/chirpx.csv archive/$repdate
 ## reads vkrepdir and vkrepstd (simplex and other local)
 #        ./bin/vkrep27wch.pl work/sortvkrepdir.csv work/vkrepstd.csv work/chtemp.csv
 #        cat work/chtemp.csv | body sort --field-separator=',' --key=3,3 > work/vkrepchmerge.csv 

@@ -1,0 +1,776 @@
+Output,Input,Call,mNemonic,Location,Service Area,S,ERP,HASL,T/O,Sp,Tone,Notes
+,,,,,,,,,,,,{{10M;FM;*}}
+29.1200,29.1200,VK2RMB,THills,Terrey Hills,Sydney 6/15,P,-,150,-,2MB,-,1
+29.1200,29.1200,VK2RBH,Darlng,Mt Darling,Broken Hill,O,-,400,-,2DPG,-,12
+29.1200,29.1200,VK4RLB,-,Logan,Brisbane,O,25,60,4,4ARN,88.5,3
+29.1300,29.1300,VK2RNG,Werri,Werrington,Western Sydney,O,-,-,-,2THE,-,13
+29.1400,29.1400,VK3RRU,-,Merbein,Mildura,O,20,-,2.5,3RSG,-,5
+29.6200,29.5200,VK5RSC,-,Mt Terrible,Adelaide,O,40,410,3,5ARC,-,7
+29.6300,29.5300,VK2RCZ,-,Lalor Park,Sydney West 8/15,P,-,-,3,2CRZ,-,
+29.6300,29.5300,VK4RPU,-,Mt Perry,Monto 6/15,P,-,-,-,4PU,-,
+29.6300,29.5300,VK7RMD,-,Mt Duncan,NW Tasmania 6/15,P,30,600,3,7NW,-,
+29.6400,29.5400,VK3RHF,-,Olinda,Melbourne 5/16,X,100,600,3,3UJ,-,8
+29.6500,29.5500,VK2RWI,Dural,Dural,Sydney 6/15,X,25,240,-,2WI,-,
+29.6600,29.5600,VK4RKC,-,Oceanview,Brisbane North,O,100,530,5,4KI,-,9
+29.6700,29.5700,VK2RBM,Lawsn1,Lawson,Blue Mtns,O,-,900,3,2HZ,-,
+29.6800,29.5800,VK6RHF,-,Leeming,Perth,O,50,300,3,WRG,179.9,10,11
+29.6800,29.5800,VK7RHF,-,Mt Nelson,Hobart 2/16,T,60,280,5,7HH,91.5,
+,,,,,,,,,,,,{{6M;FM;VK2}}
+53.5500,52.5500,VK2RSC,Lismor,Parrots Nest,Lismore,O,20,185,3,2SRC,-,
+53.5750,52.5750,VK2RPW,-,Grundy Mtn,Walcha 6/15,P,25,1463,3,NWR,-,
+53.6000,52.6000,VK2RNW,Kaput,Mt Kaputar,Narrabri 6/15,X,-,1550,-,2AJ,-,
+53.6250,52.6250,VK2RSN,-,Mt Sugarloaf,Newcastle,O,-,442,-,2FA,-,
+53.6500,52.6500,VK2RMP,Maddns,Maddens Plains,Wollongong - Sydney,O,40,465,4,2AMW,-,2
+53.6750,52.6750,VK2RMB,THills,Terrey Hills,Sydney 6/15,X,50,150,3,2MB,-,1
+53.7000,52.7000,VK2RGN,-,Signal Hill,Goulburn,O,-,-,-,2JQ,-,
+53.7250,52.7250,VK2RAG,Someb,Somersby,Gosford - Wyong,O,50,320,3,2EH,91.5,71
+53.8500,52.8500,VK2RWI,Dural,Dural,Sydney,O,25,240,3.5,2WI,-,
+53.8750,52.8750,VK2RBM,Lawsn1,Lawson,Blue Mtns,O,-,900,3,2HZ,123,
+53.9250,52.9250,VK1RGI,Ginini,Mt Ginini,SE NSW - ACT 6/15,P,35,1770,3,1ACA,91.5,
+,,,,,,,,,,,,{{6M;FM;VK3}}
+53.5500,52.5500,VK3RMH,WatlGn,Wattle Glen,Melbourne 6/15,X,25,120,3,3CNE,-,
+53.5750,52.5750,VK3RDD,-,Cockatoo,Dandenong 2/16,X,30,385,3.5,3BJA,91.5,
+53.6000,52.6000,VK3RMR,-,Mt Lookout,Gippsland,O,25,-,-,3ATQ,-,
+53.6250,52.6250,VK3RHF,-,Mt Dandenong,Melbourne,O,50,600,3,3UJ,88.5,8
+53.6500,52.6500,VK3RWU,-,Mt William,Grampians,O,-,-,-,3WI,91.5,
+53.6750,52.6750,VK3RAD,-,Mitcham,Melbourne East 6/15,X,-,100,-,3JFK,-,
+53.6750,52.6750,VK3RTN,-,Mt Gordon,Marysville - NE Vic,O,25,800,2.5,3JFK,-,14
+53.7250,52.7250,VK3RGV,Wombat,Mt Wombat,Shepparton,O,15,800,3,3WI,123,18
+53.9000,52.9000,VK3RMS,Olind2,Olinda,Melbourne,O,60,600,3,3WI,-,15
+53.9750,52.9750,VK3RGM,-,Mt Buller,NE Victoria 6/15,X,25,1800,3,3JFK,-,
+,,,,,,,,,,,,{{6M;FM;VK4}}
+53.6250,52.6250,VK4RRC,-,Wamuran,Redcliffe,O,20,230,5,4RC,-,
+53.7000,52.7000,VK4RSN,-,Wilkes Knob,Sunshine Coast,O,18,470,5,4WIS,-,
+53.7250,52.7250,VK4RGA,-,Kroombit Tops,Central Queensland 8/15,X,83,1010,5,QGL,-,
+53.7250,52.7250,VK4RLB,-,Woodridge,Brisbane South,O,25,60,4,4ARN,-,3
+53.7750,52.7750,VK4RBG,Bunda,Bundaberg,Bundaberg 6/15,P,25,50,5,4BW,-,
+53.7750,52.7750,VK4RBP,-,Butchers Creek,Atherton Tableland,O,-,600,-,4FUY,-,
+53.8000,52.8000,VK4RSA,-,Sarina,Mackay 6/15,T,-,-,-,4RM,-,
+53.8250,52.8250,VK4REG,-,Mt Mowbullan,Bunya Mtns,O,25,1700,5,4JV,91.5,
+53.9250,52.9250,VK4RBX,-,The Knobby,Ipswich,O,50,-,5,4AB,-,
+53.9500,52.9500,VK4RAT,-,Mt Stuart,Townsville 6/15,P,-,584,-,4WIT,-,
+53.9750,52.9750,VK4RBR,-,Mt Gravatt,Brisbane,O,25,80,3,4WIE,-,
+,,,,,,,,,,,,{{6M;FM;VK5}}
+53.7500,52.7500,VK5RSB,Sumtwn,Summertown,Adelaide,O,50,620,8,5ARG,-,
+53.7750,52.7750,VK5RLZ,-,Elizabeth,Adelaide North,O,50,73,5,5LZ,-,
+,,,,,,,,,,,,{{6M;FM;VK6}}
+53.8000,52.8000,VK6RAP,PerSE1,Roleystone,Perth South East,O,20,350,5,WRG,-,11
+,,,,,,,,,,,,{{6M;FM;VK7}}
+53.7000,52.7000,VK7RCH,-,Grey Mtn,Huon and Channel,O,50,821,5,7HH,-,
+53.7750,52.7750,VK7RTV,-,Gawler,Central NW Coast,O,50,155,7.5,TNA,-,
+53.8000,52.8000,VK7RMD,-,Mt Duncan,NW Tasmania,O,40,600,10,7NW,-,
+53.8250,52.8250,VK7RAD,-,Queens Domain,Derwent Valley,O,30,140,8,7OTC,-,17
+53.8250,52.8250,VK7RAC,-,Table Cape,NW Tasmania 6/15,P,30,150,3,7NW,-,
+53.8750,52.8750,VK7RAA,-,Mt Arthur,N Tasmania 6/15,P,50,1400,3,7TAZ,-,
+,,,,,,,,,,,,{{2M;FM;VK2}}
+146.6250,146.0250,VK2RBB,Byron,Goonengerry,Byron Bay,O,18,355,3,2SRC,123,
+146.6250,146.0250,VK2RGN,MtGray,Mt Gray,Goulburn,O,20,-,3,2JQ,-,
+146.6250,146.0250,VK2RNW,Kaput,Mt Kaputar,Narrabri - NW NSW 6/15,P,50,1550,3,2AJ,-,
+146.6500,146.0500,VK2RDX,Bindo,Mt Bindo,W Blue Mtns,O,50,1362,3.5,2LE,-,
+146.6500,146.0500,VK2RMI,THiHi,Terry Hie Hie,Moree / Inverell,O,10,660,4,2AJ,-,
+146.6750,146.0750,VK2RCV,Graft,Grafton,Clarence Valley,O,30,264,3.5,2YLO,123,
+146.6750,146.0750,VK2REE,-,Mt Ganghat,Taree-Gloucester,O,50,600,5.0,2FRE,123,22
+146.6750,146.0750,VK2RLH,SBark,Stringybark Hill,Bathurst,O,25,-,-,2NX,-,
+146.6750,146.0750,VK2RUW,Nites1,Knights Hill,Wgong Sth - Shoalhaven,O,50,920,5,2AMW,-,21
+146.7000,146.1000,VK2RAO,Cbolas,Mt Canobolas,Orange,O,50,1417,3,2AOA,91.5,
+146.7000,146.1000,VK2RMU,NowraH,Nowra Hill,Milton - Ulladulla,O,50,330,4,2HQ,123,
+146.7000,146.1000,VK2RPM,MdlBro,Middle Brother,Port Macquarie,O,50,552,3.5,2BOR,91.5,
+146.7250,146.1250,VK1RBM,Issacs,Isaacs Ridge,Canberra Central,O,25,790,3,1ACA,91.5,
+146.7250,146.1250,VK2RAD,SHill,South Hill,Armidale,O,10,1140,3,2IY,-,
+146.7250,146.1250,VK2RAG,Someb,Somersby,Gosford,O,50,320,3,2EH,91.5,
+146.7250,146.1250,VK2RBL,Balran,Balranald,Balranald 6/15,X,50,-,-,3RSG,-,
+146.7250,146.1250,VK2RCD,BurroH,Burroway Hill,Dubbo area,O,50,300,-,2UBQ,-,29
+146.7500,146.1500,VK2RCB,FranLO,Francis Lookout,Bellingen,O,50,850,3,2EP,123,24
+146.7500,146.1500,VK2RTM,-,Mt Crawney,Tamworth/Muswellbrook,O,50,1361,-,2BTW,-,
+146.7500,146.1500,VK2RWG,WOF,Wheel of Fortune,Wagga,O,25,496,3,2WG,91.5,25
+146.7750,146.1750,VK2RBE,Bethun,Mt Bethungra,Cootamundra - Young,O,25,892,3,2WG,91.5,25
+146.7750,146.1750,VK2RBK,NomTop,Noumea Tops,Bingara/Barraba 6/15,X,25,720,-,2DK,-,
+146.7750,146.1750,VK2RBR,Tabulm,Tabulam,Far North Coast 6/15,X,10,600,3,2SRC,-,
+146.7750,146.1750,VK2RTZ,SugarL,Sugarloaf Range,Newcastle,O,83,442,3,2ATZ,91.5,
+146.8000,146.2000,VK2RCC,NeedlMn,Needle Mtn,Coonabarabran,O,80,1100,3.5,2UBQ,-,29
+146.8000,146.2000,VK2RLE,HCote,Engadine,Sydney,O,60,110,5,2LE,-,
+146.8000,146.2000,VK2RSC,Lismor,Parrots Nest,Lismore,O,15,185,3,2SRC,123,
+146.8000,146.2000,VK2RTD,Kendal,Mt Kendall,Tumut area,O,25,933,3,2WG,91.5,25
+146.8250,146.2250,VK2RGA,Galore,Mt Galore,Lockhart,O,25,387,3,2WG,91.5,25
+146.8250,146.2250,VK2RHR,HRange,High Range,Southern Highlands,O,50,862,3,2JQ,-,
+146.8250,146.2250,VK2RWP,WolumP,Wolumla Peak,Bega-Far Sth Coast 6/15,T,50,770,3.5,2CRN,-,
+146.8500,146.2500,VK2RCH,Bruxnr,Mt Coramba,Coffs Harbour,O,50,600,3,2EP,123,24
+146.8500,146.2500,VK2RGF,SqrNob,Mt Square Knob,Leeton - Griffith,O,25,386,3,2WG,91.5,25
+146.8500,146.2500,VK2RMO,Baldwn,Mt Baldwin,Tamworth,O,20,820,-,2BTW,-,
+146.8500,146.2500,VK2RMP,Maddns,Maddens Plains,Wollongong - Sydney,O,120,465,4,2AMW,-,21
+146.8750,146.2750,VK2RMB,THills,Terrey Hills,Sydney,O,50,150,3,2MB,-,1
+146.8750,146.2750,VK2RMY,YarahP,Mt Yarrahapinni,Kempsey - Macksville,O,15,500,3,2EP,-,
+146.8750,146.2750,VK2RLJ,Prishr,Back Perisher Mtn,Jindabyne,O,10,2010,3,2SNO,-,
+146.8750,146.2750,VK2RZL,Muswel,Mt Arthur,Muswellbrook,O,10,-,0.5,2ATZ,123,
+146.9000,146.3000,VK1RAC,Tidbin,Tidbinbilla,SW ACT 6/15,X,10,441,5,1ACA,-,
+146.9000,146.3000,VK2RNC,SgarL,Mt Sugarloaf,Lower Hunter,O,70,442,5,2AWX,-,
+146.9000,146.3000,VK2RRT,Boona,Boona Mtn,Condobolin,O,25,441,5,2UBQ,-,
+146.9250,146.3250,VK1RJB,Jervis,Jervis Bay,Jervis Bay,O,-,-,-,2VVV,-,
+146.9250,146.3250,VK2RGR,NRyde,North Ryde,Sydney North,O,10,30,2.5,2TVG,-,
+146.9500,146.3500,VK1RGI,Ginini,Mt Ginini,ACT - SE NSW,O,40,1770,3.5,1ACA,91.5,
+146.9500,146.3500,VK2RNE,Rumbee,Mt Rumbee,Glen Innes,O,10,1503,4,2AJ,-,
+146.9750,146.3750,VK2RNC,SgarL1,Mt Sugarloaf,Lower Hunter,O,70,442,10,2AWX,-,26
+146.9750,146.3750,VK2RUW,Nites2,Knights Hill,Wollongong,O,50,920,5,2AMW,-,
+147.0000,146.4000,VK2RBH,Darlng,Mt Darling,Broken Hill,O,15,400,3,2DPG,-,
+147.0000,146.4000,VK2RCN,TelePt,Telegraph Point,Port Macquarie,O,50,136,3,2BOR,-,
+147.0000,146.4000,VK2RWI,Dural,Dural,Sydney,O,120,240,3.5,2WI,-,
+147.0250,147.6250,VK2ROT,Paddo,Paddington,Sydney,O,20,40,3,2BV,91.5,23
+147.0250,147.6250,VK2RSM,Digits,Digits,Adaminaby,O,50,1350,3.5,2SNO,-,
+147.0500,147.6500,VK2RBM,Lawsn1,Lawson,Blue Mtns,O,20,900,3.5,2HZ,123,
+147.0750,147.6750,VK2RMW,Wandra,Mt Wandera,Batemans Bay,O,25,530,3,2BAY,-,
+147.0750,147.6750,VK2RCZ,Lalor,Lalor Park,Sydney West,O,20,150,3,2CRZ,123,
+147.0750,147.6750,VK2RWR,Moona,Moona Trig,Walcha,O,-,-,-,NWR,-,
+147.1000,147.7000,VK2RGL,CbTree,Cabbage Tree Mtn,Forster - Tuncurry,O,30,650,5,2GLR,-,
+147.1000,147.7000,VK2RSH,SHigh,Southern Highlands,Southern Highlands,O,-,-,-,2JQ,-,
+147.1000,147.7000,VK2RWM,Warrad,Mt Warraderry,Grenfell,O,100,575,3,2XAQ,-,
+147.1250,147.7250,VK1RWP,-,portable,ACT WICEN,O,20,-,-,1ACA,-,
+147.1250,147.7250,VK2RAG,Someb1,Somersby,Gosford WICEN,O,50,320,3,2EH,91.5,
+147.1250,147.7250,VK2RAV,-,portable,Statewide WICEN,O,10,-,3,NWN,-,
+147.1250,147.7250,VK2RSR,Scadns,Scaddens Ridge,Wyong WICEN,O,20,-,-,NWN,-,27
+147.1500,147.7500,VK1RWP,-,portable,ACT WICEN,O,20,-,-,1ACA,-,
+147.1500,147.7500,VK2RAV,-,portable,Statewide WICEN,O,10,-,3,NWN,-,
+147.1500,147.7500,VK2RWC,Chats1,Chatswood,Sydney WICEN,O,40,140,0.5,NWN,91.5,
+147.1500,147.7500,VK2RWH,Nwcsle,Newcastle,Lower Hunter WICEN,O,-,-,-,NWN,-,
+147.1500,147.7500,VK2RWK,KurraJ,Kurrajong Heights,Blue Mtns WICEN,O,-,-,-,NWN,-,
+147.1750,147.7750,VK1RBH,BullsH,Bulls Head,ACT WICEN,O,50,1385,-,1ACA,-,
+147.1750,147.7750,VK1RWP,-,portable,ACT wide WICEN,O,-,-,-,1ACA,-,
+147.1750,147.7750,VK2RAV,-,portable,Statewide WICEN,O,10,-,3,NWN,-,
+147.1750,147.7750,VK2REP,-,portable,Statewide WICEN,O,-,-,-,NWN,-,
+147.1750,147.7750,VK2RFI,-,portable,Hunter region WICEN,O,-,-,-,NWN,-,
+147.1750,147.7750,VK2RWS,-,portable,Statewide WICEN,O,-,-,-,NWN,-,
+147.2000,147.8000,VK2RCW,Lindsy,Mt Lindsay,Orange,O,87,950,3,2ACW,-,
+147.2000,147.8000,VK2RGL,CbTree,Cabbage Tree Mtn,Forster - Tuncurry,O,30,650,5,2GLR,-,
+147.2000,147.8000,VK2RWB,GwynH,Gwynne Hill,Yarrawonga WICEN,O,80,250,5,NWN,123,19
+147.2250,147.8250,VK2RAY,Albury,Albury,Albury,O,-,-,-,2EWC,118.8,
+147.2250,147.8250,VK2RST,Lewshm,Lewisham,Sydney SSTV 6/15,X,25,60,5,2TVG,-,30
+147.2250,147.8250,VK2RYL,BaldM,Bald Mtn,Rylstone,O,120,983,4,2LE,-,31
+147.2500,147.8500,VK2REH,Woodbn,Moonimba,Evans Head,O,18,180,3,2SRC,123,
+147.2500,147.8500,VK2RNS,Asqith,Asquith,Sydney,O,50,225,3.5,2MA,-,32
+147.2750,147.8750,VK2RAP,AcacPl,Acacia Plateau,Warwick - Stanthorpe,O,40,950,3,4BRC,-,33
+147.2750,147.8750,VK2RRR,Razor,Razorback Range,SW Sydney,O,-,-,-,2VVV,-,
+147.3250,147.9250,VK2RTS,Lawsn2,Lawson,Blue Mtns,O,25,-,5,2FKO,-,
+147.3500,147.9500,VK2RBO,Coorb,Cooranbong,Newcastle 6/15,P,-,-,-,2DBO,-,
+147.3750,147.9750,VK2RMM,McKen,Mt MacKenzie,Tenterfield - Granite Belt,O,40,1350,3,4BRC,123,33
+,,,,,,,,,,,,{{2M;FM;VK3}}
+144.9375,145.5375,VK3RDQ,WantE,Outer Eastern Suburbs,Melbourne,O,80,68,3,3DQ,-,46
+146.6500,146.0500,VK3RBT,GreenH,Green Hill,Ballarat,O,-,-,-,3BML,91.5,
+146.6500,146.0500,VK3REG,MntCan,Mt Cann,East Gippsland,O,40,-,2.5,3EGC,-,35
+146.6500,146.0500,VK3RGV,Wombat,Mt Wombat,Shepparton,O,80,800,3,3WI,123,18
+146.6750,146.0750,VK3RSP,MtMtha,Mt Martha,Mornington Peninsula,O,-,-,-,3BSP,-,
+146.6750,146.0750,VK3RCA,Torumb,Torrumbarry,Echuca,O,50,-,-,3CMZ,-,
+146.7000,146.1000,VK3RML,FernyC,Ferny Creek,Melbourne,O,100,600,2.5,3RSG,91.5,
+146.7000,146.1000,VK3RON,Ouyen,Ouyen,Ouyen,O,80,130,3,3RSG,-,56
+146.7250,146.1250,VK3RYV,Briart,Briarty Hill,Yarra Valley,O,25,421,2.5,3YVG,-,
+146.7500,146.1500,VK3RBA,Bunyng,Mt Buninyong,Ballarat,O,15,750,3,3WI,91.5,
+146.7750,146.1750,VK3RAG,Renies,Rennies Hill,Alexandra,O,50,480,2.5,3JFK,123,14
+146.8000,146.2000,VK3RLV,Tassie,Mt Tassie,Latrobe Valley,O,80,730,2.5,3WI,-,37
+146.8000,146.2000,VK3RMA,Mildra,Mildura,Mildura City,O,50,50,3,3WI,-,56
+146.8250,146.2250,VK3RAJ,Upwey,Upwey,Melbourne E/SE,O,50,270,3,3AJ,94.8,104
+146.8250,146.2250,VK3RPL,Portld,Portland,Portland,O,200,100,3,3AJ,91.5,104
+146.8500,146.2500,VK3RDU,Major,Mt Major,Goulburn Valley,O,80,377,2.5,3WI,-,
+146.8500,146.2500,VK3RMN,KLake,Kinglake,Melbourne,O,80,600,3,VWN,91.5,39
+146.8500,146.2500,VK3RWM,Arapls,Mt Arapiles,Horsham,O,30,-,2.5,3WI,-,
+146.8750,146.2750,VK3RGH,GreenH,Green Hill,Macedon R & Melb,O,100,600,3,3HF,91.5,
+146.9000,146.3000,VK3REB,MntNow,Mt Nowa Nowa,Bairnsdale,O,30,354,2.5,3EGC,-,35
+146.9250,146.3250,VK3RPW,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+146.9250,146.3250,VK3RWE,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+146.9250,146.3250,VK3RWI,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+146.9250,146.3250,VK3RWR,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+146.9250,146.3250,VK3RWP,-,portable,Statewide WICEN,O,20,-,-,3WI,-,
+146.9500,146.3500,VK3RWZ,Wiliam,Mt William,Grampians,O,50,1170,2.5,3WI,91.5,
+146.9750,146.3750,VK3RRC,RdlsCk,Riddells Creek,Riddells Creek (Scouts),O,-,-,-,VSA,-,
+146.9750,146.3750,VK3RSR,-,portable,Statewide,O,20,-,-,VSA,-,40
+147.0000,146.4000,VK3RGL,Anakie,Mt Anakie,Geelong,O,45,400,3,3ATL,91.5,
+147.0000,146.4000,VK3RNE,BigBen,Mt Big Ben,Wodonga,O,100,1158,2.5,3WI,-,36
+147.0250,147.6250,VK3RGS,-,Mt Fatigue,Foster 6/15,X,60,-,2.5,3WI,123,37
+147.0250,147.6250,VK3RMK,Kerang,Mt Kerang,Charlton,O,25,385,-,3WI,-,
+147.0500,147.6500,VK3RHO,Hotham,Mt Hotham,NE Victoria,O,30,-,2.5,3WI,-,
+147.0500,147.6500,VK3RVL,RobinV,Robinvale,Robinvale,O,40,-,3,3RSG,-,56
+147.0500,147.6500,VK3RWL,Warnum,Mt Warrnambool,Warrnambool,O,40,-,0.5,3WI,-,
+147.0750,147.6750,VK3RCR,Dande,Mt Dandenong,Melbourne,O,100,600,-,3VW,-,
+147.1000,147.7000,VK3RPB,Bright,Mt Porepunkah,Bright,O,5,-,2.5,3WI,-,36
+147.1000,147.7000,VK3RSG,BassH,Bass Hill,South Gippsland,O,40,-,3,3WI,-,
+147.1000,147.7000,VK3RWA,BenNev,Ben Nevis,Ararat,O,30,876,2.5,3WI,91.5,
+147.1250,147.7250,VK3RDG,Delegt,Mt Delegate,Delegate,O,-,-,-,3WI,-,
+147.1250,147.7250,VK3RGC,MoPell,Montpellier,Geelong,O,45,160,3,3ATL,91.5,
+147.1500,147.7500,VK3RCV,Alex,Mt Alexander,Bendigo,O,20,730,3,3WI,-,
+147.1500,147.7500,VK3REM,MarHil,Maramingo Hill,Mallacoota WICEN 7/15,X,30,388,2.5,3EGC,-,35
+147.1750,147.7750,VK3REC,Olind1,Olinda,Melbourne,O,40,600,2.5,3ER,-,
+147.2000,147.8000,VK3RBQ,Dimbol,Dimboola,Wimmera,O,25,160,-,3KAY,-,
+147.2000,147.8000,VK3RPS,Cotrel,Mt Cottrell,Melb West EchoL/IRLP,O,150,217,3,3HF,91.5,103
+147.2250,147.8250,VK3RWG,BawSq,Mt Baw Baw,West Gippsland,O,20,1563,2.5,3WI,-,
+147.2500,147.8500,VK3RMM,Macdon,Mt Macedon,Melbourne WICEN,O,100,1011,2.5,3WI,-,
+147.2750,147.8750,VK3RMP,Caveat,Caveat,North Central 6/15,P,100,670,3,VSA,91.5,
+147.2750,147.8750,VK3ROW,BeechF,Beech Forest,Otway Ranges 6/15,X,45,550,3,3ATL,91.5,
+147.3000,147.9000,VK3RWE,-,portable,Statewide WICEN,O,-,-,-,3WI,-,
+147.3000,147.9000,VK3RWR,-,portable,Statewide WICEN,O,-,-,-,3WI,-,
+147.3000,147.9000,VK3RWP,-,portable,Statewide WICEN,O,20,-,-,3WI,-,
+147.3250,147.9250,VK3RMC,NarWar,Narre Warren Nth,Melbourne SE,O,-,-,-,3APC,-,
+147.3500,147.9500,VK3RMS,Olind2,Olinda,Melbourne East,O,-,600,-,3WI,-,
+147.3750,147.9750,VK3RMU,StLeo,Mt St Leonard,Melbourne,O,-,1028,2.5,3WI,91.5,
+147.4250,147.4250,VK3RFY,Hillsd,Hillside,Melb West EchoL/IRLP,O,100,145,3HF,91.5,38,99
+,,,,,,,,,,,,{{2M;FM;VK4}}
+145.6250,145.6250,VK4RKC,-,Oceanview,Brisbane North SSTV,O,100,530,-,4KI,-,41
+146.6250,146.0250,VK4RCC,-,Caboolture,Caboolture,O,-,-,-,4QD,-,
+146.6250,146.0250,VK4RGT,-,Maurice Hill,Gladstone City,O,83,212,2,QGL,91.5,
+146.6500,146.0500,VK4ROM,-,Grafton Range,Roma,O,30,550,-,4ROM,-,
+146.6500,146.0500,VK4RHB,-,Booral,Hervey Bay,O,25,135,3,4CHB,-,
+146.6750,146.0750,VK4RET,-,Mt Kiangarow,S Burnet & D/Downs,O,60,1145,5,4BAD,91.5,
+146.6750,146.0750,VK4RHT,-,Hann Tableland,Atherton Tablelands,O,100,965,4,4WAT,-,
+146.6750,146.0750,VK4RSA,-,Sarina,Mackay,O,25,400,4,4RM,-,
+146.7000,146.1000,VK4RAR,-,Mt Archer,Rockhampton,O,50,608,4,4WIR,91.5,
+146.7000,146.1000,VK4RAT,-,Mt Stuart,Townsville,O,50,584,10,4WIT,-,
+146.7000,146.1000,VK4RGC,-,Springbrook,Gold Coast,O,150,1010,4,4WIG,123,48
+146.7000,146.1000,VK4RMI,-,Four Mile Hill,Mount Isa,O,20,500,3.5,4RMI,-,
+146.7250,146.1250,VK4RCM,GymSth,Mt Boulder,Gympie Southern,O,20,505,4,4GYM,91.5,
+146.7250,146.1250,VK4RKP,-,Mt Crosby,Ipswich,O,20,-,-,4AKP,-,
+146.7500,146.1500,VK4RDD,-,O'Rourke's House,Toowoomba,O,35,702,4,4WID,-,
+146.7500,146.1500,VK4RPU,-,Mt Perry,Monto,O,-,-,-,4PU,-,
+146.7750,146.1750,VK4RBM,-,Blue Mtn,Mackay,O,25,400,4,4WIM,91.5,42
+146.7750,146.1750,VK4RGN,GymNth,Mt Kanigan,Gympie Northern 10/16,T,25,366,4,4GYM,-,
+146.8000,146.2000,VK4RBU,MtGoon,Mt Goonaneman,Bundaberg/Maryborough,O,20,620,4,4BW,-,44
+146.8000,146.2000,VK4RMP,-,Midge Point,Proserpine,O,-,-,-,4RM,-,49
+146.8250,146.2250,VK4RCR,-,Braeside,Stanthorpe,O,10,1050,5,4AGJ,-,
+146.8250,146.2250,VK4RSL,-,Noosa Heads,Sunshine Coast North,O,25,100,4.5,4WIS,91.5,45
+146.8250,146.2250,VK4RSP,-,Roddas Lookout,Springsure,O,100,-,-,4WCH,-,49
+146.8500,146.2500,VK4RSC,-,Wilkes Knob,Sunshine Coast South,O,15,470,4.5,4WIS,91.5,45
+146.8750,146.2750,VK4RAS,-,Carborough Range,Moranbah,O,50,450,3,4WCH,-,49
+146.8750,146.2750,VK4RBS,-,Alexandra Hills,Redlands,O,25,70,3.5,4BAY,-,
+146.9000,146.3000,VK4RAI,-,The Knobby,Ipswich,O,70,120,4.5,4WIP,-,47
+146.9000,146.3000,VK4RGA,-,Kroombit Tops,Central Qld,O,83,1010,4,QGL,91.5,44,49
+146.9250,146.3250,VK4RHR,-,Hodgson Range,W Central Highlands,O,25,520,-,4WCH,-,49
+146.9250,146.3250,VK4RRC,-,Wamuran,Redcliffe,O,25,230,5,4RC,-,
+146.9500,146.3500,VK4RBD,-,Blackdown Tableland,Blackwater,O,100,900,-,4WCH,91.5,49
+146.9500,146.3500,VK4RBQ,-,Mt Coot-tha,Brisbane 9/15,X,120,-,4,4WIG,91.5,48
+146.9500,146.3500,VK4RCA,-,Mt Haren,Cairns,O,50,500,4,4HM,-,
+146.9500,146.3500,VK4REG,-,Mt Mowbullan,Bunya Mtns,O,75,1700,5,4JV,91.5,
+146.9750,146.3750,VK4RRR,-,Mt Seaview,N Central Highlands,O,50,-,3,4WCH,-,49
+146.9750,146.3750,VK4RLW,-,Spring Mtn,Logan,O,25,-,5,4OD,91.5,
+147.0000,146.4000,VK4RBN,-,Mt Glorious,Brisbane,O,60,-,2,4RC,91.5,94
+147.0000,146.4000,VK4RCQ,-,Banana Range,Monto,O,-,-,-,4RCQ,-,
+147.0000,146.4000,VK4RMK,-,Mt Blackwood,Mackay,O,25,320,5,4WIM,-,42
+147.0750,147.6750,VK4RAX,-,Mt Cotton,Brisbane South,O,50,-,-,4WSS,-,95
+147.0750,147.6750,VK4REP,-,Middlemount,Middlemount 1/16,T,83,-,-,4WCH,-,95,49
+147.1000,147.7000,VK4RBP,-,Butchers Creek,Atherton Tableland,O,25,600,4,4FUY,-,95
+147.1250,147.7250,VK4RMM,-,Stanthorpe,Stanthorpe,O,-,-,-,4BRC,-,95
+147.1500,147.7500,VK4RAG,-,Spring Hill,Brisbane WICEN,O,80,90,3.5,4BWI,-,95
+147.1500,147.7500,VK4RWI,-,portable,Statewide WICEN 6/15,P,-,-,-,QWN,-,95
+147.1750,147.7750,VK4RWM,-,North Ipswich,Ipswich WICEN,O,10,-,4,4WIP,-,95
+147.2500,147.8500,VK4RED,-,Dalby,Dalby,O,60,-,5,4BAD,-,95
+147.2750,147.8750,VK4RNL,-,Doonan,N. Sunshine Coast,O,25,90,5,4NL,-,95
+147.3750,147.9750,VK4RGA,-,Kroombit Tops,Central Qld,O,83,1010,4,QGL,91.5,49,95
+147.6250,147.0250,VK4RLB,-,Woodridge,Brisbane South,O,25,60,4,4ARN,-,94
+147.8000,147.2000,VK4RBG,-,The Hummock,Bundaberg,O,20,100,5,4BW,-,94
+147.8000,147.2000,VK4RBT,-,Mt Tambourine,Gold Coast,O,100,1900,5,4WIF,-,94
+147.9000,147.3000,VK4RKC,-,Oceanview,Brisbane North,O,100,530,5,4KI,-,9,94
+147.9500,147.3500,VK4RBR,-,Mt Gravatt,Brisbane,O,110,80,-,4WIE,-,94
+,,,,,,,,,,,,{{2M;FM;VK5}}
+146.6250,146.0250,VK5RLZ,-,Elizabeth,Adelaide North,O,25,73,4,5LZ,-,
+146.6500,146.0500,VK5RNC,Ncte,Naracoorte,Naracoorte,O,25,80,3,5RNC,-,51
+146.6750,146.0750,VK5RSV,-,Willunga Hill,Adelaide South RTTY,O,25,320,10,5ARC,-,52
+146.7000,146.1000,VK5RMN,-,The Bluff,Port Pirie,O,55,730,5,STX,-,
+146.7250,146.1250,VK5RBK,-,Mt Barker,Mt Barker,O,-,-,-,5YFR,-,
+146.7500,146.1500,VK5RAC,-,Pillaworta Hill,Lower Eyre Peninsula,O,50,325,4.5,5ZEA,-,
+146.7750,146.1750,VK5RAH,-,Lobethal,Adelaide Hills,O,50,-,8,5NRV,-,
+146.8000,146.2000,VK5REP,-,Coolanie,Eyre Peninsula,O,60,500,4,WIA,-,
+146.8000,146.2000,VK5RSE,MtGrah,Mt Graham,Millicent,O,25,230,3,5SR,-,
+146.8250,146.2250,VK5RBV,-,Mt Kitchener,Barossa Valley,O,50,580,3.5,5BRC,-,53
+146.8500,146.2500,VK5RHO,-,Anstey Hill,Adelaide,O,30,410,3.5,5GRC,-,
+146.8750,146.2750,VK5RMB,-,Mt Beevor,Murray Bridge,O,80,503,5,5NRV,-,
+146.9000,146.3000,VK5RMG,MtgVHF,The Bluff,Mount Gambier,O,25,100,5,5SR,-,51
+146.9250,146.3250,VK5RLH,-,Bumbunga Hill,Central North,O,50,413,3,5CZ,-,
+146.9750,146.3750,VK5RAE,-,Mt Arden,Port Augusta,O,25,845,3,5AJ,-,
+147.0000,146.4000,VK5RAD,-,Crafers,Adelaide,O,30,610,3.5,5BAR,-,
+147.2000,147.8000,VK5RBP,-,portable,Statewide (Scouts) 6/15,P,50,-,3,5BP,-,
+147.3000,147.9000,VK5RWI,-,portable,Statewide WICEN,O,-,-,-,SWN,-,
+147.3250,147.9250,VK5RLD,-,Moorook,Riverland,O,25,86,5,5BRL,-,
+147.3500,147.9500,VK5RBT,-,Willalooka,Bordertown - Keith,O,50,125,3,5SR,-,51
+147.3750,147.9750,VK5RKN,Kingst,Mt Benson,Kingston,O,25,25,3,5SR,-,51
+29.6200,147.6750,VK5RSC,-,Mt Terrible,Adelaide,O,40,410,3,5ARC,141.3,7
+147.6750,29.6200,VK5RSC,-,Mt Terrible,Adelaide,O,40,410,3,5ARC,141.3,7
+,,,,,,,,,,,,{{2M;FM;VK6}}
+146.6250,146.0250,VK6RNC,PerNth,Landsdale,Perth North,O,50,100,4,6NC,-,
+146.6250,146.0250,VK6RTP,TomPrc,Tom Price,Tom Price,O,50,1128,5,6DF,-,
+146.6500,146.0500,VK6RBY,Bunbry,Harvey,Bunbury,O,25,20,5,6BRC,-,
+146.6750,146.0750,VK6RNR,NthHmp,Northampton,Northampton,O,25,-,-,WGE,-,
+146.7000,146.1000,VK6RAP,PerSE1,Roleystone,Perth South East,O,40,360,4,WRG,-,11
+146.7000,146.1000,VK6RWR,WickHm,Wickham,North West,O,20,80,-,WNW,-,
+146.7250,146.1250,VK6RAL,Albany,Mt Clarence,Albany 6/15,X,25,170,5,6SR,-,54
+146.7500,146.1500,VK6RLM,PerSE2,Roleystone,Perth South East,O,20,350,4,WRG,-,
+146.7750,146.1750,VK6ROO,Geldtn,Geraldton,Geraldton,O,50,-,-,WGE,-,
+146.8000,146.2000,VK6RTH,PerNE,Tic Hill,Perth North East,O,60,230,4,WRG,-,19
+146.8250,146.2250,VK6RAA,MtBark,Mt Barker,South Coast 6/15,X,25,450,5,6SR,-,54
+146.8500,146.2500,VK6REX,Exmoth,Exmouth,North West,O,20,385,3,WNW,-,
+146.8750,146.2750,VK6RIC,-,portable,Statewide WICEN,O,-,-,-,WWN,-,
+146.9000,146.3000,VK6RMW,MtWilm,Mt William,Mandurah,O,20,520,4,WRG,-,
+146.9500,146.3500,VK6RFM,Bicton,Attadale,Bicton,O,10,65,3,WRG,-,
+146.9750,146.3750,VK6RSH,-,portable,Statewide,O,10,-,5,6SH,-,
+147.0000,146.4000,VK6RAW,Katnng,Fairfield,Katanning,O,25,400,5,WRG,-,54
+147.0000,146.4000,VK6RAK,Kal,Kalgoorlie,Kalgoorlie,O,20,400,5,6RM,-,
+147.0000,146.4000,VK6RGN,Grldtn,Geraldton,Geraldton,O,16,30,5,WGE,-,
+147.0250,147.6250,VK6RPT,-,portable,Statewide,O,-,-,-,WRG,-,
+147.0750,147.6750,VK6ROT,Rotto,Rottnest Is,Perth Coast 6/15,X,50,55,5,6ZTN,-,19
+147.1500,147.7500,VK6RMJ,Manji,Manjimup,Manjimup,O,25,150,5,6FN,-,
+147.1750,147.7750,VK6REC,Avon C,Wooroloo,Avon Central,O,25,300,3,6PK,-,
+147.2000,147.8000,VK6RCT,Cataby,Yandan Hill,Cataby,O,50,200,4,WRG,-,19
+147.2500,147.8500,VK6RMS,MtSdbk,Mt Saddleback,Boddington 6/15,X,20,590,4,WRG,-,56,11
+147.2750,147.8750,VK6RAV,-,Hoddy Well,Avon East,O,20,80,3,WRG,-,
+147.3250,147.9250,VK6RKN,Keller,Kellerberrin,Kellerberrin,O,25,-,5,WRG,-,
+147.3500,147.9500,VK6RBN,Busltn,Chapman Hill,Busselton,O,30,130,5,WRG,-,11
+147.6250,147.0250,VK6RPT,-,portable,Statewide,O,-,-,-,WRG,-,
+,,,,,,,,,,,,{{2M;FM;VK7}}
+146.6250,146.0250,VK7RMD,-,Mt Duncan,NW Tasmania,O,30,600,5,7NW,-,
+146.6500,146.0500,VK7RAF,-,Mt Faulkner,Hobart,O,50,900,3,7JG,123,60
+146.7000,146.1000,VK7RAD,-,Queens Domain,Hobart,O,100,140,3,7OTC,141.3,61
+146.7500,146.1500,VK7RNW,-,Ulverstone West,Central North Coast,O,30,160,5,7NW,-,
+146.7750,146.1750,VK7RTV,-,Stowport,Central NW Coast,O,70,155,5,TNA,-,
+146.8000,146.2000,VK7RAK,-,Gagebrook,NW Hobart,O,-,-,-,7HDM,-,
+146.8500,146.2500,VK7RHT,-,Snug Tiers,Channel,O,100,370,40,7OTC,-,61
+146.9000,146.3000,VK7REC,-,Snow Hill,East Coast 6/15,X,30,970,-,7TAZ,-,
+147.0000,146.4000,VK7RAA,-,Mt Arthur,N Tasmania,O,100,1400,5,7TAZ,-,59
+147.0750,147.6750,VK7RWC,-,Mt Read,West Coast,O,25,1200,3,7RWC,123,59
+147.3000,147.3000,VK7RBI,-,Alonnah,SE Tasmania,O,-,-,3,7OTC,114.8,61
+147.3750,147.9750,VK7RAC,-,Table Cape,NW Tasmania 6/15,P,-,150,-,7NW,-,
+147.8750,146.0750,VK7RCR,-,Lenah Valley,Hobart 6/15,X,20,220,2,7ZCR,123,96
+147.9750,147.3750,VK7RAD,-,Queens Domain,Hobart,O,100,140,40,7OTC,141.3,62
+,,,,,,,,,,,,{{2M;FM;VK8}}
+146.8000,146.2000,VK8RWI,-,Marrara,Darwin WICEN,O,100,77,4,8DA,123,
+146.9000,146.3000,VK8RDA,-,Darwin,Darwin,O,50,86,4,8DA,123,
+146.9500,146.3500,VK8RCA,ASpr2,West Gap,Alice Springs,O,25,776,3,8AR,91.5,
+146.9500,146.3500,VK8RPD,-,Moil,Darwin N suburbs,O,50,72,4,8DA,-,
+147.0000,146.4000,VK8RTE,-,Larrakeyah,Darwin City 6/15,X,50,59,4,8DA,123,
+,,,,,,,,,,,,{{70CM;FM;VK2}}
+438.0250,433.0250,VK2RHR,HRange,High Range,Southern Highlands,O,75,827,2,2JQ,-,
+438.0250,433.0250,VK2RNC,SgarL,Mt Sugarloaf,Lower Hunter,O,25,442,5,2AWX,-,
+438.0250,433.0250,VK2RTW,-,Willans Hill,Wagga,O,25,372,3,2WG,91.5,25
+438.0500,433.0500,VK1RGI,Ginini,Mt Ginini,ACT - SE NSW,O,150,1770,3.5,1ACA,91.5,67
+438.0750,433.0750,VK2RAG,Someb,Somersby,Gosford - Wyong IRLP,O,50,320,3,2EH,91.5,31
+438.0750,433.0750,VK2RMY,YarahP,Mt Yarrahapinni,Kempsey - Macksville,O,50,500,3,2EP,-,
+438.1000,433.1000,VK2RRW,-,North Ryde,Northern Sydney WICEN,O,-,-,-,NWN,-,
+438.1125,432.7125,VK2RBV,-,Sydney,Sydney,O,25,200,3,2BV,91.5,
+438.1250,433.1250,VK2RHK,-,Wyee,Lake Macquarie,O,-,-,-,2HK,-,
+438.1250,433.1250,VK2RMU,NowraH,Nowra Hill,Milton - Ulladulla,O,50,330,3,2HQ,91.5,
+438.1750,433.1750,VK2RMB,THills,Terrey Hills,Sydney,O,5,150,3,2MB,91.5,1,82
+438.2750,432.8750,VK2RWS,-,Berowra North,Sydney,O,-,-,-,NWN,91.5,80
+438.3000,433.3000,VK2RIW,-,Kiama,Kiama WICEN,O,-,-,-,NWN,-,
+438.3250,433.3250,VK2REE,-,Mt Ganghat,Taree-Gloucester,O,50,600,5.0,2FRE,-,106
+438.3250,433.3250,VK2RGN,MtGray,Mt Gray,Goulburn,O,10,-,3.5,2JQ,-,67
+438.3250,433.3250,VK2RWM,Warrad,Mt Warraderry,Grenfell,O,25,575,3,2XAQ,-,
+438.3500,432.9500,VK2RHT,Chats,Chatswood,Sydney,O,-,140,-,2MA,91.5,32,96
+438.3750,433.3750,VK2RBM,Lawsn1,Lawson,Blue Mtns,O,25,700,4,2HZ,123,
+438.4250,433.4250,VK2RCN,TelePt,Telegraph Point,Port Macquarie,O,25,138,3,2BOR,123,
+438.4250,433.4250,VK2RLE,HCote,Engadine,Sydney,O,50,110,3,2LE,-,
+438.4500,433.4500,VK2RCF,-,Carlingford,Sydney,O,-,-,-,NME,91.5,
+438.4500,433.4500,VK2RLJ,Prishr,Back Perisher Mtn,Jindabyne 6/15,P,10,2010,3,2SNO,-,
+438.4750,433.4750,VK2RAB,MtCraw,Mt Crawney,Tamworth/Muswellbrook,O,50,1341,-,NWR,-,
+438.4750,433.4750,VK2RRS,-,Lewisham,Sydney North 6/15,X,100,65,5,2TVG,-,
+438.5250,433.5250,VK2RPM,MdlBro,Middle Brother,Port Macquarie,O,10,552,3,2BOR,123,
+438.5250,433.5250,VK2RWI,Dural,Dural,Sydney,O,25,240,3.5,2WI,-,
+438.5500,433.5500,VK2RHC,-,Hurstville,Sydney,O,-,-,-,NME,91.5,
+438.5750,433.5750,VK2RAY,Albury,Albury,Albury 6/15,P,-,-,-,2EWC,-,
+438.5750,433.5750,VK2RNW,Kaput,Mt Kaputar,Narrabri - NW NSW,O,50,1550,3,2AJ,-,
+438.5750,433.5750,VK2ROT,Paddo,Paddington,Sydney,O,50,90,3,2BV,91.5,23
+438.6000,433.6000,VK2RWI,Dural1,Dural,Sydney 6/15,X,20,240,3,2WI,-,
+438.6250,433.6250,VK2RUM,-,Merewether,Newcastle,O,5,50,3,2FA,-,
+438.6250,433.6250,VK2RGN,-,Goulburn,Goulburn,O,-,-,-,2JQ,-,
+438.6500,433.6500,VK2RAD,SHill,South Hill,Armidale,O,10,1140,3,2IY,-,
+438.6500,433.6500,VK2RDC,-,Woy Woy,Woy Woy,O,-,-,-,2MDC,91.5,
+438.6750,433.6750,VK2RNC,SgarL1,Mt Sugarloaf,Lower Hunter,O,80,442,5,2AWX,-,
+438.6750,433.6750,VK2RPL,Nardi,Mt Nardi,Lismore,O,50,850,3,2SRC,123,
+438.7250,433.7250,VK2RAO,Cbolas,Mt Canobolas,Orange area,O,50,1417,-,2AOA,-,
+438.7250,433.7250,VK2RMP,Maddns,Maddens Plains,Wollongong - Sydney,O,50,465,4,2AMW,123,2
+439.2750,434.2750,VK2RAI,-,Booral,Booral/Stroud,O,-,-,-,2RA,-,
+439.3000,434.3000,VK2RTG,-,Kariong,Gosford RTTY/SSTV 6/15,T,10,220,10,2EH,-,23
+439.3000,434.3000,VK2RCW,Lindsy,Mt Lindsay,Orange,O,50,950,3,2ACW,-,
+439.3250,434.3250,VK2RSV,-,Sans Souci,Sydney South EchoLink,O,25,25,-,2CL,91.5,64
+439.3750,434.3750,VK2RSH,-,Alpine,Mittagong,O,-,-,-,2JQ,-,
+439.4250,434.4250,VK2RCZ,Lalor,Lalor Park,West Sydney 6/15,P,20,150,3,2CRZ,-,
+439.4750,434.4750,VK2RGW,-,Glenwood,West Sydney 6/15,P,50,175,3,2AO,-,
+439.5250,434.5250,VK2RAG,Someb1,Somersby,Gosford - Wyong WICEN,O,50,320,3,2EH,91.5,31
+439.5250,434.5250,VK2RAV,-,portable,Statewide WICEN,O,10,-,-,NWN,-,
+439.5750,434.5750,VK2RMR,-,Mt Riverview,Blue Mtns,O,20,360,9,2THE,123,
+439.6000,434.6000,VK2RRR,Razor,Razorback,SW Sydney,O,-,-,-,2VVV,91.5,
+439.6250,434.6250,VK2RFI,-,portable,Hunter region WICEN,O,25,-,-,NWN,-,
+439.6250,434.6250,VK2RWH,Nwcsle,Newcastle,Lower Hunter WICEN,O,-,-,-,NWN,-,
+439.6500,434.6500,VK2RWB,GwynH,Gwynne Hill,Yarrawonga WICEN,O,80,250,5,NWN,123,19
+439.7000,434.7000,VK2ROJ,-,Bolwarra Heights,Lower Hunter,O,-,-,-,2AOJ,91.5,
+439.7250,434.7250,VK2RAG,Someb2,Somersby,Gosford - Wyong,O,25,320,3,2EH,91.5,71
+439.7500,434.7500,VK2RHP,-,Horsley Park,Sydney,O,-,-,-,NME,-,
+439.7750,434.7750,VK2RSW,-,Blaxland,Lower Blue Mtns,O,-,-,-,2NAB,-,
+439.8000,434.8000,VK2RCG,-,Sydney,Sydney City,O,-,-,-,NME,91.5,
+439.8000,434.8000,VK2RTW,-,Wagga Wagga,Wagga Wagga,O,-,-,-,2WG,91.5,
+439.8250,434.8250,VK2RWK,KurraJ,Kurrajong,NW Sydney,O,-,-,-,NWN,91.5,80
+439.8500,434.8500,VK2RLH,-,Newbridge,Bathurst,O,-,-,-,2NX,-,
+439.8500,434.8500,VK2RNG,Werri,Werrington,Western Sydney,O,-,-,-,2THE,-,
+439.8750,434.8750,VK2RAH,-,portable,Statewide WICEN,O,-,-,-,NWN,-,
+439.9000,434.9000,VK2RBK,NomTop,Noumea Tops,Bingara/Barraba 6/15,X,25,720,-,2DK,-,
+439.9000,434.9000,VK2RWI,Dural2,Dural,Sydney 6/15,P,25,240,-,2WI,-,
+439.9000,434.9000,VK2RWP,WolumP,Wolumla Peak,Bega,O,-,-,-,2CRN,-,
+439.9250,434.9250,VK1RWP,-,portable,VK1 WICEN,O,20,-,-,1ACA,-,
+439.9250,434.9250,VK2RAF,-,portable,Statewide WICEN,O,10,-,-,NWN,-,
+439.9250,434.9250,VK2RON,-,Artarmon,Sydney metro,O,15,200,1,2GO,-,
+439.9500,434.9500,VK1RBM,Issacs,Isaacs Ridge,Canberra Central,O,25,790,3,1ACA,91.5,65
+439.9500,434.9500,VK2RAG,Someb3,Somersby,Central Coast,O,-,313,3,2EH,91.5,
+439.9500,434.9500,VK2RDD,-,Burroway Hill,Dubbo,O,25,300,-,2UBQ,-,
+439.9500,434.9500,VK2RGN,MtGray,Mt Gray,Goulburn,O,20,-,3,2JQ,-,
+439.9500,434.9500,VK2RSC,Lismor,Parrots Nest,Lismore,O,30,185,3,2SRC,123,66
+439.9750,434.9750,VK1RWP,-,portable,VK1 WICEN,O,20,-,-,1ACA,-,
+439.9750,434.9750,VK2RNS,Asqith,Hornsby,Northern Sydney 11/15,P,50,225,3.5,2MA,-,
+,,,,,,,,,,,,{{70CM;FM;VK3}}
+438.0250,433.0250,VK3RBO,-,Specimen Hill,Bendigo,O,50,335,-,3WI,-,
+438.0250,433.0250,VK3RCC,-,Melbourne,Melbourne City,O,160,120,-,3BKR,91.5,76
+438.0250,433.0250,VK3RCP,-,Ouyen,Ouyen,O,-,-,-,3WI,-,
+438.0250,433.0250,VK3REG,MntCan,Mt Cann,East Gippsland 6/15,X,40,-,2.5,3EGC,-,36
+438.0750,433.0750,VK3RDU,Major,Mt Major,Goulburn Valley,O,-,377,-,3WI,-,
+438.1250,433.1250,VK3RLE,-,Paps,Mansfield,O,50,678,-,3JFK,-,68
+438.1500,433.1500,VK3RIR,-,Bendigo,Bendigo 6/15,T,100,240,3.5,3JED,91.5,
+438.1750,433.1750,VK3RUG,-,Devil's River,Alexandra - Lake Eildon,O,100,650,2.5,3JFK,-,68
+438.2250,433.2250,VK3RMS,Olind2,Olinda,Melbourne,O,100,600,2.5,3WI,91.5,
+438.2750,433.2750,VK3RPW,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+438.2750,433.2750,VK3RWE,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+438.2750,433.2750,VK3RWI,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+438.2750,433.2750,VK3RWR,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+438.3250,433.3250,VK3RMH,WatlGn,Wattle Glen,Melbourne 6/15,X,40,120,3,3CNE,-,
+438.3500,433.3500,VK3RBN,-,Burrumbeet,Ballarat,O,25,389,2.5,3UBO,91.5,
+438.3750,433.3750,VK3RGS,-,Mt Fatigue,Foster,O,-,-,-,3WI,-,
+438.3750,433.3750,VK3RHO,Hotham,Mt Hotham,NE Victoria,O,-,-,-,3WI,-,
+438.3750,433.3750,VK3RLV,Tassie,Mt Tassie,Latrobe Valley,O,-,730,-,3WI,-,
+438.3750,433.3750,VK3RWG,BawSq,Mt Baw Baw,West Gippsland,O,20,1563,2.5,3WI,-,
+438.4000,433.4000,VK3RFY,Hillsd,Hillside,Melb EchoL/IRLP,O,100,100,3,3HF,91.5,38
+438.4250,433.4250,VK3RCU,-,Mt Moliagul,Bendigo,O,-,527,-,3WI,-,
+438.4500,433.4500,VK3RBW,-,Mt Gisborne,Melbourne West,O,150,650,3,3FSK,91.5,103
+438.4750,433.4750,VK3RBU,-,Mt Hollowback,Ballarat,O,40,-,2.5,3WI,91.5,
+438.5000,433.5000,VK3RGW,-,Grovedale,Geelong West,O,100,148,3,3HF,91.5,103
+438.5250,433.5250,VK3RAD,-,Mitcham,Melbourne,O,80,100,2.5,3JFK,123,14
+438.5250,433.5250,VK3RNU,-,Mt Stanley,Wangaratta,O,60,1051,2.5,3WI,-,
+438.5250,433.5250,VK3RRU,-,Merbein,Mildura,O,20,-,2.5,3RSG,-,5
+438.5750,433.5750,VK3RWD,-,Drouin,West Gippsland,O,50,100,2,3BJA,91.5,
+438.6250,433.6250,VK3RPW,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+438.6250,433.6250,VK3RWE,-,portable,Statewide,O,-,-,-,VWN,-,
+438.6250,433.6250,VK3RWI,-,portable,Statewide WICEN,O,5,-,-,VWN,-,
+438.6250,433.6250,VK3RWP,-,portable,Statewide,O,-,-,-,VWN,-,
+438.6250,433.6250,VK3RWR,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+438.6750,433.6750,VK3RWU,-,Mt William,Grampians,O,100,1170,3,3WI,91.5,6
+438.7000,433.7000,VK3RBM,-,Bacchus Marsh,Bacchus Marsh 11/16,P,100,500,3,3HF,91.5,103
+438.7500,433.7500,VK3RHF,-,Olinda,Melbourne,O,100,600,3,3UJ,88.5,8
+439.2750,434.2750,VK3RBA,Bunyng,Mt Buninyong,Ballarat,O,50,750,3,3WI,91.5,6
+439.3000,434.3000,VK3RYV,Briart,Briarty Hill,Yarra Valley,O,-,-,-,3YVG,-,
+439.3250,434.3250,VK3RGH,GreenH,Green Hill,Macedon R & Melb 11/16,P,100,600,3,3HF,91.5,103
+439.3500,434.3500,VK3RMP,Caveat,Caveat,North Central 6/15,T,100,670,3,VSA,91.5,102
+439.3750,434.3750,VK3RMC,-,Berwick,Berwick,O,-,-,-,3APC,-,
+439.4250,434.4250,VK3RNE,BigBen,Mt Big Ben,Wodonga,O,-,1158,-,3WI,-,
+439.4250,434.4250,VK3RSV,-,Noble Park,Melbourne EchoLink,O,200,90,4,2CL,91.5,64
+439.4500,434.4500,VK3RMN,KLake,Kinglake,Melbourne,O,80,600,-,VWN,91.5,39
+439.4750,434.4750,VK3RLP,Cborn,Cranbourne,Mornington Peninsula,O,25,71,3.5,3BJA,91.5,
+439.5000,434.5000,VK3RGL,Anakie,Mt Anakie,Geelong,O,45,400,3,3ATL,91.5,
+439.5250,434.5250,VK3RPT,-,Pretty Sally,Kilmore,O,100,515,3,3HF,91.5,103
+439.5250,434.5250,VK3RTU,MntTay,Mt Taylor,Bairnsdale,O,60,476,2.5,3EGC,-,
+439.5500,434.5500,VK3RSB,-,Mt St Leonard,Melbourne,O,100,1028,3,VSA,91.5,102
+439.5750,434.5750,VK3RGC,MoPell,Montpellier,Geelong,O,45,160,3,3ATL,91.5,
+439.6000,434.6000,VK3RDX,-,Mt Waverley,Melbourne,O,100,132,3,3HF,91.5,103
+439.6250,434.6250,VK3RBY,-,Bayswater,Melbourne,O,80,-,2,3MY,88.5,
+439.6500,434.6500,VK3RSA,-,Emerald,Melbourne,O,100,370,3,VSA,91.5,102
+439.6750,434.6750,VK3RZU,-,Mt Buller,Mansfield 6/15,T,-,1800,-,3WI,-,
+439.7000,434.7000,VK3RBP,-,Horsham,Wimmera,O,25,135,-,3III,91.5,
+439.7000,434.7000,VK3RRC,RdlsCk,Riddells Creek,Riddells Creek (Scouts),O,-,-,-,VSA,-,
+439.7250,434.7250,VK3RPS,Cotrel,Mt Cottrell,Melbourne West,O,200,217,3,3WI,91.5,
+439.7500,434.7500,VK3RAJ,Upwey,Upwey,Melbourne SE,O,50,270,3,3AJ,91.5,102
+439.7750,434.7750,VK3RGV,Wombat,Mt Wombat,NE Victoria,O,-,800,-,3WI,123,
+439.8000,434.8000,VK3RMU,StLeo,Mt St Leonard,Melbourne,O,200,1028,2.5,3WI,-,
+439.8250,434.8250,VK3RBL,-,Bambill South,NW Victoria,O,-,-,-,3WI,-,
+439.8250,434.8250,VK3RMM,Macdon,Mt Macedon,Melbourne WICEN 5/16,X,100,1011,3,3WI,91.5,
+439.8500,434.8500,VK3RPU,-,Arthur's Seat,Melbourne,O,40,-,2.5,3WI,91.5,
+439.8750,434.8750,VK3RDU,Major,Mt Major,Goulburn Valley,O,40,377,2.5,3WI,-,
+439.8750,434.8750,VK3RMC,-,Narre Warren North,Melbourne SE,O,-,-,-,3APC,-,
+439.8750,434.8750,VK3RWL,Warnum,Mt Warrnambool,Warrnambool,O,40,-,0.5,3WI,-,
+439.9000,434.9000,VK3RSE,-,Glen Waverley,Melbourne,O,-,-,2,3NH,-,
+439.9250,434.9250,VK3RWP,-,portable,Statewide WICEN,O,-,-,-,VWN,-,
+439.9500,434.9500,VK3RMG,-,Mt Broughton,Yea - Seymour,O,30,650,3,3JFK,-,68
+439.9500,434.9500,VK3RPL,Portld,Portland,Portland,O,200,100,3,3AJ,91.5,100,101
+439.9750,434.9750,VK3RSS,-,portable,Statewide,O,-,-,-,VSA,-,40
+439.9750,434.9750,VK3RWP,-,portable,Statewide,O,-,-,-,VWN,-,
+,,,,,,,,,,,,{{70CM;FM;VK4}}
+438.0250,433.0250,VK4RTQ,-,Mt Kynoch,Toowoomba,O,50,500,3.5,4JV,91.5,
+438.0500,433.0500,VK4RGT,-,Maurice Hill,Gladstone City,O,83,212,2,QGL,-,
+438.0500,433.0500,VK4RZD,-,Mt Perseverance,Ipswich to T'mba Range,O,100,700,1,4BWI,91.5,70
+438.0750,433.0750,VK4RSC,-,Wilkes Knob,Sunshine Coast,O,20,450,-,4WIS,91.5,
+438.1000,433.1000,VK4RZA,-,Springbrook,Gold Coast,O,-,940,1,4BWI,91.5,70
+438.1250,433.1250,VK4RZC,-,Wilkes Knob,Maleny,O,-,470,1,4BWI,91.5,70
+438.1750,433.1750,VK4RSL,-,Noosa Heads,Sunshine Coast North,O,25,100,4.5,4WIS,91.5,
+438.2000,433.2000,VK4RZB,-,Mt Coot-tha,Brisbane,O,100,560,1,4BWI,91.5,70
+438.2250,433.2250,VK4RAT,-,Mt Stuart,Townsville,O,10,584,10,4WIT,91.5,
+438.2250,433.2250,VK4RAR,-,Mt Archer,Rockhampton,O,25,608,4,4WIR,91.5,49
+438.2250,432.8250,VK4RPH,-,Mt Haren,Kuranda,O,50,250,-,4BS,123,
+438.2750,433.2750,VK4RBR,-,Mt Gravatt,Brisbane,O,110,80,-,4WIE,-,
+438.3250,433.3250,VK4RRC,-,Wamuran,Redcliffe,O,25,230,4.5,4RC,91.5,
+438.3750,433.3750,VK4RWM,-,North Ipswich,Ipswich,O,70,120,4.5,4WIP,91.5,47
+438.4250,433.4250,VK4RBX,-,The Knobby,Ipswich,O,70,120,4.5,4AB,123,72
+438.5000,433.5000,VK4RHR,-,Hodgson Range,Clermont,O,50,520,-,4WCH,-,
+438.5000,433.5000,VK4RLW,-,Spring Mtn,Logan,O,25,315,10,4OD,91.5,
+438.5750,433.5750,VK4RSS,-,Ocean View,Brisbane,O,25,530,5,4RV,91.5,34
+438.6000,433.6000,VK4RGC,-,Springbrook,Gold Coast,O,150,1010,4,4WIG,123,84
+438.6250,433.6250,VK4RAG,-,Spring Hill,Brisbane WICEN,O,20,90,-,4BWI,-,
+438.6250,433.6250,VK4RWI,-,portable,Statewide WICEN,O,-,-,-,QWN,-,
+438.6500,433.6500,VK4REG,-,Mt Mowbullan,Bunya Mtns,O,100,1700,5,4JV,91.5,
+438.6750,433.6750,VK4RWS,-,Nebo,Mackay,O,-,-,-,4DW,91.5,
+438.7000,433.7000,VK4RET,-,Mt Kiangarow,S Burnet & D/Downs,O,12,1145,5,4BAD,91.5,
+438.7500,433.7500,VK4RLB,-,Woodridge,Logan,O,25,60,4,4ARN,-,3
+438.7500,433.7500,VK4RPU,-,Mt Perry,Monto,O,-,-,-,4PU,-,
+438.7750,433.7750,VK4RBU,MtGoon,Mt Goonaneman,Bundaberg/Maryborough,O,10,620,4,4BW,-,99
+439.2750,434.2750,VK4RDD,-,O'Rourke's House,Toowoomba,O,35,702,4,4WID,-,
+439.3000,434.3000,VK4RBM,-,Blue Mtn,Mackay 6/15,T,25,-,-,4WIM,-,42
+439.3000,434.3000,VK4RBQ,-,Mt Coot-Tha,Brisbane 9/15,X,-,-,-,4WIG,-,
+439.3000,434.3000,VK4RSM,-,Spring Mtn,Springfield,O,25,-,-,4AB,91.5,47
+439.3250,434.3250,VK4RAI,-,The Knobby,Ipswich,O,-,-,4,4WIP,91.5,49
+439.3750,434.3750,VK4RNL,-,Doonan,N. Sunshine Coast 6/15,P,25,90,5,4NL,-,
+439.6250,434.6250,VK4RSA,-,Sarina,Mackay,O,25,400,4,4RM,-,49
+439.7250,434.7250,VK4RBS,-,Alexandra Hills,Redlands,O,25,70,3.5,4BAY,91.5,
+439.7750,434.7750,VK4RBW,BundaN,Watalgan,N Bundaberg,O,50,-,4,4BW,-,
+439.7750,434.7750,VK4RBP,-,Butchers Creek,Atherton Tableland,O,25,600,4,4FUY,-,
+439.8000,434.8000,VK4RGL,-,Lady Larcom,Gladstone,O,150,330,2.5,4HN,91.5,
+439.8500,434.8500,VK4RCA,-,Cairns,Cairns,O,50,50,4,4HM,-,
+439.8750,434.8750,VK4RCQ,-,Banana Range,Monto,O,-,-,-,4RCQ,-,
+439.9000,434.9000,VK4RBK,-,Tolga,Atherton Tableland,O,-,937,4,4WAT,-,
+439.9000,434.9000,VK4RXZ,-,Maleny,Maleny 2/16,X,50,500,4,4XZ,-,
+439.9250,434.9250,VK4RBP,-,Butchers Creek,Atherton Tableland,O,-,600,-,4FUY,-,
+439.9250,434.9250,VK4RWM,-,North Ipswich,Ipswich,O,5,60,-,4WIP,91.5,
+439.9500,434.9500,VK4RBA,-,Sunnybank,Brisbane,O,-,-,-,4BA,123,
+439.9500,434.9500,VK4RGY,Gympie,Gympie,Gympie,O,25,95,4,4GYM,-,
+,,,,,,,,,,,,{{70CM;FM;VK5}}
+438.0250,433.0250,VK5RSA,AdlCty,Adelaide,Adelaide City,O,50,55,5,5ARG,-,
+438.2000,433.2000,VK5RBP,-,portable,Statewide (Scouts) 6/15,P,50,-,3,5BP,-,
+438.3250,433.3250,VK5RCT,-,Moonta,Moonta,O,-,-,-,5ZSW,91.5,
+438.5250,433.5250,VK5RVH,VictrH,Brown Hill,Victor Harbor,O,80,270,5,5GF,91.5,
+439.8000,434.8000,VK5RBV,-,Mt Kitchener,Barossa Valley,O,50,580,3.5,5BRC,-,53
+439.8250,434.8250,VK5ROH,MtgUHF,Blue Lake,Mt Gambier,O,15,135,3.5,5SR,-,
+439.8250,434.8250,VK5RSC,-,Mt Terrible,Adelaide South,O,50,380,5,5ARC,91.5,
+439.8500,434.8500,VK5RAC,-,Pillaworta Hill,Lower Eyre Peninsula,O,50,325,4.5,5ZEA,-,
+439.8750,434.8750,VK5RHO,-,Anstey Hill,Adelaide,O,20,410,3.5,5GRC,-,
+439.9000,434.9000,VK5RSB,Sumtwn,Summertown,Adelaide,O,100,620,5,5ARG,91.5,
+439.9250,434.9250,VK5RAD,-,Crafers,Adelaide,O,25,610,5,5BAR,-,
+439.9500,434.9500,VK5ROC,-,Lower Light,Adelaide NW,O,50,30,4,5LZ,-,
+439.9750,434.9750,VK5RLZ,-,Elizabeth,Adelaide North,O,25,73,3,5LZ,91.5,
+,,,,,,,,,,,,{{70CM;FM;VK6}}
+438.0250,433.0250,VK6RPT,-,portable,Statewide,O,20,-,10,WRG,-,
+438.1250,433.1250,VK6RGF,-,Kalgoorlie,Kalgoorlie,O,25,-,5,6LS,-,
+438.2250,433.2250,VK6RTH,PerNE,Tic Hill,Perth North East,O,40,230,4,WRG,-,19
+438.5250,433.5250,VK6RLM,PerSE2,Roleystone,Perth South East,O,30,360,4,WRG,-,11
+438.5250,433.5250,VK6RAV,-,Hoddy Well,Avon East,O,-,-,-,WRG,-,
+438.5250,433.5250,VK6RCT,Cataby,Yandan Hill,Cataby,O,-,200,-,WRG,-,
+438.5250,433.5250,VK6RMS,-,Boddington,Boddington,O,-,-,-,WRG,-,
+438.6500,433.6500,VK6RBY,Bunbry,Harvey,Bunbury,O,25,20,5,6BRC,-,43
+438.6750,433.6750,VK6RBN,Busltn,Chapman Hill,Busselton,O,-,130,-,WRG,-,
+438.7250,433.7250,VK6RNA,-,Wanneroo,Perth,O,40,230,4,6RNA,123,
+439.7000,434.7000,VK6ROT,Rotto,Rottnest Is,Perth Coast,O,20,55,5,6ZTN,-,19
+439.8000,434.8000,VK6RAP,PerSE1,Roleystone,Perth South East 6/15,X,50,360,5,WRG,123,
+439.9250,434.9250,VK6RNS,-,Whiteman Park,Perth N suburbs 6/15,X,40,70,5,6NC,-,
+439.9500,434.9500,VK6RAA,MtBark,Mt Barker,South Coast,O,25,450,5,6SR,-,54
+439.9500,434.9500,VK6RAL,Albany,Albany,Albany,O,25,-,-,6SR,-,
+439.9500,434.9500,VK6RAR,-,portable,Statewide WICEN,O,25,-,-,WWN,-,
+,,,,,,,,,,,,{{70CM;FM;VK7}}
+438.0500,433.0500,VK7RBH,-,Ben Lomond,North East Tasmania,O,25,1570,10,7TAZ,-,
+438.5000,433.5000,VK7RIN,-,Barren Tier,Central Tasmania,O,25,1200,-,7TAZ,-,
+438.5250,433.5250,VK7RCR,-,Lenah Valley,Hobart,O,20,220,2,7ZCR,91.5,
+438.5500,433.5500,VK7RAB,-,portable,Tasmania,O,50,1190,3,7TAZ,-,60
+438.5500,433.5500,VK7RAF,-,Mt Faulkner,Hobart,O,-,900,-,7JG,-,
+438.5750,433.5750,VK7RCH,-,Grey Mtn,Huon and Channel,O,50,821,5,7HH,123,59
+438.6000,433.6000,VK7RMD,-,Mt Duncan,NW Tasmania,O,40,600,10,7NW,141.3,
+438.6500,433.6500,VK7RAC,-,Table Cape,NW Tasmania,O,3,150,5,7NW,141.3,
+438.7000,433.7000,VK7RAK,-,Gagebrook,Hobart,O,40,100,-,7HDM,-,
+439.7000,434.7000,VK7REC,-,Snow Hill,East Coast,O,-,970,-,7TAZ,-,
+439.7500,434.7500,VK7RDS,-,Mt Nelson,Hobart,O,30,280,4,7SD,-,
+439.7750,434.7750,VK7RDR,-,Dazzler Range,Northern Tasmania,O,70,155,5,TNA,91.5,
+439.8250,434.8250,VK7RTC,-,Mt Wellington,Hobart,O,50,1271,5,7TAZ,91.5,59
+439.9000,434.9000,VK7RAL,-,Companion Hill,Hampshire,O,50,825,5,7TAZ,141.3,59
+439.9500,434.9500,VK7RML,-,Mt Lloyd,Derwent Valley,O,50,932,5,7HH,141.3,59
+,,,,,,,,,,,,{{70CM;FM;VK8}}
+438.2750,433.2750,VK8RDA,-,Darwin,Darwin 6/15,X,10,75,4,8DA,91.5,
+438.5250,433.5250,VK8RIT,ASpr70,West Gap,Alice Springs,O,25,776,3,8AR,91.5,
+439.9750,434.9750,VK8RWI,-,Marrara,Darwin 6/15,X,30,77,4,8DA,91.5,
+,,,,,,,,,,,,{{23CM;FM;VK2}}
+1273.1000,1293.1000,VK2RTZ,SugarL,Sugarloaf Range,Lower Hunter,O,83,442,3,2ATZ,-,
+1273.2000,1293.2000,VK2RPW,-,Grundy Mtn,Walcha,O,25,1450,-,NWR,-,
+1273.2000,1293.2000,VK2RWC,Chats1,Chatswood,Sydney,O,30,140,2,NWN,-,
+1273.3000,1293.3000,VK2RPL,Nardi,Mt Nardi,Lismore 6/15,P,10,850,3,2SRC,-,
+1273.4000,1293.4000,VK2RAG,Someb,Somersby,Gosford - Wyong,O,-,320,-,2EH,-,
+1273.5000,1293.5000,VK2RWI,Dural,Dural,Sydney,O,10,240,3,2WI,-,
+,,,,,,,,,,,,{{23CM;FM;VK3}}
+1273.1000,1293.1000,VK3RCC,-,Melbourne,Melbourne City,O,50,120,-,3BKR,-,
+1273.1500,1293.1500,VK3RBM,-,Bacchus Marsh,Bacchus Marsh 6/15,P,30,500,3,3HF,-,75
+1273.2500,1293.2500,VK3RGH,GreenH,Green Hill,Macedon Ranges 6/15,P,30,600,3,3HF,-,75
+1273.3500,1293.3500,VK3RLV,Tassie,Mt Tassie,Latrobe Valley,O,80,730,2.5,3WI,-,78
+1273.4000,1293.4000,VK3RHF,-,Mt Macedon,Melbourne West 6/15,X,50,1011,3,3UJ,-,8
+1273.4500,1293.4500,VK3RMN,KLake,Kinglake,Melbourne,O,30,600,3,3HF,-,75
+1273.5000,1293.5000,VK3RMU,StLeo,Mt St Leonard,Melbourne East 6/15,P,-,-,-,3WI,-,
+1273.6000,1293.6000,VK3RMC,-,Berwick,Berwick,O,-,-,-,3APC,-,
+1273.6500,1293.6500,VK3RPS,Cotrel,Mt Cottrell,Melbourne West,O,10,217,2,3HF,-,75
+1273.7000,1293.7000,VK3RIR,-,Bendigo,Bendigo 6/15,P,-,300,-,3JED,-,
+1273.9250,1293.9250,VK3RBA,Bunyng,Mt Buninyong,Ballarat,O,10,750,3,3WI,91.5,
+,,,,,,,,,,,,{{23CM;FM;VK4}}
+1273.3000,1293.3000,VK4RSC,-,Wilkes Knob,Sunshine Coast South,O,-,470,-,4WIS,91.5,
+1273.3500,1293.3500,VK4RLB,-,Woodridge,Brisbane South 6/15,P,-,560,4,4ARN,-,
+1273.4000,1293.4000,VK4RZB,-,Constitution Hill,Brisbane 6/15,X,20,560,-,4BWI,91.5,70
+1273.5000,1293.5000,VK4RMC,-,Mt Coot-tha,Brisbane,O,30,-,3,4JV,-,
+,,,,,,,,,,,,{{23CM;FM;VK5}}
+1273.3750,1293.3750,VK5RHO,-,Houghton,Adelaide North 6/15,P,50,410,5,5GRC,-,
+1273.4500,1293.4500,VK5RSC,-,Mt Terrible,Adelaide South 6/15,T,50,380,5,5ARC,-,
+1273.5000,1293.5000,VK5RSB,Sumtwn,Summertown,Adelaide,O,50,620,5,5ARG,-,
+1273.5500,1293.5500,VK5RLZ,-,Elizabeth,Adelaide North 6/15,X,5,73,5,5LZ,-,
+,,,,,,,,,,,,{{*;DSTAR;VK2}}
+146.6625,146.0625,VK1RWN C,-,Isaacs Ridge,Canberra Central (G) 6/15,T,25,790,3,1ACA,-,
+146.6375,146.0375,VK2RAG C,Someb,Somersby,Gosford (G),O,25,320,4,2EH,-,
+438.3250,432.9250,VK2RAG B,Someb1,Somersby,Gosford (G),O,25,320,4,2EH,-,96
+1273.4000,1293.4000,VK2RAG A,Someb2,Somersby,Gosford 6/15,P,10,320,4,2EH,-,
+438.7750,433.7750,VK2RBV B,-,Sydney,Sydney,O,50,200,3,2BV,-,
+1273.7000,1293.7000,VK2ROZ A,-,Lilyfield SCA,Rozelle 2/16,P,25,50,3,2BV,-,
+146.9625,146.3625,VK2RWN C,-,Terrey Hills,Sydney (G),O,25,-,3,2MB,-,
+438.4000,433.0000,VK2RWN B,-,Terrey Hills,Sydney (G),O,25,-,3,2MB,-,79,96
+1273.9000,1293.9000,VK2RWN A,-,Terrey Hills,Sydney (G) 6/15,P,25,-,3,2MB,-,
+1298.7000,1298.7000,VK2RWN AD,-,Terrey Hills,Sydney (G) 6/15,P,25,-,-,2MB,-,
+,,,,,,,,,,,,{{*;DSTAR;VK3}}
+439.9875,434.9875,VK3RBA B,Bunyng,Mt Buninyong,Ballarat 6/15,X,25,750,3,3BML,-,
+1298.7000,1298.7000,VK3RBA AD,Bunyng,Mt Buninyong,Ballarat 6/15,X,10,750,-,3BML,-,
+438.9125,438.9125,VK3RCE B,-,Bendigo,Bendigo (G),O,25,-,3,3CE,-,
+146.6375,146.0375,VK3RDK C,-,Horsham,Wimmera (G),O,25,-,3,3III,-,
+438.2000,432.8000,VK3RGV B,Wombat,Mt Wombat,Shepparton (G),O,25,800,3,3WI,-,96
+146.7625,146.1625,VK3RMC C,-,Berwick,Berwick (G),O,-,-,-,3APC,-,
+146.9625,146.3625,VK3RMM C,Macdon,Mt Macedon,Melbourne NW (G) 6/15,P,25,1011,3,3WI,-,
+438.0500,432.6500,VK3RMM B,Macdon,Mt Macedon,Melbourne NW (G),O,25,1011,3,3WI,-,96
+1273.9750,1293.9750,VK3RMM A,Macdon,Mt Macedon,Melbourne NW (G) 6/15,P,10,1011,3,3WI,-,
+1298.5000,1298.5000,VK3RMM AD,Macdon,Mt Macedon,Melbourne NW (G) 6/15,P,10,1011,-,3WI,-,
+146.8875,146.2875,VK3RSD C,-,portable,Statewide (Scouts),O,-,-,-,VSA,-,
+438.2750,432.8750,VK3RSD B,-,portable,Statewide (Scouts),O,-,-,-,VSA,-,96
+146.9125,146.3125,VK3RWN C,-,Olinda,Melbourne East (G),O,25,600,3,3ER,-,
+438.3000,432.9000,VK3RWN B,-,Olinda,Melbourne East (G),O,25,600,3,3ER,-,79,96
+1273.9000,1293.9000,VK3RWN A,-,Olinda,Melbourne East (G),O,10,600,3,3ER,-,
+1298.3000,1298.3000,VK3RWN AD,-,Olinda,Melbourne East (G),O,10,600,-,3ER,-,
+438.1500,432.7500,VK3RWW B,-,portable,Nation wide (G),O,25,-,3,WIA,-,96
+438.3000,432.9000,VK3RWW B,-,portable,Nation wide (G) 6/15,X,25,-,3,WIA,-,96
+1273.8500,1293.8500,VK3RWW A,-,portable,Nation wide (G) 6/15,X,10,-,3,WIA,-,
+1298.9000,1298.9000,VK3RWW AD,-,portable,Nation wide (G),O,10,-,-,WIA,-,
+,,,,,,,,,,,,{{*;DSTAR;VK4}}
+439.9500,434.9500,VK4RAS B,-,Carborough Range,Moronbah,O,50,450,3,4WCH,-,
+146.6375,146.0375,VK4RBD C,-,Blackdown Tableland,Blackwater,O,50,950,3,4WCH,-,
+146.7875,146.1875,VK4RBX C,-,The Knobby,Ipswich (G),O,25,600,3,4AB,-,
+146.6500,146.0500,VK4RBY C,-,Black Mtn,Mackay,O,25,-,-,4WCH,-,
+438.4500,433.4500,VK4RBY B,-,Black Mtn,Mackay,O,-,-,-,4WCH,-,
+438.3250,432.9250,VK4RCN B,-,Manoora,Cairns CBD (G),O,25,25,3,4AA,-,96
+147.3000,147.9000,VK4RCN C,-,Manoora,Cairns CBD 9/16,T,25,25,3,4AA,-,96
+438.3125,432.9125,VK4RDK B,-,Mt Tamborine,Gold Coast,O,25,500,-,4BJT,-,96
+146.7375,146.1375,VK4RDS C,-,Wilkes Knob,Maleny (G),O,25,470,3,4KZK,-,
+438.5500,433.3500,VK4RDS B,-,Wilkes Knob,Maleny (G),O,25,470,3,4KZK,-,
+1273.2000,1293.2000,VK4RDS A,-,Wilkes Knob,Maleny (G),O,25,470,3,4KZK,-,
+438.3500,432.9500,VK4RDW B,-,Wongawallan,Gold Coast (G),O,25,400,-,4BJT,-,96
+438.2750,432.8750,VK4RSA B,-,Sarina,Mackay 1/16,T,50,460,3,4RM,-,
+438.4500,433.4500,VK4RUS B,-,Sarina,Sarina,O,50,175,3,4WCH,-,
+146.8375,146.2375,VK4RWN C,-,Springbrook,Gold Coast (G) 6/15,X,25,1010,3,WIA,-,
+438.2250,432.8250,VK4RWN B,-,Springbrook,Gold Coast (G) 6/15,X,25,1010,3,WIA,-,79,96
+1273.1000,1293.1000,VK4RWN A,-,Springbrook,Gold Coast (G) 6/15,X,10,1010,3,WIA,-,
+1298.3000,1298.3000,VK4RWN AD,-,Springbrook,Gold Coast (G) 6/15,X,10,1010,-,WIA,-,
+,,,,,,,,,,,,{{*;DSTAR;VK5}}
+146.9625,146.3625,VK5REX C,-,Winter Hill,Port Lincoln (G),O,25,240,3,5ZEA,-,
+438.2250,432.8250,VK5REX B,-,Winter Hill,Port Lincoln (G),O,25,240,3,5ZEA,-,96
+438.0750,432.6750,VK5RMK B,-,Renmark,Renmark,O,-,-,-,5HS,-,
+146.9375,146.3375,VK5RWN C,-,Banksia Park,Adelaide (G) 6/15,X,25,420,3,5ARG,-,
+438.4000,433.0000,VK5RWN B,-,Banksia Park,Adelaide (G),O,25,420,3,5ARG,-,96
+1273.7000,1293.7000,VK5RWN A,-,Banksia Park,Adelaide (G) 6/15,T,10,420,3,5ARG,-,
+1299.7000,1299.7000,VK5RWN AD,-,Banksia Park,Adelaide (G) 6/15,X,10,420,-,5ARG,-,
+,,,,,,,,,,,,{{*;DSTAR;VK6}}
+438.9250,433.9250,VK6RAV B,-,Hoddy Well,Avon East,O,-,-,-,WRG,-,
+146.8625,145.2625,VK6RLX C,-,Gosnells,Gosnells (G),O,50,20,5,6XLR,-,
+438.1500,432.7500,VK6RLX B,-,Gosnells,Gosnells (G),O,50,20,5,6XLR,-,
+438.1250,432.7250,VK6ROX B,-,East Fremantle,Fremantle (G),O,10,-,5,6SKY,-,
+146.8375,146.2375,VK6RWN C,-,Roleystone,Perth (G),O,25,350,3,WIA,-,
+438.1750,432.7750,VK6RWN B,-,Roleystone,Perth (G),O,25,350,3,WIA,-,79,96
+1273.9000,1293.9000,VK6RWN A,-,Roleystone,Perth (G) 6/15,X,10,350,3,WIA,-,
+1298.3000,1298.3000,VK6RWN AD,-,Roleystone,Perth (G),O,10,350,-,WIA,-,
+,,,,,,,,,,,,{{*;DSTAR;VK7}}
+146.9625,146.3625,VK7RCR C,LenahV,Lenah Valley,Hobart,O,20,160,2,7ZCR,-,
+438.1250,432.7250,VK7RRR B,-,Richmond,SE Tasmania (G),O,25,-,3,7RRR,-,96
+,,,,,,,,,,,,{{*;DSTAR;VK8}}
+146.7000,146.1000,VK8RAD C,-,Palmerston,Darwin (G),O,25,75,3,8HF,-,
+438.7500,433.7500,VK8RAD B,-,Palmerston,Darwin (G),O,25,75,3,8HF,-,
+1293.4000,1273.4000,VK8RAD A,-,Palmerston,Darwin (G),O,10,75,3,8HF,-,108
+1274.0500,1274.0500,VK8RAD AD,-,Palmerston,Darwin (G),O,10,75,-,8HF,-,
+,,,,,,,,,,,,{{*;P25;VK2}}
+438.1375,432.7375,VK2RHP,-,Horsley Park,Sydney (L),O,-,-,-,NME,-,
+438.1750,433.1750,VK2RMB,THills,Terrey Hills,Sydney,O,5,150,3,2MB,91.5,1
+438.2000,432.8000,VK2RCG,-,Sydney,Sydney City,O,-,-,-,NME,-,
+438.2750,432.8750,VK2RWS,-,Berowra North,Sydney,O,-,-,-,NWN,91.5,80
+438.3500,432.9500,VK2RHT,Chats,Chatswood,Sydney,O,-,140,-,2MA,91.5,32,96
+438.4250,433.4250,VK2RLE,HCote,Engadine,Sydney,O,50,110,3,2LE,-,
+438.4500,433.4500,VK2RCF,-,Carlingford,Sydney,O,-,-,-,NME,91.5,
+438.5750,433.5750,VK2ROT,Paddo,Paddington,Sydney,O,50,90,3,2BV,91.5,23
+438.6750,433.6750,VK2RPL,Nardi,Mt Nardi,Lismore,O,50,850,3,2SRC,123,
+439.6000,434.6000,VK2RRR,Razor,Razorback,SW Sydney,O,-,-,-,2VVV,91.5,
+439.8250,434.8250,VK2RWK,KurraJ,Kurrajong,NW Sydney,O,-,-,-,NWN,91.5,80
+439.9500,434.9500,VK2RAG,Someb,Somersby,Central Coast,O,-,300,3,2EH,91.5,
+,,,,,,,,,,,,{{*;P25;VK3}}
+438.1875,432.7875,VK3RCD,-,Kinglake,Melbourne,O,-,600,-,3BLS,-,
+439.5000,434.5000,VK3RGL,Anakie,Mt Anakie,Geelong,O,45,400,3,3ATL,91.5,
+439.5750,434.5750,VK3RGC,MoPell,Montpellier,Geelong,O,45,160,3,3ATL,91.5,
+439.8000,434.8000,VK3RMU,StLeo,Mt St Leonard,Melbourne,O,200,1028,2.5,3WI,-,
+,,,,,,,,,,,,{{*;P25;VK4}}
+439.3250,434.3250,VK4RAI,-,The Knobby,Ipswich,O,-,-,4,4WIP,91.5,49
+146.6375,146.0375,VK4RBX,-,The Knobby,Ipswich 12.5Khz,O,25,600,3,4AB,-,20
+147.0750,147.6750,VK4RSA,-,Sarina,Mackay 1/16,T,50,460,3,4RM,-,
+147.2250,145.6250,VK4RTQ,-,Mt Kynoch,Toowoomba,O,50,-,-,4JV,-,20
+,,,,,,,,,,,,{{*;DMR;*}}
+438.1000,433.1000,VK2RRW,-,Dural,Sydney North WICEN,O,50,-,5,NWN,-,107
+439.5000,434.5000,VK2RCG,-,Sydney,Sydney City,O,50,-,5,NME,-,107
+438.1000,432.7000,VK3RSU,-,Melbourne,Melbourne,O,50,-,5,NME,-,107
+439.6750,434.6750,VK3RZU,-,Mt Buller,Victoria,O,50,-,5,NME,-,107
+438.8375,431.8375,VK4RBX,-,The Knobby,Ipswich,O,40,600,5,4AB,-,96
+147.3000,147.9000,VK4RCN,-,Manoora,Cairns CBD 9/16,T,25,25,3,4AA,-,96
+438.3250,432.9250,VK4RCN,-,Manoora,Cairns CBD,O,25,25,3,4AA,-,96
+439.9875,434.9875,VK4REG,-,Mt Mowbullan,Bunya Mtns,O,40,1700,4,4JV,-,107
+439.4875,434.4875,VK4RTQ,-,Mt Kynoch,Toowoomba,O,50,500,3.5,4JV,-,107
+439.9750,434.9750,VK4RMC,-,Mt Coot-tha,Brisbane,O,50,-,5,4JV,-,107
+438.2000,432.8000,VK6RRR,Lesmrd,Kalamunda,Lesmurdie,O,-,-,-,6ZTN,-,107
+,,,,,,,,,,,,{{*;C4FM;*}}
+438.1125,432.7125,VK2RBV,-,Sydney,Sydney,O,25,200,3,2BV,91.5,
+146.6750,146.0750,VK2REE,-,Mt Ganghat,Taree-Gloucester,O,50,600,5.0,2FRE,123,22
+438.3250,433.3250,VK2REE,-,Mt Ganghat,Taree-Gloucester,O,50,600,5.0,2FRE,-,106
+146.8000,146.2000,VK2RSC,Lismor,Parrots Nest,Lismore,O,15,185,3,2SRC,123,
+438.7000,433.7000,VK3RBM,-,Bacchus Marsh,Bacchus Marsh 11/16,P,100,500,3,3HF,91.5,103
+438.4500,433.4500,VK3RBW,-,Mt Gisborne,Melbourne West,O,150,650,3,3FSK,91.5,103
+144.9375,145.5375,VK3RDQ,WantE,Outer Eastern Suburbs,Melbourne,O,80,68,3,3DQ,-,46
+438.4000,433.4000,VK3RFY,Hillsd,Hillside,Melb EchoL/IRLP,O,100,100,3,3HF,91.5,38
+439.3250,434.3250,VK3RGH,GreenH,Green Hill,Macedon R & Melb 11/16,P,100,600,3,3HF,91.5,103
+438.5000,433.5000,VK3RGW,-,Grovedale,Geelong West 6/15,O,100,148,3,3HF,91.5,103
+439.6000,434.6000,VK3RDX,-,Mt Waverley,Melbourne,O,100,132,3,3HF,91.5,103
+147.2000,147.8000,VK3RPS,Cotrel,Mt Cottrell,Melbourne West,O,150,217,3,3HF,91.5,103
+439.5250,434.5250,VK3RPT,-,Pretty Sally,Kilmore,O,100,515,3,3HF,91.5,103
+438.2250,432.8250,VK4RPH,-,Mt Haren,Kuranda,O,50,250,-,4BS,123,
+147.3000,147.9000,VK4RCN,-,Manoora,Cairns CBD 9/16,T,25,25,3,4AA,-,96
+438.3250,432.9250,VK4RCN,-,Manoora,Cairns CBD,O,25,25,3,4AA,-,96
+439.8250,434.8250,VK5RSC,-,Mt Terrible,Adelaide South,O,50,380,5,5ARC,91.5,
+,,,,,,,,,,,,{{*;ATV;VK2}}
+426.250,444.250,VK2RGL,CbTree,Cabbage Tree Mtn,Forster-Tuncurry 6/15,P,50,685,-,2GLR,-,90
+444.250,1250.000,VK2RTG,-,Kariong,Gosford,O,-,220,-,2EH,-,91
+1250.000,444.250,VK2RTS,Lawsn2,Lawson,Blue Mtns,O,300,370,30,2FKO,-,90,92
+-,444.250,VK2RTV,-,St Leonards,Sydney 6/15,X,400,65,-,2TVG,-,
+-,2439.000,VK2RTV,-,St Leonards,Sydney 6/15,X,400,65,-,2TVG,-,
+1250.000,426.250,VK2RFM,-,Oakdale,Sydney,O,600,450,3.0,2CRZ,-,92
+1250.000,444.250,VK2RFM,-,Oakdale,Sydney,O,600,450,3.0,2CRZ,-,92
+,,,,,,,,,,,,{{*;ATV;VK3}}
+446.500,1250.000,VK3RTV,-,Olinda,Melbourne,O,50,600,-,3WI,-,86
+446.500,1255.000,VK3RTV,-,Olinda,Melbourne,O,50,600,-,3WI,-,86
+446.500,1278.000,VK3RTV,-,Olinda,Melbourne,O,50,600,-,3WI,-,86
+446.500,10410.00,VK3RTV,-,Olinda,Melbourne,O,50,600,-,3WI,-,86
+2415.000,1250.000,VK3RBO,-,Specimen Hill,Bendigo,O,100,335,-,3WI,-,91,97
+,,,,,,,,,,,,{{*;ATV;VK4}}
+444.250,1250.000,VK4RAT,-,Mt Stuart,Townsville,O,20,584,-,4WIT,-,91
+444.250,1250.000,VK4RKP,-,Mt Crosby,Ipswich,O,100,-,-,4AKP,-,91
+446.500,Various,VK4RKC,-,Oceanview,Brisbane North,O,120,530,-,4KI,-,89
+446.500,1283.000,VK4RMG,-,Oceanview,Brisbane North,O,-,530,-,4RMG,-,109
+446.500,Various,VK4RNC,-,Wilkes Knob,Sunshine Coast,O,120,450,-,4KI,-,110
+446.500,Various,VK4RTV,-,Oceanview,Brisbane North,O,120,530,-,4KI,-,111
+,,,,,,,,,,,,{{*;ATV;VK5}}
+446.500,1275.000,VK5RDC,-,The Bluff,Port Pirie & Whyalla,O,100,730,-,5DMC,-,105
+2415.000,1250.000,VK5RLZ,-,Elizabeth,Adelaide North 6/15,X,250,73,30,5LZ,-,93
+5815.000,5735.000,VK5RLZ,-,Elizabeth,Adelaide North 6/15,X,1,80,30,5LZ,-,93,99
+10350.00,10210.00,VK5RLZ,-,Elizabeth,Adelaide North 6/15,X,25,80,30,5LZ,-,93
+,,,,,,,,,,,,{{*;ATV;VK7}}
+446.500,1250.000,VK7RTV,-,Gawler,Central NW Coast 6/15,P,10,155,30,TNA,-,90
+,,,,,,,,,,,,{;;}
