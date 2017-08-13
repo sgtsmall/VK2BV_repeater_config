@@ -78,7 +78,8 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
 while (my $rowrd = $csv->getline($vksdfh)) {
     my %datard;
     @datard{@fieldssd} = @$rowrd;
-    if (   ($datard{'mode'} ~~ ["DV", "FM"])
+    if (  ($datard{'0Sort'} ne '0Sort')
+        && ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2", "7", "C4FM"])
         && ($datard{'Output'} < '470.0'))
     {

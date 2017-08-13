@@ -49,7 +49,7 @@ open(my $vksofh, '>', $fileo1) or die "Could not open '$fileo1' $!\n";
 
 #read the header line of the main input
 my @fieldsrd = @{$csv->getline($vkrdfh)};
-# output this header with sortseq 
+# output this header with sortseq
 print $vksofh $sortseq, join(',', @fieldsrd), "\n";
 
 #read the header line of the local input
@@ -63,7 +63,7 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
     @datard{@fieldsrd} = @$rowrd;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2","7","DST"])
-        && ( (($datard{'Input'} < '490.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '148.0') && ($datard{'Input'} > '144.0')))
+        && ( (($datard{'Input'} < '490.0') && ($datard{'Input'} > '430.0')) || (($datard{'Input'} < '170.0') && ($datard{'Input'} > '130.0')))
      ) {
          $sortseq = lsortseq(@$rowrd);
          print $vksofh $sortseq, join(',', @$rowrd), "\n";
@@ -73,7 +73,8 @@ while (my $rowrd = $csv->getline($vkrdfh)) {
 while (my $rowrd = $csv->getline($vksdfh)) {
     my %datard;
     @datard{@fieldssd} = @$rowrd;
-    if (   ($datard{'mode'} ~~ ["DV", "FM"])
+    if (   ($datard{'0Sort'} ne '0Sort')
+        && ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2", "7", "DST"])
         && ($datard{'Output'} < '490.0'))
     {
@@ -93,7 +94,7 @@ sub lsortseq    {
         my %datard;
         @datard{@fieldsrd} = @_ ;
         $sortseq     = 'Z,';
-        my $dirs     = '';        
+        my $dirs     = '';
         my $dirn     = sprintf("%s", $datard{'dirkat'});
         my $distcsyd = sprintf("%s", $datard{'distsyd'});
         my $distcmel = sprintf("%s", $datard{'distmel'});
@@ -151,7 +152,7 @@ sub lsortseq    {
                 }
                 elsif ($prefix eq 'VK4') {
                     if ($distctmb eq '') {
-                        $sortseq = 'A,'; 
+                        $sortseq = 'A,';
                         }
                     elsif ($distctmb <= '80000') {
 
@@ -198,9 +199,18 @@ sub lsortseq    {
             elsif ($bankfld eq '15'){
                 $sortseq = 'B,';
             }
+            elsif ($bankfld eq '22'){
+                $sortseq = 'C,';
+            }
+            elsif ($bankfld eq '23'){
+                $sortseq = 'D,';
+            }
+            elsif ($bankfld eq '19'){
+                $sortseq = 'E,';
+            }
         }
 
-        return $sortseq 
+        return $sortseq
     }
 
 exit

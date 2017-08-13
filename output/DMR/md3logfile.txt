@@ -1,0 +1,795 @@
+Log
+##### Generate (empty) Scanlists #####
+Add empty scanlist: VK2RCGDMRSL
+Add empty scanlist: VK2RAGDMRSL
+Add empty scanlist: VK2RHPDMRSL
+Add empty scanlist: VK2RLEDMRSL
+Add empty scanlist: VK2RRWDMRSL
+Add empty scanlist: VK2RHKDMRSL
+Add empty scanlist: VK1RBMDMRSL
+Add empty scanlist: VK3RADDMRSL
+Add empty scanlist: VK3RGLDMRSL
+Add empty scanlist: VK3RMCDMRSL
+Add empty scanlist: VK3RSUDMRSL
+Add empty scanlist: VK3RTEDMRSL
+Add empty scanlist: VK3RZUDMRSL
+Add empty scanlist: VK4RBTDMRSL
+Add empty scanlist: VK4RBXDMRSL
+Add empty scanlist: VK4RMCDMRSL
+Add empty scanlist: VK4RCNDMRSL
+Add empty scanlist: VK4REGDMRSL
+Add empty scanlist: VK4RTQDMRSL
+Add empty scanlist: VK5REXDMRSL
+Add empty scanlist: VK5RSFDMRSL
+Add empty scanlist: VK6RDMDMRSL
+Add empty scanlist: VK6RLMDMRSL
+Add empty scanlist: VK6RPTDMRSL
+Add empty scanlist: VK6RRRDMRSL
+Add empty scanlist: VK7RAADMRSL
+Add empty scanlist: VK7RCRDMRSL
+Add empty scanlist: DMR-U0DMRSL
+Add empty scanlist: VK2RFIDMRSL
+Add empty scanlist: VK3RWWDMRSL
+Add empty scanlist: VK4RGXDMRSL
+Add empty scanlist: VKSMPLDMRSL
+Add empty scanlist: FAVFM
+Add empty scanlist: SYDFM
+Add empty scanlist: VK2NFM
+Add empty scanlist: VK2SFM
+Add empty scanlist: VK2WFM
+Add empty scanlist: OTHERFM
+Add empty scanlist: WICENFM
+Add empty scanlist: MELFM
+Add empty scanlist: VK3FM
+Add empty scanlist: TMBFM
+Add empty scanlist: VK4FM
+Add empty scanlist: VK5FM
+Add empty scanlist: VK6FM
+Add empty scanlist: VK7FM
+Add empty scanlist: VK8FM
+Add empty scanlist: ESOFM
+
+##### Generate (empty) Scanlists #####
+Add empty scanlist: VK4RCNDM2SL
+Add empty scanlist: DMR-01DM2SL
+Add empty scanlist: DMR-02DM2SL
+Add empty scanlist: DMR-03DM2SL
+Add empty scanlist: DMR-04DM2SL
+Add empty scanlist: DMR-51DM2SL
+Add empty scanlist: DMR-52DM2SL
+Add empty scanlist: DMR-53DM2SL
+Add empty scanlist: DMR-54DM2SL
+Add empty scanlist: DMR-61DM2SL
+Add empty scanlist: DMR-62DM2SL
+Add empty scanlist: DMR-63DM2SL
+Add empty scanlist: DMR-64DM2SL
+Add empty scanlist: DMR-92DM2SL
+Add empty scanlist: DMR-93DM2SL
+Add empty scanlist: DMR-94DM2SL
+Add empty scanlist: DMR-95DM2SL
+Add empty scanlist: KUR-TADM2SL
+Add empty scanlist: VK2RFIDM2SL
+Add empty scanlist: VKSMPLDM2SL
+Add empty scanlist: FAVF2
+Add empty scanlist: SYDF2
+Add empty scanlist: VK2NF2
+Add empty scanlist: VK2SF2
+Add empty scanlist: VK2WF2
+Add empty scanlist: OTHERF2
+Add empty scanlist: WICENF2
+Add empty scanlist: MELF2
+Add empty scanlist: VK3F2
+Add empty scanlist: TMBF2
+Add empty scanlist: VK4F2
+Add empty scanlist: VK5F2
+Add empty scanlist: VK6F2
+Add empty scanlist: VK7F2
+Add empty scanlist: VK8F2
+Add empty scanlist: ESOF2
+Add empty scanlist: APRSFM
+Add empty scanlist: 
+
+##### Programming Channels #####
+DMR: LOCAL 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RCG
+DMR: WW CALL 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RCG
+DMR: WW EN 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RCG
+DMR: UAEN1 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RCG
+DMR: UAEN2 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RCG
+DMR: UAUS 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RCG
+DMR: UAUK 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RCG
+DMR: UASP 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 2RCG
+DMR: VKZL 439.5000 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RCG
+DMR: VK 439.5000 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 2RCG
+DMR: TECH 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 2RCG
+DMR: LOCAL 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RAG
+DMR: WW CALL 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RAG
+DMR: WW EN 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RAG
+DMR: UAEN1 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RAG
+DMR: UAEN2 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RAG
+DMR: UAUS 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RAG
+DMR: UAUK 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RAG
+DMR: UASP 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 2RAG
+DMR: VKZL 438.9250 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RAG
+DMR: VK 438.9250 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 2RAG
+DMR: TECH 438.9250 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 2RAG
+DMR: LOCAL 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RHP
+DMR: WW CALL 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RHP
+DMR: WW EN 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RHP
+DMR: UAEN1 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RHP
+DMR: UAEN2 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RHP
+DMR: UAUS 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RHP
+DMR: UAUK 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RHP
+DMR: UASP 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 2RHP
+DMR: VKZL 439.7500 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RHP
+DMR: VK 439.7500 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 2RHP
+DMR: TECH 439.7500 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 2RHP
+DMR: LOCAL 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RLE
+DMR: WW CALL 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RLE
+DMR: WW EN 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RLE
+DMR: UAEN1 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RLE
+DMR: UAEN2 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RLE
+DMR: UAUS 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RLE
+DMR: UAUK 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RLE
+DMR: UASP 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 2RLE
+DMR: VKZL 438.4250 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RLE
+DMR: VK 438.4250 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 2RLE
+DMR: TECH 438.4250 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 2RLE
+DMR: LOCAL 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RRW
+DMR: WW CALL 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RRW
+DMR: WW EN 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RRW
+DMR: UAEN1 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RRW
+DMR: UAEN2 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RRW
+DMR: UAUS 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RRW
+DMR: UAUK 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RRW
+DMR: UASP 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 2RRW
+DMR: VKZL 438.1000 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RRW
+DMR: VK 438.1000 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 2RRW
+DMR: TECH 438.1000 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 2RRW
+DMR: LOCAL 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RHK
+DMR: WW CALL 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RHK
+DMR: WW EN 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RHK
+DMR: UAEN1 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RHK
+DMR: UAEN2 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RHK
+DMR: UAUS 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RHK
+DMR: UAUK 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RHK
+DMR: UASP 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 2RHK
+DMR: VKZL 439.8750 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RHK
+DMR: VK 439.8750 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 2RHK
+DMR: TECH 439.8750 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 2RHK
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 1RBM
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 1RBM
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 1RBM
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 1RBM
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 1RBM
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 1RBM
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 1RBM
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 1RBM
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 1RBM
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 1RBM
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 1RBM
+DMR: LOCAL 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 3RAD
+DMR: WW CALL 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 3RAD
+DMR: WW EN 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 3RAD
+DMR: UAEN1 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RAD
+DMR: UAEN2 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RAD
+DMR: UAUS 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 3RAD
+DMR: UAUK 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 3RAD
+DMR: UASP 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 3RAD
+DMR: VKZL 438.5250 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 3RAD
+DMR: VK 438.5250 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 3RAD
+DMR: TECH 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 3RAD
+DMR: LOCAL 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 3RGL
+DMR: WW CALL 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 3RGL
+DMR: WW EN 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 3RGL
+DMR: UAEN1 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RGL
+DMR: UAEN2 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RGL
+DMR: UAUS 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 3RGL
+DMR: UAUK 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 3RGL
+DMR: UASP 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 3RGL
+DMR: VKZL 439.5000 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 3RGL
+DMR: VK 439.5000 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 3RGL
+DMR: TECH 439.5000 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 3RGL
+DMR: LOCAL 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 3RMC
+DMR: WW CALL 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 3RMC
+DMR: WW EN 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 3RMC
+DMR: UAEN1 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RMC
+DMR: UAEN2 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RMC
+DMR: UAUS 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 3RMC
+DMR: UAUK 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 3RMC
+DMR: UASP 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 3RMC
+DMR: VKZL 439.3750 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 3RMC
+DMR: VK 439.3750 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 3RMC
+DMR: TECH 439.3750 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 3RMC
+DMR: LOCAL 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: LOCAL TG9 3RSU
+DMR: WW CALL 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: WW CALL TG1 3RSU
+DMR: WW EN 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: WW EN TG13 3RSU
+DMR: UAEN1 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RSU
+DMR: UAEN2 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RSU
+DMR: UAUS 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: UAUS TG133 3RSU
+DMR: UAUK 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: UAUK TG143 3RSU
+DMR: UASP 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: UASP TG153 3RSU
+DMR: VKZL 438.1000 MHz -5.400 MHz, s2
+     Added FM Channel: VKZL TG5 3RSU
+DMR: VK 438.1000 MHz -5.400 MHz, s2
+     Added FM Channel: VK TG505 3RSU
+DMR: TECH 438.1000 MHz -5.400 MHz, s1
+     Added FM Channel: TECH TG100 3RSU
+DMR: LOCAL 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 3RTE
+DMR: WW CALL 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 3RTE
+DMR: WW EN 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 3RTE
+DMR: UAEN1 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RTE
+DMR: UAEN2 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RTE
+DMR: UAUS 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 3RTE
+DMR: UAUK 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 3RTE
+DMR: UASP 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 3RTE
+DMR: VKZL 438.9125 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 3RTE
+DMR: VK 438.9125 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 3RTE
+DMR: TECH 438.9125 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 3RTE
+DMR: LOCAL 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 3RZU
+DMR: WW CALL 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 3RZU
+DMR: WW EN 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 3RZU
+DMR: UAEN1 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RZU
+DMR: UAEN2 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RZU
+DMR: UAUS 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 3RZU
+DMR: UAUK 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 3RZU
+DMR: UASP 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 3RZU
+DMR: VKZL 439.6750 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 3RZU
+DMR: VK 439.6750 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 3RZU
+DMR: TECH 439.6750 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 3RZU
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 4RBT
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 4RBT
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 4RBT
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 4RBT
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 4RBT
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 4RBT
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 4RBT
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 4RBT
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 4RBT
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 4RBT
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 4RBT
+DMR: LOCAL 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 4RBX
+DMR: WW CALL 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 4RBX
+DMR: WW EN 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 4RBX
+DMR: UAEN1 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 4RBX
+DMR: UAEN2 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 4RBX
+DMR: UAUS 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 4RBX
+DMR: UAUK 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 4RBX
+DMR: UASP 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 4RBX
+DMR: VKZL 438.8375 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 4RBX
+DMR: VK 438.8375 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 4RBX
+DMR: TECH 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 4RBX
+DMR: LOCAL 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 4RMC
+DMR: WW CALL 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 4RMC
+DMR: WW EN 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 4RMC
+DMR: UAEN1 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 4RMC
+DMR: UAEN2 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 4RMC
+DMR: UAUS 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 4RMC
+DMR: UAUK 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 4RMC
+DMR: UASP 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 4RMC
+DMR: VKZL 439.9750 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 4RMC
+DMR: VK 439.9750 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 4RMC
+DMR: TECH 439.9750 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 4RMC
+DMR: LOCAL 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: LOCAL TG9 4RCN
+DMR: WW CALL 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: WW CALL TG1 4RCN
+DMR: WW EN 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: WW EN TG13 4RCN
+DMR: UAEN1 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN1 TG113 4RCN
+DMR: UAEN2 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN2 TG123 4RCN
+DMR: UAUS 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: UAUS TG133 4RCN
+DMR: UAUK 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: UAUK TG143 4RCN
+DMR: UASP 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: UASP TG153 4RCN
+DMR: VKZL 438.3250 MHz -5.400 MHz, s2
+     Added FM Channel: VKZL TG5 4RCN
+DMR: VK 438.3250 MHz -5.400 MHz, s2
+     Added FM Channel: VK TG505 4RCN
+DMR: TECH 438.3250 MHz -5.400 MHz, s1
+     Added FM Channel: TECH TG100 4RCN
+DMR: LOCAL 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 4REG
+DMR: WW CALL 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 4REG
+DMR: WW EN 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 4REG
+DMR: UAEN1 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 4REG
+DMR: UAEN2 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 4REG
+DMR: UAUS 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 4REG
+DMR: UAUK 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 4REG
+DMR: UASP 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 4REG
+DMR: VKZL 439.9875 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 4REG
+DMR: VK 439.9875 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 4REG
+DMR: TECH 439.9875 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 4REG
+DMR: LOCAL 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 4RTQ
+DMR: WW CALL 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 4RTQ
+DMR: WW EN 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 4RTQ
+DMR: UAEN1 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 4RTQ
+DMR: UAEN2 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 4RTQ
+DMR: UAUS 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 4RTQ
+DMR: UAUK 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 4RTQ
+DMR: UASP 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 4RTQ
+DMR: VKZL 439.4875 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 4RTQ
+DMR: VK 439.4875 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 4RTQ
+DMR: TECH 439.4875 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 4RTQ
+DMR: LOCAL 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: LOCAL TG9 5REX
+DMR: WW CALL 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: WW CALL TG1 5REX
+DMR: WW EN 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: WW EN TG13 5REX
+DMR: UAEN1 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN1 TG113 5REX
+DMR: UAEN2 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN2 TG123 5REX
+DMR: UAUS 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: UAUS TG133 5REX
+DMR: UAUK 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: UAUK TG143 5REX
+DMR: UASP 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: UASP TG153 5REX
+DMR: VKZL 438.2625 MHz -5.400 MHz, s2
+     Added FM Channel: VKZL TG5 5REX
+DMR: VK 438.2625 MHz -5.400 MHz, s2
+     Added FM Channel: VK TG505 5REX
+DMR: TECH 438.2625 MHz -5.400 MHz, s1
+     Added FM Channel: TECH TG100 5REX
+DMR: LOCAL 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 5RSF
+DMR: WW CALL 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 5RSF
+DMR: WW EN 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 5RSF
+DMR: UAEN1 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 5RSF
+DMR: UAEN2 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 5RSF
+DMR: UAUS 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 5RSF
+DMR: UAUK 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 5RSF
+DMR: UASP 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 5RSF
+DMR: VKZL 438.8375 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 5RSF
+DMR: VK 438.8375 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 5RSF
+DMR: TECH 438.8375 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 5RSF
+DMR: LOCAL 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 6RDM
+DMR: WW CALL 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 6RDM
+DMR: WW EN 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 6RDM
+DMR: UAEN1 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 6RDM
+DMR: UAEN2 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 6RDM
+DMR: UAUS 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 6RDM
+DMR: UAUK 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 6RDM
+DMR: UASP 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 6RDM
+DMR: VKZL 439.8625 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 6RDM
+DMR: VK 439.8625 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 6RDM
+DMR: TECH 439.8625 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 6RDM
+DMR: LOCAL 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 6RLM
+DMR: WW CALL 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 6RLM
+DMR: WW EN 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 6RLM
+DMR: UAEN1 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 6RLM
+DMR: UAEN2 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 6RLM
+DMR: UAUS 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 6RLM
+DMR: UAUK 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 6RLM
+DMR: UASP 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 6RLM
+DMR: VKZL 438.5250 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 6RLM
+DMR: VK 438.5250 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 6RLM
+DMR: TECH 438.5250 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 6RLM
+DMR: LOCAL 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 6RPT
+DMR: WW CALL 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 6RPT
+DMR: WW EN 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 6RPT
+DMR: UAEN1 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 6RPT
+DMR: UAEN2 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 6RPT
+DMR: UAUS 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 6RPT
+DMR: UAUK 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 6RPT
+DMR: UASP 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 6RPT
+DMR: VKZL 438.0250 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 6RPT
+DMR: VK 438.0250 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 6RPT
+DMR: TECH 438.0250 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 6RPT
+DMR: LOCAL 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: LOCAL TG9 6RRR
+DMR: WW CALL 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: WW CALL TG1 6RRR
+DMR: WW EN 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: WW EN TG13 6RRR
+DMR: UAEN1 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN1 TG113 6RRR
+DMR: UAEN2 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN2 TG123 6RRR
+DMR: UAUS 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: UAUS TG133 6RRR
+DMR: UAUK 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: UAUK TG143 6RRR
+DMR: UASP 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: UASP TG153 6RRR
+DMR: VKZL 438.2000 MHz -5.400 MHz, s2
+     Added FM Channel: VKZL TG5 6RRR
+DMR: VK 438.2000 MHz -5.400 MHz, s2
+     Added FM Channel: VK TG505 6RRR
+DMR: TECH 438.2000 MHz -5.400 MHz, s1
+     Added FM Channel: TECH TG100 6RRR
+DMR: LOCAL 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 7RAA
+DMR: WW CALL 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 7RAA
+DMR: WW EN 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 7RAA
+DMR: UAEN1 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 7RAA
+DMR: UAEN2 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 7RAA
+DMR: UAUS 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 7RAA
+DMR: UAUK 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 7RAA
+DMR: UASP 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 7RAA
+DMR: VKZL 438.4125 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 7RAA
+DMR: VK 438.4125 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 7RAA
+DMR: TECH 438.4125 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 7RAA
+DMR: LOCAL 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 7RCR
+DMR: WW CALL 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 7RCR
+DMR: WW EN 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 7RCR
+DMR: UAEN1 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 7RCR
+DMR: UAEN2 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 7RCR
+DMR: UAUS 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 7RCR
+DMR: UAUK 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 7RCR
+DMR: UASP 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 7RCR
+DMR: VKZL 438.5250 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 7RCR
+DMR: VK 438.5250 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 7RCR
+DMR: TECH 438.5250 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 7RCR
+DMR: LOCAL 455.9125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 465.9125 MHz -10 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 465.9125 MHz 0.000 MHz, s1
+  WARNING: TX QRG outside allowed range: 465.9125
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 455.9125 MHz 10 MHz, s1
+  WARNING: TX QRG outside allowed range: 465.9125
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: LOCAL TG9 2RFI
+DMR: WW CALL 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: WW CALL TG1 2RFI
+DMR: WW EN 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: WW EN TG13 2RFI
+DMR: UAEN1 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 2RFI
+DMR: UAEN2 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 2RFI
+DMR: UAUS 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUS TG133 2RFI
+DMR: UAUK 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: UAUK TG143 2RFI
+DMR: UASP 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: UASP TG153 2RFI
+DMR: VKZL 439.6250 MHz -5.000 MHz, s2
+     Added FM Channel: VKZL TG5 2RFI
+DMR: VK 439.6250 MHz -5.000 MHz, s2
+     Added FM Channel: VK TG505 2RFI
+DMR: TECH 439.6250 MHz -5.000 MHz, s1
+     Added FM Channel: TECH TG100 2RFI
+DMR: LOCAL 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: LOCAL TG9 3RWW
+DMR: WW CALL 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: WW CALL TG1 3RWW
+DMR: WW EN 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: WW EN TG13 3RWW
+DMR: UAEN1 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RWW
+DMR: UAEN2 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RWW
+DMR: UAUS 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: UAUS TG133 3RWW
+DMR: UAUK 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: UAUK TG143 3RWW
+DMR: UASP 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: UASP TG153 3RWW
+DMR: VKZL 438.1500 MHz -5.400 MHz, s2
+     Added FM Channel: VKZL TG5 3RWW
+DMR: VK 438.1500 MHz -5.400 MHz, s2
+     Added FM Channel: VK TG505 3RWW
+DMR: TECH 438.1500 MHz -5.400 MHz, s1
+     Added FM Channel: TECH TG100 3RWW
+DMR: LOCAL 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: LOCAL TG9 3RWW
+DMR: WW CALL 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: WW CALL TG1 3RWW
+DMR: WW EN 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: WW EN TG13 3RWW
+DMR: UAEN1 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN1 TG113 3RWW
+DMR: UAEN2 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: UAEN2 TG123 3RWW
+DMR: UAUS 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: UAUS TG133 3RWW
+DMR: UAUK 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: UAUK TG143 3RWW
+DMR: UASP 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: UASP TG153 3RWW
+DMR: VKZL 438.3000 MHz -5.400 MHz, s2
+     Added FM Channel: VKZL TG5 3RWW
+DMR: VK 438.3000 MHz -5.400 MHz, s2
+     Added FM Channel: VK TG505 3RWW
+DMR: TECH 438.3000 MHz -5.400 MHz, s1
+     Added FM Channel: TECH TG100 3RWW
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: LOCAL TG9 4RGX
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: WW CALL TG1 4RGX
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: WW EN TG13 4RGX
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN1 TG113 4RGX
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAEN2 TG123 4RGX
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUS TG133 4RGX
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UAUK TG143 4RGX
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: UASP TG153 4RGX
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+     Added FM Channel: VKZL TG5 4RGX
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+     Added FM Channel: VK TG505 4RGX
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+     Added FM Channel: TECH TG100 4RGX
+DMR: DMR 438.9250 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact DMR SIMPLEX
+     Added FM Channel: DMR SIMPLEX
+DMR: VK 439.2000 MHz 0.000 MHz, s2
+     Added FM Channel: VK SIMPLEX
+DMR: LOCAL 441.1000 MHz 0.000 MHz, s1
+     Added FM Channel: LOCAL DV4M

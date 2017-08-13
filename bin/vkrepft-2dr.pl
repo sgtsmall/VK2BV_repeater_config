@@ -39,7 +39,7 @@ open(my $ft2fh, '>', $file2) or die "Could not open '$file2' $!\n";
 my $newhea1 =
   'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,Vibrator,';
 my $newhea2 =
-  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,C4FM,Marine Fav,Marine,';
+  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,ESORFS,Marine Fav,Marine,UHF,WICENE,C4FM,';
 my $newhea3 = 'Comment,User CTCSS,S-Meter Squelch,Bell,';
 
 # print "$newhead,$newhea2,$newhea3\n";
@@ -127,8 +127,16 @@ while (my $row = $csv->getline($vkrdfh)) {
         }
 #
 # BANK2,...,13
-#
         my $BankLoc = '';
+# BANK15 Test
+        my $BankTest = ',';
+# BANK19 ESORFD
+        my $BankESORFS = ',';
+
+# BANK22 UHF
+        my $BankUHF = ',';
+# BANK23 WICEN
+        my $BankWicen = ',';
 #
         my $dirn     = sprintf("%s", $data{'dirkat'});
         my $dirs     = '';
@@ -254,34 +262,49 @@ while (my $row = $csv->getline($vkrdfh)) {
             }
         }
         else {
+#        print STDERR "bankfld >", $bankfld,"<\n";
+
             $BankLoc = ',,,,,,,,,,,,';
             if ($bankfld eq '6') {
                 $BankLoc = ',,,,1,,,,,,,,';
+# BANK19 ESORFS
+            } elsif ($bankfld eq '19') {
+                $BankESORFS = '1,';
+# BANK22 UHF
+            } elsif ($bankfld eq '22') {
+                $BankUHF = '1,';
+# BANK23 WICEN
+            } elsif ($bankfld eq '23') {
+                $BankWicen = '1,';
+# BANK15 Test
+            } elsif ($bankfld eq '15') {
+                $BankTest = '1,';
+            }else {
+            print STDERR "bankfld not defined in 2dr.pl \n";
             }
         }
 
-# BANK14,15
+# BANK14
         my $BankAPRS = ',';
         if ($prefix eq 'APR') {
             $BankAPRS = '1,';
         }
-        my $BankTest = ',';
-        if ($bankfld eq '15') {
-            $BankTest = '1,';
-        }
-# BANK16,..,21,
-#                       678901
-        my $BankRest = ',,,,,,';
-# BANK22
+# BANK16,..,18,
+#                       678
+        my $BankRest = ',,,';
+# BANK19 ESORFS
+# BANK20,21,
+        my $BankMarine = ',,';
+# BANK22 UHF
+# BANK23 WICEN
+# BANK24
         my $BankC4FM =',';
         if ($data{'band'} eq 'C4FM') {
             $BankC4FM ='1,'
         }
-# BANK23,24,
-        my $BankMarine = ',,';
 #
-        my $newbank = sprintf("%s%s%s%s%s%s%s",
-            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest, $BankC4FM, $BankMarine);
+        my $newbank = sprintf("%s%s%s%s%s%s%s%s%s%s",
+            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest, $BankESORFS, $BankMarine, $BankUHF, $BankWicen, $BankC4FM, );
 
 # Comment, User CTCSS,S-Meter Squelch,Bell,
 #

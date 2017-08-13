@@ -49,7 +49,7 @@ open(my $vksofh, '>', $fileo1) or die "Could not open '$fileo1' $!\n";
 
 #read the header line of the main input
 my @fieldsrd = @{$csv->getline($vkrdfh)};
-# output this header with sortseqfld 
+# output this header with sortseqfld
 print $vksofh $sortseqfld, join(',', @fieldsrd), "\n";
 
 #read the header line of the local input
@@ -75,7 +75,7 @@ while (my $rowrd = $csv->getline($vksdfh)) {
     @datard{@fieldssd} = @$rowrd;
     if (   ($datard{'mode'} ~~ ["DV", "FM"])
         && ($datard{'band'} ~~ ["2", "7", "DMR"])
-        && ($datard{'Output'} < '470.0'))
+        && ($datard{'Output'} < '480.0'))
     {
          $sortseqfld = lsortseqfld(@$rowrd);
          print $vksofh $sortseqfld, join(',', @$rowrd), "\n";
@@ -93,7 +93,7 @@ sub lsortseqfld    {
         my %datard;
         @datard{@fieldsrd} = @_ ;
         $sortseqfld     = 'Z,';
-        my $dirs     = '';        
+        my $dirs     = '';
         my $dirn     = sprintf("%s", $datard{'dirkat'});
         my $distcsyd = sprintf("%s", $datard{'distsyd'});
         my $distcmel = sprintf("%s", $datard{'distmel'});
@@ -102,7 +102,7 @@ sub lsortseqfld    {
         my $prefix   = sprintf("%.3s", $datard{'Call U'});
         my $prefix6  = sprintf("%.6s", $datard{'Call U'});
 
-#DEBUG print "$cnt,$prefix ";
+#DEBUG print "$cnt,$prefix6 ";
         if (grep { $prefix6 eq $_ } @Favourds) {
             my $subsort = first_index { $prefix6 eq $_ } @Favourds ;
             $sortseqfld = sprintf('01%s,',$subsort );
@@ -151,7 +151,7 @@ sub lsortseqfld    {
                 }
                 elsif ($prefix eq 'VK4') {
                     if ($distctmb eq '') {
-                        $sortseqfld = 'A,'; 
+                        $sortseqfld = 'A,';
                         }
                     elsif ($distctmb <= '80000') {
 
@@ -200,7 +200,7 @@ sub lsortseqfld    {
             }
         }
 
-        return $sortseqfld 
+        return $sortseqfld
     }
 
 exit

@@ -35,10 +35,10 @@ require My::Favourites;
 my $csv = Text::CSV_XS->new({sep_char => ','});
 
 #open vkrepdir.csv
-my $file1 = $ARGV[0] or die "Need to main CSV file on the command line\n";
+my $file1 = $ARGV[0] or die "Need main CSV file on the command line\n";
 
-# open vkrepft-2dr.csv
-my $file2pre = $ARGV[1] or die "Need to merge CSV file on the command line\n";
+# get output folder
+my $file2pre = $ARGV[1] or die "Need output folder on the command line\n";
 my $memcnt0  = '-1';
 my $memcnt1  = '-1';
 my $memcnt2  = '-1';
@@ -59,6 +59,11 @@ my $memcntbk  = '-1'; #vk5-8
 my $memcntbl  = '-1'; #vk6
 my $memcntbm  = '-1'; #vk7
 my $memcntbn  = '-1'; #aprs
+my $memcntbu  = '-1'; #uhf
+my $memcntbw  = '-1'; #wicen
+#my $memcntbx  = '-1'; #marine
+my $memcntbz  = '-1'; #wicenemerg
+
 #my $memcntbo  = '-1'; #test
 
 
@@ -67,10 +72,11 @@ my @CallUuniq;
 #my $cnt = 0;
 my $call       = '';
 my $cntfld     = '';
+my $TStext     = '';
 my $utcoffset  = '';
 my $dstlab     = '';
-my @grpnum     = qw{3 22 23 24};
-my @grpnam     = qw{AusDV FMAus FMAusNW Local};
+my @grpnum     = qw{3 22 23 24 25 26};
+my @grpnam     = qw{AusDV FMAus FMAusNW Local UHF Wicen};
 my @utco10     = qw{VK1 VK2 Vk3 VK4 VK7};
 my @utco95     = qw{VK5 VK8};
 my @utco08     = qw{VK6};
@@ -82,13 +88,16 @@ open(my $vkrdfh, '<', $file1) or die "Could not open '$file1' $!\n";
 # to add more banks add to @bfiles and use in $oubfh;
 #
 #open output file
-my @gfiles = qw{ g3 g22 g23 g24 };
+my @gfiles = qw{ g3 g22 g23 g24 g25 g26 };
 my @mfiles = qw{ m0 m1 m2 m3 m4 };
-my @bfiles = qw{ ba bb bc bd be bf bg bh bi bj bk bl bm bn };
+my @bfiles = qw{ ba bb bc bd be bf bg bh bi bj bk bl bm bn bu bw bz};
 my @allfiles = ( @gfiles, @mfiles, @bfiles );
 my %handles = get_write_handles(@allfiles);
 my @g22    = qw{VK1 VK2 VK3 VK7};
 my @g23    = qw{VK4 VK5 VK6 VK8};
+my @g25    = qw{UHF };
+my @g26    = qw{ESO VRA WIC };
+#
 #
 my $newhea1 =
   'Group No,Group Name,Name,Sub Name,Repeater Call Sign,Gateway Call Sign,';
@@ -99,8 +108,8 @@ my $newhead = sprintf("%s%s%s", $newhea1, $newhea2, $newhea3);
 #
 if ($csv->parse($newhead)) {
     foreach (@gfiles) {
-        print { $handles{$_} } $csv->string,"\n";    
-    }    
+        print { $handles{$_} } $csv->string,"\n";
+    }
 }
 else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -116,11 +125,11 @@ my $newhebd = sprintf("%s%s%s", $newheb1, $newheb2, $newheb3);
 #
 if ($csv->parse($newhebd)) {
     foreach (@mfiles) {
-        print { $handles{$_} } $csv->string,"\n";  
-    }    
+        print { $handles{$_} } $csv->string,"\n";
+    }
     foreach (@bfiles) {
-        print { $handles{$_} } $csv->string,"\n";  
-    }    
+        print { $handles{$_} } $csv->string,"\n";
+    }
 }
 else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -200,7 +209,7 @@ while (my $row = $csv->getline($vkrdfh)) {
         else {
             $tonemode = sprintf("TSQL,%sHz", $data{'Tone'});
             $tonesql  = sprintf(",%sHz", $data{'Tone'});
-    }
+        }
 
 # RPT1USE,
 # use this logic for RPT1 USE
@@ -209,7 +218,7 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $Rptskip = 'PSkip';
         if (grep { $prefix6 eq $_ } @Favourds) {
             $Rptuseg = 'YES';
-            $Rptskip = 'OFF'
+            $Rptskip = 'OFF';
         }
 
 my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
@@ -217,8 +226,13 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 #  'CH No,
 #my $chnum = sprintf("%s,",$cnt);
 #Frequency,Dup,Offset,TS,Mode,' ;
-        my $newdab1 = sprintf("%s,%s,%.3f,,%s,",
-            $data{'Output'}, $data{'tdup'}, $data{'absoff'}, $data{'mode'});
+        if ( $data{'TS'} ne '' ) {
+            $TStext = sprintf("%skHz",$data{'TS'}) ;
+        } else {
+            $TStext = '25kHz';
+        }
+        my $newdab1 = sprintf("%s,%s,%.3f,%s,%s,",
+            $data{'Output'}, $data{'tdup'}, $data{'absoff'}, $TStext, $data{'mode'});
 
 #$newdab1,
 # 'Name,SKIP,TONE,Repeater Tone,TSQL Frequency,DTCS Code,DTCS Polarity,' ;
@@ -229,7 +243,7 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 #'DV SQL,DV SQL Code,Your Call Sign,RPT1 Call Sign,RPT2 Call Sign' ;
         my $newdab3 = sprintf(",,%s,%s,%s", $Urcall, $CallUufld, $CallG);
 #         my $newdab3 = sprintf(",,%s,%s,", $Urcall, $CallUufld);
-        
+
 
 #,$newdab3,$newdab4
 #
@@ -285,6 +299,16 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
             $grpnam = 'FMAusNW,';
             $ougfh  = 'g23';
         }
+        elsif (grep { $prefix eq $_ } @g25) {
+            $grpnum = '25,';
+            $grpnam = 'UHF,';
+            $ougfh  = 'g25';
+        }
+        elsif (grep { $prefix eq $_ } @g26) {
+            $grpnum = '26,';
+            $grpnam = 'Wicen,';
+            $ougfh  = 'g26';
+        }
         else {
             $grpnum = '24,';
             $grpnam = 'Simplex,';
@@ -305,7 +329,7 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
                     if (($dirs lt 180) || ($dirs gt 360)) { #west
                         $oubfh = 'be';
                         $memcntbe += 1;
-                        $bchnum = $memcntbe;  
+                        $bchnum = $memcntbe;
                     }
                     elsif ($dirs lt 270) {    #North
                     $oumfh = 'm1';
@@ -313,17 +337,17 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
                     $chnum = $memcnt1;
                         $oubfh = 'bd';
                         $memcntbd += 1;
-                        $bchnum = $memcntbd;                    
+                        $bchnum = $memcntbd;
                     }
                     elsif ($dirs le 360) {    #South
                         $oubfh = 'bc';
                         $memcntbc += 1;
-                        $bchnum = $memcntbc;                    
+                        $bchnum = $memcntbc;
                     }
                 }
             }
             elsif ($prefix eq 'VK3') {
-                
+
                 if ($data{'distmel'} <= '80000') {
                     $oubfh = 'bg';
                     $memcntbg += 1;
@@ -339,10 +363,11 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
                 }
             }
             elsif ($prefix eq 'VK4')  {
-                $oumfh = 'm3';
-                $memcnt3 += 1;
-                $chnum = $memcnt3;
-                if ($data{'disttmb'} <= '80000') {
+
+                if ($data{'disttmb'} <= '90000') {
+                    $oumfh = 'm3';
+                    $memcnt3 += 1;
+                    $chnum = $memcnt3;
                     $oubfh = 'bi';
                     $memcntbi += 1;
                     $bchnum = $memcntbi;
@@ -378,6 +403,32 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
             $memcntbn += 1;
             $bchnum = $memcntbn;
         }
+
+        elsif ($data{'mode'} eq "FM" && $data{'0  sortseq'} eq "C" ) {
+            #$oumfh = 'm4';
+            #$memcnt4 += 1;
+            #$chnum = $memcnt4;
+            $oubfh = 'bu';
+            $memcntbu += 1;
+            $bchnum = $memcntbu;
+        }
+        elsif ($data{'mode'} eq "FM" && $data{'0  sortseq'} eq "D" ) {
+            #$oumfh = 'm4';
+            #$memcnt4 += 1;
+            #$chnum = $memcnt4;
+            $oubfh = 'bw';
+            $memcntbw += 1;
+            $bchnum = $memcntbw;
+        }
+        elsif ($data{'mode'} eq "FM" && $data{'0  sortseq'} eq "E" ) {
+            #$oumfh = 'm4';
+            #$memcnt4 += 1;
+            #$chnum = $memcnt4;
+            $oubfh = 'bz';
+            $memcntbz += 1;
+            $bchnum = $memcntbz;
+        }
+
         elsif ($data{'mode'} eq "FM" ) {
             #$oumfh = 'm4';
             #$memcnt4 += 1;
@@ -386,7 +437,7 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
             $memcntbf += 1;
             $bchnum = $memcntbf;
         }
-        
+
         $utcoffset = '+10:00';
         if (grep { $prefix eq $_ } @utco10) {
             $utcoffset = '+10:00';
@@ -432,7 +483,7 @@ my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
             }
         }
         if ($bchnum ne 'UNDEF') {
-        if ($bchnum >= '99' ) { print STDERR "bchnum already 99 $CallUufld\n " ; }
+        if ($bchnum >= '99' ) { print STDERR "bchnum in $oubfh already 99 $CallUufld\n " ; }
             my $newlinb =
               sprintf("%s,%s%s%s", $bchnum, $newdab1, $newdab2, $newdab3);
             if ($csv->parse($newlinb)) {

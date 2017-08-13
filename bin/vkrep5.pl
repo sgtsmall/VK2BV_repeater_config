@@ -117,7 +117,7 @@ while (my $line = <$data>) {
 # look for the location data
 # could hash this but the whole job runs under a second
 # and I also want to leave the vkrep.csv file alone
-            my $result = ',,,,,,,,5,';
+            my $result = ',,,,,,,,5,,';
             
 #'CALL_SIGN,LATITUDE,LONGITUDE,NAME,STATE,POSTCODE,SITE_PRECISION,';
 #ELEVATION,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank'
@@ -126,7 +126,7 @@ while (my $line = <$data>) {
 #                print STDERR $shcall,"\n";
                 if ( $ssitex->datum($shcall,'txpower'))  {
                     $result = sprintf(
-                    "%s,%s,%s,%s,%s,%s,%s,%s,%s,",
+                    "%s,%s,%s,%s,%s,%s,%s,%s,%s,,",
                     $ssitex->datum($shcall,'LONGITUDE'),
                     $ssitex->datum($shcall,'LATITUDE'),
                     $ssitex->datum($shcall,'maidenhead'),
@@ -142,7 +142,7 @@ while (my $line = <$data>) {
                # last;
                 }
             } else {
-            $result = 'longditude,latitude,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank'
+            $result = 'longditude,latitude,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank,TS'
             }
             
             print "$sort,$call,$fielddata,$offdata,$result\n";

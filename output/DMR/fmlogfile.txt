@@ -1,0 +1,2810 @@
+Log
+##### Programming Channels #####
+FM:  VK2RBV 7 438.1125 MHz -5.400 MHz
+     Added FM channel: VK2RBV 7
+FM:  VK2ROT 7 438.5750 MHz -5.000 MHz
+     Added FM channel: VK2ROT 7
+FM:  VK2RCG 7 439.8000 MHz -5.000 MHz
+     Added FM channel: VK2RCG 7
+DMR: LOCAL 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RCG
+DMR: WW CALL 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RCG
+DMR: WW EN 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RCG
+DMR: UAEN1 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RCG
+DMR: UAEN2 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RCG
+DMR: UAUS 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RCG
+DMR: UAUK 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RCG
+DMR: UASP 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RCG
+DMR: VKZL 439.5000 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RCG
+DMR: VK 439.5000 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RCG
+DMR: TECH 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RCG
+FM:  VK2RCF 7 438.4500 MHz -5.000 MHz
+     Added FM channel: VK2RCF 7
+FM:  VK2RWI 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK2RWI 7
+FM:  VK2RWIA7 438.6000 MHz -5.000 MHz
+     Added FM channel: VK2RWIA7
+FM:  VK2RWIB7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK2RWIB7
+FM:  VK2RMP 7 438.7250 MHz -5.000 MHz
+     Added FM channel: VK2RMP 7
+FM:  VK2RBM 7 438.3750 MHz -5.000 MHz
+     Added FM channel: VK2RBM 7
+FM:  VK2RAG 7 438.0750 MHz -5.000 MHz
+     Added FM channel: VK2RAG 7
+FM:  VK2RAGA7 439.5250 MHz -5.000 MHz
+     Added FM channel: VK2RAGA7
+FM:  VK2RAGB7 439.7250 MHz -5.000 MHz
+     Added FM channel: VK2RAGB7
+FM:  VK2RAGC7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK2RAGC7
+FM:  VK2RCZ 7 439.4250 MHz -5.000 MHz
+     Added FM channel: VK2RCZ 7
+FM:  VK2RDC 7 438.6500 MHz -5.000 MHz
+     Added FM channel: VK2RDC 7
+FM:  VK2RGW 7 439.4750 MHz -5.000 MHz
+     Added FM channel: VK2RGW 7
+FM:  VK2RHC 7 438.5500 MHz -5.000 MHz
+     Added FM channel: VK2RHC 7
+FM:  VK2RHP 7 439.7500 MHz -5.000 MHz
+     Added FM channel: VK2RHP 7
+FM:  VK2RHT 7 438.3500 MHz -5.400 MHz
+     Added FM channel: VK2RHT 7
+FM:  VK2RLE 7 438.4250 MHz -5.000 MHz
+     Added FM channel: VK2RLE 7
+FM:  VK2RMB 7 438.1750 MHz -5.000 MHz
+     Added FM channel: VK2RMB 7
+FM:  VK2RMR 7 439.5750 MHz -5.000 MHz
+     Added FM channel: VK2RMR 7
+FM:  VK2RNG 7 439.8500 MHz -5.000 MHz
+     Added FM channel: VK2RNG 7
+FM:  VK2RNS 7 439.9750 MHz -5.000 MHz
+     Added FM channel: VK2RNS 7
+FM:  VK2RON 7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK2RON 7
+FM:  VK2RRR 7 439.6000 MHz -5.000 MHz
+     Added FM channel: VK2RRR 7
+FM:  VK2RRS 7 438.4750 MHz -5.000 MHz
+     Added FM channel: VK2RRS 7
+FM:  VK2RSV 7 439.3250 MHz -5.000 MHz
+     Added FM channel: VK2RSV 7
+FM:  VK2RSW 7 439.7750 MHz -5.000 MHz
+     Added FM channel: VK2RSW 7
+FM:  VK2RTG 7 439.3000 MHz -5.000 MHz
+     Added FM channel: VK2RTG 7
+FM:  VK2RWS 7 438.2750 MHz -5.400 MHz
+     Added FM channel: VK2RWS 7
+DMR: LOCAL 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RAG
+DMR: WW CALL 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RAG
+DMR: WW EN 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RAG
+DMR: UAEN1 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RAG
+DMR: UAEN2 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RAG
+DMR: UAUS 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RAG
+DMR: UAUK 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RAG
+DMR: UASP 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RAG
+DMR: VKZL 438.9250 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RAG
+DMR: VK 438.9250 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RAG
+DMR: TECH 438.9250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RAG
+DMR: LOCAL 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RHP
+DMR: WW CALL 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RHP
+DMR: WW EN 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RHP
+DMR: UAEN1 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RHP
+DMR: UAEN2 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RHP
+DMR: UAUS 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RHP
+DMR: UAUK 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RHP
+DMR: UASP 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RHP
+DMR: VKZL 439.7500 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RHP
+DMR: VK 439.7500 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RHP
+DMR: TECH 439.7500 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RHP
+DMR: LOCAL 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RLE
+DMR: WW CALL 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RLE
+DMR: WW EN 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RLE
+DMR: UAEN1 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RLE
+DMR: UAEN2 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RLE
+DMR: UAUS 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RLE
+DMR: UAUK 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RLE
+DMR: UASP 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RLE
+DMR: VKZL 438.4250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RLE
+DMR: VK 438.4250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RLE
+DMR: TECH 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RLE
+DMR: LOCAL 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RLE
+DMR: WW CALL 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RLE
+DMR: WW EN 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RLE
+DMR: UAEN1 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RLE
+DMR: UAEN2 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RLE
+DMR: UAUS 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RLE
+DMR: UAUK 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RLE
+DMR: UASP 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RLE
+DMR: VKZL 438.4250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RLE
+DMR: VK 438.4250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RLE
+DMR: TECH 438.4250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RLE
+DMR: LOCAL 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RRW
+DMR: WW CALL 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RRW
+DMR: WW EN 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RRW
+DMR: UAEN1 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RRW
+DMR: UAEN2 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RRW
+DMR: UAUS 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RRW
+DMR: UAUK 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RRW
+DMR: UASP 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RRW
+DMR: VKZL 438.1000 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RRW
+DMR: VK 438.1000 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RRW
+DMR: TECH 438.1000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RRW
+FM:  VK2RHR 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK2RHR 7
+FM:  VK2RIW 7 438.3000 MHz -5.000 MHz
+     Added FM channel: VK2RIW 7
+FM:  VK2RMU 7 438.1250 MHz -5.000 MHz
+     Added FM channel: VK2RMU 7
+FM:  VK2RSH 7 439.3750 MHz -5.000 MHz
+     Added FM channel: VK2RSH 7
+FM:  VK2RWP 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK2RWP 7
+FM:  VK2RAI 7 439.2750 MHz -5.000 MHz
+     Added FM channel: VK2RAI 7
+FM:  VK2RCN 7 438.4250 MHz -5.000 MHz
+     Added FM channel: VK2RCN 7
+FM:  VK2REE 7 438.3250 MHz -5.000 MHz
+     Added FM channel: VK2REE 7
+FM:  VK2RHK 7 438.1250 MHz -5.000 MHz
+     Added FM channel: VK2RHK 7
+FM:  VK2RMY 7 438.0750 MHz -5.000 MHz
+     Added FM channel: VK2RMY 7
+FM:  VK2RNC 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK2RNC 7
+FM:  VK2RNCA7 438.6750 MHz -5.000 MHz
+     Added FM channel: VK2RNCA7
+FM:  VK2ROJ 7 439.7000 MHz -5.000 MHz
+     Added FM channel: VK2ROJ 7
+FM:  VK2RPL 7 438.6750 MHz -5.000 MHz
+     Added FM channel: VK2RPL 7
+FM:  VK2RPM 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK2RPM 7
+FM:  VK2RPW 7 438.2250 MHz -5.000 MHz
+     Added FM channel: VK2RPW 7
+FM:  VK2RSC 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK2RSC 7
+FM:  VK2RUM 7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK2RUM 7
+FM:  VK2RWH 7 439.6250 MHz -5.000 MHz
+     Added FM channel: VK2RWH 7
+FM:  VK2RWK 7 439.8250 MHz -5.000 MHz
+     Added FM channel: VK2RWK 7
+DMR: LOCAL 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RHK
+DMR: WW CALL 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RHK
+DMR: WW EN 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RHK
+DMR: UAEN1 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RHK
+DMR: UAEN2 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RHK
+DMR: UAUS 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RHK
+DMR: UAUK 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RHK
+DMR: UASP 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RHK
+DMR: VKZL 439.8750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RHK
+DMR: VK 439.8750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RHK
+DMR: TECH 439.8750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RHK
+FM:  VK1RBM 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK1RBM 7
+FM:  VK1RGI 7 438.0500 MHz -5.000 MHz
+     Added FM channel: VK1RGI 7
+FM:  VK2RAB 7 438.4750 MHz -5.000 MHz
+     Added FM channel: VK2RAB 7
+FM:  VK2RAD 7 438.6500 MHz -5.000 MHz
+     Added FM channel: VK2RAD 7
+FM:  VK2RAO 7 438.7250 MHz -5.000 MHz
+     Added FM channel: VK2RAO 7
+FM:  VK2RAY 7 438.5750 MHz -5.000 MHz
+     Added FM channel: VK2RAY 7
+FM:  VK2RBK 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK2RBK 7
+FM:  VK2RCW 7 439.3000 MHz -5.000 MHz
+     Added FM channel: VK2RCW 7
+FM:  VK2RDD 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK2RDD 7
+FM:  VK2RGN 7 438.3250 MHz -5.000 MHz
+     Added FM channel: VK2RGN 7
+FM:  VK2RGNA7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK2RGNA7
+FM:  VK2RGNB7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK2RGNB7
+FM:  VK2RLH 7 439.8500 MHz -5.000 MHz
+     Added FM channel: VK2RLH 7
+FM:  VK2RLJ 7 438.4500 MHz -5.000 MHz
+     Added FM channel: VK2RLJ 7
+FM:  VK2RNW 7 438.5750 MHz -5.000 MHz
+     Added FM channel: VK2RNW 7
+FM:  VK2RTW 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK2RTW 7
+FM:  VK2RTWA7 439.8000 MHz -5.000 MHz
+     Added FM channel: VK2RTWA7
+FM:  VK2RWB 7 439.6500 MHz -5.000 MHz
+     Added FM channel: VK2RWB 7
+FM:  VK2RWM 7 438.3250 MHz -5.000 MHz
+     Added FM channel: VK2RWM 7
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 1RBM
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 1RBM
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 1RBM
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 1RBM
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 1RBM
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 1RBM
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 1RBM
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 1RBM
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 1RBM
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 1RBM
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 1RBM
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 1RBM
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 1RBM
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 1RBM
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 1RBM
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 1RBM
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 1RBM
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 1RBM
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 1RBM
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 1RBM
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 1RBM
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 1RBM
+FM:  VK3RAD 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK3RAD 7
+FM:  VK3RAJ 7 439.7500 MHz -5.000 MHz
+     Added FM channel: VK3RAJ 7
+FM:  VK3RBM 7 438.7000 MHz -5.000 MHz
+     Added FM channel: VK3RBM 7
+FM:  VK3RBW 7 438.4500 MHz -5.000 MHz
+     Added FM channel: VK3RBW 7
+FM:  VK3RBY 7 439.6250 MHz -5.000 MHz
+     Added FM channel: VK3RBY 7
+FM:  VK3RCC 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK3RCC 7
+FM:  VK3RCD 7 438.1875 MHz -5.400 MHz
+     Added FM channel: VK3RCD 7
+FM:  VK3RDX 7 439.6000 MHz -5.000 MHz
+     Added FM channel: VK3RDX 7
+FM:  VK3RFY 7 438.4000 MHz -5.000 MHz
+     Added FM channel: VK3RFY 7
+FM:  VK3RGC 7 439.5750 MHz -5.000 MHz
+     Added FM channel: VK3RGC 7
+FM:  VK3RGL 7 439.5000 MHz -5.000 MHz
+     Added FM channel: VK3RGL 7
+FM:  VK3RGW 7 438.5000 MHz -5.000 MHz
+     Added FM channel: VK3RGW 7
+FM:  VK3RHF 7 438.7500 MHz -5.000 MHz
+     Added FM channel: VK3RHF 7
+FM:  VK3RIR 7 438.1500 MHz -5.000 MHz
+     Added FM channel: VK3RIR 7
+FM:  VK3RLP 7 439.4750 MHz -5.000 MHz
+     Added FM channel: VK3RLP 7
+FM:  VK3RMC 7 439.3750 MHz -5.000 MHz
+     Added FM channel: VK3RMC 7
+FM:  VK3RMCA7 439.8750 MHz -5.000 MHz
+     Added FM channel: VK3RMCA7
+FM:  VK3RMH 7 438.3250 MHz -5.000 MHz
+     Added FM channel: VK3RMH 7
+FM:  VK3RMM 7 439.8250 MHz -5.000 MHz
+     Added FM channel: VK3RMM 7
+FM:  VK3RMN 7 439.4500 MHz -5.000 MHz
+     Added FM channel: VK3RMN 7
+FM:  VK3RMS 7 438.2250 MHz -5.000 MHz
+     Added FM channel: VK3RMS 7
+FM:  VK3RMU 7 439.8000 MHz -5.000 MHz
+     Added FM channel: VK3RMU 7
+FM:  VK3RPS 7 439.7250 MHz -5.000 MHz
+     Added FM channel: VK3RPS 7
+FM:  VK3RPT 7 439.5250 MHz -5.000 MHz
+     Added FM channel: VK3RPT 7
+FM:  VK3RPU 7 439.8500 MHz -5.000 MHz
+     Added FM channel: VK3RPU 7
+FM:  VK3RRC 7 439.7000 MHz -5.000 MHz
+     Added FM channel: VK3RRC 7
+FM:  VK3RSA 7 439.6500 MHz -5.000 MHz
+     Added FM channel: VK3RSA 7
+FM:  VK3RSB 7 439.5500 MHz -5.000 MHz
+     Added FM channel: VK3RSB 7
+FM:  VK3RSE 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK3RSE 7
+FM:  VK3RSV 7 439.4250 MHz -5.000 MHz
+     Added FM channel: VK3RSV 7
+FM:  VK3RYV 7 439.3000 MHz -5.000 MHz
+     Added FM channel: VK3RYV 7
+DMR: LOCAL 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RAD
+DMR: WW CALL 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RAD
+DMR: WW EN 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RAD
+DMR: UAEN1 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RAD
+DMR: UAEN2 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RAD
+DMR: UAUS 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RAD
+DMR: UAUK 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RAD
+DMR: UASP 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RAD
+DMR: VKZL 438.5250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RAD
+DMR: VK 438.5250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RAD
+DMR: TECH 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RAD
+DMR: LOCAL 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RGL
+DMR: WW CALL 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RGL
+DMR: WW EN 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RGL
+DMR: UAEN1 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RGL
+DMR: UAEN2 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RGL
+DMR: UAUS 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RGL
+DMR: UAUK 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RGL
+DMR: UASP 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RGL
+DMR: VKZL 439.5000 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RGL
+DMR: VK 439.5000 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RGL
+DMR: TECH 439.5000 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RGL
+DMR: LOCAL 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RMC
+DMR: WW CALL 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RMC
+DMR: WW EN 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RMC
+DMR: UAEN1 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RMC
+DMR: UAEN2 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RMC
+DMR: UAUS 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RMC
+DMR: UAUK 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RMC
+DMR: UASP 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RMC
+DMR: VKZL 439.3750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RMC
+DMR: VK 439.3750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RMC
+DMR: TECH 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RMC
+DMR: LOCAL 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RMC
+DMR: WW CALL 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RMC
+DMR: WW EN 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RMC
+DMR: UAEN1 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RMC
+DMR: UAEN2 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RMC
+DMR: UAUS 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RMC
+DMR: UAUK 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RMC
+DMR: UASP 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RMC
+DMR: VKZL 439.3750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RMC
+DMR: VK 439.3750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RMC
+DMR: TECH 439.3750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RMC
+DMR: LOCAL 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RSU
+DMR: WW CALL 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RSU
+DMR: WW EN 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RSU
+DMR: UAEN1 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RSU
+DMR: UAEN2 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RSU
+DMR: UAUS 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RSU
+DMR: UAUK 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RSU
+DMR: UASP 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RSU
+DMR: VKZL 438.1000 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RSU
+DMR: VK 438.1000 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RSU
+DMR: TECH 438.1000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RSU
+DMR: LOCAL 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RTE
+DMR: WW CALL 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RTE
+DMR: WW EN 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RTE
+DMR: UAEN1 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RTE
+DMR: UAEN2 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RTE
+DMR: UAUS 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RTE
+DMR: UAUK 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RTE
+DMR: UASP 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RTE
+DMR: VKZL 438.9125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RTE
+DMR: VK 438.9125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RTE
+DMR: TECH 438.9125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RTE
+FM:  VK3RBA 7 439.2750 MHz -5.000 MHz
+     Added FM channel: VK3RBA 7
+FM:  VK3RBL 7 439.8250 MHz -5.000 MHz
+     Added FM channel: VK3RBL 7
+FM:  VK3RBN 7 438.3500 MHz -5.000 MHz
+     Added FM channel: VK3RBN 7
+FM:  VK3RBO 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK3RBO 7
+FM:  VK3RBP 7 439.7000 MHz -5.000 MHz
+     Added FM channel: VK3RBP 7
+FM:  VK3RBU 7 438.4750 MHz -5.000 MHz
+     Added FM channel: VK3RBU 7
+FM:  VK3RCP 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK3RCP 7
+FM:  VK3RCU 7 438.4250 MHz -5.000 MHz
+     Added FM channel: VK3RCU 7
+FM:  VK3RDU 7 438.0750 MHz -5.000 MHz
+     Added FM channel: VK3RDU 7
+FM:  VK3RDUA7 439.8750 MHz -5.000 MHz
+     Added FM channel: VK3RDUA7
+FM:  VK3REG 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK3REG 7
+FM:  VK3RGH 7 439.3250 MHz -5.000 MHz
+     Added FM channel: VK3RGH 7
+FM:  VK3RGS 7 438.3750 MHz -5.000 MHz
+     Added FM channel: VK3RGS 7
+FM:  VK3RGV 7 439.7750 MHz -5.000 MHz
+     Added FM channel: VK3RGV 7
+FM:  VK3RHO 7 438.3750 MHz -5.000 MHz
+     Added FM channel: VK3RHO 7
+FM:  VK3RLE 7 438.1250 MHz -5.000 MHz
+     Added FM channel: VK3RLE 7
+FM:  VK3RLV 7 438.3750 MHz -5.000 MHz
+     Added FM channel: VK3RLV 7
+FM:  VK3RMG 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK3RMG 7
+FM:  VK3RMP 7 439.3500 MHz -5.000 MHz
+     Added FM channel: VK3RMP 7
+FM:  VK3RNE 7 439.4250 MHz -5.000 MHz
+     Added FM channel: VK3RNE 7
+FM:  VK3RNU 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK3RNU 7
+FM:  VK3RPL 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK3RPL 7
+FM:  VK3RRU 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK3RRU 7
+FM:  VK3RTU 7 439.5250 MHz -5.000 MHz
+     Added FM channel: VK3RTU 7
+FM:  VK3RUG 7 438.1750 MHz -5.000 MHz
+     Added FM channel: VK3RUG 7
+FM:  VK3RWD 7 438.5750 MHz -5.000 MHz
+     Added FM channel: VK3RWD 7
+FM:  VK3RWG 7 438.3750 MHz -5.000 MHz
+     Added FM channel: VK3RWG 7
+FM:  VK3RWL 7 439.8750 MHz -5.000 MHz
+     Added FM channel: VK3RWL 7
+FM:  VK3RWU 7 438.6750 MHz -5.000 MHz
+     Added FM channel: VK3RWU 7
+FM:  VK3RZU 7 439.6750 MHz -5.000 MHz
+     Added FM channel: VK3RZU 7
+DMR: LOCAL 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RZU
+DMR: WW CALL 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RZU
+DMR: WW EN 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RZU
+DMR: UAEN1 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RZU
+DMR: UAEN2 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RZU
+DMR: UAUS 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RZU
+DMR: UAUK 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RZU
+DMR: UASP 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RZU
+DMR: VKZL 439.6750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RZU
+DMR: VK 439.6750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RZU
+DMR: TECH 439.6750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RZU
+FM:  VK4RAG 7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK4RAG 7
+FM:  VK4RAI 7 439.3250 MHz -5.000 MHz
+     Added FM channel: VK4RAI 7
+FM:  VK4RBA 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK4RBA 7
+FM:  VK4RBQ 7 439.3000 MHz -5.000 MHz
+     Added FM channel: VK4RBQ 7
+FM:  VK4RBR 7 438.2750 MHz -5.000 MHz
+     Added FM channel: VK4RBR 7
+FM:  VK4RBS 7 439.7250 MHz -5.000 MHz
+     Added FM channel: VK4RBS 7
+FM:  VK4RBX 7 438.4250 MHz -5.000 MHz
+     Added FM channel: VK4RBX 7
+FM:  VK4RGC 7 438.6000 MHz -5.000 MHz
+     Added FM channel: VK4RGC 7
+FM:  VK4RLB 7 438.7500 MHz -5.000 MHz
+     Added FM channel: VK4RLB 7
+FM:  VK4RLW 7 438.5000 MHz -5.000 MHz
+     Added FM channel: VK4RLW 7
+FM:  VK4RSM 7 439.3000 MHz -5.000 MHz
+     Added FM channel: VK4RSM 7
+FM:  VK4RWM 7 438.3750 MHz -5.000 MHz
+     Added FM channel: VK4RWM 7
+FM:  VK4RWMA7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK4RWMA7
+FM:  VK4RZA 7 438.1000 MHz -5.000 MHz
+     Added FM channel: VK4RZA 7
+FM:  VK4RZB 7 438.2000 MHz -5.000 MHz
+     Added FM channel: VK4RZB 7
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RBT
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RBT
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RBT
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RBT
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RBT
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RBT
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RBT
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RBT
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RBT
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RBT
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RBT
+DMR: LOCAL 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RBX
+DMR: WW CALL 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RBX
+DMR: WW EN 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RBX
+DMR: UAEN1 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RBX
+DMR: UAEN2 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RBX
+DMR: UAUS 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RBX
+DMR: UAUK 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RBX
+DMR: UASP 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RBX
+DMR: VKZL 438.8375 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RBX
+DMR: VK 438.8375 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RBX
+DMR: TECH 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RBX
+DMR: LOCAL 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RMC
+DMR: WW CALL 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RMC
+DMR: WW EN 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RMC
+DMR: UAEN1 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RMC
+DMR: UAEN2 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RMC
+DMR: UAUS 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RMC
+DMR: UAUK 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RMC
+DMR: UASP 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RMC
+DMR: VKZL 439.9750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RMC
+DMR: VK 439.9750 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RMC
+DMR: TECH 439.9750 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RMC
+FM:  VK4RAR 7 438.2250 MHz -5.000 MHz
+     Added FM channel: VK4RAR 7
+FM:  VK4RAT 7 438.2250 MHz -5.000 MHz
+     Added FM channel: VK4RAT 7
+FM:  VK4RBK 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK4RBK 7
+FM:  VK4RBM 7 439.3000 MHz -5.000 MHz
+     Added FM channel: VK4RBM 7
+FM:  VK4RBP 7 439.7750 MHz -5.000 MHz
+     Added FM channel: VK4RBP 7
+FM:  VK4RBPA7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK4RBPA7
+FM:  VK4RBU 7 438.7750 MHz -5.000 MHz
+     Added FM channel: VK4RBU 7
+FM:  VK4RBW 7 439.7750 MHz -5.000 MHz
+     Added FM channel: VK4RBW 7
+FM:  VK4RCA 7 439.8500 MHz -5.000 MHz
+     Added FM channel: VK4RCA 7
+FM:  VK4RCQ 7 439.8750 MHz -5.000 MHz
+     Added FM channel: VK4RCQ 7
+FM:  VK4RDD 7 439.2750 MHz -5.000 MHz
+     Added FM channel: VK4RDD 7
+FM:  VK4REG 7 438.6500 MHz -5.000 MHz
+     Added FM channel: VK4REG 7
+FM:  VK4RET 7 438.7000 MHz -5.000 MHz
+     Added FM channel: VK4RET 7
+FM:  VK4RGL 7 439.8000 MHz -5.000 MHz
+     Added FM channel: VK4RGL 7
+FM:  VK4RGT 7 438.0500 MHz -5.000 MHz
+     Added FM channel: VK4RGT 7
+FM:  VK4RGY 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK4RGY 7
+FM:  VK4RHR 7 438.5000 MHz -5.000 MHz
+     Added FM channel: VK4RHR 7
+FM:  VK4RNL 7 439.3750 MHz -5.000 MHz
+     Added FM channel: VK4RNL 7
+FM:  VK4RPH 7 438.2250 MHz -5.400 MHz
+     Added FM channel: VK4RPH 7
+FM:  VK4RPU 7 438.7500 MHz -5.000 MHz
+     Added FM channel: VK4RPU 7
+FM:  VK4RRC 7 438.3250 MHz -5.000 MHz
+     Added FM channel: VK4RRC 7
+FM:  VK4RSA 7 439.6250 MHz -5.000 MHz
+     Added FM channel: VK4RSA 7
+FM:  VK4RSC 7 438.0750 MHz -5.000 MHz
+     Added FM channel: VK4RSC 7
+FM:  VK4RSL 7 438.1750 MHz -5.000 MHz
+     Added FM channel: VK4RSL 7
+FM:  VK4RSS 7 438.5750 MHz -5.000 MHz
+     Added FM channel: VK4RSS 7
+FM:  VK4RTQ 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK4RTQ 7
+FM:  VK4RWS 7 438.6750 MHz -5.000 MHz
+     Added FM channel: VK4RWS 7
+FM:  VK4RXZ 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK4RXZ 7
+FM:  VK4RZC 7 438.1250 MHz -5.000 MHz
+     Added FM channel: VK4RZC 7
+FM:  VK4RZD 7 438.0500 MHz -5.000 MHz
+     Added FM channel: VK4RZD 7
+DMR: LOCAL 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RCN
+DMR: WW CALL 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RCN
+DMR: WW EN 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RCN
+DMR: UAEN1 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RCN
+DMR: UAEN2 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RCN
+DMR: UAUS 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RCN
+DMR: UAUK 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RCN
+DMR: UASP 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RCN
+DMR: VKZL 438.3250 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RCN
+DMR: VK 438.3250 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RCN
+DMR: TECH 438.3250 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RCN
+DMR: LOCAL 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4REG
+DMR: WW CALL 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4REG
+DMR: WW EN 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4REG
+DMR: UAEN1 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4REG
+DMR: UAEN2 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4REG
+DMR: UAUS 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4REG
+DMR: UAUK 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4REG
+DMR: UASP 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4REG
+DMR: VKZL 439.9875 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4REG
+DMR: VK 439.9875 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4REG
+DMR: TECH 439.9875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4REG
+DMR: LOCAL 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RTQ
+DMR: WW CALL 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RTQ
+DMR: WW EN 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RTQ
+DMR: UAEN1 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RTQ
+DMR: UAEN2 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RTQ
+DMR: UAUS 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RTQ
+DMR: UAUK 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RTQ
+DMR: UASP 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RTQ
+DMR: VKZL 439.4875 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RTQ
+DMR: VK 439.4875 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RTQ
+DMR: TECH 439.4875 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RTQ
+FM:  VK5RAC 7 439.8500 MHz -5.000 MHz
+     Added FM channel: VK5RAC 7
+FM:  VK5RAD 7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK5RAD 7
+FM:  VK5RBP 7 438.2000 MHz -5.000 MHz
+     Added FM channel: VK5RBP 7
+FM:  VK5RBV 7 439.8000 MHz -5.000 MHz
+     Added FM channel: VK5RBV 7
+FM:  VK5RCT 7 438.3250 MHz -5.000 MHz
+     Added FM channel: VK5RCT 7
+FM:  VK5RHO 7 439.8750 MHz -5.000 MHz
+     Added FM channel: VK5RHO 7
+FM:  VK5RLZ 7 439.9750 MHz -5.000 MHz
+     Added FM channel: VK5RLZ 7
+FM:  VK5RMN 7 438.5000 MHz -7.000 MHz
+     Added FM channel: VK5RMN 7
+FM:  VK5ROC 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK5ROC 7
+FM:  VK5ROH 7 439.8250 MHz -5.000 MHz
+     Added FM channel: VK5ROH 7
+FM:  VK5RSA 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK5RSA 7
+FM:  VK5RSB 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK5RSB 7
+FM:  VK5RSC 7 439.8250 MHz -5.000 MHz
+     Added FM channel: VK5RSC 7
+FM:  VK5RVH 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK5RVH 7
+FM:  VK8RDA 7 438.2750 MHz -5.000 MHz
+     Added FM channel: VK8RDA 7
+FM:  VK8RIT 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK8RIT 7
+FM:  VK8RWI 7 439.9750 MHz -5.000 MHz
+     Added FM channel: VK8RWI 7
+DMR: LOCAL 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 5REX
+DMR: WW CALL 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 5REX
+DMR: WW EN 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 5REX
+DMR: UAEN1 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 5REX
+DMR: UAEN2 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 5REX
+DMR: UAUS 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 5REX
+DMR: UAUK 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 5REX
+DMR: UASP 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 5REX
+DMR: VKZL 438.2625 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 5REX
+DMR: VK 438.2625 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 5REX
+DMR: TECH 438.2625 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 5REX
+DMR: LOCAL 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 5RSF
+DMR: WW CALL 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 5RSF
+DMR: WW EN 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 5RSF
+DMR: UAEN1 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 5RSF
+DMR: UAEN2 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 5RSF
+DMR: UAUS 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 5RSF
+DMR: UAUK 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 5RSF
+DMR: UASP 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 5RSF
+DMR: VKZL 438.8375 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 5RSF
+DMR: VK 438.8375 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 5RSF
+DMR: TECH 438.8375 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 5RSF
+FM:  VK6RAA 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK6RAA 7
+FM:  VK6RAL 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK6RAL 7
+FM:  VK6RAP 7 439.8000 MHz -5.000 MHz
+     Added FM channel: VK6RAP 7
+FM:  VK6RAR 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK6RAR 7
+FM:  VK6RAV 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK6RAV 7
+FM:  VK6RBN 7 438.6750 MHz -5.000 MHz
+     Added FM channel: VK6RBN 7
+FM:  VK6RBY 7 438.6500 MHz -5.000 MHz
+     Added FM channel: VK6RBY 7
+FM:  VK6RCT 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK6RCT 7
+FM:  VK6RGF 7 438.1250 MHz -5.000 MHz
+     Added FM channel: VK6RGF 7
+FM:  VK6RLM 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK6RLM 7
+FM:  VK6RMS 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK6RMS 7
+FM:  VK6RNA 7 438.7250 MHz -5.000 MHz
+     Added FM channel: VK6RNA 7
+FM:  VK6RNS 7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK6RNS 7
+FM:  VK6ROT 7 439.7000 MHz -5.000 MHz
+     Added FM channel: VK6ROT 7
+FM:  VK6RPT 7 438.0250 MHz -5.000 MHz
+     Added FM channel: VK6RPT 7
+FM:  VK6RTH 7 438.2250 MHz -5.000 MHz
+     Added FM channel: VK6RTH 7
+DMR: LOCAL 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 6RDM
+DMR: WW CALL 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 6RDM
+DMR: WW EN 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 6RDM
+DMR: UAEN1 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 6RDM
+DMR: UAEN2 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 6RDM
+DMR: UAUS 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 6RDM
+DMR: UAUK 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 6RDM
+DMR: UASP 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 6RDM
+DMR: VKZL 439.8625 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 6RDM
+DMR: VK 439.8625 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 6RDM
+DMR: TECH 439.8625 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 6RDM
+DMR: LOCAL 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 6RLM
+DMR: WW CALL 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 6RLM
+DMR: WW EN 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 6RLM
+DMR: UAEN1 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 6RLM
+DMR: UAEN2 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 6RLM
+DMR: UAUS 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 6RLM
+DMR: UAUK 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 6RLM
+DMR: UASP 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 6RLM
+DMR: VKZL 438.5250 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 6RLM
+DMR: VK 438.5250 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 6RLM
+DMR: TECH 438.5250 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 6RLM
+DMR: LOCAL 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 6RPT
+DMR: WW CALL 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 6RPT
+DMR: WW EN 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 6RPT
+DMR: UAEN1 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 6RPT
+DMR: UAEN2 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 6RPT
+DMR: UAUS 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 6RPT
+DMR: UAUK 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 6RPT
+DMR: UASP 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 6RPT
+DMR: VKZL 438.0250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 6RPT
+DMR: VK 438.0250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 6RPT
+DMR: TECH 438.0250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 6RPT
+DMR: LOCAL 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 6RRR
+DMR: WW CALL 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 6RRR
+DMR: WW EN 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 6RRR
+DMR: UAEN1 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 6RRR
+DMR: UAEN2 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 6RRR
+DMR: UAUS 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 6RRR
+DMR: UAUK 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 6RRR
+DMR: UASP 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 6RRR
+DMR: VKZL 438.2000 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 6RRR
+DMR: VK 438.2000 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 6RRR
+DMR: TECH 438.2000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 6RRR
+FM:  VK7RAB 7 438.5500 MHz -5.000 MHz
+     Added FM channel: VK7RAB 7
+FM:  VK7RAC 7 438.6500 MHz -5.000 MHz
+     Added FM channel: VK7RAC 7
+FM:  VK7RAF 7 438.5500 MHz -5.000 MHz
+     Added FM channel: VK7RAF 7
+FM:  VK7RAK 7 438.7000 MHz -5.000 MHz
+     Added FM channel: VK7RAK 7
+FM:  VK7RAL 7 439.9000 MHz -5.000 MHz
+     Added FM channel: VK7RAL 7
+FM:  VK7RBH 7 438.0500 MHz -5.000 MHz
+     Added FM channel: VK7RBH 7
+FM:  VK7RCH 7 438.5750 MHz -5.000 MHz
+     Added FM channel: VK7RCH 7
+FM:  VK7RCR 7 438.5250 MHz -5.000 MHz
+     Added FM channel: VK7RCR 7
+FM:  VK7RDR 7 439.7750 MHz -5.000 MHz
+     Added FM channel: VK7RDR 7
+FM:  VK7RDS 7 439.7500 MHz -5.000 MHz
+     Added FM channel: VK7RDS 7
+FM:  VK7REC 7 439.7000 MHz -5.000 MHz
+     Added FM channel: VK7REC 7
+FM:  VK7RIN 7 438.5000 MHz -5.000 MHz
+     Added FM channel: VK7RIN 7
+FM:  VK7RMD 7 438.6000 MHz -5.000 MHz
+     Added FM channel: VK7RMD 7
+FM:  VK7RML 7 439.9500 MHz -5.000 MHz
+     Added FM channel: VK7RML 7
+FM:  VK7RTC 7 439.8250 MHz -5.000 MHz
+     Added FM channel: VK7RTC 7
+DMR: LOCAL 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 7RAA
+DMR: WW CALL 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 7RAA
+DMR: WW EN 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 7RAA
+DMR: UAEN1 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 7RAA
+DMR: UAEN2 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 7RAA
+DMR: UAUS 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 7RAA
+DMR: UAUK 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 7RAA
+DMR: UASP 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 7RAA
+DMR: VKZL 438.4125 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 7RAA
+DMR: VK 438.4125 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 7RAA
+DMR: TECH 438.4125 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 7RAA
+DMR: LOCAL 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 7RCR
+DMR: WW CALL 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 7RCR
+DMR: WW EN 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 7RCR
+DMR: UAEN1 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 7RCR
+DMR: UAEN2 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 7RCR
+DMR: UAUS 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 7RCR
+DMR: UAUK 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 7RCR
+DMR: UASP 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 7RCR
+DMR: VKZL 438.5250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 7RCR
+DMR: VK 438.5250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 7RCR
+DMR: TECH 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 7RCR
+DMR: LOCAL 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 7RCR
+DMR: WW CALL 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 7RCR
+DMR: WW EN 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 7RCR
+DMR: UAEN1 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 7RCR
+DMR: UAEN2 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 7RCR
+DMR: UAUS 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 7RCR
+DMR: UAUK 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 7RCR
+DMR: UASP 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 7RCR
+DMR: VKZL 438.5250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 7RCR
+DMR: VK 438.5250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 7RCR
+DMR: TECH 438.5250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 7RCR
+FM:  ESOAIR1 468.5750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 468.575
+     Added FM channel: ESOAIR1
+FM:  ESORPT1 421.8375 MHz -5 MHz
+     Added FM channel: ESORPT1
+FM:  ESORPT2 421.9250 MHz -5 MHz
+     Added FM channel: ESORPT2
+FM:  ESOSIM1 412.2750 MHz -9.25 MHz
+     Added FM channel: ESOSIM1
+FM:  ESOSIM10 412.6000 MHz -9.575 MHz
+     Added FM channel: ESOSIM10
+FM:  ESOSIM2 412.3250 MHz -9.3 MHz
+     Added FM channel: ESOSIM2
+FM:  ESOSIM3 412.3500 MHz -9.325 MHz
+     Added FM channel: ESOSIM3
+FM:  ESOSIM4 412.4000 MHz -9.375 MHz
+     Added FM channel: ESOSIM4
+FM:  ESOSIM5 412.4500 MHz -9.425 MHz
+     Added FM channel: ESOSIM5
+FM:  ESOSIM6 412.5000 MHz -9.475 MHz
+     Added FM channel: ESOSIM6
+FM:  ESOSIM7 412.5250 MHz -9.5 MHz
+     Added FM channel: ESOSIM7
+FM:  ESOSIM8 412.5500 MHz -9.525 MHz
+     Added FM channel: ESOSIM8
+FM:  ESOSIM9 412.5750 MHz -9.55 MHz
+     Added FM channel: ESOSIM9
+FM:  UHF-01 476.4250 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.175
+     Added FM channel: UHF-01
+FM:  UHF-02 476.4500 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.2
+     Added FM channel: UHF-02
+FM:  UHF-03 476.4750 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.225
+     Added FM channel: UHF-03
+FM:  UHF-04 476.5000 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.25
+     Added FM channel: UHF-04
+FM:  UHF-05 476.5250 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.275
+     Added FM channel: UHF-05
+FM:  UHF-06 476.5500 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.3
+     Added FM channel: UHF-06
+FM:  UHF-07 476.5750 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.325
+     Added FM channel: UHF-07
+FM:  UHF-08 476.6000 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.35
+     Added FM channel: UHF-08
+FM:  UHF-09 476.6250 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.625
+     Added FM channel: UHF-09
+FM:  UHF-10 476.6500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.65
+     Added FM channel: UHF-10
+FM:  UHF-11 476.6750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.675
+     Added FM channel: UHF-11
+FM:  UHF-12 476.7000 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.7
+     Added FM channel: UHF-12
+FM:  UHF-13 476.7250 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.725
+     Added FM channel: UHF-13
+FM:  UHF-14 476.7500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.75
+     Added FM channel: UHF-14
+FM:  UHF-15 476.7750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.775
+     Added FM channel: UHF-15
+FM:  UHF-16 476.8000 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.8
+     Added FM channel: UHF-16
+FM:  UHF-17 476.8250 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.825
+     Added FM channel: UHF-17
+FM:  UHF-18 476.8500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.85
+     Added FM channel: UHF-18
+FM:  UHF-19 476.8750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.875
+     Added FM channel: UHF-19
+FM:  UHF-20 476.9000 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.9
+     Added FM channel: UHF-20
+FM:  UHF-21 476.9250 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.925
+     Added FM channel: UHF-21
+FM:  UHF-22 476.9500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.95
+     Added FM channel: UHF-22
+FM:  UHF-23 476.9750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.975
+     Added FM channel: UHF-23
+FM:  UHF-24 477.0000 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477
+     Added FM channel: UHF-24
+FM:  UHF-25 477.0250 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.025
+     Added FM channel: UHF-25
+FM:  UHF-26 477.0500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.05
+     Added FM channel: UHF-26
+FM:  UHF-27 477.0750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.075
+     Added FM channel: UHF-27
+FM:  UHF-28 477.1000 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.1
+     Added FM channel: UHF-28
+FM:  UHF-29 477.2250 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.225
+     Added FM channel: UHF-29
+FM:  UHF-30 477.2500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.25
+     Added FM channel: UHF-30
+FM:  UHF-39 477.3750 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.375
+     Added FM channel: UHF-39
+FM:  UHF-40 477.4000 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.4
+     Added FM channel: UHF-40
+FM:  UHF-41 476.4375 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.1875
+     Added FM channel: UHF-41
+FM:  UHF-42 476.4625 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.2125
+     Added FM channel: UHF-42
+FM:  UHF-43 476.4875 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.2375
+     Added FM channel: UHF-43
+FM:  UHF-44 476.5125 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.2625
+     Added FM channel: UHF-44
+FM:  UHF-45 476.5375 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.2875
+     Added FM channel: UHF-45
+FM:  UHF-46 476.5625 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.3125
+     Added FM channel: UHF-46
+FM:  UHF-47 476.5875 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.3375
+     Added FM channel: UHF-47
+FM:  UHF-48 476.6125 MHz 0.75 MHz
+  WARNING: TX QRG outside allowed range: 477.3625
+     Added FM channel: UHF-48
+FM:  UHF-49 476.6375 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.6375
+     Added FM channel: UHF-49
+FM:  UHF-50 476.6625 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.6625
+     Added FM channel: UHF-50
+FM:  UHF-51 476.6875 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.6875
+     Added FM channel: UHF-51
+FM:  UHF-52 476.7125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.7125
+     Added FM channel: UHF-52
+FM:  UHF-53 476.7375 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.7375
+     Added FM channel: UHF-53
+FM:  UHF-54 476.7625 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.7625
+     Added FM channel: UHF-54
+FM:  UHF-55 476.7875 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.7875
+     Added FM channel: UHF-55
+FM:  UHF-56 476.8125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.8125
+     Added FM channel: UHF-56
+FM:  UHF-57 476.8375 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.8375
+     Added FM channel: UHF-57
+FM:  UHF-58 476.8625 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.8625
+     Added FM channel: UHF-58
+FM:  UHF-59 476.8875 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.8875
+     Added FM channel: UHF-59
+FM:  UHF-60 476.9125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 476.9125
+     Added FM channel: UHF-60
+FM:  UHF-64 477.0125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.0125
+     Added FM channel: UHF-64
+FM:  UHF-65 477.0375 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.0375
+     Added FM channel: UHF-65
+FM:  UHF-66 477.0625 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.0625
+     Added FM channel: UHF-66
+FM:  UHF-67 477.0875 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.0875
+     Added FM channel: UHF-67
+FM:  UHF-68 477.1125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.1125
+     Added FM channel: UHF-68
+FM:  UHF-69 477.1375 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.1375
+     Added FM channel: UHF-69
+FM:  UHF-70 477.1625 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.1625
+     Added FM channel: UHF-70
+FM:  UHF-79 477.3875 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.3875
+     Added FM channel: UHF-79
+FM:  UHF-80 477.4125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 477.4125
+     Added FM channel: UHF-80
+FM:  VRA61R 467.3500 MHz -10 MHz
+     Added FM channel: VRA61R
+FM:  VRA62S 467.3500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 467.35
+     Added FM channel: VRA62S
+FM:  VRA66R 467.3500 MHz -10 MHz
+     Added FM channel: VRA66R
+FM:  VRA67S 467.3500 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 467.35
+     Added FM channel: VRA67S
+FM:  WICEN01S 455.9125 MHz 0 MHz
+     Added FM channel: WICEN01S
+FM:  WICEN02R 465.9125 MHz -10 MHz
+     Added FM channel: WICEN02R
+FM:  WICEN03S 465.9125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN03S
+FM:  WICEN04R 455.9125 MHz 10 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN04R
+FM:  WICEN11S 455.9125 MHz 0 MHz
+     Added FM channel: WICEN11S
+FM:  WICEN12R 465.9125 MHz -10 MHz
+     Added FM channel: WICEN12R
+FM:  WICEN13S 465.9125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN13S
+FM:  WICEN14R 455.9125 MHz 10 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN14R
+FM:  WICEN21S 455.9125 MHz 0 MHz
+     Added FM channel: WICEN21S
+FM:  WICEN22R 465.9125 MHz -10 MHz
+     Added FM channel: WICEN22R
+FM:  WICEN23S 465.9125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN23S
+FM:  WICEN24R 455.9125 MHz 10 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN24R
+FM:  WICEN31S 455.9125 MHz 0 MHz
+     Added FM channel: WICEN31S
+FM:  WICEN32R 465.9125 MHz -10 MHz
+     Added FM channel: WICEN32R
+FM:  WICEN33S 465.9125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN33S
+FM:  WICEN34R 455.9125 MHz 10 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN34R
+FM:  WICEN41S 455.9125 MHz 0 MHz
+     Added FM channel: WICEN41S
+FM:  WICEN42R 465.9125 MHz -10 MHz
+     Added FM channel: WICEN42R
+FM:  WICEN43S 465.9125 MHz 0 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN43S
+FM:  WICEN44R 455.9125 MHz 10 MHz
+  WARNING: TX QRG outside allowed range: 465.9125
+     Added FM channel: WICEN44R
+DMR: LOCAL 455.9125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 465.9125 MHz -10 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 465.9125 MHz 0.000 MHz, s1
+  WARNING: TX QRG outside allowed range: 465.9125
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 455.9125 MHz 10 MHz, s1
+  WARNING: TX QRG outside allowed range: 465.9125
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: LOCAL TG1
+FM:  S27125 432.7125 MHz 0 MHz
+     Added FM channel: S27125
+FM:  S81125 438.1125 MHz 0 MHz
+     Added FM channel: S81125
+FM:  W3800 433.8000 MHz 0 MHz
+     Added FM channel: W3800
+FM:  W8275 438.2750 MHz 0 MHz
+     Added FM channel: W8275
+FM:  W8625 438.6250 MHz 0 MHz
+     Added FM channel: W8625
+FM:  W8800 438.8000 MHz 0 MHz
+     Added FM channel: W8800
+FM:  W9925 439.9250 MHz 0 MHz
+     Added FM channel: W9925
+FM:  W9975 439.9750 MHz 0 MHz
+     Added FM channel: W9975
+FM:  VK1RWP 7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK1RWP 7
+FM:  VK1RWPA7 439.9750 MHz -5.000 MHz
+     Added FM channel: VK1RWPA7
+FM:  VK2RAF 7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK2RAF 7
+FM:  VK2RAH 7 439.8750 MHz -5.000 MHz
+     Added FM channel: VK2RAH 7
+FM:  VK2RAV 7 439.5250 MHz -5.000 MHz
+     Added FM channel: VK2RAV 7
+FM:  VK2RFI 7 439.6250 MHz -5.000 MHz
+     Added FM channel: VK2RFI 7
+FM:  VK3RPW 7 438.2750 MHz -5.000 MHz
+     Added FM channel: VK3RPW 7
+FM:  VK3RPWA7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK3RPWA7
+FM:  VK3RSS 7 439.9750 MHz -5.000 MHz
+     Added FM channel: VK3RSS 7
+FM:  VK3RWE 7 438.2750 MHz -5.000 MHz
+     Added FM channel: VK3RWE 7
+FM:  VK3RWEA7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK3RWEA7
+FM:  VK3RWI 7 438.2750 MHz -5.000 MHz
+     Added FM channel: VK3RWI 7
+FM:  VK3RWIA7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK3RWIA7
+FM:  VK3RWP 7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK3RWP 7
+FM:  VK3RWPA7 439.9250 MHz -5.000 MHz
+     Added FM channel: VK3RWPA7
+FM:  VK3RWPB7 439.9750 MHz -5.000 MHz
+     Added FM channel: VK3RWPB7
+FM:  VK3RWR 7 438.2750 MHz -5.000 MHz
+     Added FM channel: VK3RWR 7
+FM:  VK3RWRA7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK3RWRA7
+FM:  VK4RWI 7 438.6250 MHz -5.000 MHz
+     Added FM channel: VK4RWI 7
+DMR: LOCAL 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RFI
+DMR: WW CALL 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RFI
+DMR: WW EN 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RFI
+DMR: UAEN1 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RFI
+DMR: UAEN2 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RFI
+DMR: UAUS 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RFI
+DMR: UAUK 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RFI
+DMR: UASP 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RFI
+DMR: VKZL 439.6250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RFI
+DMR: VK 439.6250 MHz -5.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RFI
+DMR: TECH 439.6250 MHz -5.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RFI
+DMR: LOCAL 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RWW
+DMR: WW CALL 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RWW
+DMR: WW EN 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RWW
+DMR: UAEN1 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RWW
+DMR: UAEN2 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RWW
+DMR: UAUS 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RWW
+DMR: UAUK 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RWW
+DMR: UASP 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RWW
+DMR: VKZL 438.1500 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RWW
+DMR: VK 438.1500 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RWW
+DMR: TECH 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RWW
+DMR: LOCAL 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RWW
+DMR: WW CALL 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RWW
+DMR: WW EN 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RWW
+DMR: UAEN1 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RWW
+DMR: UAEN2 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RWW
+DMR: UAUS 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RWW
+DMR: UAUK 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RWW
+DMR: UASP 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RWW
+DMR: VKZL 438.1500 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RWW
+DMR: VK 438.1500 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RWW
+DMR: TECH 438.1500 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RWW
+DMR: LOCAL 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 3RWW
+DMR: WW CALL 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 3RWW
+DMR: WW EN 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 3RWW
+DMR: UAEN1 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 3RWW
+DMR: UAEN2 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 3RWW
+DMR: UAUS 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 3RWW
+DMR: UAUK 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 3RWW
+DMR: UASP 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 3RWW
+DMR: VKZL 438.3000 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 3RWW
+DMR: VK 438.3000 MHz -5.400 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 3RWW
+DMR: TECH 438.3000 MHz -5.400 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 3RWW
+DMR: LOCAL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RGX
+DMR: WW CALL 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RGX
+DMR: WW EN 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RGX
+DMR: UAEN1 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RGX
+DMR: UAEN2 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RGX
+DMR: UAUS 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RGX
+DMR: UAUK 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RGX
+DMR: UASP 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RGX
+DMR: VKZL 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RGX
+DMR: VK 438.8125 MHz -7.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RGX
+DMR: TECH 438.8125 MHz -7.000 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RGX
+DMR: DMR 438.9250 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact DMR SIMPLEX
+     Added FM Channel: DMR SIMPLEX
+DMR: VK 439.2000 MHz 0.000 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK SIMPLEX
+DMR: LOCAL 441.1000 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL DV4M
+
+##### Programming Channels #####
+FM:  VK2ROT 2 147.0250 MHz 0.600 MHz
+     Added FM channel: VK2ROT 2
+FM:  VK2RWI 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK2RWI 2
+FM:  VK2RMP 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK2RMP 2
+FM:  VK2RBM 2 147.0500 MHz 0.600 MHz
+     Added FM channel: VK2RBM 2
+FM:  VK2RAG 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK2RAG 2
+FM:  VK2RAGA2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK2RAGA2
+FM:  VK2RCZ 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK2RCZ 2
+FM:  VK2RGR 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK2RGR 2
+FM:  VK2RLE 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK2RLE 2
+FM:  VK2RMB 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK2RMB 2
+FM:  VK2RNS 2 147.2500 MHz 0.600 MHz
+     Added FM channel: VK2RNS 2
+FM:  VK2RRR 2 147.2750 MHz 0.600 MHz
+     Added FM channel: VK2RRR 2
+FM:  VK2RST 2 147.2250 MHz 0.600 MHz
+     Added FM channel: VK2RST 2
+FM:  VK2RWC 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK2RWC 2
+FM:  VK2RWS 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK2RWS 2
+FM:  VK1RJB 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK1RJB 2
+FM:  VK2RFS 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK2RFS 2
+FM:  VK2RHR 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK2RHR 2
+FM:  VK2RMU 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK2RMU 2
+FM:  VK2RMW 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK2RMW 2
+FM:  VK2RSH 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK2RSH 2
+FM:  VK2RUW 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK2RUW 2
+FM:  VK2RUWA2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK2RUWA2
+FM:  VK2RWP 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK2RWP 2
+FM:  VK2RBB 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK2RBB 2
+FM:  VK2RBO 2 147.3500 MHz 0.600 MHz
+     Added FM channel: VK2RBO 2
+FM:  VK2RCB 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK2RCB 2
+FM:  VK2RCH 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK2RCH 2
+FM:  VK2RCN 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK2RCN 2
+FM:  VK2RCV 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK2RCV 2
+FM:  VK2REE 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK2REE 2
+FM:  VK2REH 2 147.2500 MHz 0.600 MHz
+     Added FM channel: VK2REH 2
+FM:  VK2RGL 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK2RGL 2
+FM:  VK2RGLA2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK2RGLA2
+FM:  VK2RMY 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK2RMY 2
+FM:  VK2RNC 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK2RNC 2
+FM:  VK2RNCA2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK2RNCA2
+FM:  VK2RPM 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK2RPM 2
+FM:  VK2RPW 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK2RPW 2
+FM:  VK2RSC 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK2RSC 2
+FM:  VK2RSR 2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK2RSR 2
+FM:  VK2RTS 2 147.3250 MHz 0.600 MHz
+     Added FM channel: VK2RTS 2
+FM:  VK2RTZ 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK2RTZ 2
+FM:  VK2RWH 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK2RWH 2
+FM:  VK2RWK 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK2RWK 2
+FM:  VK2RWR 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK2RWR 2
+FM:  VK1RAC 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK1RAC 2
+FM:  VK1RBH 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK1RBH 2
+FM:  VK1RBM 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK1RBM 2
+FM:  VK1RGI 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK1RGI 2
+FM:  VK2RAD 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK2RAD 2
+FM:  VK2RAO 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK2RAO 2
+FM:  VK2RAP 2 147.2750 MHz 0.600 MHz
+     Added FM channel: VK2RAP 2
+FM:  VK2RAY 2 147.2250 MHz 0.600 MHz
+     Added FM channel: VK2RAY 2
+FM:  VK2RBE 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK2RBE 2
+FM:  VK2RBH 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK2RBH 2
+FM:  VK2RBK 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK2RBK 2
+FM:  VK2RBL 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK2RBL 2
+FM:  VK2RBR 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK2RBR 2
+FM:  VK2RCC 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK2RCC 2
+FM:  VK2RCD 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK2RCD 2
+FM:  VK2RCW 2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK2RCW 2
+FM:  VK2RDX 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK2RDX 2
+FM:  VK2RGA 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK2RGA 2
+FM:  VK2RGF 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK2RGF 2
+FM:  VK2RGN 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK2RGN 2
+FM:  VK2RLH 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK2RLH 2
+FM:  VK2RLJ 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK2RLJ 2
+FM:  VK2RMI 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK2RMI 2
+FM:  VK2RMM 2 147.3750 MHz 0.600 MHz
+     Added FM channel: VK2RMM 2
+FM:  VK2RMO 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK2RMO 2
+FM:  VK2RNE 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK2RNE 2
+FM:  VK2RNW 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK2RNW 2
+FM:  VK2RRT 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK2RRT 2
+FM:  VK2RSM 2 147.0250 MHz 0.600 MHz
+     Added FM channel: VK2RSM 2
+FM:  VK2RTD 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK2RTD 2
+FM:  VK2RTM 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK2RTM 2
+FM:  VK2RWB 2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK2RWB 2
+FM:  VK2RWG 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK2RWG 2
+FM:  VK2RWM 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK2RWM 2
+FM:  VK2RYL 2 147.2250 MHz 0.600 MHz
+     Added FM channel: VK2RYL 2
+FM:  VK2RZL 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK2RZL 2
+FM:  VK3RAJ 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK3RAJ 2
+FM:  VK3RCR 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK3RCR 2
+FM:  VK3RDQ 2 144.9375 MHz 0.600 MHz
+     Added FM channel: VK3RDQ 2
+FM:  VK3REC 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK3REC 2
+FM:  VK3RFY 2 147.4250 MHz 0.000 MHz
+     Added FM channel: VK3RFY 2
+FM:  VK3RGC 2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK3RGC 2
+FM:  VK3RGL 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK3RGL 2
+FM:  VK3RMC 2 147.3250 MHz 0.600 MHz
+     Added FM channel: VK3RMC 2
+FM:  VK3RML 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK3RML 2
+FM:  VK3RMM 2 147.2500 MHz 0.600 MHz
+     Added FM channel: VK3RMM 2
+FM:  VK3RMN 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK3RMN 2
+FM:  VK3RMS 2 147.3500 MHz 0.600 MHz
+     Added FM channel: VK3RMS 2
+FM:  VK3RMU 2 147.3750 MHz 0.600 MHz
+     Added FM channel: VK3RMU 2
+FM:  VK3RPS 2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK3RPS 2
+FM:  VK3RRC 2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK3RRC 2
+FM:  VK3RSP 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK3RSP 2
+FM:  VK3RYV 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK3RYV 2
+FM:  VK3RAG 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK3RAG 2
+FM:  VK3RBA 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK3RBA 2
+FM:  VK3RBQ 2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK3RBQ 2
+FM:  VK3RBT 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK3RBT 2
+FM:  VK3RCA 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK3RCA 2
+FM:  VK3RCV 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK3RCV 2
+FM:  VK3RDG 2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK3RDG 2
+FM:  VK3RDU 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK3RDU 2
+FM:  VK3REB 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK3REB 2
+FM:  VK3REG 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK3REG 2
+FM:  VK3REM 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK3REM 2
+FM:  VK3RGH 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK3RGH 2
+FM:  VK3RGS 2 147.0250 MHz 0.600 MHz
+     Added FM channel: VK3RGS 2
+FM:  VK3RGV 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK3RGV 2
+FM:  VK3RHO 2 147.0500 MHz 0.600 MHz
+     Added FM channel: VK3RHO 2
+FM:  VK3RLV 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK3RLV 2
+FM:  VK3RMA 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK3RMA 2
+FM:  VK3RMK 2 147.0250 MHz 0.600 MHz
+     Added FM channel: VK3RMK 2
+FM:  VK3RMP 2 147.2750 MHz 0.600 MHz
+     Added FM channel: VK3RMP 2
+FM:  VK3RNE 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK3RNE 2
+FM:  VK3RON 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK3RON 2
+FM:  VK3ROW 2 147.2750 MHz 0.600 MHz
+     Added FM channel: VK3ROW 2
+FM:  VK3RPB 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK3RPB 2
+FM:  VK3RPL 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK3RPL 2
+FM:  VK3RSG 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK3RSG 2
+FM:  VK3RVL 2 147.0500 MHz 0.600 MHz
+     Added FM channel: VK3RVL 2
+FM:  VK3RWA 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK3RWA 2
+FM:  VK3RWG 2 147.2250 MHz 0.600 MHz
+     Added FM channel: VK3RWG 2
+FM:  VK3RWL 2 147.0500 MHz 0.600 MHz
+     Added FM channel: VK3RWL 2
+FM:  VK3RWM 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK3RWM 2
+FM:  VK3RWZ 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK3RWZ 2
+FM:  VK4RAG 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK4RAG 2
+FM:  VK4RAI 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK4RAI 2
+FM:  VK4RAX 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK4RAX 2
+FM:  VK4RBN 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK4RBN 2
+FM:  VK4RBQ 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK4RBQ 2
+FM:  VK4RBR 2 147.9500 MHz -0.600 MHz
+     Added FM channel: VK4RBR 2
+FM:  VK4RBS 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK4RBS 2
+FM:  VK4RBT 2 147.8000 MHz -0.600 MHz
+     Added FM channel: VK4RBT 2
+FM:  VK4RGC 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK4RGC 2
+FM:  VK4RKP 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK4RKP 2
+FM:  VK4RLB 2 147.6250 MHz -0.600 MHz
+     Added FM channel: VK4RLB 2
+FM:  VK4RLW 2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK4RLW 2
+FM:  VK4RWM 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK4RWM 2
+FM:  VK4RAR 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK4RAR 2
+FM:  VK4RAS 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK4RAS 2
+FM:  VK4RAT 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK4RAT 2
+FM:  VK4RBD 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK4RBD 2
+FM:  VK4RBG 2 147.8000 MHz -0.600 MHz
+     Added FM channel: VK4RBG 2
+FM:  VK4RBM 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK4RBM 2
+FM:  VK4RBP 2 147.1000 MHz 0.600 MHz
+     Added FM channel: VK4RBP 2
+FM:  VK4RBU 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK4RBU 2
+FM:  VK4RCA 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK4RCA 2
+FM:  VK4RCC 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK4RCC 2
+FM:  VK4RCM 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK4RCM 2
+FM:  VK4RCQ 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK4RCQ 2
+FM:  VK4RCR 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK4RCR 2
+FM:  VK4RDD 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK4RDD 2
+FM:  VK4RED 2 147.2500 MHz 0.600 MHz
+     Added FM channel: VK4RED 2
+FM:  VK4REG 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK4REG 2
+FM:  VK4REP 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK4REP 2
+FM:  VK4RET 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK4RET 2
+FM:  VK4RGA 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK4RGA 2
+FM:  VK4RGAA2 147.3750 MHz 0.600 MHz
+     Added FM channel: VK4RGAA2
+FM:  VK4RGN 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK4RGN 2
+FM:  VK4RGT 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK4RGT 2
+FM:  VK4RHB 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK4RHB 2
+FM:  VK4RHR 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK4RHR 2
+FM:  VK4RHT 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK4RHT 2
+FM:  VK4RKC 2 145.6250 MHz 0.000 MHz
+     Added FM channel: VK4RKC 2
+FM:  VK4RKCA2 147.9000 MHz -0.600 MHz
+     Added FM channel: VK4RKCA2
+FM:  VK4RMI 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK4RMI 2
+FM:  VK4RMK 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK4RMK 2
+FM:  VK4RMM 2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK4RMM 2
+FM:  VK4RMP 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK4RMP 2
+FM:  VK4RNL 2 147.2750 MHz 0.600 MHz
+     Added FM channel: VK4RNL 2
+FM:  VK4ROM 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK4ROM 2
+FM:  VK4RPU 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK4RPU 2
+FM:  VK4RRC 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK4RRC 2
+FM:  VK4RRR 2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK4RRR 2
+FM:  VK4RSA 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK4RSA 2
+FM:  VK4RSC 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK4RSC 2
+FM:  VK4RSL 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK4RSL 2
+FM:  VK4RSP 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK4RSP 2
+DMR: LOCAL 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 4RCN
+DMR: WW CALL 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 4RCN
+DMR: WW EN 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 4RCN
+DMR: UAEN1 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 4RCN
+DMR: UAEN2 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 4RCN
+DMR: UAUS 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 4RCN
+DMR: UAUK 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 4RCN
+DMR: UASP 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 4RCN
+DMR: VKZL 147.3000 MHz 0.600 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 4RCN
+DMR: VK 147.3000 MHz 0.600 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 4RCN
+DMR: TECH 147.3000 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 4RCN
+FM:  VK5RAC 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK5RAC 2
+FM:  VK5RAD 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK5RAD 2
+FM:  VK5RAE 2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK5RAE 2
+FM:  VK5RAH 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK5RAH 2
+FM:  VK5RBK 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK5RBK 2
+FM:  VK5RBP 2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK5RBP 2
+FM:  VK5RBT 2 147.3500 MHz 0.600 MHz
+     Added FM channel: VK5RBT 2
+FM:  VK5RBV 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK5RBV 2
+FM:  VK5REP 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK5REP 2
+FM:  VK5RHO 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK5RHO 2
+FM:  VK5RKN 2 147.3750 MHz 0.600 MHz
+     Added FM channel: VK5RKN 2
+FM:  VK5RLD 2 147.3250 MHz 0.600 MHz
+     Added FM channel: VK5RLD 2
+FM:  VK5RLH 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK5RLH 2
+FM:  VK5RLZ 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK5RLZ 2
+FM:  VK5RMB 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK5RMB 2
+FM:  VK5RMG 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK5RMG 2
+FM:  VK5RMN 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK5RMN 2
+FM:  VK5RNC 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK5RNC 2
+FM:  VK5RSE 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK5RSE 2
+FM:  VK5RSV 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK5RSV 2
+FM:  VK5RWI 2 147.3000 MHz 0.600 MHz
+     Added FM channel: VK5RWI 2
+FM:  VK8RCA 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK8RCA 2
+FM:  VK8RDA 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK8RDA 2
+FM:  VK8RPD 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK8RPD 2
+FM:  VK8RTE 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK8RTE 2
+FM:  VK8RWI 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK8RWI 2
+FM:  VK6RAA 2 146.8250 MHz -0.600 MHz
+     Added FM channel: VK6RAA 2
+FM:  VK6RAK 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK6RAK 2
+FM:  VK6RAL 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK6RAL 2
+FM:  VK6RAP 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK6RAP 2
+FM:  VK6RAV 2 147.2750 MHz 0.600 MHz
+     Added FM channel: VK6RAV 2
+FM:  VK6RAW 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK6RAW 2
+FM:  VK6RBN 2 147.3500 MHz 0.600 MHz
+     Added FM channel: VK6RBN 2
+FM:  VK6RBY 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK6RBY 2
+FM:  VK6RCT 2 147.2000 MHz 0.600 MHz
+     Added FM channel: VK6RCT 2
+FM:  VK6REC 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK6REC 2
+FM:  VK6REX 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK6REX 2
+FM:  VK6RFM 2 146.9500 MHz -0.600 MHz
+     Added FM channel: VK6RFM 2
+FM:  VK6RGN 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK6RGN 2
+FM:  VK6RIC 2 146.8750 MHz -0.600 MHz
+     Added FM channel: VK6RIC 2
+FM:  VK6RKN 2 147.3250 MHz 0.600 MHz
+     Added FM channel: VK6RKN 2
+FM:  VK6RLM 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK6RLM 2
+FM:  VK6RMJ 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK6RMJ 2
+FM:  VK6RMS 2 147.2500 MHz 0.600 MHz
+     Added FM channel: VK6RMS 2
+FM:  VK6RMW 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK6RMW 2
+FM:  VK6RNC 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK6RNC 2
+FM:  VK6RNR 2 146.6750 MHz -0.600 MHz
+     Added FM channel: VK6RNR 2
+FM:  VK6ROO 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK6ROO 2
+FM:  VK6ROT 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK6ROT 2
+FM:  VK6RPT 2 147.0250 MHz 0.600 MHz
+     Added FM channel: VK6RPT 2
+FM:  VK6RPTA2 147.6250 MHz -0.600 MHz
+     Added FM channel: VK6RPTA2
+FM:  VK6RSH 2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK6RSH 2
+FM:  VK6RTH 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK6RTH 2
+FM:  VK6RTP 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK6RTP 2
+FM:  VK6RWR 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK6RWR 2
+FM:  VK7RAA 2 147.0000 MHz -0.600 MHz
+     Added FM channel: VK7RAA 2
+FM:  VK7RAC 2 147.3750 MHz 0.600 MHz
+     Added FM channel: VK7RAC 2
+FM:  VK7RAD 2 146.7000 MHz -0.600 MHz
+     Added FM channel: VK7RAD 2
+FM:  VK7RADA2 147.9750 MHz -0.600 MHz
+     Added FM channel: VK7RADA2
+FM:  VK7RAF 2 146.6500 MHz -0.600 MHz
+     Added FM channel: VK7RAF 2
+FM:  VK7RAK 2 146.8000 MHz -0.600 MHz
+     Added FM channel: VK7RAK 2
+FM:  VK7RBI 2 147.3000 MHz 0.000 MHz
+     Added FM channel: VK7RBI 2
+FM:  VK7RCR 2 147.8750 MHz -1.800 MHz
+     Added FM channel: VK7RCR 2
+FM:  VK7REC 2 146.9000 MHz -0.600 MHz
+     Added FM channel: VK7REC 2
+FM:  VK7RHT 2 146.8500 MHz -0.600 MHz
+     Added FM channel: VK7RHT 2
+FM:  VK7RMD 2 146.6250 MHz -0.600 MHz
+     Added FM channel: VK7RMD 2
+FM:  VK7RNW 2 146.7500 MHz -0.600 MHz
+     Added FM channel: VK7RNW 2
+FM:  VK7RTV 2 146.7750 MHz -0.600 MHz
+     Added FM channel: VK7RTV 2
+FM:  VK7RVP 2 146.7250 MHz -0.600 MHz
+     Added FM channel: VK7RVP 2
+FM:  VK7RWC 2 147.0750 MHz 0.600 MHz
+     Added FM channel: VK7RWC 2
+FM:  APRSAU 145.1750 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSAU
+FM:  APRWIC 145.2000 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRWIC
+FM:  APRISS 145.8250 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRISS
+FM:  APRSAR 144.9300 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSAR
+FM:  APRSBR 145.5750 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSBR
+FM:  APRSCN 144.6400 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSCN
+FM:  APRSCR 144.8000 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSCR
+FM:  APRSEU 144.8000 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSEU
+FM:  APRSJP 144.6600 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSJP
+FM:  APRSKO 144.6200 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSKO
+FM:  APRSNZ 144.5750 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSNZ
+FM:  APRSTH 144.5250 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSTH
+FM:  APRSUS 144.3900 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSUS
+FM:  APRSVE 145.0100 MHz 0 MHz
+  WARNING: Unable to select Scanlist APRSFM
+     Added FM channel: APRSVE
+FM:  WICV-01 159.7750 MHz 0 MHz
+     Added FM channel: WICV-01
+FM:  WICV-02 164.3750 MHz -4.6 MHz
+     Added FM channel: WICV-02
+FM:  WICV-03 164.3750 MHz 0 MHz
+     Added FM channel: WICV-03
+FM:  WICV-04 159.7750 MHz 4.6 MHz
+     Added FM channel: WICV-04
+FM:  WICV-11 159.7750 MHz 0 MHz
+     Added FM channel: WICV-11
+FM:  WICV-12 164.3750 MHz -4.6 MHz
+     Added FM channel: WICV-12
+FM:  WICV-13 164.3750 MHz 0 MHz
+     Added FM channel: WICV-13
+FM:  WICV-14 159.7750 MHz 4.6 MHz
+     Added FM channel: WICV-14
+FM:  WICV-21 159.7750 MHz 0 MHz
+     Added FM channel: WICV-21
+FM:  WICV-22 164.3750 MHz -4.6 MHz
+     Added FM channel: WICV-22
+FM:  WICV-23 164.3750 MHz 0 MHz
+     Added FM channel: WICV-23
+FM:  WICV-24 159.7750 MHz 4.6 MHz
+     Added FM channel: WICV-24
+FM:  WICV-31 159.7750 MHz 0 MHz
+     Added FM channel: WICV-31
+FM:  WICV-32 164.3750 MHz -4.6 MHz
+     Added FM channel: WICV-32
+FM:  WICV-33 164.3750 MHz 0 MHz
+     Added FM channel: WICV-33
+FM:  WICV-34 159.7750 MHz 4.6 MHz
+     Added FM channel: WICV-34
+FM:  WICV-41 159.7750 MHz 0 MHz
+     Added FM channel: WICV-41
+FM:  WICV-42 164.3750 MHz -4.6 MHz
+     Added FM channel: WICV-42
+FM:  WICV-43 164.3750 MHz 0 MHz
+     Added FM channel: WICV-43
+FM:  WICV-44 159.7750 MHz 4.6 MHz
+     Added FM channel: WICV-44
+FM:  WICV-51 160.0125 MHz 0 MHz
+     Added FM channel: WICV-51
+FM:  WICV-52 164.6125 MHz -4.6 MHz
+     Added FM channel: WICV-52
+FM:  WICV-53 164.6125 MHz 0 MHz
+     Added FM channel: WICV-53
+FM:  WICV-54 160.0125 MHz 4.6 MHz
+     Added FM channel: WICV-54
+FM:  WICV-61 159.2125 MHz 0 MHz
+     Added FM channel: WICV-61
+FM:  WICV-62 163.8125 MHz -4.6 MHz
+     Added FM channel: WICV-62
+FM:  WICV-63 163.8125 MHz 0 MHz
+     Added FM channel: WICV-63
+FM:  WICV-64 159.2125 MHz 4.6 MHz
+     Added FM channel: WICV-64
+FM:  WICV-71 159.2125 MHz 0 MHz
+     Added FM channel: WICV-71
+FM:  WICV-72 163.8125 MHz -4.6 MHz
+     Added FM channel: WICV-72
+FM:  WICV-73 163.8125 MHz 0 MHz
+     Added FM channel: WICV-73
+FM:  WICV-74 159.2125 MHz 4.6 MHz
+     Added FM channel: WICV-74
+FM:  WICV-81 159.2125 MHz 0 MHz
+     Added FM channel: WICV-81
+FM:  WICV-82 163.8125 MHz -4.6 MHz
+     Added FM channel: WICV-82
+FM:  WICV-83 163.8125 MHz 0 MHz
+     Added FM channel: WICV-83
+FM:  WICV-84 159.2125 MHz 4.6 MHz
+     Added FM channel: WICV-84
+FM:  WICV-91 161.4500 MHz 0 MHz
+     Added FM channel: WICV-91
+FM:  WICV-92 161.4500 MHz 0 MHz
+     Added FM channel: WICV-92
+FM:  WICV-93 161.4500 MHz 0 MHz
+     Added FM channel: WICV-93
+FM:  WICV-94 154.4125 MHz 0 MHz
+     Added FM channel: WICV-94
+FM:  WICV-95 154.4125 MHz 0 MHz
+     Added FM channel: WICV-95
+FM:  WICV-96 154.4125 MHz 0 MHz
+     Added FM channel: WICV-96
+DMR: VK 159.7750 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR01
+DMR: VK 164.3750 MHz -4.6 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR02
+DMR: VK 164.3750 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR03
+DMR: VK 159.7750 MHz 4.6 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR04
+DMR: VK 160.0125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR51
+DMR: VK 164.6125 MHz -4.6 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR52
+DMR: VK 164.6125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR53
+DMR: VK 160.0125 MHz 4.6 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR54
+DMR: VK 159.2125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR61
+DMR: VK 163.8125 MHz -4.6 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR62
+DMR: VK 163.8125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR63
+DMR: VK 159.2125 MHz 4.6 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR64
+DMR: VK 161.4500 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR92
+DMR: VK 161.4500 MHz 0.000 MHz, s2
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR93
+DMR: VK 154.4125 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR94
+DMR: VK 154.4125 MHz 0.000 MHz, s2
+  WARNING: Unable to select TX Contact WICEN GROUP 101001
+     Added FM Channel: VK DMR95
+DMR: LOCAL 147.175 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN TAC1 TG1
+     Added FM Channel: LOCAL TG1 R-TA
+DMR: LOCAL 147.175 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN TAC2 2
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 147.175 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact WICEN TAC3 3
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 147.175 MHz 0.000 MHz, s2
+  WARNING: Unable to select TX Contact WICEN TAC4 TG4
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 147.175 MHz 0.000 MHz, s2
+  WARNING: Unable to select TX Contact WICEN TAC5 TG5
+     Added FM Channel: LOCAL TG1
+DMR: LOCAL 147.175 MHz 0.000 MHz, s2
+  WARNING: Unable to select TX Contact WICEN TAC6 TG6
+     Added FM Channel: LOCAL TG1
+FM:  S7025 147.0250 MHz 0 MHz
+     Added FM channel: S7025
+FM:  S7625 147.6250 MHz 0 MHz
+     Added FM channel: S7625
+FM:  W7125 147.1250 MHz 0 MHz
+     Added FM channel: W7125
+FM:  W7150 147.1500 MHz 0 MHz
+     Added FM channel: W7150
+FM:  W7175 147.1750 MHz 0 MHz
+     Added FM channel: W7175
+FM:  W7500 147.5000 MHz 0 MHz
+     Added FM channel: W7500
+FM:  W7725 147.7250 MHz 0 MHz
+     Added FM channel: W7725
+FM:  W7750 147.7500 MHz 0 MHz
+     Added FM channel: W7750
+FM:  W7775 147.7750 MHz 0 MHz
+     Added FM channel: W7775
+FM:  VK1RWP 2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK1RWP 2
+FM:  VK1RWPA2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK1RWPA2
+FM:  VK1RWPB2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK1RWPB2
+FM:  VK2RAV 2 147.1250 MHz 0.600 MHz
+     Added FM channel: VK2RAV 2
+FM:  VK2RAVA2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK2RAVA2
+FM:  VK2RAVB2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK2RAVB2
+FM:  VK2REP 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK2REP 2
+FM:  VK2RFI 2 147.1750 MHz 0.600 MHz
+     Added FM channel: VK2RFI 2
+FM:  VK3RPW 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK3RPW 2
+FM:  VK3RSR 2 146.9750 MHz -0.600 MHz
+     Added FM channel: VK3RSR 2
+FM:  VK3RWE 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK3RWE 2
+FM:  VK3RWEA2 147.3000 MHz 0.600 MHz
+     Added FM channel: VK3RWEA2
+FM:  VK3RWI 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK3RWI 2
+FM:  VK3RWP 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK3RWP 2
+FM:  VK3RWPA2 147.3000 MHz 0.600 MHz
+     Added FM channel: VK3RWPA2
+FM:  VK3RWR 2 146.9250 MHz -0.600 MHz
+     Added FM channel: VK3RWR 2
+FM:  VK3RWRA2 147.3000 MHz 0.600 MHz
+     Added FM channel: VK3RWRA2
+FM:  VK4RWI 2 147.1500 MHz 0.600 MHz
+     Added FM channel: VK4RWI 2
+FM:  WicenPkt 145.2000 MHz 0 MHz
+     Added FM channel: WicenPkt
+DMR: LOCAL 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL TG9 2RFI
+DMR: WW CALL 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact WW CALL TG1
+     Added FM Channel: WW CALL TG1 2RFI
+DMR: WW EN 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact WW EN TG13
+     Added FM Channel: WW EN TG13 2RFI
+DMR: UAEN1 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAEN1 TG113
+     Added FM Channel: UAEN1 TG113 2RFI
+DMR: UAEN2 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAEN2 TG123
+     Added FM Channel: UAEN2 TG123 2RFI
+DMR: UAUS 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAUS TG133
+     Added FM Channel: UAUS TG133 2RFI
+DMR: UAUK 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UAUK TG143
+     Added FM Channel: UAUK TG143 2RFI
+DMR: UASP 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact UASP TG153
+     Added FM Channel: UASP TG153 2RFI
+DMR: VKZL 147.1750 MHz 0.600 MHz, s2
+  WARNING: Unable to select TX Contact VKZL TG5
+     Added FM Channel: VKZL TG5 2RFI
+DMR: VK 147.1750 MHz 0.600 MHz, s2
+  WARNING: Unable to select TX Contact VK TG505
+     Added FM Channel: VK TG505 2RFI
+DMR: TECH 147.1750 MHz 0.600 MHz, s1
+  WARNING: Unable to select TX Contact TECH TG100
+     Added FM Channel: TECH TG100 2RFI
+DMR: LOCAL 147.5000 MHz 0.000 MHz, s1
+  WARNING: Unable to select TX Contact LOCAL TG9
+     Added FM Channel: LOCAL DV4M

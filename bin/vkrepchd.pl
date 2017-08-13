@@ -75,7 +75,7 @@ while (my $row = $csv->getline($vkrdfh)) {
 # This radio can handle DStar and FM on 2 and 70
     if (   ($data{'mode'} ~~ ["DV", "FM"])
         && ($data{'band'} ~~ ["7", "2", "DST"])
-        && ($data{'Output'} < '450.0'))
+        && ($data{'Output'} < '490.0'))
     {
 #        $cnt +=1;
         my $CallUufld = sprintf("%s", $data{'Call U'});
