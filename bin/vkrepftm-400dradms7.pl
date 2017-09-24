@@ -91,6 +91,7 @@ while ((my $row = $csv->getline($vkrdfh))
 # This radio can handle DV-C4FM and FM on 2 and 70
     if (   ($data{'mode'} ~~ ["DV", "FM"])
         && ($data{'band'} ~~ ["7", "2", "C4FM"])
+        && ($data{'bank'} ne "20" ) 
 #        && ($data{'absoff'} < '10.0')
         )
     {
@@ -173,7 +174,7 @@ while ((my $row = $csv->getline($vkrdfh))
 # BANK2,...,13
 #
         my $BankLoc = '';
-        my $both    = '0'; 
+        my $both    = '0';
         my $dirn     = sprintf("%s", $data{'dirkat'});
         my $dirs     = '';
         my $distcsyd = sprintf("%s", $data{'distsyd'});
@@ -248,7 +249,7 @@ while ((my $row = $csv->getline($vkrdfh))
                 if ($data{'mode'} eq 'FM' ) {
                     $both = '-1';
                     $memcntb += 1;
-                }            
+                }
             }
             else {
                 $band = '0';
@@ -258,7 +259,7 @@ while ((my $row = $csv->getline($vkrdfh))
                 if ($data{'mode'} eq 'FM' ) {
                     $both = '-1';
                     $memcntb += 1;
-                }            
+                }
             }
 #    }
         }
@@ -271,10 +272,10 @@ while ((my $row = $csv->getline($vkrdfh))
             if ($data{'mode'} eq 'FM' ) {
                 $both = '-1';
                 $memcntb += 1;
-            }            
+            }
         }
         while ( $both < '1' ){
-# create the line and write it        
+# create the line and write it
             my $newline = sprintf(
                 "%s,%s%s%s%s%s%s%s%s",
                 $chnum,   $newdata, $newdat1, $newdat2, $newdat3,

@@ -176,6 +176,7 @@ if [ -n "$outuhf" ] ; then
  echo "adding wicen"
  cat Defaults/vkrepwic.srccsv >> output/vkrepstd.csv
  cat Defaults/vkrepuhf.srccsv >> output/vkrepstd.csv
+ cat Defaults/vkrepmar.srccsv >> output/vkrepstd.csv
 fi
 if [ -n "$outtest" ] ; then
     echo "Testing a new format generating work/shortdev.csv"
@@ -264,10 +265,12 @@ echo " sorting dmtemp.csv svkrepdmmerge"
 
 echo "vkremmd380u.pl reading work/svkrepdmmerge.csv writing to DMR 380"
     ./bin/vkrepmd380u.pl work/svkrepdmmerge.csv output/DMR
+echo "reduce zone entries"
+     gsed -f bin/md380zone.gsed output/DMR/rt3uzone.csv > output/DMR/rt3uzonex.csv
 echo "files are converted to dos for windows programs"
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/380uchan.csv
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/380uscan.csv
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/380uzone.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uchan.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uscan.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uzonex.csv
 
 echo "vkreprt8vhfg.pl reading work/svkrepdmmerge.csv writing to DMR RT8V G"
     ./bin/vkreprt8vhfg.pl work/svkrepdmmerge.csv output/DMR
@@ -276,12 +279,23 @@ echo "files are converted to dos for windows programs"
     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vgscan.csv
     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vgzone.csv
 
- echo "vkrepmd2017.pl reading work/svkrepdmmerge.csv writing to DMR MD2017"
-     ./bin/vkrepmd2017.pl work/svkrepdmmerge.csv output/DMR
- echo "files are converted to dos for windows programs"
-     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/md2017chan.csv
-     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/md2017scan.csv
-     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/md2017zone.csv
+ echo "Merging files for md2017"
+
+cat output/DMR/rt3uchan.csv > output/DMR/rt82chan.csv
+tail -n +2 output/DMR/rt8vgchan.csv >> output/DMR/rt82chan.csv
+
+cat output/DMR/rt3uscan.csv > output/DMR/rt82scan.csv
+tail -n +2 output/DMR/rt8vgscan.csv >> output/DMR/rt82scan.csv
+
+cat output/DMR/rt3uzonex.csv > output/DMR/rt82zone.csv
+tail -n +2 output/DMR/rt8vgzone.csv >> output/DMR/rt82zone.csv
+
+# echo "vkrepmd2017.pl reading work/svkrepdmmerge.csv writing to DMR MD2017"
+#     ./bin/vkrepmd2017.pl work/svkrepdmmerge.csv output/DMR
+# echo "files are converted to dos for windows programs"
+#     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/md2017chan.csv
+#     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/md2017scan.csv
+#     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/md2017zone.csv
 else
    echo "suppressed DMR contacts"
 fi

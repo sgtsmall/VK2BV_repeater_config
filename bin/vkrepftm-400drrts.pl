@@ -58,7 +58,7 @@ my $newhead = sprintf("%s", $newhea1);
 if ($csv->parse ($newhead)) {
   print $ftmfha $csv->string, "\n";
   print $ftmfhb $csv->string, "\n";
-  
+
 } else {
   print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
   $csv->error_diag ();
@@ -94,6 +94,7 @@ while ((my $row = $csv->getline($vkrdfh))
     if (   ($data{'mode'} ~~ ["DV", "FM"])
         && ($data{'band'} ~~ ["7", "2", "C4FM"])
         && ($data{'absoff'} < '10.0')
+        && ($data{'bank'} ne "20" ) 
         )
     {
 #    $cnt +=1;
@@ -175,7 +176,7 @@ while ((my $row = $csv->getline($vkrdfh))
 # BANK2,...,13
 #
         my $BankLoc = '';
-        my $both    = '0'; 
+        my $both    = '0';
         my $dirn     = sprintf("%s", $data{'dirkat'});
         my $dirs     = '';
         my $distcsyd = sprintf("%s", $data{'distsyd'});
@@ -250,7 +251,7 @@ while ((my $row = $csv->getline($vkrdfh))
                 if ($data{'mode'} eq 'FM' ) {
                     $both = '-1';
                     $memcntb += 1;
-                }            
+                }
             }
             else {
                 $band = '0';
@@ -260,7 +261,7 @@ while ((my $row = $csv->getline($vkrdfh))
                 if ($data{'mode'} eq 'FM' ) {
                     $both = '-1';
                     $memcntb += 1;
-                }            
+                }
             }
 #    }
         }
@@ -273,10 +274,10 @@ while ((my $row = $csv->getline($vkrdfh))
             if ($data{'mode'} eq 'FM' ) {
                 $both = '-1';
                 $memcntb += 1;
-            }            
+            }
         }
         while ( $both < '1' ){
-# create the line and write it        
+# create the line and write it
             my $newline = sprintf(
                 "%s,%s%s%s%s%s%s%s%s",
                 $chnum,   $newdata, $newdat1, $newdat2, $newdat3,
