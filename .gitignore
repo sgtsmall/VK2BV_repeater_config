@@ -2,6 +2,7 @@
 work/
 /.project
 output/**/*.md
+output/**/*.txt
 output/**/*.html
 output/**/*.csv
 output/**/*.dat
