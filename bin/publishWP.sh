@@ -10,7 +10,7 @@ pansed(){
 today=`date "+%Y-%m-%d"`
 mdfile=$1
 gsed -e's/MDDATEFLD/Generated on '$today' with WIA data from '$repdate'/' Defaults/$mdfile.md > output/$mdfile.md
-pandoc -f markdown output/$mdfile.md > work/$mdfile.htmlx
+pandoc -f markdown_github output/$mdfile.md > work/$mdfile.htmlx
 gsed -f bin/wp$mdfile.gsed work/$mdfile.htmlx > output/WP/$mdfile.html
 }
 
@@ -22,7 +22,7 @@ if [ "$1" != "" ]; then
     set -- $args
 
     for i
-    do 
+    do
         case "$i"
         in
             -r ) repdate=$2 ; mand=0 ; shift 2 ;;
@@ -30,9 +30,9 @@ if [ "$1" != "" ]; then
         esac
     done
 fi
-if [ ! -n "$mand" ] ; then 
-   usage 
-   exit 0 
+if [ ! -n "$mand" ] ; then
+   usage
+   exit 0
 fi
 
 pansed README_FT_1D
@@ -44,4 +44,4 @@ pansed README_ID_5100
 pansed README_MD380
 pansed README_MotoDMR
 
-rm work/*.htmlx
+#rm work/*.htmlx

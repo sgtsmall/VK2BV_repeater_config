@@ -1,7 +1,18 @@
 /<h1 id="md-380-files">MD 380 Files<\/h1>/d
-s:<li>MD380_VK2BV.rdt -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/MD380_VK2BV.rdt' expires='25']MD380_VK2BV.rdt[/s3secureurl] -:
+s:<li>RT-3_VK2BV.rdt -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/RT-3_VK2BV.rdt' expires='25']RT-3_VK2BV.rdt[/s3secureurl] -:
+s:<li>RT-8_VK2BV.rdt -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/RT-8_VK2BV.rdt' expires='25']RT-8_VK2BV.rdt[/s3secureurl] -:
+s:<li>RT-82_VK2BV.rdt -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/RT-82_VK2BV.rdt' expires='25']RT-82_VK2BV.rdt[/s3secureurl] -:
+s:<li>MD-9600_VK2BV.rdt -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/MD-9600_VK2BV.rdt' expires='25']MD-9600_VK2BV.rdt[/s3secureurl] -:
 s:<li>contacts.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/contacts.csv' expires='25']contacts.csv[/s3secureurl] -:
 s:<li>cont-n0gsg.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/cont-n0gsg.csv' expires='25']cont-n0gsg.csv[/s3secureurl] -:
-s:<li>chan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/chan.csv' expires='25']chan.csv[/s3secureurl] -:
-s:<li>scan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/scan.csv' expires='25']scan.csv[/s3secureurl] -:
-s:<li>zone.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/zone.csv' expires='25']zone.csv[/s3secureurl] -:
+s:<li>rt82contacts.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt82contacts.csv' expires='25']rt82contacts.csv[/s3secureurl] -:
+s:<li>rxgroups.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rxgroups.csv' expires='25']rxgroups.csv[/s3secureurl] -:
+s:<li>rt3uchan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt3uchan.csv' expires='25']rt3uchan.csv[/s3secureurl] -:
+s:<li>rt3uscan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt3uscan.csv' expires='25']rt3uscan.csv[/s3secureurl] -:
+s:<li>rt3uzone.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt3uzone.csv' expires='25']rt3uzone.csv[/s3secureurl] -:
+s:<li>rt8vchan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt8vchan.csv' expires='25']rt8vchan.csv[/s3secureurl] -:
+s:<li>rt8vscan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt8vscan.csv' expires='25']rt8vscan.csv[/s3secureurl] -:
+s:<li>rt8vzone.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt8vzone.csv' expires='25']rt8vzone.csv[/s3secureurl] -:
+s:<li>rt82chan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt82chan.csv' expires='25']rt82chan.csv[/s3secureurl] -:
+s:<li>rt82scan.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt82scan.csv' expires='25']rt82scan.csv[/s3secureurl] -:
+s:<li>rt82zone.csv -: <li>[s3secureurl bucket='warssharedfiles' target='/public/DMR/rt82zone.csv' expires='25']rt82zone.csv[/s3secureurl] -:

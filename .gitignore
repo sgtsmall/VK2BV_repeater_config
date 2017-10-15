@@ -1,5 +1,6 @@
 .DS_Store
 work/
+DMRtest/
 /.project
 output/**/*.md
 output/**/*.txt

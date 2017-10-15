@@ -9,15 +9,15 @@ use strict;
 use warnings;
 no warnings 'experimental::smartmatch';
 
-
 use Text::CSV_XS;
 
 our @Favourft;
 require My::Favourites;
+
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
 
-my $csv = Text::CSV_XS->new({sep_char => ','});
+my $csv = Text::CSV_XS->new( { sep_char => ',' } );
 
 #open vkrepdir.csv
 my $file1 = $ARGV[0] or die "Need main CSV file on the command line\n";
@@ -25,27 +25,27 @@ my $file1 = $ARGV[0] or die "Need main CSV file on the command line\n";
 # open vkrepft-2dr.csv
 my $file2 = $ARGV[1] or die "Need merge CSV file on the command line\n";
 my @CallUuniq;
-my $cnt        = 0;
-my $call       = '';
-my $cntfld     = '';
+my $cnt    = 0;
+my $call   = '';
+my $cntfld = '';
 
 # Load arrays with file contents
 #Open input file
-open(my $vkrdfh, '<', $file1) or die "Could not open '$file1' $!\n";
+open( my $vkrdfh, '<', $file1 ) or die "Could not open '$file1' $!\n";
 
 #open output file
-open(my $ft2fh, '>', $file2) or die "Could not open '$file2' $!\n";
+open( my $ft2fh, '>', $file2 ) or die "Could not open '$file2' $!\n";
 #
 my $newhea1 =
-  'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,Vibrator,';
+'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,Vibrator,';
 my $newhea2 =
-  'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,ESORFS,Marine Fav,Marine,UHF,WICENE,C4FM,';
+'Fav,SYDCBD,VK2Sth,VK2Nth,VK2West,WICEN,MELCBD,VK3,VK4SE,VK4,VK5-8,VK6,VK7,APRS,Test,BANK16,BANK17,BANK18,ESORFS,Marine Fav,Marine,UHF,WICENE,C4FM,';
 my $newhea3 = 'Comment,User CTCSS,S-Meter Squelch,Bell,';
 
 # print "$newhead,$newhea2,$newhea3\n";
-my $newhead = sprintf("%s%s%s", $newhea1, $newhea2, $newhea3);
+my $newhead = sprintf( "%s%s%s", $newhea1, $newhea2, $newhea3 );
 #
-if ($csv->parse($newhead)) {
+if ( $csv->parse($newhead) ) {
     print $ft2fh $csv->string, "\n";
 }
 else {
@@ -54,144 +54,148 @@ else {
 }
 
 #read the header line of the main input
-my @fields = @{$csv->getline($vkrdfh)};
+my @fields = @{ $csv->getline($vkrdfh) };
 
 # Read each line from the CSV file, and store it in @rows
 my @rows;
-while (my $row = $csv->getline($vkrdfh)) {
+while ( my $row = $csv->getline($vkrdfh) ) {
     my %data;
     @data{@fields} = @$row;    # This is a hash slice
 
     push @rows, \%data;
 
-# This radio can handle DV-C4FM and FM on 2 and 70
-    if (   ($data{'mode'} ~~ ["DV", "FM"])
-        && ($data{'band'} ~~ ["7", "2", "C4FM"])
-        && ($data{'bank'} ne "20" ) )
+    # This radio can handle DV-C4FM and FM on 2 and 70
+    if (   ( $data{'mode'} ~~ [ "DV", "FM" ] )
+        && ( $data{'band'} ~~ [ "7", "2", "C4FM" ] )
+        && ( $data{'bank'} ne "20" ) )
     {
         $cnt += 1;
 
-#DEBUG      print "Station: $data{'Call U'}, Output: $data{Output}\n";
-#
-#Channel Number,Receive Frequency,Transmit Frequency
-#
+        #DEBUG      print "Station: $data{'Call U'}, Output: $data{Output}\n";
+        #
+        #Channel Number,Receive Frequency,Transmit Frequency
+        #
         my $newdata =
-          sprintf("%d,%s,%s,", $cnt, $data{'Output'}, $data{'Input'});
+          sprintf( "%d,%s,%s,", $cnt, $data{'Output'}, $data{'Input'} );
 
-#my $newdata = sprintf(",%s,%s,", $data{'Output'}, $data{'Input'});
-#
-#Offset Frequency,Offset Direction,Operating Mode
-#
-        my $newdat1 = sprintf("%.3f MHz,%s,%s,",
-            $data{'absoff'}, $data{'tsign'}, $data{'mode'});
+        #my $newdata = sprintf(",%s,%s,", $data{'Output'}, $data{'Input'});
+        #
+        #Offset Frequency,Offset Direction,Operating Mode
+        #
+        my $newdat1 = sprintf( "%.3f MHz,%s,%s,",
+            $data{'absoff'}, $data{'tsign'}, $data{'mode'} );
 
-        my $CallUufld = sprintf("%s", $data{'Call U'});
-        if (grep { $CallUufld eq $_ } @CallUuniq) {
+        my $CallUufld = sprintf( "%s", $data{'Call U'} );
+        if ( grep { $CallUufld eq $_ } @CallUuniq ) {
 
-#        print "$CallUufld not unique\n";
+            #        print "$CallUufld not unique\n";
             my $cuniq = '64';
-            while (grep { $CallUufld eq $_ } @CallUuniq) {
+            while ( grep { $CallUufld eq $_ } @CallUuniq ) {
                 $cuniq += 1;
                 my $ccuniq = chr($cuniq);
                 my $tCallUufld = substr $CallUufld, 6, 1, $ccuniq;
             }
-#            print "Inserting $CallUufld\n";
+
+            #            print "Inserting $CallUufld\n";
             push @CallUuniq, $CallUufld;
         }
         else {
             push @CallUuniq, $CallUufld;
         }
 
-        my $name = sprintf("%s %s %s", $CallUufld, $data{'mNemonic'},
-            $data{'Location'});
+        my $name = sprintf( "%s %s %s",
+            $CallUufld, $data{'mNemonic'}, $data{'Location'} );
 
-#my $tonemode = 'None';
-        my $tonemode = ($data{'Tone'} eq '-') ? 'None' : 'T Sql';
-#
-#Name,Tone Mode,CTCSS,
-#
+        #my $tonemode = 'None';
+        my $tonemode = ( $data{'Tone'} eq '-' ) ? 'None' : 'T Sql';
+        #
+        #Name,Tone Mode,CTCSS,
+        #
         my $newdat2 =
-          sprintf("%.16s,%s,%s,", $name, $tonemode, $data{'Tone'});
-#
-# DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,
-#
-#        my $newdat3 = sprintf(",,%s,,,,,,", $data{'txpower'});
-        my $newdat3 = sprintf(",,2.5,,,,,,", );
-#
-#  Favourite Logic here for Bank1
-#
-# Vibrator,BANK1
-#
+          sprintf( "%.16s,%s,%s,", $name, $tonemode, $data{'Tone'} );
+        #
+        # DCS,DCS Polarity,Tx Power,Skip,Step,Attenuator,Clock Shift,Half Dev,
+        #
+        #        my $newdat3 = sprintf(",,%s,,,,,,", $data{'txpower'});
+        my $newdat3 = sprintf( ",,2.5,,,,,,", );
+        #
+        #  Favourite Logic here for Bank1
+        #
+        # Vibrator,BANK1
+        #
         my $BankFav = ',,';
-        if (grep { $data{'Call'} eq $_ } @Favourft) {
+        if ( grep { $data{'Call'} eq $_ } @Favourft ) {
             $BankFav = '1,1,';
         }
-#
-# BANK2,...,13
+        #
+        # BANK2,...,13
         my $BankLoc = '';
-# BANK15 Test
+
+        # BANK15 Test
         my $BankTest = ',';
-# BANK19 ESORFD
+
+        # BANK19 ESORFD
         my $BankESORFS = ',';
 
-# BANK22 UHF
+        # BANK22 UHF
         my $BankUHF = ',';
-# BANK23 WICEN
+
+        # BANK23 WICEN
         my $BankWicen = ',';
-#
-        my $dirn     = sprintf("%s", $data{'dirkat'});
+        #
+        my $dirn     = sprintf( "%s", $data{'dirkat'} );
         my $dirs     = '';
-        my $distcsyd = sprintf("%s", $data{'distsyd'});
-        my $distcmel = sprintf("%s", $data{'distmel'});
-        my $distctmb = sprintf("%s", $data{'disttmb'});
-        my $bankfld  = sprintf("%s", $data{'bank'});
+        my $distcsyd = sprintf( "%s", $data{'distsyd'} );
+        my $distcmel = sprintf( "%s", $data{'distmel'} );
+        my $distctmb = sprintf( "%s", $data{'disttmb'} );
+        my $bankfld  = sprintf( "%s", $data{'bank'} );
 
-#DEBUG print ("$data{'Call U'}-$dirn-$dirs-$distc\n");
+        #DEBUG print ("$data{'Call U'}-$dirn-$dirs-$distc\n");
 
-        my $prefix = sprintf("%.3s", $data{'Call U'});
+        my $prefix = sprintf( "%.3s", $data{'Call U'} );
 
-#DEBUG print "$cnt,$prefix ";
-        if ($bankfld eq '') {
+        #DEBUG print "$cnt,$prefix ";
+        if ( $bankfld eq '' ) {
             for ($prefix) {
-                if (($prefix eq 'VK1') || ($prefix eq 'VK2')) {
+                if ( ( $prefix eq 'VK1' ) || ( $prefix eq 'VK2' ) ) {
 
-#  print ("when1 or 2 $cnt $prefix ");
+                    #  print ("when1 or 2 $cnt $prefix ");
 
-                    if ($distcsyd eq '') {
+                    if ( $distcsyd eq '' ) {
 
                         #           2345667890123
                         $BankLoc = ',,,,1,,,,,,,,';
                     }
-                    elsif ($distcsyd <= '60000') {
+                    elsif ( $distcsyd <= '60000' ) {
 
-#DEBUG  print "lt 60000\n";
+                        #DEBUG  print "lt 60000\n";
                         #           2234567890123
                         $BankLoc = '1,,,,,,,,,,,,';
                     }
                     else {
-                        if ($dirn eq '') {
+                        if ( $dirn eq '' ) {
 
                             #           2345667890123
                             $BankLoc = ',,,,1,,,,,,,,';
                         }
                         else {
                             $dirs = $dirn + 157.5;
-                            if ($dirs lt 180) {    #West
+                            if ( $dirs lt 180 ) {    #West
 
                                 #           2345567890123
                                 $BankLoc = ',,,1,,,,,,,,,';
                             }
-                            elsif ($dirs gt 360) {    #West
+                            elsif ( $dirs gt 360 ) {    #West
 
                                 #           2345567890123
                                 $BankLoc = ',,,1,,,,,,,,,';
                             }
-                            elsif ($dirs lt 270) {    #North
+                            elsif ( $dirs lt 270 ) {    #North
 
                                 #           2344567890123
                                 $BankLoc = ',,1,,,,,,,,,,';
                             }
-                            elsif ($dirs le 360) {    #South
+                            elsif ( $dirs le 360 ) {    #South
 
                                 #           2334567890123
                                 $BankLoc = ',1,,,,,,,,,,,';
@@ -199,17 +203,17 @@ while (my $row = $csv->getline($vkrdfh)) {
                         }
                     }
                 }
-                elsif ($prefix eq 'VK3') {
+                elsif ( $prefix eq 'VK3' ) {
 
-#    print ("when3 $cnt $prefix ");
-                    if ($distcmel eq '') {
+                    #    print ("when3 $cnt $prefix ");
+                    if ( $distcmel eq '' ) {
 
                         #           2345667890123
                         $BankLoc = ',,,,1,,,,,,,,';
                     }
-                    elsif ($distcmel <= '80000') {
+                    elsif ( $distcmel <= '80000' ) {
 
-#DEBUG  print "lt 60000\n";
+                        #DEBUG  print "lt 60000\n";
                         #           2345677890123
                         $BankLoc = ',,,,,1,,,,,,,';
                     }
@@ -218,17 +222,17 @@ while (my $row = $csv->getline($vkrdfh)) {
                         $BankLoc = ',,,,,,1,,,,,,';
                     }
                 }
-                elsif ($prefix eq 'VK4') {
+                elsif ( $prefix eq 'VK4' ) {
 
-#    print ("when4 $cnt $prefix ");
-                    if ($distctmb eq '') {
+                    #    print ("when4 $cnt $prefix ");
+                    if ( $distctmb eq '' ) {
 
                         #           2345667890123
                         $BankLoc = ',,,,1,,,,,,,,';
                     }
-                    elsif ($distctmb <= '80000') {
+                    elsif ( $distctmb <= '80000' ) {
 
-#DEBUG  print "lt 60000\n";
+                        #DEBUG  print "lt 60000\n";
                         #           2345678990123
                         $BankLoc = ',,,,,,,1,,,,,';
                     }
@@ -237,85 +241,100 @@ while (my $row = $csv->getline($vkrdfh)) {
                         $BankLoc = ',,,,,,,,1,,,,';
                     }
                 }
-                elsif (($prefix eq 'VK5') || ($prefix eq 'VK8')) {
+                elsif ( ( $prefix eq 'VK5' ) || ( $prefix eq 'VK8' ) ) {
 
-#  print ("when5 $cnt $prefix ");
+                    #  print ("when5 $cnt $prefix ");
                     #           2345678901123
                     $BankLoc = ',,,,,,,,,1,,,';
                 }
-                elsif ($prefix eq 'VK6') {
+                elsif ( $prefix eq 'VK6' ) {
 
-#    print ("when6 $cnt $prefix ");
+                    #    print ("when6 $cnt $prefix ");
                     #           2345678901223
                     $BankLoc = ',,,,,,,,,,1,,';
                 }
-                elsif ($prefix eq 'VK7') {
+                elsif ( $prefix eq 'VK7' ) {
 
-#  print ("when7 $cnt $prefix ");
+                    #  print ("when7 $cnt $prefix ");
                     #           2345678901233
                     $BankLoc = ',,,,,,,,,,,1,';
                 }
                 else {
-#  print ("got to default $prefix");
+                    #  print ("got to default $prefix");
                     #           234567890123
                     $BankLoc = ',,,,,,,,,,,,';
                 }
             }
         }
         else {
-#        print STDERR "bankfld >", $bankfld,"<\n";
+            #        print STDERR "bankfld >", $bankfld,"<\n";
 
             $BankLoc = ',,,,,,,,,,,,';
-            if ($bankfld eq '6') {
+            if ( $bankfld eq '6' ) {
                 $BankLoc = ',,,,1,,,,,,,,';
-# BANK19 ESORFS
-            } elsif ($bankfld eq '19') {
+
+                # BANK19 ESORFS
+            }
+            elsif ( $bankfld eq '19' ) {
                 $BankESORFS = '1,';
-# BANK22 UHF
-            } elsif ($bankfld eq '22') {
+
+                # BANK22 UHF
+            }
+            elsif ( $bankfld eq '22' ) {
                 $BankUHF = '1,';
-# BANK23 WICEN
-            } elsif ($bankfld eq '23') {
+
+                # BANK23 WICEN
+            }
+            elsif ( $bankfld eq '23' ) {
                 $BankWicen = '1,';
-# BANK15 Test
-            } elsif ($bankfld eq '15') {
+
+                # BANK15 Test
+            }
+            elsif ( $bankfld eq '15' ) {
                 $BankTest = '1,';
-            }else {
-            print STDERR "bankfld not defined in 2dr.pl \n";
+            }
+            else {
+                print STDERR "bankfld not defined in 2dr.pl \n";
             }
         }
 
-# BANK14
+        # BANK14
         my $BankAPRS = ',';
-        if ($prefix eq 'APR') {
+        if ( $prefix eq 'APR' ) {
             $BankAPRS = '1,';
         }
-# BANK16,..,18,
-#                       678
-        my $BankRest = ',,,';
-# BANK19 ESORFS
-# BANK20,21,
-        my $BankMarine = ',,';
-# BANK22 UHF
-# BANK23 WICEN
-# BANK24
-        my $BankC4FM =',';
-        if ($data{'band'} eq 'C4FM') {
-            $BankC4FM ='1,'
-        }
-#
-        my $newbank = sprintf("%s%s%s%s%s%s%s%s%s%s",
-            $BankFav, $BankLoc, $BankAPRS, $BankTest, $BankRest, $BankESORFS, $BankMarine, $BankUHF, $BankWicen, $BankC4FM, );
 
-# Comment, User CTCSS,S-Meter Squelch,Bell,
-#
-        my $newdat4 = sprintf("%s,,,", $name);
-#
-        my $newline = sprintf("%s%s%s%s%s%s",
-            $newdata, $newdat1, $newdat2, $newdat3, $newbank, $newdat4);
-#
-#
-        if ($csv->parse($newline)) {
+        # BANK16,..,18,
+        #                       678
+        my $BankRest = ',,,';
+
+        # BANK19 ESORFS
+        # BANK20,21,
+        my $BankMarine = ',,';
+
+        # BANK22 UHF
+        # BANK23 WICEN
+        # BANK24
+        my $BankC4FM = ',';
+        if ( $data{'band'} eq 'C4FM' ) {
+            $BankC4FM = '1,';
+        }
+        #
+        my $newbank = sprintf(
+            "%s%s%s%s%s%s%s%s%s%s",
+            $BankFav,    $BankLoc,    $BankAPRS, $BankTest,  $BankRest,
+            $BankESORFS, $BankMarine, $BankUHF,  $BankWicen, $BankC4FM,
+        );
+
+        # Comment, User CTCSS,S-Meter Squelch,Bell,
+        #
+        my $newdat4 = sprintf( "%s,,,", $name );
+        #
+        my $newline = sprintf( "%s%s%s%s%s%s",
+            $newdata, $newdat1, $newdat2, $newdat3, $newbank, $newdat4 );
+        #
+        #
+        if ( $csv->parse($newline) ) {
             print $ft2fh $csv->string, "\n";
         }
         else {
