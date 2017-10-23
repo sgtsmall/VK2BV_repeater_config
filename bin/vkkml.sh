@@ -21,7 +21,7 @@ usage() {
   echo "  -i Suppress Icom Files"
   echo "  -y Suppress Yaesu Files"
   echo "  -d Suppress DMR Files"
-  echo "  -p Suppress Publish"
+  echo "  -p Publish"
   echo "  -u Suppress uhf "
   echo "  -z Include Wicen "
   echo "  -x Test new function"

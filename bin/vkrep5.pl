@@ -64,10 +64,12 @@ while (my $line = <$data>) {
             $band = $fields[4];
             if ($type eq 'DST') { $type = ''; }
             if ($type eq 'C4FM') {$type = '4'; }
-        } 
+        }
         else {
 # Not a HEAD
             $call = sprintf("%s %s,%s,%s", $fields[2], $type, $mode, $band);
+
+#Output,Input,Call,mNemonic,Location,Service Area,S,ERP,HASL,T/O,Sp,Tone,Notes
 
 # Note 2
 #
@@ -118,11 +120,11 @@ while (my $line = <$data>) {
 # could hash this but the whole job runs under a second
 # and I also want to leave the vkrep.csv file alone
             my $result = ',,,,,,,,5,,';
-            
+
 #'CALL_SIGN,LATITUDE,LONGITUDE,NAME,STATE,POSTCODE,SITE_PRECISION,';
 #ELEVATION,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank'
             if ($fields[0] ne 'Output')  {
-                my $shcall = substr $fields[2], 0,6;        
+                my $shcall = substr $fields[2], 0,6;
 #                print STDERR $shcall,"\n";
                 if ( $ssitex->datum($shcall,'txpower'))  {
                     $result = sprintf(
@@ -138,13 +140,15 @@ while (my $line = <$data>) {
                     $ssitex->datum($shcall,'txpower'),
                     );
                 } else {
-                    print STDERR 'No ACMA Location ',$shcall,"\n";
-               # last;
+
+                    if ($fields[4] ne 'portable') {
+                      print STDERR 'No ACMA Location ',$shcall, ' ', $fields[4], "\n";
+                    }                # last;
                 }
             } else {
             $result = 'longditude,latitude,maidenhead,distsyd,dirsyd,dirkat,distmel,disttmb,txpower,bank,TS'
             }
-            
+
             print "$sort,$call,$fielddata,$offdata,$result\n";
         }
     }
@@ -154,5 +158,3 @@ while (my $line = <$data>) {
 }
 
 # DEBUG print "Finished\n";
-
-
