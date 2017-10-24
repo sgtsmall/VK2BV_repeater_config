@@ -11,4 +11,6 @@ output/**/*.rdt
 output/**/*.icf
 output/**/*.FT2D
 output/**/*.FTM400
+output/**/*.FT991
+output/**/*.gdoc
 extract of gsed
