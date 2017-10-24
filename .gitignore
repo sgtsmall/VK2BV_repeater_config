@@ -9,8 +9,6 @@ output/**/*.csv
 output/**/*.dat
 output/**/*.rdt
 output/**/*.icf
+output/**/*.FT2D
+output/**/*.FTM400
 extract of gsed
-
-*.rdt
-
-*.icf
