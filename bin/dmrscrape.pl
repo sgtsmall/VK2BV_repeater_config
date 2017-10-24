@@ -69,11 +69,11 @@ foreach my $tmpTG (@bothTGlist) {
     my $dmrtgnum  = $tmpTGinfo[3];
     my $dmrtgtext = sprintf( '%s %s', $dmrlab, $dmrtg );
     if ( grep { $dmrtgnum eq $_ } @tgnumuniq ) {
-        print "\nTG contact exists :", $dmrtgnum, ":", $dmrtgtext,
-          ": not adding\n\n";
+    #    print "\nTG contact exists :", $dmrtgnum, ":", $dmrtgtext,
+    #      ": not adding\n\n";
     }
     else {
-        print "adding TG contact :", $dmrtgnum, ":", $dmrtgtext, ": added\n";
+    #    print "adding TG contact :", $dmrtgnum, ":", $dmrtgtext, ": added\n";
 
         # Print the three items: ID, Callsign, Firstname
         print $con1fh join( ',', $dmrtgnum, $dmrtgtext, ' ' ), "\n";

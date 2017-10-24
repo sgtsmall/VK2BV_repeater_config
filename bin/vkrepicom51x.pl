@@ -209,7 +209,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             $tonesql  = ',';
         }
         else {
-            $tonemode = sprintf( "TSQL,%sHz", $data{'Tone'} );
+            $tonemode = sprintf( "TONE,%sHz", $data{'Tone'} );
             $tonesql  = sprintf( ",%sHz",     $data{'Tone'} );
         }
 

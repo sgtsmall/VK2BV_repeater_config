@@ -118,7 +118,8 @@ while (my $row = $csv->getline($vkrdfh)) {
             $tonemode = 'OFF,';
         }
         else {
-            $tonemode = sprintf("TONE SQL,%s Hz", $data{'Tone'});
+#            $tonemode = sprintf("TONE SQL,%s Hz", $data{'Tone'});
+            $tonemode = sprintf("TONE,%s Hz", $data{'Tone'});
         }
         my $newdat2 = sprintf("%.16s,%s,", $name, $tonemode);
 

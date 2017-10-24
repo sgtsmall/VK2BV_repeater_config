@@ -53,7 +53,7 @@ my $newhead = sprintf("%s%s", $newhea1, $newhea2);
 #
 if ($csv->parse($newhead)) {
     print $icgfh1 $csv->string, "\n";
-    
+
 }
 else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
@@ -122,10 +122,11 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $tonemode = '';
         if ($data{'Tone'} eq '-') {
             $tonemode = ',88.5,88.5';
-   
+
         }
         else {
-            $tonemode = sprintf("TSQL,%s,%s", $data{'Tone'},$data{'Tone'});
+#            $tonemode = sprintf("TSQL,%s,%s", $data{'Tone'},$data{'Tone'});
+            $tonemode = sprintf("TONE,%s,%s", $data{'Tone'},$data{'Tone'});
         }
 
 #my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
@@ -165,7 +166,7 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $outfh  = $icgfh1;
         my $chnum  = 'UNDEF';
         my $bchnum = 'UNDEF';
-        
+
         my $newlinb = sprintf("%s,%s%s%s%s", $cnt, $newdab1, $newdab2, $newdab3, $newdab4);
         if ($csv->parse($newlinb)) {
             print $outfh $csv->string, "\n";

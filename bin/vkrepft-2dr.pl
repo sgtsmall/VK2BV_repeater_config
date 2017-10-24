@@ -106,8 +106,8 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         my $name = sprintf( "%s %s %s",
             $CallUufld, $data{'mNemonic'}, $data{'Location'} );
 
-        #my $tonemode = 'None';
-        my $tonemode = ( $data{'Tone'} eq '-' ) ? 'None' : 'T Sql';
+        #my $tonemode = 'None'; chang T Sql to Tone
+        my $tonemode = ( $data{'Tone'} eq '-' ) ? 'None' : 'Tone';
         #
         #Name,Tone Mode,CTCSS,
         #

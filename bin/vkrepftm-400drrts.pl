@@ -94,7 +94,7 @@ while ((my $row = $csv->getline($vkrdfh))
     if (   ($data{'mode'} ~~ ["DV", "FM"])
         && ($data{'band'} ~~ ["7", "2", "C4FM"])
         && ($data{'absoff'} < '10.0')
-        && ($data{'bank'} ne "20" ) 
+        && ($data{'bank'} ne "20" )
         )
     {
 #    $cnt +=1;
@@ -149,7 +149,8 @@ while ((my $row = $csv->getline($vkrdfh))
         }
         else {
             my $printtone = sprintf("%.1f", $data{'Tone'});
-            $tonemode = sprintf("T Sql,%s Hz", $printtone);
+#            $tonemode = sprintf("T Sql,%s Hz", $printtone);
+            $tonemode = sprintf("Tone,%s Hz", $printtone);
         }
         my $newdat2 = sprintf("%.8s,Large,%s,", $name, $tonemode);
 

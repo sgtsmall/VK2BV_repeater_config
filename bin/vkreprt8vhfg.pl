@@ -139,8 +139,8 @@ foreach my $tmpTG (@bothTGlist) {
     my $dmrtgnum = $tmpTGinfo[3];
     my $dmrtgtext = sprintf( '%s %s', $dmrlab, $dmrtg );
     if ( grep { $dmrtgnum eq $_ } @tgnumuniq ) {
-        print "\nTG contact exists :", $dmrtgnum, ":", $dmrtgtext,
-          ": not adding\n\n";
+  #      print "\nTG contact exists :", $dmrtgnum, ":", $dmrtgtext,
+  #        ": not adding\n\n";
     }
     else {
         push @tgnumuniq, $dmrtgnum;
@@ -240,7 +240,8 @@ while ( my $row = $csv->getline($vkrdfh) ) {
     #print STDERR "DEBUG mode ", $datard{'mode'}, "tone ", $datard{'Tone'},"\n";
         if ( $datard{'mode'} eq "FM" ) {
             $tonefld = ( $datard{'Tone'} eq '-' ) ? '' : $datard{'Tone'};
-            $dmccode = ( $tonefld eq '' )         ? '' : 'c';
+            #23oct17 set ccode to '' for FM to switch off automatic receive tone
+            $dmccode = ( $tonefld eq '' )         ? '' : '';
         }
         if ( $datard{'mode'} eq "DV" ) {
 
@@ -472,8 +473,9 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                         $csv->error_diag();
                     }
                 }    #End tglist
-            } else   # End not simplex or wicen
-            { print "WICENS $CallUufld\n" }
+            }
+          #  else   # End not simplex or wicen
+          #  { print "WICENS $CallUufld\n" }
         }    # end DV
     }    #end freq range
 }    #get line

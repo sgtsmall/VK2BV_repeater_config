@@ -91,7 +91,7 @@ while ((my $row = $csv->getline($vkrdfh))
 # This radio can handle DV-C4FM and FM on 2 and 70
     if (   ($data{'mode'} ~~ ["DV", "FM"])
         && ($data{'band'} ~~ ["7", "2", "C4FM"])
-        && ($data{'bank'} ne "20" ) 
+        && ($data{'bank'} ne "20" )
 #        && ($data{'absoff'} < '10.0')
         )
     {
@@ -147,7 +147,8 @@ while ((my $row = $csv->getline($vkrdfh))
         }
         else {
             my $printtone = sprintf("%.1f", $data{'Tone'});
-            $tonemode = sprintf("TONE SQL,%s Hz", $printtone);
+    #        $tonemode = sprintf("TONE SQL,%s Hz", $printtone);
+            $tonemode = sprintf("TONE,%s Hz", $printtone);
         }
         my $newdat2 = sprintf("%.8s,%s,", $name, $tonemode);
 

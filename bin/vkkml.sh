@@ -187,6 +187,7 @@ if [ -n "$outtest" ] ; then
   exit 0
 fi
 if [ -n "$outyaesu" ] ;  then
+  echo "Processing Yaesu Standard"
   echo "starting the create of vkrepftmerge.csv"
   # reads vkrepdir and vkrepstd (simplex and other local)
   ./bin/vkrepft.pl work/sortvkrepdir.csv output/vkrepstd.csv work/vkrepftmerge.csv
@@ -226,6 +227,7 @@ else
   echo "suppressed yaesu"
 fi
 if [ -n "$outicom" ] ;  then
+  echo "Processing ICOM Standard"
   echo "starting the create of vkrepdsmerge.csv"
   # reads vkrepdir and vkrepstd (simplex and other local)
   #        ./bin/vkrep27wds.pl work/sortvkrepdir.csv work/vkrepstd.csv work/dstemp.csv
@@ -239,7 +241,7 @@ if [ -n "$outicom" ] ;  then
   cp Defaults/g14.csv output/ICOM/icomg14.csv
   ./bin/vkrepicom51x.pl work/vkrepdsmerge.csv output/ICOM/icom
   if [ ! -n "$outwic" ] ; then
-    echo "Processing Icom Wicen"
+    echo "Processing ICOM Wicen"
     echo "starting the create of vkrepdsmergew.csv"
     # reads vkrepdir and vkrepstd (simplex and other local)
     #        ./bin/vkrep27wds.pl work/sortvkrepdir.csv work/vkrepstd.csv work/dstemp.csv
@@ -256,6 +258,7 @@ if [ -n "$outicom" ] ;  then
   if [ -n "$outchirp" ] ;  then
     #    echo "starting the create of merged chtemp.csv" Chirp dependent on icom
     #    ./bin/vkrepch.pl work/sortvkrepdir.csv output/vkrepstd.csv work/chtemp.csv
+    echo "Processing Chirp Standard"
     echo "starting vkrepchd.pl create of chirpx.csv"
     ./bin/vkrepchd.pl work/vkrepdsmerge.csv output/ch
     perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/chirpx.csv
@@ -275,6 +278,7 @@ else
   echo "suppressed icom and chirp"
 fi
 if [ -n "$outdmr" ] ;  then
+  echo "Processing DMR Standard"
   if [  -f work/userwork.dat ] ; then
     echo "starting the create of contact.csv for DMR"
     echo "starting dmrscrape.pl"
