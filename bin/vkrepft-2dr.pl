@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/opt/local/bin/perl
 #
 # Creates a data file for the Yaesu FT-2DR
 #
@@ -270,7 +270,12 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             #        print STDERR "bankfld >", $bankfld,"<\n";
 
             $BankLoc = ',,,,,,,,,,,,';
-            if ( $bankfld eq '6' ) {
+            if ( $bankfld eq '5' ) {
+                $BankLoc = ',,,1,,,,,,,,,';
+
+                # BANK19 ESORFS
+            }
+            elsif ( $bankfld eq '6' ) {
                 $BankLoc = ',,,,1,,,,,,,,';
 
                 # BANK19 ESORFS
@@ -294,7 +299,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                 $BankTest = '1,';
             }
             else {
-                print STDERR "bankfld not defined in 2dr.pl \n";
+                print STDERR "$CallUufld bankfld >$bankfld< not defined in 2dr.pl \n";
             }
         }
 

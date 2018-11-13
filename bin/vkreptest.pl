@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/opt/local/bin/perl
 #
 
 use strict;
@@ -9,7 +9,10 @@ use XML::LibXML;
 use Ham::Locator;
 use Geo::Direction::Distance;
 use Text::CSV_XS;
+use Text::CSV::Hashify;
 use List::MoreUtils;
+use File::Slurp;
+use Parse::CSV;
 
 my $lltomh = Ham::Locator->new();
 

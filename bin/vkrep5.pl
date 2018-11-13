@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/opt/local/bin/perl
 # Reads in the monthly wia data and the converted kml data
 # Creates a vkrepdir.csv
 #

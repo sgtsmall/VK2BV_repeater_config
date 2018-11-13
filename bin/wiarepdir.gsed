@@ -1,18 +1,12 @@
-# ignore this
-/^438.1000,433.1000,VK2RRW,-,North Ryde,Northern Sydney WICEN,O,-,-,-,NWN,-,/{ d }
 #ignore this as well
-/^HEAD,8-DMR,VK-DMR,DV,DMR,,,,,,,,/{ a \
+/^HEAD,8-DMR,VK-DMR,DV,DMR,,,,,,,/ a\
 438.9250,431.9250,VK2RAG,Someb,Somersby,Gosford - Wyong IRLP,O,50,320,3,2EH,-, \
 439.8750,434.8750,VK2RHK,-,Wyee,Lake Macquarie,O,-,-,-,2HK,-, \
-439.7500,434.7500,VK2RHP,-,Horsley Park,Sydney,O,-,-,-,NME,-, \
-439.6250,434.6250,VK2RFI,-,portable,Statewide WICEN,O,-,-,-,VWN,-, \
-147.1750,147.7750,VK2RFI,-,portable,Statewide WICEN,O,-,-,-,VWN,-, \
 438.5250,433.5250,VK3RAD,-,Mitcham,Melbourne,O,80,100,2.5,3JFK,-, \
-438.8125,431.8125,VK4RBT,-,Mt Tambourine,Gold Coast,O,100,1900,5,4WIF,-, \
 438.2625,432.8625,VK5REX,-,Winter Hill,Port Lincoln,O,25,240,3,5ZEA,-,
-}
-/^438.3000,432.9000,VK3RWW,-,portable,Nation wide,O,-,-,-,3TE,-,107/ { c \
-438.3000,432.9000,VK3RW2,-,portable,Nation wide,O,-,-,-,3TE,-,107
+#
+/^438.3000,432.9000,VK3RWW,-,portable,Nation wide,O,20,-,3,3TE,-/ { c \
+438.3000,432.9000,VK3RW2,-,portable,Nation wide,O,20,-,3,3TE,-
 }
 #2DAG 2ERG 2YHX 3TE 3AS 4DU 4TUX 4TCA 4TUB 6ZTN 6AG
 # analogue 439.8750,434.8750,VK3RMC,-,Narre Warren North,Melbourne SE,O,-,-,-,3APC,-,\n
@@ -31,4 +25,5 @@
 #AU 505410	VK4RBX	146.1875 MHz	146.7875 MHz
 #AU 505411	VK4RSA	147.675 MHz	147.075 MHz
 #AU 505606	VK6RGF	438.125 MHz	433.125 MHz
-#AU 5052084	VK2EVB		438.400 MHz	433.400 MHz	
+#AU 5052084	VK2EVB		438.400 MHz	433.400 MHz
+#439.7500,434.7500,VK2RHP,-,Horsley Park,Sydney,O,-,-,-,NME,-, \

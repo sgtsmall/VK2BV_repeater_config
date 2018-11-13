@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/opt/local/bin/perl
 #
 # Creates a data file(s) for the RT8G
 #
@@ -17,6 +17,9 @@ no warnings 'experimental::smartmatch';
 use Text::CSV_XS;
 use List::Util qw(first);
 use List::MoreUtils;
+use Findbin::Libs;
+require My::Favourites;
+
 my @longcalluniq;
 my @ScanlistUniq;
 my @ScanlistDUniq;
@@ -36,14 +39,13 @@ our @FavwicenTG;
 our @FavwicenchTGK;
 our @FavsimpWTG;
 our @FavDMRP;
-require My::Favourites;
+
 my @fmscanlist = (
-    'FAVF2',   'SYDF2',   'VK2NF2', 'VK2SF2', 'VK2WF2', 'OTHERF2',
-    'WICENF0', 'WICENF1', 'MELF2',  'VK3F2',  'TMBF2',  'VK4F2',
-    'VK5F2',   'VK6F2',   'VK7F2',  'VK8F2',  'RFSFM', 'MVHF0',
-    'MVHF1',   'APRSFM'
+    'FAVFM',   'SYDFM', 'VK2NFM', 'VK2SFM', 'VK2WFM', 'OTHERFM',
+    'WICENFM', 'MELFM', 'VK3FM',  'TMBFM',  'VK4FM',  'VK5FM',
+    'VK6FM',   'VK7FM', 'VK8FM',  'RFSFM', 'MVHF0', 'APRSFM'
 );
-my @fmscancnt = ( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 );
+my @fmscancnt = ( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 );
 my $dmscantmp = '';
 my $index     = '';
 my $csv       = Text::CSV_XS->new( { sep_char => ',' } );
@@ -66,14 +68,22 @@ my $file2pre = $ARGV[1]
 #Open input file
 open( my $vkrdfh, '<', $file1 ) or die "HALTED: Could not open '$file1' $!\n";
 
+my $model = $ARGV[2]
+or die "HALTED: Need model for output e.g.(rt3, rt8, rt82) on the command line\n";
+
+my $band = $ARGV[3]
+or die "HALTED: Need band for output e.g.(u, v) on the command line\n";
+
 #open output file
-my $file2chan = sprintf( "%s/rt8vchan.csv", $file2pre );
-my $file2scan = sprintf( "%s/rt8vscan.csv", $file2pre );
-my $file2zone = sprintf( "%s/rt8vzone.csv", $file2pre );
+my $file2chan = sprintf( "%s%s%schan.csv", $file2pre, $model, $band );
+my $file2scan = sprintf( "%s%s%sscan.csv", $file2pre, $model, $band );
+my $file2zone = sprintf( "%s%s%szone.csv", $file2pre, $model, $band );
+my $file2chn0 = sprintf( "%s%s%schann0gsg.csv", $file2pre, $model, $band );
 
 open( my $chanfh, '>', $file2chan ) or die "HALTED: Could not open '$file2chan' $!\n";
 open( my $scanfh, '>', $file2scan ) or die "HALTED: Could not open '$file2scan' $!\n";
 open( my $zonefh, '>', $file2zone ) or die "HALTED: Could not open '$file2zone' $!\n";
+open( my $chn0fh, '>', $file2chn0 ) or die "HALTED: Could not open '$file2chn0' $!\n";
 
 my $newhea1 =
 '0;num;type;callsign;dmrid;qrg;shift;cc;mix;ctcss;net;city;cnty;country;ctry;lat;lon;';
@@ -91,6 +101,14 @@ else {
     print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
     $csv->error_diag();
 }
+
+#Channel Name,Mode,BW,TxFreq,RxFreq,ScaList,Squelch,Admit,RxRef,TxRef,TOT,TOTDelay,Power,AutoScan,Rx Only,Lone,VOX,AllowTA,CTCSSDec,CTCSSEnc,QTReverse,TxSig,RxSig,RevBurstTone,De 1,De 2,De 3,De 4,De 5,De 6,De 7,De 8,PrivCall,EmergAck,DataCall,Emerg,Contact,RXGrp,CC,Privacy,PrivacyNum,TS
+#"VK2RBV 7","FM","25","432.712500","438.112500","FAVFM7","NORMAL","Always","Low","Low","300","0","HIGH","No","No","No","No","Yes","NONE","091.5","120","Off","Off","YES","NO","NO","NO","NO","NO","NO","NO","NO","NO","NO","NO","NONE","NONE","NONE","1","NONE","1","1"
+#"9 1CGVK2", "DMR", "12.5", "434.500000", "439.500000", "VK2ROAM", "NORMAL", "Color Code Free", "Low", "Low", "90", "0", "HIGH", "No", "No", "No", "No", "Yes", "NONE", "NONE", "180", "Off", "Off", "YES", "NO", "NO", "NO", "NO", "NO", "NO", "NO", "NO", "YES", "NO", "NO", "NONE", "9 LOCAL", "RXGR1", "1", "NONE", "1", "1"
+my $scanmax = ( $model eq 'rt82' ) ? '64' : '32';
+my $zonemax = ( $model eq 'rt82' ) ? '64' : '16';
+my $bandmin = ( $band eq 'u') ? '400.0' : '120.0' ;
+my $bandmax = ( $band eq 'u') ? '480.0' : '170.0' ;
 
 #BM (Brandmeister)	&
 #DMR-DL	(none)
@@ -111,6 +129,7 @@ foreach my $tmpDV (@FavDMRP) {
     my $dmrDVcall = $tmpDVinfo[1];
     my $dmrDVnet  = $tmpDVinfo[2];
     my $dmrDVregn = $tmpDVinfo[3];
+#    print STDERR "DEBUG: DVnet ",$dmrDVnumb, "-", $dmrDVcall, "-", $dmrDVnet, "\n";
     push @dvlistdpnumb, $dmrDVnumb;
     push @dvlistdpcall, $dmrDVcall;
     push @dvlistdpnet,  $dmrDVnet;
@@ -119,7 +138,7 @@ foreach my $tmpDV (@FavDMRP) {
 
 #foreach my $prnDV (@dvlistdpcall) {
 #   print STDERR "DEBUG: print Calls ", $prnDV, "\n";
-# }
+ #}
 
 # Build talkgroup tables so that we can split names and numbers for later use
 
@@ -166,9 +185,9 @@ while ( my $row = $csv->getline($vkrdfh) ) {
 
         #   if (   ($datard{'mode'} ~~ ["DV"])
         && ( $datard{'band'} ~~ [ "2", "DMR" ] )
-        && ( ( $datard{'Input'} < '170.0' ) && ( $datard{'Input'} > '120.0' ) )
-        && (   ( $datard{'Output'} < '170.0' )
-            && ( $datard{'Output'} > '120.0' ) )
+        && ( ( $datard{'Input'} < $bandmax ) && ( $datard{'Input'} > $bandmin ) )
+        && (   ( $datard{'Output'} < $bandmax )
+            && ( $datard{'Output'} > $bandmin ) )
       )
     {
         $cnt += 1;
@@ -190,6 +209,9 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         my $dmrlabtg;
         my $dmrtgnum;
         my $tonefld = '';
+        my $CTCSSDec = '';
+        my $CTCSSEnc = '';
+        my $powerlevel = '';
         my $dmrlab  = '';
         $dmrtg = '';
         my $pcallext    = '';
@@ -201,6 +223,12 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         my $newdat2     = '';
         my $newdat3     = '';
         my $newdat4     = '';
+        my $newn0gsg    = '';
+        my $newn0gsg0   = '';
+        my $newn0gsg1   = '';
+        my $newn0gsg2   = '';
+        my $newn0gsg3   = '';
+        my $newn0gsg4   = '';
 
         my $CallUufld = sprintf( "%s", $datard{'Call U'} );
         unless ( $datard {'Call'} eq "WICENS" ) {
@@ -238,13 +266,19 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         $calltxrxscan = sprintf( ';;;;;;%s;;;', $pwr );
 
     #print STDERR "DEBUG mode ", $datard{'mode'}, "tone ", $datard{'Tone'},"\n";
+        my $bwidth = ( $datard{'mode'} eq 'FM' ) ? '25' : '12.5';
         if ( $datard{'mode'} eq "FM" ) {
             $tonefld = ( $datard{'Tone'} eq '-' ) ? '' : $datard{'Tone'};
-            #23oct17 set ccode to '' for FM to switch off automatic receive tone
+        #23oct17 set ccode to '' for FM to switch off automatic receive tone
             $dmccode = ( $tonefld eq '' )         ? '' : '';
-        }
+        # need to find a way to deal with CTCSSDec from data
+            $CTCSSDec = 'None';
+#            print $tonefld," ";
+            $CTCSSEnc = ( $tonefld eq '' ) ? 'None' : sprintf("%05.1f",$tonefld);
+#            print $CTCSSEnc,"\n";
+          }
         if ( $datard{'mode'} eq "DV" ) {
-
+#print STDERR "DEBUG: $datard{'Call'}\n";
     # check if we have identified if the net is dmrplus or brandmeister or WICEN
             my ($dvindex) =
               grep { $dvlistdpcall[$_] eq $datard{'Call'} } 0 .. $#dvlistdpcall;
@@ -256,13 +290,16 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             }
 
             $dmtype = 'd';
-            $dmrlabtg =
-              ( $datard{'Tone'} eq '-' ) ? '1-9-LOCAL-9' : $datard{'Tone'};
+            $dmrlabtg = $datard{'Tone'};
+            unless ( $datard {'Call'} eq "WICENS" ) {
+              $dmrlabtg =
+              ( $datard{'Tone'} eq '-'|'91.5' ) ? '1-9-LOCAL-9' : $datard{'Tone'};
+            }
 #print "DEBUG dmrlabtg :", $dmrlabtg, " ",$dmtype, " ",$CallUufld," ", $datard{'Call'},"\n";
             $tonefld = '';
             #      @dmrtginfo = split('-',$dmrlabtg);
             #$dmccode = '1';
-            my ( $dmccode, $dmmix, $longcall, $calltxrxscan, $CallUufld ) =
+            my ( $dmccode, $dmmix, $longcall, $calltxrxscan, $CallUufld, $newn0gsgscan, $newn0gsgx ) =
 #               1-9-LOCAL-9, RPT02, WICENS
               dvtxrx(  $dmrlabtg, $CallUufld, $datard{'Call'} );
 
@@ -274,14 +311,62 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             $newdata = sprintf( "%s;%s;000;%s;%s;",
                 $dmtype, $CallUufld, $datard{'Output'}, $datard{'Offset'} );
             $newdat3 = sprintf( "%.16s;%s", $longcall, $calltxrxscan );
-        }
+            #Channel Name,Mode,BW,TxFreq,RxFreq,
+            $newn0gsg0 = sprintf("%s,%s,%s,%3.6f,%3.6f",
+                  $longcall,
+                  $datard{'band'},
+                  $bwidth,
+                  $datard{'Input'},
+                  $datard{'Output'},
+                );
+            #Squelch,Admit,RxRef,TxRef,TOT,TOTDelay,Power,AutoScan,Rx Only,Lone,VOX,AllowTA,CTCSSDec,CTCSSEnc,
+            $powerlevel = ( $datard{'txpower'}  eq '5' ) ? 'HIGH' : 'LOW' ;
+            $CTCSSDec = '0.000';
+            $CTCSSEnc = '0.000';
+            $newn0gsg1 = $newn0gsgscan;
+            $newn0gsg2 = sprintf("NORMAL,Always,Low,Low,300,0,%s,No,No,No,No,Yes,%s,%s",
+                  $powerlevel,
+                  $CTCSSDec,
+                  $CTCSSEnc
+                );
+            #QTReverse,TxSig,RxSig,RevBurstTone,De 1,De 2,De 3,De 4,De 5,De 6,De 7,De 8,PrivCall,EmergAck,DataCall,Emerg,
+            $newn0gsg3 = "120,Off,Off,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NONE";
+            #Contact,RXGp,CC,Privacy,PrivacyNum,TS
+            $newn0gsg4 = $newn0gsgx;
+
+        } #End first DV
         else {
 # Drop the dmrDVnet code for now as special character is not helping
             $newdat1 = sprintf( "%s;%s;%s;;", $dmccode, $dmmix, $tonefld );
             $newdata = sprintf( "%s;%s;000;%s;%s;",
                 $dmtype, $CallUufld, $datard{'Output'}, $datard{'Offset'} );
             $newdat3 = sprintf( "%.16s;%s", $longcall, $calltxrxscan );
-        }    #end first DV
+            #Channel Name,Mode,BW,TxFreq,RxFreq,ScaList,Squelch,Admit,RxRef,TxRef,TOT,TOTDelay,Power,AutoScan,Rx Only,Lone,VOX,AllowTA,CTCSSDec,CTCSSEnc,QTReverse,TxSig,RxSig,RevBurstTone,De 1,De 2,De 3,De 4,De 5,De 6,De 7,De 8,PrivCall,EmergAck,DataCall,Emerg,Contact,RXGrp,CC,Privacy,PrivacyNum,TS
+            #"VK2RBV 7","FM","25","432.712500","438.112500","FAVFM7","NORMAL","Always","Low","Low","300","0","HIGH","No","No","No","No","Yes","NONE","091.5","120","Off","Off","YES","NO","NO","NO","NO","NO","NO","NO","NO","NO","NO","NO","NONE","NONE","NONE","1","NONE","1","1"
+            #"9 1CGVK2", "DMR", "12.5", "434.500000", "439.500000", "VK2ROAM", "NORMAL", "Color Code Free", "Low", "Low", "90", "0", "HIGH", "No", "No", "No", "No", "Yes", "NONE", "NONE", "180", "Off", "Off", "YES", "NO", "NO", "NO", "NO", "NO", "NO", "NO", "NO", "YES", "NO", "NO", "NONE", "9 LOCAL", "RXGR1", "1", "NONE", "1", "1"
+#Channel Name,Mode,BW,TxFreq,RxFreq,
+            $newn0gsg0 = sprintf("%s,%s,%s,%3.6f,%3.6f",
+              $CallUufld,
+              $datard{'mode'},
+              $bwidth,
+              $datard{'Input'},
+              $datard{'Output'},
+              );
+#Squelch,Admit,RxRef,TxRef,TOT,TOTDelay,Power,AutoScan,Rx Only,Lone,VOX,AllowTA,CTCSSDec,CTCSSEnc,
+            $powerlevel = ( $datard{'txpower'}  eq '5' ) ? 'HIGH' : 'LOW' ;
+#            $newn0gsg1 = $scanlistfm;
+            $newn0gsg2 = sprintf("NORMAL,Always,Low,Low,300,0,%s,No,No,No,No,Yes,%s,%s",
+              $powerlevel,
+              $CTCSSDec,
+              $CTCSSEnc
+            );
+#QTReverse,TxSig,RxSig,RevBurstTone,De 1,De 2,De 3,De 4,De 5,De 6,De 7,De 8,PrivCall,EmergAck,DataCall,Emerg,
+            $newn0gsg3 = "120,Off,Off,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NONE";
+#Contact,RXGp,CC,Privacy,PrivacyNum,TS
+            $newn0gsg4 = "NONE,NONE,1,None,1,1";
+#
+}    #end first FM except scanlist
+
 
         my $dirn     = sprintf( "%s", $datard{'dirkat'} );
         my $dirs     = '';
@@ -292,54 +377,54 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         if ( $datard{'mode'} eq "FM" && ( $datard{'distsyd'} ne '' ) ) {
             if ( ( $prefix3 eq 'VK1' ) || ( $prefix3 eq 'VK2' ) ) {
                 if ( $datard{'distsyd'} <= '55000' ) {
-                    $scanlistfm = 'SYDF2';
+                    $scanlistfm = 'SYDFM';
                 }
                 else {    # improve later
                     $dirs = $dirn + 157.5;
                     if ( ( $dirs lt 180 ) || ( $dirs gt 360 ) ) {    #west
-                        $scanlistfm = 'VK2WF2';
+                        $scanlistfm = 'VK2WFM';
                     }
                     elsif ( $dirs lt 270 ) {                         #North
-                        $scanlistfm = 'VK2NF2';
+                        $scanlistfm = 'VK2NFM';
                     }
                     elsif ( $dirs le 360 ) {                         #South
-                        $scanlistfm = 'VK2SF2';
+                        $scanlistfm = 'VK2SFM';
                     }
                 }
             }
             elsif ( $prefix3 eq 'VK3' ) {
                 if ( $datard{'distmel'} <= '80000' ) {
-                    $scanlistfm = 'MELF2';
+                    $scanlistfm = 'MELFM';
                 }
                 else {    # improve later
-                    $scanlistfm = 'VK3F2';
+                    $scanlistfm = 'VK3FM';
                 }
             }
             elsif ( $prefix3 eq 'VK4' ) {
                 if ( $datard{'disttmb'} <= '80000' ) {
-                    $scanlistfm = 'TMBF2';
+                    $scanlistfm = 'TMBFM';
                 }
                 else {    # improve later
-                    $scanlistfm = 'VK4F2';
+                    $scanlistfm = 'VK4FM';
                 }
             }
             elsif ( $prefix3 eq 'VK5' ) {
-                $scanlistfm = 'VK5F2';
+                $scanlistfm = 'VK5FM';
             }
             elsif ( $prefix3 eq 'VK6' ) {
-                $scanlistfm = 'VK6F2';
+                $scanlistfm = 'VK6FM';
             }
             elsif ( $prefix3 eq 'VK7' ) {
-                $scanlistfm = 'VK7F2';
+                $scanlistfm = 'VK7FM';
             }
             elsif ( $prefix3 eq 'VK8' ) {
-                $scanlistfm = 'VK8F2';
+                $scanlistfm = 'VK8FM';
             }
         }
         elsif (( $datard{'mode'} eq "FM" )
             && ( ( $prefix3 eq 'WIC' ) || ( $prefix3 eq 'VRA' ) ) )
         {
-            $scanlistfm = 'WICENF0';
+            $scanlistfm = 'WICENFM';
         }
 #        elsif ( ( $datard{'mode'} eq "FM" ) && ( $prefix3 eq 'ESO' ) ) {
 #            $scanlistfm = 'ESOF2';
@@ -354,12 +439,12 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             $scanlistfm = 'APRSFM';
         }
         elsif ( $datard{'mode'} eq "FM" ) {
-            $scanlistfm = 'OTHERF2';
+            $scanlistfm = 'OTHERFM';
         }
 #        my $newfmscan;
 #        my $newfmscancnt;
         if ( $datard{'mode'} eq "FM" ) {
-#print "scanlist ",$scanlistfm," ", $CallUufld,"\n";
+
             if ( fmscanbuild( $scanlistfm, $CallUufld ) ) {
             }
             else {
@@ -369,7 +454,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                     }
                     else { print "still not loaded MVHF1\n" }
                 }
-                elsif ( $scanlistfm eq 'WICENF0' ) {
+                elsif ( $scanlistfm eq 'WICENFM' ) {
                     $scanlistfm = 'WICENF1';
                     if ( fmscanbuild( $scanlistfm, $CallUufld ) ) {
                     }
@@ -385,25 +470,26 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         # add fandling of lat lon later
         $newdat2 = sprintf( ";;;;%s", $newloc );
 
-#longcall;callext1;callext2;txcontact1;rxgroup1;txcontact2;rxgroup2;pwr;
+#longcall;callext1;callext2;txcontact1;rxgroup1;txcontact2;rxgroup2;pwr;scanlist1;scanlist2;
 
         if (   ( $datard{'mode'} eq "FM" )
             && ( grep { $datard{'Call'} eq $_ } @Favourdm ) )
         {
-            $scanlistfm = 'FAVF2';
+            $scanlistfm = 'FAVFM';
             if ( fmscanbuild( $scanlistfm, $CallUufld ) ) {
 
             }
             else {
-                print "not loaded FAVF2\n";
+                print "not loaded FAVFM\n";
             }
         }
         if ( !grep { $scanlistfm eq $_ } @ScanlistUniq ) {
             push @ScanlistUniq, $scanlistfm;
         }
-
         $newdat4 = $scanlistfm;
+        $newn0gsg1 = ($newn0gsg1 eq '') ? $scanlistfm : $newn0gsg1 ;
         #
+        # write channel output
         my $newline = sprintf( "2;%s;%s%s%s%s%s",
             $cnt, $newdata, $newdat1, $newdat2, $newdat3, $newdat4 );
         #
@@ -415,6 +501,17 @@ while ( my $row = $csv->getline($vkrdfh) ) {
               "\n";
             $csv->error_diag();
         }
+        $newn0gsg = sprintf("%s,%s,%s,%s,%s",
+            $newn0gsg0,$newn0gsg1,$newn0gsg2,$newn0gsg3,$newn0gsg4);
+            #
+        if ( $csv->parse($newn0gsg) ) {
+          print $chn0fh $csv->string, "\n";
+        }
+        else {
+          print STDERR "parse () failed on argument: ", $csv->error_input,
+              "\n";
+          $csv->error_diag();
+        }
 
         # First record should now be written
         #
@@ -424,19 +521,27 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                 ( $datard{'Call'} ne "WICENS" ) )
             {
 
-        #print STDERR "DEBUG: searching repeater list ", $datard{'Call'}, " \n";
+        print STDERR "DEBUG: searching repeater list ", $datard{'Call'}, " DVnet  ", $dmrDVnet, " \n";
 
                 # insert multiple if it is a repeater
                 if ( $dmrDVnet eq 'IPSC2' ) {
-                #    my $dvreptg = sprintf( '2-380%s-%s-380%s',
-              #          $dmrDVregn, $dmrDVregn, $dmrDVregn );
+                  # 15oct17 go back to putting all state codes in
+                  # probably add logic to sort to front later
+                  #  my $dvreptg = sprintf( '2-380%s-%s-380%s',
+                  #      $dmrDVregn, $dmrDVregn, $dmrDVregn );
 
                    #print STDERR "DEBUG: creating TG dvreptg ", $dvreptg, " \n";
-            #       @Favamateur = ( @FavdmrpTG, $dvreptg, @FavdmrefTG, @FavmarcTG, @FavmarcWTG );
-                   @Favamateur = ( @FavdmrpTG, @FavdmrefTG, @FavmarcTG, @FavmarcWTG );
+#                   @Favamateur = ( @FavdmrpTG, $dvreptg, @FavdmrefTG, @FavmarcTG, @FavmarcWTG );
+                   @Favamateur = ( @FavdmrpTG,  @FavmarcTG, @FavmarcWTG );
                 }
                 elsif ( $dmrDVnet eq 'BM' ) {
                     @Favamateur = (@FavdmrefTG, @FavmarcTG );
+                }
+                elsif ( $dmrDVnet eq 'REF' ) {
+                    @Favamateur = (@FavdmrefTG );
+                }
+                elsif ( $dmrDVnet eq 'MMDVM' ) {
+                    @Favamateur = (@FavdmrefTG );
                 }
                 elsif ( $dmrDVnet eq 'WICA' ) {
                     @Favamateur = (@FavwicenchTGK );
@@ -447,7 +552,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                 foreach $dmrlabtg (@Favamateur) {
                     $cnt += 1;
                     $dmtype = 'd';
-                    my ( $dmccode, $dmmix, $longcall, $calltxrxscan, $CallUufld ) =
+                    my ( $dmccode, $dmmix, $longcall, $calltxrxscan, $CallUufld, $newn0gsgscan, $newn0gsgx ) =
                       dvtxrx(  $dmrlabtg, $CallUufld, $datard{'Call'} );
 
 #            my $newdat1 = sprintf("%s;%s;%s;%s;",$dmccode, $dmmix, $tonefld, $dmrDVnet);
@@ -464,6 +569,33 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                         $cnt,     $newdata, $newdat1,
                         $newdat2, $newdat3, $newdat4
                     );
+                    #Channel Name,Mode,BW,TxFreq,RxFreq,
+                    $newn0gsg0 = sprintf("%s,%s,%s,%3.6f,%3.6f",
+                          $longcall,
+                          $datard{'band'},
+                          $bwidth,
+                          $datard{'Input'},
+                          $datard{'Output'},
+                        );
+                    #Squelch,Admit,RxRef,TxRef,TOT,TOTDelay,Power,AutoScan,Rx Only,Lone,VOX,AllowTA,CTCSSDec,CTCSSEnc,
+                    $powerlevel = ( $datard{'txpower'}  eq '5' ) ? 'HIGH' : 'LOW' ;
+                    $CTCSSDec = '0.000';
+                    $CTCSSEnc = '0.000';
+                    $newn0gsg1 = $newn0gsgscan;
+
+                    $newn0gsg2 = sprintf("NORMAL,Always,Low,Low,300,0,%s,No,No,No,No,Yes,%s,%s",
+                          $powerlevel,
+                          $CTCSSDec,
+                          $CTCSSEnc
+                        );
+                    #QTReverse,TxSig,RxSig,RevBurstTone,De 1,De 2,De 3,De 4,De 5,De 6,De 7,De 8,PrivCall,EmergAck,DataCall,Emerg,
+                    $newn0gsg3 = "120,Off,Off,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NONE";
+                    #Contact,RXGp,CC,Privacy,PrivacyNum,TS
+                    $newn0gsg4 = $newn0gsgx;
+
+#
+# write additional DMR channels
+#
                     if ( $csv->parse($newline) ) {
                         print $chanfh $csv->string, "\n";
                     }
@@ -472,10 +604,22 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                           $csv->error_input, "\n";
                         $csv->error_diag();
                     }
+                    $newn0gsg = sprintf("%s,%s,%s,%s,%s",
+                        $newn0gsg0,$newn0gsg1,$newn0gsg2,$newn0gsg3,$newn0gsg4);
+                        #
+                    if ( $csv->parse($newn0gsg) ) {
+                      print $chn0fh $csv->string, "\n";
+                    }
+                    else {
+                      print STDERR "parse () failed on argument: ", $csv->error_input,
+                          "\n";
+                      $csv->error_diag();
+                    }
+
                 }    #End tglist
             }
-          #  else   # End not simplex or wicen
-          #  { print "WICENS $CallUufld\n" }
+            #else   # End not simplex or wicen
+            #{ print "WICENS $CallUufld\n" }
         }    # end DV
     }    #end freq range
 }    #get line
@@ -485,7 +629,7 @@ my $newfmscancnt;
 my $tmpindex = 0;
 foreach $newfmscancnt (@fmscancnt) {
 
-    while ( $newfmscancnt < 31 ) {
+    while ( $newfmscancnt < $scanmax ) {
         my $addsemicolon = sprintf( '%s;', $fmscanlist[$tmpindex] );
 
         #       print "adding $addsemicolon \n to $newfmscancnt\n";
@@ -508,10 +652,10 @@ my $newdmrscancnt;
 $tmpindex = 0;
 foreach $newdmrscancnt (@dmrscancnt) {
   my @tmpdmrsl = split( ';', $dmrscanlist[$tmpindex] );
-#    if ( $tmpdmrsl[0] ne 'VKSMPLDMRS2' ) {
-  my $extracnt = 31 + 1;
+#    if ( $tmpdmrsl[0] ne 'VKSMPLDMRSL' ) {
+  my $extracnt = $scanmax;
 
-#        my $extracnt = 31 - $holddmrsmplcnt + 1;
+
 
       #        print "DEBUG: A zonesuffix ",$extracnt," zone0 ",$zoneline, "\n";
 
@@ -530,7 +674,7 @@ foreach $newdmrscancnt (@dmrscancnt) {
         ##}
 #    }
 
-    while ( $newdmrscancnt < 31 ) {
+    while ( $newdmrscancnt < $scanmax ) {
         my $addsemicolon = sprintf( '%s;', $dmrscanlist[$tmpindex] );
 
         #       print "adding $addsemicolon \n to $newfmscancnt\n";
@@ -550,18 +694,20 @@ my $tmpfmx;
 my $zonename;
 my $zoneline;
 my @zonelist;
+my $pat = 'FM7';
 
 my @bothlist = ( @dmrscanlist, @fmscanlist );
 foreach $scanent (@bothlist) {
 
-    #    print "scanent $scanent\n" ;
+#        print "scanent $scanent\n" ;
     my @tmpfment = split( ';', $scanent );
     foreach $tmpfmx (@tmpfment) {
 
-        #        print "tmpfmx $tmpfmx C $tmpcnt I $tmpindex \n" ;
-        if ( $tmpcnt < 17 ) {
+#                print "tmpfmx $tmpfmx C $tmpcnt I $tmpindex \n" ;
+        if ( $tmpcnt < 65 ) {
             if ( $tmpcnt == 0 ) {
                 if ( $tmpindex == 0 ) {
+                    $tmpfmx =~ s/$pat$/FM/;
                     $zonename = sprintf( '%.9s', $tmpfmx );
                     $zoneline = sprintf( '%s',   $zonename );
                     $tmpcnt += 1;
@@ -582,7 +728,7 @@ foreach $scanent (@bothlist) {
         $tmpindex += 1;
     }
 
-    while ( $tmpcnt < 17 ) {
+    while ( $tmpcnt <= $zonemax ) {
         $zoneline = sprintf( '%s;', $zoneline );
         $tmpcnt += 1;
     }
@@ -600,10 +746,10 @@ foreach $scanent (@bothlist) {
 $tmpcnt = 1;
 my $scanheader = 'ScanList';
 my $zoneheader = 'ZoneList';
-while ( $tmpcnt < 32 ) {
+while ( $tmpcnt <= $zonemax ) {
+  $zoneheader = sprintf( '%s;Ch%i', $zoneheader, $tmpcnt );
+  if ( $tmpcnt <= $scanmax  ) {
     $scanheader = sprintf( '%s;Ch%i', $scanheader, $tmpcnt );
-    if ( $tmpcnt < 17 ) {
-        $zoneheader = sprintf( '%s;Ch%i', $zoneheader, $tmpcnt );
     }
     $tmpcnt += 1;
 }
@@ -633,7 +779,7 @@ sub fmscanbuild {
     my ($index) = grep { $fmscanlist[$_] =~ /^$scanlistfm/ } 0 .. $#fmscanlist;
     my $newfmscan = sprintf( '%s;%s', $fmscanlist[$index], $CallUufld );
     my $newfmscancnt = $fmscancnt[$index] + 1;
-    if ( $newfmscancnt > 31 ) {
+    if ( $newfmscancnt >= $scanmax ) {
 
         return 0;
     }
@@ -747,7 +893,7 @@ sub dvtxrx {    # Restructure for 8 digit view Most significant at front
     my $newdmrscancnt = $dmrscancnt[$index] + 1;
 
     #       print "DEBUG newdmr ", $newdmrscan," :", $newdmrscancnt,"\n";
-    if ( $newdmrscancnt > 31 ) {
+    if ( $newdmrscancnt >= $scanmax ) {
         print "too many entries for C $scanlistdm \n";
     }
     else {
@@ -804,6 +950,10 @@ sub dvtxrx {    # Restructure for 8 digit view Most significant at front
         $callext1, $callext2, $txcontact1, $rxgroup1, $txcontact2,
         $rxgroup2, $pwr,      $scanlist1,  $scanlist2
     );
-    return ( $dmccode, $dmmix, $longcall, $calltxrxscan, $CallUufld );
+    #Contact,RXGp,CC,Privacy,PrivacyNum,TS
+    my $newn0gsgscan = $scanlistdm;
+    my  $newn0gsgx = sprintf("%s,%s,%s,None,1,%s",$txcontact,$rxgroup,$dmccode,$dmrtginfo[0]);
+
+    return ( $dmccode, $dmmix, $longcall, $calltxrxscan, $CallUufld, $newn0gsgscan, $newn0gsgx );
 }
 exit

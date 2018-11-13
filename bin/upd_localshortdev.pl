@@ -1,14 +1,9 @@
 #!/opt/local/bin/perl
 #
-# Extract repeater info from spectra device_details.csv
+# Generate a local_shortdev from lat, long
 #
+#CALL_SIGN,LATITUDE,LONGITUDE,NAME,STATE,POSTCODE,SITE_PRECISION,ELEVATION
 
-#SDD_ID,LICENCE_NO,DEVICE_REGISTRATION_IDENTIFIER,FORMER_DEVICE_IDENTIFIER,AUTHORISATION_DATE,CERTIFICATION_METHOD,GROUP_FLAG,SITE_RADIUS,
-#FREQUENCY,BANDWIDTH,CARRIER_FREQ,EMISSION,DEVICE_TYPE,TRANSMITTER_POWER,TRANSMITTER_POWER_UNIT,[SITE_ID],ANTENNA_ID,POLARISATION,AZIMUTH,HEIGHT,
-#TILT,FEEDER_LOSS,LEVEL_OF_PROTECTION,EIRP,EIRP_UNIT,SV_ID,SS_ID,EFL_ID,EFL_FREQ_IDENT,EFL_SYSTEM,
-#LEQD_MODE,RECEIVER_THRESHOLD,AREA_AREA_ID, [CALL_SIGN] ,AREA_DESCRIPTION,AP_ID,CLASS_OF_STATION_CODE,SUPPLIMENTAL_FLAG,EQ_FREQ_RANGE_MIN,EQ_FREQ_RANGE_MAX,
-#NATURE_OF_SERVICE_ID,HOURS_OF_OPERATION,SA_ID,RELATED_EFL_ID,EQP_ID,ANTENNA_MULTI_MODE,POWER_IND,LPON_CENTER_LONGITUDE,LPON_CENTER_LATITUDE,TCS_ID,
-#TECH_SPEC_ID,DROPTHROUGH_ID,STATION_TYPE,STATION_NAME
 
 use strict;
 use warnings;
@@ -25,20 +20,22 @@ use Geo::Direction::Distance;
 require My::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ',',eol => "\n"});
-my $devdet = 'work/device_details.csv';
-my $sitinf = 'work/site.csv';
+
+#my $devdet = 'work/device_details.csv';
+#my $sitinf = 'work/site.csv';
 #open shinytemp.csv
 #SITE_ID,LATITUDE,LONGITUDE,NAME,STATE,LICENSING_AREA_ID,POSTCODE,SITE_PRECISION,ELEVATION,HCIS_L2
-my $sitex = Text::CSV::Hashify->new ( {
-    file => $sitinf,
-    format => 'hoh',
-    key => 'SITE_ID',
-}
-);
+#my $sitex = Text::CSV::Hashify->new ( {
+#    file => $sitinf,
+#    format => 'hoh',
+#    key => 'SITE_ID',
+#}
+#);
 my $lltomh = Ham::Locator->new();
 
 # open output/s   then apend shiny later
-my $file2pre = $ARGV[0] or die "Need to merge CSV file on the command line\n";
+my $file1pre = $ARGV[0] or die "Need to merge CSV file on the command line\n";
+my $file2pre = $ARGV[1] or die "Need to merge CSV file on the command line\n";
 
 
 my @CallUuniq;
@@ -70,8 +67,7 @@ my $txpower = '5';
 # bearing South-South-West (Coastal South) 202.5
 # Load arrays with file contents
 #Open input file
-open(my $devdetfh, '<', $devdet) or die "Could not open '$devdet' $!\n";
-
+open(my $localfh, '<', sprintf("%s", $file1pre)) or die "Could not open '$file1pre' $!\n";
 
 #open output file
 open(my $outfh, '>', sprintf("%s", $file2pre)) or die "Could not open '$file2pre' $!\n";
@@ -93,40 +89,40 @@ if ($csv->parse($newhead)) {
 
 
 #read the header line of the main input
-my $fields = $csv->getline($devdetfh);
+my $fields = $csv->getline($localfh);
 
 my @fields = @{$fields};
 # Read each line from the CSV file, and store it in @rows
 my @rows;
-while (my $row = $csv->getline($devdetfh)) {
+
+while (my $row = $csv->getline($localfh)) {
     my %data;
     @data{@fields} = @$row;    # This is a hash slice
     if ($data{'CALL_SIGN'} =~ /(^VK[123456789]R)(.{2,})/ ){
       if (! grep { $data{'CALL_SIGN'} eq $_ } @CallUniq) {
         push @CallUniq, $data{'CALL_SIGN'};
-        if ($data{'SITE_ID'} ne '' ) {
-          my $xname = $sitex->datum($data{'SITE_ID'},'NAME');
+          my $xname = $data{'NAME'};
           $xname =~ s/,/ /g;
-          my $xprec = $sitex->datum($data{'SITE_ID'},'SITE_PRECISION');
+          my $xprec = $data{'SITE_PRECISION'};
           $xprec =~ s/Within //g;
           $xprec =~ s/ meters//g;
           $xprec =~ s/Unknown/0/g;
           $siteline = sprintf(
           "%s,%s,%s,%s,%s,%s,%s,%s",
           $data{'CALL_SIGN'},
-          $sitex->datum($data{'SITE_ID'},'LATITUDE'),
-          $sitex->datum($data{'SITE_ID'},'LONGITUDE'),
+          $data{'LATITUDE'},
+          $data{'LONGITUDE'},
           $xname,
-          $sitex->datum($data{'SITE_ID'},'STATE'),
-          $sitex->datum($data{'SITE_ID'},'POSTCODE'),
+          $data{'STATE'},
+          $data{'POSTCODE'},
           $xprec,
-          $sitex->datum($data{'SITE_ID'},'ELEVATION'),
+          $data{'ELEVATION'},
           );
-          $lltomh->set_latlng($sitex->datum($data{'SITE_ID'},'LATITUDE'),
-            $sitex->datum($data{'SITE_ID'},'LONGITUDE'));
+          $lltomh->set_latlng($data{'LATITUDE'},
+            $data{'LONGITUDE'});
           my @tolatlng = (
-            $sitex->datum($data{'SITE_ID'},'LATITUDE'),
-            $sitex->datum($data{'SITE_ID'},'LONGITUDE'),
+            $data{'LATITUDE'},
+            $data{'LONGITUDE'},
             );
           my ($dirsyd, $distsyd) = latlng2dirdist(@fromsydlatlng, @tolatlng);
           my ($dirmel, $distmel) = latlng2dirdist(@frommellatlng, @tolatlng);
@@ -144,7 +140,6 @@ while (my $row = $csv->getline($devdetfh)) {
             print STDERR "parse () failed on argument: ", $csv->error_input, "\n";
             $csv->error_diag();
           }
-        }
       }
     }
 }

@@ -10,14 +10,14 @@ Note that despite this it runs in about 3 seconds on my mac (2.5 seconds is the 
 ### Apr-16 Now uses pandoc and BasicTeX on my mac to generate documentation
 Start with pandoc (available for most platforms) then find how it generates pdf.
 
-## Install some perl modules 
+## Install some perl modules
 Ham::Locator
 Geo::Direction::Distance
 Text::CSV_XS
 XML::LibXML
 List::MoreUtils
 
-### ubuntu 
+### ubuntu
 sudo apt-get install libtext-csv-xs-perl  libxml-libxml-perl
 cpan   Ham::Locator Geo::Direction::Distance
 cd /usr/bin

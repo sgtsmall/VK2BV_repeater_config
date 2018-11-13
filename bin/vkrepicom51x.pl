@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/opt/local/bin/perl
 #
 # Creates a data file for the Icom D-Star radios
 #
@@ -16,7 +16,7 @@
 # mem 400 is APRS and could include other simplex.
 #
 # 26 Bank Names A - Z
-# A - Fav, B - CBD, C Sth, D Nth, E West, F Other, G MEL, H VK3, I TMB, J VK4, VK5-8, VK6, VK7, N APRS, O - Test, .. X- Marine
+# A - Fav, B - CBD, C Sth, D Nth, E West, F Other, G MEL, H VK3, I TMB, J VK4, K VK5-8, L VK6, M VK7, N APRS, O - Test, S - ESO .., U Marine, V UHF
 # Mem
 # Bank
 #CH No,Frequency,Dup,Offset,TS,Mode,Name,SKIP,TONE,Repeater Tone,TSQL Frequency,DTCS Code,DTCS Polarity,DV SQL,DV CSQL Code,Your Call Sign,RPT1 Call Sign,RPT2 Call Sign
@@ -58,11 +58,14 @@ my $memcntbk = '-1';    #vk5-8
 my $memcntbl = '-1';    #vk6
 my $memcntbm = '-1';    #vk7
 my $memcntbn = '-1';    #aprs
-my $memcntbu = '-1';    #uhf
+my $memcntbs = '-1';    #eso
+my $memcntbu = '-1';    #marine
+my $memcntbv = '-1';    #UHF
 my $memcntbw = '-1';    #wicen
+my $memcntbz = '-1';    #wicen
 
 #my $memcntbx  = '-1'; #marine
-my $memcntbz = '-1';    #wicenemerg
+#my $memcntbz = '-1';    #wicenemerg
 
 #my $memcntbo  = '-1'; #test
 
@@ -89,7 +92,7 @@ open( my $vkrdfh, '<', $file1 ) or die "Could not open '$file1' $!\n";
 #open output file
 my @gfiles   = qw{ g3 g22 g23 g24 g25 g26 };
 my @mfiles   = qw{ m0 m1 m2 m3 m4 };
-my @bfiles   = qw{ ba bb bc bd be bf bg bh bi bj bk bl bm bn bu bw bz};
+my @bfiles   = qw{ ba bb bc bd be bf bg bh bi bj bk bl bm bn bs bu bv bw bz};
 my @allfiles = ( @gfiles, @mfiles, @bfiles );
 my %handles  = get_write_handles(@allfiles);
 my @g22      = qw{VK1 VK2 VK3 VK7};
@@ -209,6 +212,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             $tonesql  = ',';
         }
         else {
+#            $tonemode = sprintf( "TSQL,%sHz", $data{'Tone'} );
             $tonemode = sprintf( "TONE,%sHz", $data{'Tone'} );
             $tonesql  = sprintf( ",%sHz",     $data{'Tone'} );
         }

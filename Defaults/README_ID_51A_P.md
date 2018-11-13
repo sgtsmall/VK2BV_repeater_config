@@ -26,7 +26,7 @@ This will create the folders and a backup file.
 
 * Copy the new configuration to the card
     - Power off handset and unload card, insert into PC.
-    - The file just created will be ID-51/Setting/setyyyymmdd.icf 
+    - The file just created will be ID-51/Setting/setyyyymmdd.icf
     - Copy the file 51P_AUS_VK2BV.icf onto the SD
     - Eject the card and load to radio.
     - Menu>SD Card>Load Setting> 51P_AUS_VK2BV.icf
@@ -36,7 +36,7 @@ This will create the folders and a backup file.
     - Reset Radio (Power on/off)
 
 * Configure your radio
-        
+
 * Enable BANK mode on VFO A and B
     - Choose VFO A (short press om MAIN to swap)
     - Press M/CALL to get to MR (memory) mode.
@@ -46,10 +46,10 @@ This will create the folders and a backup file.
     > The radio is now ready to operate in Bank mode on both VFO's
     - Change back to VFO A
     - change to  [DR] "Digital Mode" and adjust TO and FROM values
-        - To - change from "Local CQ" to "Your Call Sign" "Use Repeater" 
+        - To - change from "Local CQ" to "Your Call Sign" "Use Repeater"
         - From - test near repeater.
-    
-    
+
+
 ### Structure of entries
 
 The ID-51 supports 2 VFO's 'A' and 'B' with 1 Tranceivers. Both VFO's can process D-Star. Memories and banks are available to both VFO's.
@@ -57,7 +57,7 @@ The ID-51 supports 2 VFO's 'A' and 'B' with 1 Tranceivers. Both VFO's can proces
 * In most sections entries are sorted by Callsign
 
 * The ID-51A supports 26 "Banks" (A-Z), a Memory can only be assigned to 1 bank.
-    
+
     - A DStar entries
     - B SYDCBD Stations within 60km of Sydney
     - C VK2 South Coast
@@ -73,4 +73,5 @@ The ID-51 supports 2 VFO's 'A' and 'B' with 1 Tranceivers. Both VFO's can proces
     - M VK7
     - N APRS including AU and ISS and other countries
     - O Test
+    - U UHF 
     - X Marine

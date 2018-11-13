@@ -22,7 +22,7 @@ usage() {
   echo "  -y Suppress Yaesu Files"
   echo "  -d Suppress DMR Files"
   echo "  -p Publish"
-  echo "  -u Suppress uhf "
+  echo "  -u Include uhf "
   echo "  -z Include Wicen "
   echo "  -x Test new function"
   echo "  -t Test perl and libraries"
@@ -84,6 +84,7 @@ here=`pwd`
 #exit
 #cd ~/Onedrive/wia
 if [ ! -d work ] ; then mkdir work ; fi
+if [ ! -d work/wicen ] ; then mkdir work/wicen ; fi
 if [ ! -d archive ] ; then mkdir archive ; fi
 if [ ! -d output ] ; then mkdir output ; fi
 if [ ! -d output/DMR ] ; then mkdir output/DMR ; fi
@@ -99,6 +100,7 @@ if [ ! -n "$getweb" ] ; then
   rm -r work/*
   # rm output/*
   cd work
+  mkdir wicen
   # Get the WIA data
   curl -f -o repdown.dat http://www.wia.org.au/members/repeaters/data/documents/Repeater%20Directory%20$repdate.csv
   #echo $wiaget
@@ -108,12 +110,19 @@ if [ ! -n "$getweb" ] ; then
   cp repdown.dat ../archive/$repdate
   tr -d '\r' < repdown.dat > repdowntext.dat
   echo "Generated work/repdownext.dat from repdown.dat remove CR"
-  gsed -f ../bin/wiahead2.gsed repdowntext.dat > wiarepdiri.csv
+  headgsedscript=wiahead2.gsed
+  if [ $repdate > "180317" ] ; then headgsedscript=wiahead3.gsed ; fi
+  echo "repdate $repdate headgsedscript $headgsedscript "
+  gsed -f ../bin/$headgsedscript repdowntext.dat > wiarepdiri.csv ;
+
   echo "Generated work/wiarepdiri.csv headings"
-  cp wiarepdiri.csv wiarepdir.csv
+  if [ $repdate > "180317" ] ; then ../bin/prune-columnsc.pl wiarepdiri.csv "Latitude" "Longitude" > wiarepdirll.csv ;
+else cp wiarepdiri.csv wiarepdirll.csv ; fi
+
+  cp wiarepdirll.csv wiarepdir.csv
 
   echo "Local edit of the wiarepdir.csv for repeater changes with wiarepdir.gsed"
-  gsed -f ../bin/wiarepdir.gsed wiarepdiri.csv > wiarepdir.csv
+  gsed -f ../bin/wiarepdir.gsed wiarepdirll.csv > wiarepdir.csv
   echo "Generated work/wiarepdir.csv local edit"
   #
   cd ..
@@ -137,19 +146,37 @@ if [ ! -n "$getmarc" ] ; then
   echo "starting get data from MARC"
   cd work
   # Get DMR contacts
-  curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
-  if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check dmr-marc website" ; exit 0 ; fi
-  grep "^Radio" userdown.dat |sed 's/<br\/>//' > userwork.dat
+#  curl -f -o userdown.dat  --data table=users\&format=csv\&header=1 http://www.dmr-marc.net/cgi-bin/trbo-database/datadump.cgi
+
+#  curl -f -o userdown.dat https://www.radioid.net/static/users.csv
+#  curl -f -o userdown.dat https://ham-digital.org/status/dmrid.dat
+  curl -f -o userdown.dat https://www.radioid.net/static/users.csv
+  if [ $? != 0 ] ; then echo "Extract Failed" ; echo "Please check radioid.net website" ; exit 0 ; fi
+  echo "Radio ID,Callsign,Name,City,State,Country,Remarks" > userwork.dat
+#  grep "^Radio" userdown.dat |sed 's/<br\/>//' >> userwork.dat
   grep "^505" userdown.dat |sed 's/<br\/>//' >> userwork.dat
   #   grep "^530" userdown.dat |sed 's/<br\/>//' >> userwork.dat
   grep "^537" userdown.dat |sed 's/<br\/>//' >> userwork.dat
   #
+  echo "Local edit of the userwork.dat for for bad user data from marc"
+  gsed -i bak -f ../bin/userwork.gsed userwork.dat
   cd ..
   # here we leave work and this is the end of the section for getting raw data from web
 fi #end getmarc
-#
+##
+#echo "installing updated My files to library folder"
+#sudo cp lib/Favourites.pm /opt/local/lib/perl5/site_perl/5.26/My/Favourites.pm
+#cp My/Vkrepsort.pm /opt/local/lib/perl5/site_perl/5.26/My/Vkrepsort.pm
+
 echo "starting vkrep5.pl (5th version!) create vkrepdir.csv wialist merged with acma"
-./bin/vkrep5.pl work/wiarepdir.csv output/shortsite.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
+perl ./bin/vkrep5.pl work/wiarepdir.csv output/shortsite.csv|sed -f bin/vkrep.sed  |sort > output/vkrepdir.csv
+value=$( cat output/vkrepdir.csv | wc -l )
+if [ $value -lt 1 ] ; then
+   echo "vkrep5 acma merge failed "
+   exit
+fi
+#if [ $repdate > "180317" ] ; then ./bin/prune-columns.pl work/vkrepdir.csv "Latitude" "Longitude" > output/vkrepdir.csv ;
+#else cp work/vkrepdir.csv output/vkrepdir.csv ; fi
 #
 echo "sort vkrepdir.csv to create sortvkrepdir.csv in work and archive"
 # This is callsign then input frequency
@@ -190,6 +217,7 @@ if [ -n "$outyaesu" ] ;  then
   echo "Processing Yaesu Standard"
   echo "starting the create of vkrepftmerge.csv"
   # reads vkrepdir and vkrepstd (simplex and other local)
+  echo "starting vkrepft.pl create of vkrepftmerge.csv"
   ./bin/vkrepft.pl work/sortvkrepdir.csv output/vkrepstd.csv work/vkrepftmerge.csv
   # This is callsign then input frequency
   cat work/vkrepftmerge.csv | body sort --field-separator=',' --key=1,1 > work/svkrepftmerge.csv
@@ -277,17 +305,19 @@ if [ -n "$outicom" ] ;  then
 else
   echo "suppressed icom and chirp"
 fi
+if [  -f work/userwork.dat ] ; then
+  echo "starting the create of contact.csv for DMR"
+  echo "starting dmrscrape.pl"
+  ./bin/dmrscrape.pl work/userwork.dat output/DMR
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/contacts.csv
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/cont-n0gsg.csv
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/motocontacts.csv
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt82contacts.csv
+
+  cp work/userdown.dat output/DMR/rt82con10k.csv
+fi
 if [ -n "$outdmr" ] ;  then
   echo "Processing DMR Standard"
-  if [  -f work/userwork.dat ] ; then
-    echo "starting the create of contact.csv for DMR"
-    echo "starting dmrscrape.pl"
-    ./bin/dmrscrape.pl work/userwork.dat output/DMR
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/contacts.csv
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/cont-n0gsg.csv
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/motocontacts.csv
-    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt82contacts.csv
-  fi
   echo "starting the create of channels, scanlists and zones for DMR"
   echo "reading work/sortvkrepdir.csv output/vkrepstd.csv writing work/dmtemp.csv"
   ./bin/vkrepdm.pl work/sortvkrepdir.csv output/vkrepstd.csv work/dmtemp.csv
@@ -297,71 +327,172 @@ if [ -n "$outdmr" ] ;  then
   cat work/dmtemp.csv | body sort --field-separator=',' --key=1,1 > work/svkrepdmmerge.csv
   #
 
-  echo "vkremmd380u.pl reading work/svkrepdmmerge.csv writing to DMR 380"
-  ./bin/vkrepmd380u.pl work/svkrepdmmerge.csv output/DMR
-  echo "reduce zone entries"
-  gsed -f bin/md380zone.gsed output/DMR/rt3uzone.csv > output/DMR/rt3uzonex.csv
+  echo "vkreprt82.pl reading work/svkrepdmmerge.csv writing to DMR RT3 U"
+  ./bin/vkreprt82.pl work/svkrepdmmerge.csv output/DMR/ rt3 u
+
+#  echo "reduce zone entries"
+#  gsed -f bin/md380zone.gsed output/DMR/rt3uzone.csv > output/DMR/rt3uzonex.csv
   echo "files are converted to dos for windows programs"
   perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uchan.csv
   perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uscan.csv
-  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uzonex.csv
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uzone.csv
 
-  echo "vkreprt8vhfg.pl reading work/svkrepdmmerge.csv writing to DMR RT8V G"
-  ./bin/vkreprt8vhfg.pl work/svkrepdmmerge.csv output/DMR
+  echo "vkreprt82.pl reading work/svkrepdmmerge.csv writing to DMR RT82 U"
+  ./bin/vkreprt82.pl work/svkrepdmmerge.csv work/ rt82 u
+#  echo "vkreprt82uprune scan to 32"
+#  bin/prune-columns.pl work/rt82uscan.csv Ch32 Ch33 Ch34 Ch35 Ch36 Ch37 Ch38 Ch39 Ch40 Ch41 Ch42 Ch43 Ch44 Ch45 Ch46 Ch47 Ch48 Ch49 Ch50 Ch51 Ch52 Ch53 Ch54 Ch55 Ch56 Ch57 Ch58 Ch59 Ch60 Ch61 Ch62 Ch63 Ch64> work/rt82uxscan.csv
+
+#  echo "reduce zone entries"
+  echo "vkreprt82.pl reading work/svkrepdmmerge.csv writing to DMR RT8V G"
+  ./bin/vkreprt82.pl work/svkrepdmmerge.csv output/DMR/ rt8 v
   echo "files are converted to dos for windows programs"
   perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vchan.csv
   perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vscan.csv
   perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vzone.csv
 
-  echo "Merging files for md2017"
+  echo "vkreprt82.pl reading work/svkrepdmmerge.csv writing to DMR RT82 V"
+  ./bin/vkreprt82.pl work/svkrepdmmerge.csv work/ rt82 v
+#  echo "vkreprt82vprune scan to 32"
+#  bin/prune-columns.pl work/rt82vscan.csv Ch32 Ch33 Ch34 Ch35 Ch36 Ch37 Ch38 Ch39 Ch40 Ch41 Ch42 Ch43 Ch44 Ch45 Ch46 Ch47 Ch48 Ch49 Ch50 Ch51 Ch52 Ch53 Ch54 Ch55 Ch56 Ch57 Ch58 Ch59 Ch60 Ch61 Ch62 Ch63 Ch64> work/rt82vxscan.csv
 
-  cat output/DMR/rt3uchan.csv > output/DMR/rt82chan.csv
-  tail -n +2 output/DMR/rt8vchan.csv >> output/DMR/rt82chan.csv
+  echo "Merging files for rt82/md2017"
+  echo " Merge channels rt82 DL5"
+  cat work/rt82uchan.csv > output/DMR/rt82chan.csv
+  tail -n +2 work/rt82vchan.csv >> output/DMR/rt82chan.csv
+  echo " Merge channels rt82 N0GSG"
+  cat work/rt82uchann0gsg.csv > output/DMR/rt82chann0gsg.csv
+  cat work/rt82vchann0gsg.csv >> output/DMR/rt82chann0gsg.csv
 
-  cat output/DMR/rt3uscan.csv > output/DMR/rt82scan.csv
-  tail -n +2 output/DMR/rt8vscan.csv >> output/DMR/rt82scan.csv
-
-  cat output/DMR/rt3uzonex.csv > output/DMR/rt82zone.csv
-  tail -n +2 output/DMR/rt8vzone.csv >> output/DMR/rt82zone.csv
+  echo " Merge scanlist"
+  cat work/rt82uscan.csv > work/rt82newscan.csv
+  tail -n +2 work/rt82vscan.csv >> work/rt82newscan.csv
+  gsed -f bin/emptyrt82scan.gsed work/rt82newscan.csv > work/rt82xscan.csv
+  awk -F";" '!_[$1]++' work/rt82xscan.csv > output/DMR/rt82scan.csv
+  echo " Non uniq rt82 scan entries "
+  diff work/rt82xscan.csv output/DMR/rt82scan.csv
+  echo " End Non uniq scan entries "
+#  awk -F";" '!_[$1]++' work/rt82newscan.csv > output/DMR/rt82scan.csv
+#  echo " Non uniq rt82 scan entries "
+#  diff work/rt82newscan.csv output/DMR/rt82scan.csv
+#  echo " End Non uniq scan entries "
+  echo "remove blank zones"
+  gsed -f bin/emptyrt82.gsed -f bin/vhfuhf82.gsed work/rt82uzone.csv > work/rt82uxzone.csv
+#  tail -n +2 output/DMR/rt8vzone.csv | gsed -f bin/emptyrt82.gsed -f bin/vhfuhf82.gsed  > work/rt82vzone.csv
+  gsed -f bin/emptyrt82.gsed -f bin/vhfuhf82.gsed work/rt82vzone.csv  > work/rt82vxzone.csv
+  echo " create rt82new_fh.csv merges uhf and vhf with blanks"
+  ./bin/vkrepdzones.pl work/rt82uxzone.csv work/rt82vxzone.csv work/rt82
+# need to add single channels
+  echo " update empty set of new_hf "
+  gsed -f bin/emptyurt82.gsed work/rt82newuhf.csv > output/DMR/rt82uzone.csv
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt82uzone.csv
+  gsed -f bin/emptyvrt82.gsed work/rt82newvhf.csv > output/DMR/rt82vzone.csv
+  perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt82vzone.csv
+  echo "finished standard DMR"
   if [ ! -n "$outwic" ] ; then
     echo "Processing DMR Wicen"
     echo "starting the create of channels, scanlists and zones for DMR"
-    echo "reading work/sortvkrepdir.csv output/vkrepstd.csv writing work/dmtemp.csv"
+    echo "reading work/sortvkrepdir.csv output/vkrepstdw.csv writing work/dmtempw.csv"
     ./bin/vkrepdm.pl output/wicen/vkrepstdw.csv Defaults/vkrepblank.srccsv work/dmtempw.csv
     echo " sorting dmtempw.csv svkrepdmmergew"
     # This is callsign then input frequency
-    cat work/dmtempw.csv | body sort --field-separator=',' --key=1,1 > work/svkrepdmmergew.csv
+    cat work/dmtempw.csv | sort --field-separator=',' -k1,1 -k2,2 -k3,3 -k17.3,17.6 > work/svkrepdmmergew.csv
     #
 
-    echo "vkremmd380u.pl reading work/svkrepdmmergew.csv writing to DMR 380"
-    ./bin/vkrepmd380u.pl work/svkrepdmmergew.csv output/wicen/DMR
-    echo "reduce zone entries"
-#    gsed -f bin/md380zone.gsed output/DMR/rt3uzone.csv > output/DMR/rt3uzonex.csv
-#    echo "files are converted to dos for windows programs"
-#    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uchan.csv
-#    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uscan.csv
-#    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt3uzonex.csv
+    echo "vkreprt82.pl reading work/svkrepdmmergew.csv writing to RT3 U"
+    ./bin/vkreprt82.pl work/svkrepdmmergew.csv output/wicen/DMR/ rt3 u
+  #  echo "reduce zone entries"
+    echo "vkreprt82.pl reading work/svkrepdmmergew.csv writing to DMR RT82 U"
+    ./bin/vkreprt82.pl work/svkrepdmmergew.csv work/wicen/ rt82 u
 
-    echo "vkreprt8vhfg.pl reading work/svkrepdmmergew.csv writing to DMR RT8V G"
-    ./bin/vkreprt8vhfg.pl work/svkrepdmmergew.csv output/wicen/DMR
-#    echo "files are converted to dos for windows programs"
-#    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vchan.csv
-#    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vscan.csv
-#    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/DMR/rt8vzone.csv
+    echo "vkreprt82.pl reading work/svkrepdmmergew.csv writing to DMR RT8 V"
+    ./bin/vkreprt82.pl work/svkrepdmmergew.csv output/wicen/DMR/ rt8 v
+
+    echo "vkreprt82.pl reading work/svkrepdmmergew.csv writing to DMR RT82 V"
+    ./bin/vkreprt82.pl work/svkrepdmmergew.csv work/wicen/  rt82 v
 
     echo "Merging files for md2017"
+    echo " Merge channels rt82 DL5"
+    cat work/wicen/rt82uchan.csv > output/wicen/DMR/rt82chan.csv
+    tail -n +2 work/wicen/rt82vchan.csv >> output/wicen/DMR/rt82chan.csv
+    echo " Merge channels rt82 N0GSG"
+    cat work/wicen/rt82uchann0gsg.csv > output/wicen/DMR/rt82chann0gsg.csv
+    cat work/wicen/rt82vchann0gsg.csv >> output/wicen/DMR/rt82chann0gsg.csv
 
-    cat output/wicen/DMR/rt3uchan.csv > output/wicen/DMR/rt82chan.csv
-    tail -n +2 output/wicen/DMR/rt8vchan.csv >> output/wicen/DMR/rt82chan.csv
+    echo " Merge scanlist"
+    cat work/wicen/rt82uscan.csv > work/wicen/rt82newscan.csv
+    tail -n +2 work/wicen/rt82vscan.csv >> work/wicen/rt82newscan.csv
+    gsed -f bin/emptyrt82scan.gsed work/wicen/rt82newscan.csv > work/wicen/rt82xscan.csv
+    awk -F";" '!_[$1]++' work/wicen/rt82xscan.csv > output/wicen/DMR/rt82scan.csv
+    echo " Non uniq rt82 scan entries "
+    diff work/wicen/rt82xscan.csv output/wicen/DMR/rt82scan.csv
+    echo " End Non uniq scan entries "
+    # merge the zones (not the scanlists!)
+    gsed -f bin/emptyrt82.gsed -f bin/vhfuhf82.gsed work/wicen/rt82uzone.csv > work/wicen/rt82uxzone.csv
+    #  tail -n +2 output/DMR/rt8vzone.csv | gsed -f bin/emptyrt82.gsed -f bin/vhfuhf82.gsed  > work/rt82vzone.csv
+    gsed -f bin/emptyrt82.gsed -f bin/vhfuhf82.gsed work/wicen/rt82vzone.csv  > work/wicen/rt82vxzone.csv
+    echo " create rt82new_fh.csv "
+    bin/vkrepdzones.pl work/wicen/rt82uxzone.csv work/wicen/rt82vxzone.csv work/wicen/rt82
+    # need to add single channels
+    echo " update empty set of new_hf "
+    gsed -f bin/emptyurt82w.gsed work/wicen/rt82newuhf.csv > output/wicen/DMR/rt82uzone.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/wicen/DMR/rt82uzone.csv
+    gsed -f bin/emptyvrt82w.gsed work/wicen/rt82newvhf.csv > output/wicen/DMR/rt82vzone.csv
+    perl -pi -e 's/\r\n|\n|\r/\r\n/g' output/wicen/DMR/rt82uzone.csv
 
-    cat output/wicen/DMR/rt3uscan.csv > output/wicen/DMR/rt82scan.csv
-    tail -n +2 output/wicen/DMR/rt8vscan.csv >> output/wicen/DMR/rt82scan.csv
+    echo "# Process standard and wicen"
+    #
+    echo "Merge standard and wicen rt3"
+    cat output/DMR/rt3uchann0gsg.csv > output/wicen/DMR/brt3uchann0gsg.csv
+    cat output/wicen/DMR/rt3uchann0gsg.csv >>  output/wicen/DMR/brt3uchann0gsg.csv
+    echo "Remove empty scan entries before merge"
+    gsed -f bin/emptyrt3u.gsed output/DMR/rt3uscan.csv > work/wicen/brt3uxscan.csv
+    tail -n +2 output/wicen/DMR/rt3uscan.csv | gsed -f bin/emptyrt3u.gsed >>  work/wicen/brt3uxscan.csv
+    awk -F";" '!_[$1]++' work/wicen/brt3uxscan.csv > output/wicen/DMR/brt3uscan.csv
+    echo " Non uniq brt3u scan entries "
+    diff work/wicen/brt3uxscan.csv output/wicen/DMR/brt3uscan.csv
+    echo " End Non uniq scan entries "
 
-    cat output/wicen/DMR/rt3uzone.csv > output/wicen/DMR/rt82zone.csv
-    tail -n +2 output/wicen/DMR/rt8vzone.csv >> output/wicen/DMR/rt82zone.csv
+    cat output/DMR/rt3uzone.csv > work/wicen/brt3uxzone.csv
+    tail -n +2 output/wicen/DMR/rt3uzone.csv >>  work/wicen/brt3uxzone.csv
+    cat work/wicen/brt3uxzone.csv > output/wicen/DMR/brt3uzone.csv
+
+##  echo "starting dzones.pl wrt"
+##        bin/vkrepdzones.pl work/wicen/brt82uxzone.csv work/wicen/brt82vxzone.csv work/wicen/brt82
+##    #
+##    gsed -f bin/emptyurt82.gsed work/wicen/brt82newuhf.csv > output/wicen/DMR/brt82uzone.csv
+##    gsed -f bin/emptyvrt82.gsed work/wicen/brt82newvhf.csv > output/wicen/DMR/brt82vzone.csv
+
+
+echo "Merge standard and wicen rt82"
+
+    #
+    cat output/DMR/rt82chan.csv > output/wicen/DMR/brt82chan.csv
+    tail -n +2 output/wicen/DMR/rt82chan.csv >>  output/wicen/DMR/brt82chan.csv
+
+    cat output/DMR/rt82chann0gsg.csv > output/wicen/DMR/brt82chann0gsg.csv
+    cat output/wicen/DMR/rt82chann0gsg.csv >>  output/wicen/DMR/brt82chann0gsg.csv
+
+
+    cat output/DMR/rt82scan.csv > work/brt82xscan.csv
+    tail -n +2 output/wicen/DMR/rt82scan.csv >>  work/brt82xscan.csv
+    awk -F";" '!_[$1]++' work/brt82xscan.csv > output/wicen/DMR/brt82scan.csv
+    echo " Non uniq brt82 scan entries "
+    diff work/brt82xscan.csv output/wicen/DMR/brt82scan.csv
+    echo " End Non uniq scan entries "
+
+    cat work/rt82uxzone.csv > work/wicen/brt82uxzone.csv
+    tail -n +2 work/wicen/rt82uxzone.csv >>  work/wicen/brt82uxzone.csv
+    cat work/rt82vxzone.csv  > work/wicen/brt82vxzone.csv
+    tail -n +2 work/wicen/rt82vxzone.csv >>  work/wicen/brt82vxzone.csv
+  echo "starting dzones.pl wrt"
+        bin/vkrepdzones.pl work/wicen/brt82uxzone.csv work/wicen/brt82vxzone.csv work/wicen/brt82
+    #
+    gsed -f bin/emptyurt82.gsed work/wicen/brt82newuhf.csv > output/wicen/DMR/brt82uzone.csv
+    gsed -f bin/emptyvrt82.gsed work/wicen/brt82newvhf.csv > output/wicen/DMR/brt82vzone.csv
+
   fi
 else
-  echo "suppressed DMR contacts"
+  echo "suppressed DMR"
 fi
 if [ ! -n "$publish" ] ;  then
   echo "starting the publish WP files"

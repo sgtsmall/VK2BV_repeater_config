@@ -2,6 +2,8 @@
 work/
 DMRtest/
 /.project
+Defaults/vkrepwic.srccsv
+Defaults/vkrepwicx.srccsv
 output/**/*.md
 output/**/*.txt
 output/**/*.html
@@ -13,4 +15,6 @@ output/**/*.FT2D
 output/**/*.FTM400
 output/**/*.FT991
 output/**/*.gdoc
+output/wicen/**
+archive/**
 extract of gsed
