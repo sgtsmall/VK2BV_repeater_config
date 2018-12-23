@@ -13,6 +13,8 @@ no warnings 'experimental::smartmatch';
 use Text::CSV_XS;
 
 our @Favourft;
+our @Favtsqlr;
+
 require My::Favourites;
 
 #use List::Util qw(first);
@@ -112,6 +114,11 @@ while ((my $row = $csv->getline($vkrdfh))
 #    my $newdat1 = sprintf("%.4f,-RPT,NFM,", $data{'absoff'});
 
         my $CallUufld = sprintf("%s", $data{'Call U'});
+	  my $CallUdfld = $CallUufld;
+	  if (length $CallUufld > 6 ) {
+	  	my $CallUxfld = substr($CallUdfld, 6, 1, '-');
+	}
+
 #        print "Process $CallUufld\n";
         if (grep { $CallUufld eq $_ } @CallUuniq) {
 
@@ -145,6 +152,10 @@ while ((my $row = $csv->getline($vkrdfh))
         if ($data{'Tone'} eq '-') {
             $tonemode = 'OFF,100.0 Hz';
         }
+	  elsif ( grep { $CallUdfld eq $_ } @Favtsqlr) {
+		  my $printtone = sprintf("%.1f", $data{'Tone'});
+		  $tonemode = sprintf("TSQL,%s,%s", $data{'Tone'},$data{'Tone'});
+	  }
         else {
             my $printtone = sprintf("%.1f", $data{'Tone'});
     #        $tonemode = sprintf("TONE SQL,%s Hz", $printtone);

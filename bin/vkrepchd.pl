@@ -15,6 +15,7 @@ use Text::CSV_XS;
 our @Favourds;
 our @FavdstrUR;
 our @FavdstrR1;
+our @Favtsqlr;
 require My::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
@@ -79,6 +80,12 @@ while (my $row = $csv->getline($vkrdfh)) {
     {
 #        $cnt +=1;
         my $CallUufld = sprintf("%s", $data{'Call U'});
+	  my $CallUdfld = $CallUufld;
+	  if (length $CallUufld > 6 ) {
+	  	my $CallUxfld = substr($CallUdfld, 6, 1, '-');
+	}
+#	  print STDERR "DEBUG: CallUufld: ", $CallUufld, " CallUdfld: ", $CallUdfld, "\n";
+
         if (grep { $CallUufld eq $_ } @CallUuniq) {
 
             #   print "$CallUufld not unique\n";
@@ -122,12 +129,15 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $tonemode = '';
         if ($data{'Tone'} eq '-') {
             $tonemode = ',88.5,88.5';
-
         }
-        else {
+        elsif ( grep { $CallUdfld eq $_ } @Favtsqlr) {
+		  $tonemode = sprintf("TSQL,%s,%s", $data{'Tone'},$data{'Tone'});
+	  }
+	  else {
 #            $tonemode = sprintf("TSQL,%s,%s", $data{'Tone'},$data{'Tone'});
-            $tonemode = sprintf("TONE,%s,%s", $data{'Tone'},$data{'Tone'});
+            $tonemode = sprintf("Tone,%s,%s", $data{'Tone'},$data{'Tone'});
         }
+#	  print STDERR "DEBUG: CallUufld: ", $CallUufld, " CallUdfld: ", $CallUdfld, " tonemode:", $tonemode,"\n";
 
 #my $newdat4 = sprintf("%s,%s,", $tonemode, $Rptuseg);
 

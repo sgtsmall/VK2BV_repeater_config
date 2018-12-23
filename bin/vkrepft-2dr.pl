@@ -12,6 +12,7 @@ no warnings 'experimental::smartmatch';
 use Text::CSV_XS;
 
 our @Favourft;
+our @Favtsqlr;
 require My::Favourites;
 
 #use List::Util qw(first);
@@ -86,6 +87,13 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             $data{'absoff'}, $data{'tsign'}, $data{'mode'} );
 
         my $CallUufld = sprintf( "%s", $data{'Call U'} );
+	  my $CallUdfld = $CallUufld;
+	  if (length $CallUufld > 6 ) {
+		  my $CallUxfld = substr($CallUdfld, 6, 1, '-');
+	  }
+
+	#  print STDERR "DEBUG: CallUufld: ", $CallUufld, " CallUdfld: ", $CallUdfld, "\n";
+
         if ( grep { $CallUufld eq $_ } @CallUuniq ) {
 
             #        print "$CallUufld not unique\n";
@@ -108,7 +116,9 @@ while ( my $row = $csv->getline($vkrdfh) ) {
 
         #my $tonemode = 'None'; chang T Sql to Tone
         my $tonemode = ( $data{'Tone'} eq '-' ) ? 'None' : 'Tone';
-        #
+        if (  grep { $CallUdfld eq $_ } @Favtsqlr)  {
+	  $tonemode = 'TSQL';
+  	}
         #Name,Tone Mode,CTCSS,
         #
         my $newdat2 =

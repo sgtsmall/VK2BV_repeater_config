@@ -13,6 +13,7 @@ no warnings 'experimental::smartmatch';
 use Text::CSV_XS;
 
 our @Favourft;
+our @Favtsqlr;
 require My::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
@@ -87,6 +88,10 @@ while (my $row = $csv->getline($vkrdfh)) {
 #    my $newdat1 = sprintf("%.4f,-RPT,NFM,", $data{'absoff'});
 
         my $CallUufld = sprintf("%s", $data{'Call U'});
+	  my $CallUdfld = $CallUufld;
+	  if (length $CallUufld > 6 ) {
+	  	my $CallUxfld = substr($CallUdfld, 6, 1, '-');
+	}
         if (grep { $CallUufld eq $_ } @CallUuniq) {
 
 #        print "$CallUufld not unique\n";
@@ -116,8 +121,9 @@ while (my $row = $csv->getline($vkrdfh)) {
 #TONE,Repeater Tone,RPT1USE,
         if ($data{'Tone'} eq '-') {
             $tonemode = 'OFF,';
-        }
-        else {
+        } elsif ( grep { $CallUdfld eq $_ } @Favtsqlr) {
+		  $tonemode = sprintf("TSQL,%s Hz", $data{'Tone'});
+	  } else {
 #            $tonemode = sprintf("TONE SQL,%s Hz", $data{'Tone'});
             $tonemode = sprintf("TONE,%s Hz", $data{'Tone'});
         }

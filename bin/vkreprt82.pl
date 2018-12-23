@@ -47,6 +47,8 @@ our @FavsharkDMRGTD;
 our @FavsharkDMRGTPD;
 our @FavsharkDMRGTX;
 our @FavsharkDMRGTPX;
+our @FavsharkDMRGTI;
+our @FavsharkDMRGTPI;
 our @FavmmdvmDMRGTB;
 our @FavmmdvmDMRGTPB;
 our @FavmmdvmDMRGTD;
@@ -55,6 +57,7 @@ our @FavmmdvmDMRGTX;
 our @FavmmdvmDMRGTPX;
 our @Favopenspotrx;
 our @FavDMRno1_9;
+our @Favtsqlr;
 
 my $dmscantmp = '';
 my $index     = '';
@@ -304,17 +307,22 @@ while (my $row = $csv->getline($vkrdfh)) {
         my $newn0gsg4   = '';
 
         my $CallUufld = sprintf("%s", $datard{'Call U'});
+	  my $CallUdfld = $CallUufld;
+	  if (length $CallUufld > 6 ) {
+	  	my $CallUxfld = substr($CallUdfld, 6, 1, '-');
+	}
+#	  print STDERR "DEBUG: Call: ", $datard{'Call'}," CallUufld: ", $CallUufld, " CallUdfld: ", $CallUdfld, "\n";
         unless ($datard{'Call'} eq "WICENS") {
             if (grep { $CallUufld eq $_ } @CallUuniq) {
 
-                #        print " DEBUG $CallUufld not unique\n";
+ #                       print " DEBUG $CallUufld not unique\n";
                 my $cuniq = '64';
                 while (grep { $CallUufld eq $_ } @CallUuniq) {
                     $cuniq += 1;
                     my $ccuniq = chr($cuniq);
                     my $tCallUufld = substr $CallUufld, 6, 1, $ccuniq;
                 }
-                #            print "DEBUG Inserting $CallUufld\n";
+ #                           print "DEBUG Inserting $CallUufld\n";
                 push @CallUuniq, $CallUufld;
             }
             else {
@@ -346,7 +354,13 @@ while (my $row = $csv->getline($vkrdfh)) {
             $dmccode = ($tonefld eq '') ? '' : '';
 
             # need to find a way to deal with CTCSSDec from data
-            $CTCSSDec = 'None';
+		if ( grep { $CallUdfld eq $_ } @Favtsqlr) {
+			#23dec18 set ccode to 'c' for FM to switch on automatic receive tone
+	     	 $CTCSSDec = ($tonefld eq '') ? 'None' : sprintf("%05.1f", $tonefld);
+		 $dmccode = ($tonefld eq '') ? '' : 'c';
+	 } else {
+		 $CTCSSDec = 'None';
+	 }
 
 #            print $tonefld," ";
             $CTCSSEnc =
@@ -602,6 +616,9 @@ while (my $row = $csv->getline($vkrdfh)) {
                     # insert multiple if it is a repeater
                     if ($dmrDVnet eq 'IPSC2') {
                         @Favamateur = (@FavdmrpTG, @FavmarcTG, @FavmarcWTG);
+                        if ($CallUufld eq 'SHARKI') {
+                          @Favamateur = (@FavdmrOspotTG, @FavsharkDMRGTI, @FavsharkDMRGTPI, @Favamateur);
+                        }
                     }
                     elsif ($dmrDVnet eq 'BM') {
                         @Favamateur = (@FavmmdvmDMRGTB);

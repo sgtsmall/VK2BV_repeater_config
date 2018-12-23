@@ -29,6 +29,7 @@ use Text::CSV_XS;
 our @Favourds;
 our @FavdstrUR;
 our @FavdstrR1;
+our @Favtsqlr;
 require My::Favourites;
 
 my $csv = Text::CSV_XS->new( { sep_char => ',' } );
@@ -157,7 +158,12 @@ while ( my $row = $csv->getline($vkrdfh) ) {
     {
         #        $cnt +=1;
         my $CallUufld = sprintf( "%s", $data{'Call U'} );
-        if ( grep { $CallUufld eq $_ } @CallUuniq ) {
+	  my $CallUdfld = $CallUufld;
+ 	if (length $CallUufld > 6 ) {
+ 	  my $CallUxfld = substr($CallUdfld, 6, 1, '-');
+  }
+# 	  print STDERR "DEBUG: CallUufld: ", $CallUufld, " CallUdfld: ", $CallUdfld, "\n";
+       if ( grep { $CallUufld eq $_ } @CallUuniq ) {
 
             #   print "$CallUufld not unique\n";
             my $cuniq = '64';
@@ -207,15 +213,27 @@ while ( my $row = $csv->getline($vkrdfh) ) {
         #TONE - Tone only, TSQL - Tone Squelch
         my $tonemode = '';
         my $tonesql  = '';
+	  my $btonemode = '';
         if ( $data{'Tone'} eq '-' ) {
             $tonemode = 'OFF,';
+		$btonemode = 'OFF,';
             $tonesql  = ',';
         }
-        else {
-#            $tonemode = sprintf( "TSQL,%sHz", $data{'Tone'} );
-            $tonemode = sprintf( "TONE,%sHz", $data{'Tone'} );
-            $tonesql  = sprintf( ",%sHz",     $data{'Tone'} );
+	  elsif ( grep { $CallUdfld eq $_ } @Favtsqlr) {
+		$tonemode = sprintf("TSQL,%sHz,", $data{'Tone'});
+		$btonemode = sprintf("TONE(T)/TSQL(R),%sHz",$data{'Tone'});
+		$tonesql = sprintf("%sHz,", $data{'Tone'});
         }
+	  else {
+#            $tonemode = sprintf("TSQL,%s,%s", $data{'Tone'},$data{'Tone'});
+            $tonemode = sprintf("TONE,%sHz,", $data{'Tone'});
+		$btonemode = $tonemode;
+		$tonesql = sprintf("%sHz,", $data{'Tone'});
+        }
+#	  print STDERR "DEBUG: CallUufld: ", $CallUufld, " CallUdfld: ", $CallUdfld, " tonemode:", $tonemode,"\n";
+
+
+
 
         # RPT1USE,
         # use this logic for RPT1 USE
@@ -226,7 +244,9 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             $Rptuseg = 'YES';
             $Rptskip = 'OFF';
         }
-
+# TSQL,91.5Hz
+# TONE,91.5Hz
+# OFF,88.5Hz
         my $newdat4 = sprintf( "%s,%s,", $tonemode, $Rptuseg );
 
         #  'CH No,
@@ -247,8 +267,12 @@ while ( my $row = $csv->getline($vkrdfh) ) {
       #$newdab1,
       # 'Name,SKIP,TONE,Repeater Tone,TSQL Frequency,DTCS Code,DTCS Polarity,' ;
       # $tonemode == TONE,Repeater Tone
-        my $newdab2 =
-          sprintf( "%s,%s,%s%s,,,", $dispname, $Rptskip, $tonemode, $tonesql );
+	# TONE(T)/TSQL(R),91.5Hz,91.5Hz,
+	# OFF,88.5Hz,88.5Hz,
+	# TONE,91.5Hz,91.5Hz,
+
+	  my $newdab2 =
+          sprintf( "%s,%s,%s%s,,,", $dispname, $Rptskip, $btonemode, $tonesql );
 
         #$newdab2
         #'DV SQL,DV SQL Code,Your Call Sign,RPT1 Call Sign,RPT2 Call Sign' ;
