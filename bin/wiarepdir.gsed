@@ -8,6 +8,9 @@
 /^438.3000,432.9000,VK3RWW,-,portable,Nation wide,O,20,-,3,3TE,-/ { c \
 438.3000,432.9000,VK3RW2,-,portable,Nation wide,O,20,-,3,3TE,-
 }
+/^439.3750,434.3750,VK3RMC,-,Narre Warren Nth,Melbourne SE,O,40,-,3,3APC,-/ { c \
+439.3750,434.3750,VK3RM2,-,Narre Warren Nth,Melbourne SE,O,40,-,3,3APC,-
+}
 #2DAG 2ERG 2YHX 3TE 3AS 4DU 4TUX 4TCA 4TUB 6ZTN 6AG
 # analogue 439.8750,434.8750,VK3RMC,-,Narre Warren North,Melbourne SE,O,-,-,-,3APC,-,\n
 #438.8375,431.8375,VK4RBX,-,The Knobby,Ipswich,O,70,120,4.5,4AB,-, \
@@ -26,4 +29,5 @@
 #AU 505411	VK4RSA	147.675 MHz	147.075 MHz
 #AU 505606	VK6RGF	438.125 MHz	433.125 MHz
 #AU 5052084	VK2EVB		438.400 MHz	433.400 MHz
-#439.7500,434.7500,VK2RHP,-,Horsley Park,Sydney,O,-,-,-,NME,-, \
+#439.7500,434.7500,VK2RHP,-,Horsley Park,Sydney,O,-,-,-,NME,-,
+/^438.6000,433.6000,VK2RWI,Dural1,Dural,Sydney 6/ d

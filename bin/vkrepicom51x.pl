@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Creates a data file for the Icom D-Star radios
 #
@@ -30,7 +30,7 @@ our @Favourds;
 our @FavdstrUR;
 our @FavdstrR1;
 our @Favtsqlr;
-require My::Favourites;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new( { sep_char => ',' } );
 

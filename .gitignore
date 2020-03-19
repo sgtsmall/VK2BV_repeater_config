@@ -8,6 +8,7 @@ output/**/*.md
 output/**/*.txt
 output/**/*.html
 output/**/*.csv
+output/**/*.LST
 output/**/*.dat
 output/**/*.rdt
 output/**/*.icf
@@ -15,6 +16,8 @@ output/**/*.FT2D
 output/**/*.FTM400
 output/**/*.FT991
 output/**/*.gdoc
+output/DMR/CSV
+output/DMR/RDT
 output/wicen/**
 archive/**
 extract of gsed

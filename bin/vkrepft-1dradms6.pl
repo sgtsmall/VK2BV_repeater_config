@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Creates a data file for the Yaesu FT-1DR ADMS6
 #
@@ -14,7 +14,7 @@ use Text::CSV_XS;
 
 our @Favourft;
 our @Favtsqlr;
-require My::Favourites;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
 

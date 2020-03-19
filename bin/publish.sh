@@ -68,7 +68,69 @@ rsync Defaults/README_ID_51A.gdoc output/ICOM/ICOM_51A/
 rsync output/ICOM/IcomDStar.zip output/ICOM/ICOM_51A/
 mv    output/README_ID_51A.md output/ICOM/ICOM_51A/
 
-cd output
-zip -r wicen wicen
-rm -r wicen
-cd ..
+rm output/DMR/*.zip
+rm output/wicen/DMR/*.zip
+
+echo " publish zipping 868"
+
+cd output/DMR
+zip -r 868 868
+rm -r 868
+cd ../..
+
+echo " publish zipping rt82"
+
+cd output/DMR
+zip -r rt82 rt82
+rm -r rt82
+cd ../..
+
+echo " publish zipping rt3"
+
+cd output/DMR
+zip -r rt3 rt3
+rm -r rt3
+cd ../..
+
+echo " publish zipping rt8"
+
+cd output/DMR
+zip -r rt8 rt8
+rm -r rt8
+cd ../..
+
+echo " publish zipping wicen 868"
+cd output/wicen/DMR
+rm 868*.csv
+zip -r 868 868
+rm -r 868
+cd ../../..
+
+echo " publish zipping wicen rt82"
+
+cd output/wicen/DMR
+rm rt82*.csv
+zip -r rt82 rt82
+rm -r rt82
+cd ../../..
+
+echo " publish zipping wicen rt3"
+
+cd output/wicen/DMR
+#rm rt82*.csv
+zip -r rt3 rt3
+rm -r rt3
+cd ../../..
+
+echo " publish zipping wicen rt8"
+
+cd output/wicen/DMR
+#rm rt82*.csv
+zip -r rt8 rt8
+rm -r rt8
+cd ../../..
+
+#cd output
+#zip -r wicen wicen
+#rm -r wicen
+#cd ..

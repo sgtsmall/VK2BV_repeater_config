@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # merges wia and local data
 #
@@ -13,7 +13,7 @@ use Text::CSV_XS;
 use List::MoreUtils qw(first_index);
 
 our @Favourft;
-require My::Favourites;
+require lib::Favourites;
 
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);

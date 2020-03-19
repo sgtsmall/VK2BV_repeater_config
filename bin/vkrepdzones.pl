@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 
 =pod
 =head1 NAME
@@ -22,7 +22,7 @@ use Pod::Usage;
 use List::MoreUtils qw(first_index);
 
 our @Favourft;
-require My::Favourites;
+require lib::Favourites;
 
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
@@ -140,7 +140,7 @@ if ( $zoneline =~ "ZoneList" ) {
   my $uidx = first_index { $_ =~ /^$zoneline/ } @alluzone;
   if ( $uidx gt 0  ) {
 #    say "found u ";
-    print $uhfznfh @alluzone[$uidx] ;
+    print $uhfznfh $alluzone[$uidx] ;
   } else {
     say $uhfznfh "$zoneline;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;" ;
   }
@@ -148,7 +148,7 @@ if ( $zoneline =~ "ZoneList" ) {
   my $vidx = first_index { $_ =~ /^$zoneline/ } @allvzone;
   if ( $vidx gt 0  ) {
 #    say "found v ";
-    print $vhfznfh @allvzone[$vidx] ;
+    print $vhfznfh $allvzone[$vidx] ;
   } else {
     say $vhfznfh "$zoneline;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;" ;
   }

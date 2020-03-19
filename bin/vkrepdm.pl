@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # merges wia and local data
 #
@@ -11,7 +11,10 @@ no warnings 'experimental::smartmatch';
 use Text::CSV_XS;
 use List::MoreUtils qw(first_index);
 our @Favourds;
-require My::Favourites;
+our @FavdistSYD;
+our @FavdistMEL;
+our @FavdistTMB;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
 
@@ -113,7 +116,7 @@ sub lsortseqfld    {
                     if ($distcsyd eq '') {
                         $sortseqfld = 'A,';
                         }
-                    elsif ($distcsyd <= '60000') {
+                    elsif ($distcsyd <= @FavdistSYD) {
                         $sortseqfld = '02,';
                     }
                     else {
@@ -142,7 +145,7 @@ sub lsortseqfld    {
                     if ($distcmel eq '') {
                         $sortseqfld = 'A,';
                         }
-                    elsif ($distcmel <= '80000') {
+                    elsif ($distcmel <= @FavdistMEL) {
                         $sortseqfld = '10,';
                         }
                     else {
@@ -153,7 +156,7 @@ sub lsortseqfld    {
                     if ($distctmb eq '') {
                         $sortseqfld = 'A,';
                         }
-                    elsif ($distctmb <= '80000') {
+                    elsif ($distctmb <= @FavdistTMB) {
 
                         $sortseqfld = '20,';
                         }

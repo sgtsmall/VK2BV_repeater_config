@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Creates a data file for the Yaesu FT-2DR
 #
@@ -13,7 +13,10 @@ use Text::CSV_XS;
 
 our @Favourft;
 our @Favtsqlr;
-require My::Favourites;
+our @FavdistSYD;
+our @FavdistMEL;
+our @FavdistTMB;
+require lib::Favourites;
 
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
@@ -111,8 +114,8 @@ while ( my $row = $csv->getline($vkrdfh) ) {
             push @CallUuniq, $CallUufld;
         }
 
-        my $name = sprintf( "%s %s %s",
-            $CallUufld, $data{'mNemonic'}, $data{'Location'} );
+        my $name = sprintf( "%s %s",
+            $CallUufld, $data{'Location'} );
 
         #my $tonemode = 'None'; chang T Sql to Tone
         my $tonemode = ( $data{'Tone'} eq '-' ) ? 'None' : 'Tone';
@@ -176,7 +179,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                         #           2345667890123
                         $BankLoc = ',,,,1,,,,,,,,';
                     }
-                    elsif ( $distcsyd <= '60000' ) {
+                    elsif ( $distcsyd <= sprintf('%d',@FavdistSYD ) {
 
                         #DEBUG  print "lt 60000\n";
                         #           2234567890123
@@ -221,7 +224,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                         #           2345667890123
                         $BankLoc = ',,,,1,,,,,,,,';
                     }
-                    elsif ( $distcmel <= '80000' ) {
+			  elsif ( $distcmel <= sprintf('%d',@FavdistMEL ) {
 
                         #DEBUG  print "lt 60000\n";
                         #           2345677890123
@@ -240,7 +243,7 @@ while ( my $row = $csv->getline($vkrdfh) ) {
                         #           2345667890123
                         $BankLoc = ',,,,1,,,,,,,,';
                     }
-                    elsif ( $distctmb <= '80000' ) {
+                    elsif ( $distctmb <= sprintf('%d',@FavdistTMB ) {
 
                         #DEBUG  print "lt 60000\n";
                         #           2345678990123

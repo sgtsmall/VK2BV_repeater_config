@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Extract repeater info from spectra device_details.csv
 #
@@ -22,7 +22,7 @@ use Ham::Locator;
 use Geo::Direction::Distance;
 
 
-require My::Favourites;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ',',eol => "\n"});
 my $devdet = 'work/device_details.csv';

@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 # Simple DMR Contacts extraction.
 
 # You might have to get this package from CPAN or PPM:
@@ -7,7 +7,7 @@ use warnings;
 
 use Text::CSV_XS;
 
-require My::Favourites;
+require lib::Favourites;
 
 our @FavmarcTG;
 our @FavmarcWTG;
@@ -98,11 +98,11 @@ foreach my $tmpTG (@bothTGlist) {
     my $dmrtgnum  = $tmpTGinfo[3];
     my $dmrtgtext = sprintf( '%s %s', $dmrlab, $dmrtg );
     if ( grep { $dmrtgnum.'G' eq $_ } @tgnumuniq ) {
-        print "\nTG contact numb exists :", $dmrtgnum, ":", $dmrtgtext,
-          ": not adding\n\n";
+        print "TG contact numb exists :", $dmrtgnum, ":", $dmrtgtext,
+          ": not adding\n";
     } elsif ( grep { $dmrtgtext eq $_ } @tgnamuniq ) {
-      print "\nTG contact name exists :", $dmrtgnum, ":", $dmrtgtext,
-        ": not adding\n\n";
+      print "TG contact name exists :", $dmrtgnum, ":", $dmrtgtext,
+        ": not adding\n";
     } else {
     #    print "adding TG contact :", $dmrtgnum, ":", $dmrtgtext, ": added\n";
     $seq += 1;
@@ -132,11 +132,11 @@ foreach my $tmpTP (@bothTPlist) {
     my $dmrtgnum  = $tmpTPinfo[3];
     my $dmrtgtext = sprintf( '%s %s', $dmrlab, $dmrtg );
     if ( grep { $dmrtgnum.'P' eq $_ } @tgnumuniq ) {
-        print "\nTG contact numb exists :", $dmrtgnum, ":", $dmrtgtext,
-          ": not adding\n\n";
+        print "TG contact numb exists :", $dmrtgnum, ":", $dmrtgtext,
+          ": not adding\n";
     } elsif ( grep { $dmrtgtext eq $_ } @tgnamuniq ) {
-        print "\nTG contact name exists :", $dmrtgnum, ":", $dmrtgtext,
-          ": not adding\n\n";
+        print "TG contact name exists :", $dmrtgnum, ":", $dmrtgtext,
+          ": not adding\n";
     }
     else {
     #    print "adding TG contact :", $dmrtgnum, ":", $dmrtgtext, ": added\n";
@@ -163,22 +163,21 @@ while ( my $rowrd = $csv->getline($dmrwfh) ) {
     $seq += 1;
     my %datard;
     @datard{@fieldsrd} = @$rowrd;
-    my $fullname = $datard{'Name'};
-    my ( $firstname, $lastname ) = split( ' ', $fullname );
+#    my $fullname = $datard{'Name'};
+#    my ( $firstname, $lastname ) = split( ' ', $fullname );
     my $remarks = sprintf( "%.1s", $datard{'Remarks'} );
   #  print "DEBUG: $fullname $datard{'Radio ID'} \n";
     # Print the three items: ID, Callsign, Firstname
     print $con1fh join( ',',
-        $datard{'Radio ID'}, $datard{'Callsign'}, $firstname, $remarks ),
-      "\n";
+        $datard{'Radio ID'}, $datard{'Callsign'}, $datard{'FirstName'}, $remarks ),"\n";
     my $nogsgcon = sprintf( '"%s","%s %s","Private Call","No"',
-        $datard{'Radio ID'}, $datard{'Callsign'}, $firstname );
+        $datard{'Radio ID'}, $datard{'Callsign'}, $datard{'FirstName'} );
     print $con2fh $nogsgcon, "\n";
     my $motocon = sprintf( "%s %s %s,%s",
-        $datard{'Callsign'}, $firstname, $remarks, $datard{'Radio ID'} );
+        $datard{'Callsign'}, $datard{'FirstName'}, $remarks, $datard{'Radio ID'} );
     print $con3fh $motocon, "\n";
     my $md2017con = sprintf( "%s %s %s,2,%s,0",
-        $datard{'Callsign'}, $firstname, $remarks, $datard{'Radio ID'} );
+        $datard{'Callsign'}, $datard{'FirstName'}, $remarks, $datard{'Radio ID'} );
     print $con4fh $md2017con, "\n";
     my $gd77con = sprintf( "%s,%s,%s,Private Call,On,None",
         $seq, $datard{'Callsign'}, $datard{'Radio ID'} );

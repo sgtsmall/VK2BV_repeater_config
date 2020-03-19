@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # merges wia and local data
 #
@@ -12,7 +12,10 @@ use Text::CSV_XS;
 use List::MoreUtils qw(first_index);
 
 our @Favourft;
-require My::Favourites;
+our @FavdistSYD;
+our @FavdistMEL;
+our @FavdistTMB;
+require lib::Favourites;
 
 #use List::Util qw(first);
 #use Scalar::Util qw(looks_like_number);
@@ -54,7 +57,7 @@ open(my $vksofh, '>', $fileo1) or die "Could not open '$fileo1' $!\n";
 
 #read the header line of the main input
 my @fieldsrd = @{$csv->getline($vkrdfh)};
-# output this header with sortseq 
+# output this header with sortseq
 print $vksofh $sortseq, join(',', @fieldsrd), "\n";
 
 #read the header line of the local input
@@ -99,7 +102,7 @@ sub lsortseq    {
         my %datard;
         @datard{@fieldsrd} = @_ ;
         $sortseq     = 'Z,';
-        my $dirs     = '';        
+        my $dirs     = '';
         my $dirn     = sprintf("%s", $datard{'dirkat'});
         my $distcsyd = sprintf("%s", $datard{'distsyd'});
         my $distcmel = sprintf("%s", $datard{'distmel'});
@@ -119,7 +122,7 @@ sub lsortseq    {
                     if ($distcsyd eq '') {
                         $sortseq = 'A1,';
                         }
-                    elsif ($distcsyd <= '60000') {
+                    elsif ($distcsyd <= @FavdistSYD) {
                         $sortseq = '02,';
                         }
                     else {
@@ -138,7 +141,7 @@ sub lsortseq    {
                                 $sortseq = '04,';
                             }
                             elsif ($dirs le 360) {    #South
-                                $sortseq = '03,'; 
+                                $sortseq = '03,';
                             }
                         }
                     }
@@ -147,7 +150,7 @@ sub lsortseq    {
                     if ($distcmel eq '') {
                         $sortseq = 'A3,';
                         }
-                    elsif ($distcmel <= '80000') {
+                    elsif ($distcmel <= @FavdistMEL) {
                         $sortseq = '10,';
                         }
                     else {
@@ -156,9 +159,9 @@ sub lsortseq    {
                 }
                 elsif ($prefix eq 'VK4') {
                     if ($distctmb eq '') {
-                        $sortseq = 'A4,'; 
+                        $sortseq = 'A4,';
                         }
-                    elsif ($distctmb <= '80000') {
+                    elsif ($distctmb <= @FavdistTMB) {
                         $sortseq = '20,';
                         }
                     else {
@@ -226,7 +229,7 @@ sub lsortseq    {
             }
         }
 
-        return $sortseq 
+        return $sortseq
     }
 
 

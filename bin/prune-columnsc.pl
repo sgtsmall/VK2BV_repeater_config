@@ -1,7 +1,5 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 
-# read vkrepdir remove colums Latitude and Longitude
-#!/opt/local/bin/perl
 
 =pod
 =head1 NAME

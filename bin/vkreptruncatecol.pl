@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # merges wia and local data
 #
@@ -11,7 +11,7 @@ use warnings;
 use Text::CSV_XS;
 use List::MoreUtils qw(first_index);
 our @Favourds;
-require My::Favourites;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ';'});
 

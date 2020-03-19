@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Creates a data file(s) for the MD-380
 #
@@ -17,8 +17,8 @@ no warnings 'experimental::smartmatch';
 use Text::CSV_XS;
 use List::Util qw(first);
 use List::MoreUtils;
-use Findbin::Libs;
-require My::Favourites;
+
+require lib::Favourites;
 
 my @longcalluniq;
 my @ScanlistUniq;

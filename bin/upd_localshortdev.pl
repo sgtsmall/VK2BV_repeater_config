@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Generate a local_shortdev from lat, long
 #
@@ -17,7 +17,7 @@ use Ham::Locator;
 use Geo::Direction::Distance;
 
 
-require My::Favourites;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ',',eol => "\n"});
 

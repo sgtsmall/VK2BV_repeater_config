@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #
 # Creates a data file for the Chirp
 #
@@ -22,7 +22,7 @@ use Text::CSV_XS;
 our @Favourds;
 our @FavdstrUR;
 our @FavdstrR1;
-require My::Favourites;
+require lib::Favourites;
 
 my $csv = Text::CSV_XS->new({sep_char => ','});
 

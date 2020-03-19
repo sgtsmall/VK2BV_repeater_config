@@ -1,4 +1,4 @@
-#!/opt/local/bin/perl
+#!/usr/bin/perl
 #my @array = qw( your array here );
 #my $search_for = "here";
 #my( $index )= grep { $array[$_] eq $search_for } 0..$#array;
